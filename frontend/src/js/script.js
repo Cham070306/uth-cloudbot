@@ -158,7 +158,6 @@ const errorBanner     = document.getElementById('errorBanner');
 const errorBannerText = errorBanner.querySelector('span');
 const retryBtn        = document.getElementById('retryBtn');
 const newChatBtn      = document.getElementById('newChatBtn');
-const tabGroup        = document.getElementById('tabGroup');
 const themeToggle     = document.getElementById('themeToggle');
 const apiBadge        = document.getElementById('apiBadge');
 const sourcesEmpty    = document.getElementById('sourcesEmpty');
@@ -175,14 +174,6 @@ apiBadge.classList.toggle('is-live', !USE_MOCK);
 themeToggle.addEventListener('click', () => {
   const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
   document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
-});
-
-// ---------- Tabs (scope filter, cosmetic) ----------
-tabGroup.addEventListener('click', (e) => {
-  const btn = e.target.closest('.tab');
-  if (!btn) return;
-  tabGroup.querySelectorAll('.tab').forEach(t => t.classList.remove('is-active'));
-  btn.classList.add('is-active');
 });
 
 // ---------- New chat ----------

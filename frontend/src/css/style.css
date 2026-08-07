@@ -27,16 +27,21 @@
 }
 
 [data-theme="dark"]{
-  --dark:        #1c2312;
-  --dark-soft:   #2a331b;
-  --mint:        #1f2818;
-  --cream:       #262d1b;
-  --cream-card:  #313a22;
-  --cream-border:#454f2d;
-  --ink:         #f1ead9;
-  --ink-soft:    rgba(241,234,217,0.65);
-  --ink-faint:   rgba(241,234,217,0.25);
-  --white:       #2c3520;
+  --dark:        #171915;
+  --dark-soft:   #292c26;
+  --dark-line:   rgba(244,235,221,0.12);
+  --accent:      #c98268;
+  --accent-ink:  #f8eee2;
+  --mint:        #252a22;
+  --cream:       #1f211d;
+  --cream-card:  #2b2d27;
+  --cream-border:#484a42;
+  --ink:         #f4ebdd;
+  --ink-soft:    #b8b4aa;
+  --ink-faint:   rgba(244,235,221,0.28);
+  --rust:        #d58b70;
+  --rust-soft:   #3b2923;
+  --white:       #f4ebdd;
 }
 
 *{ box-sizing: border-box; }
@@ -117,6 +122,7 @@ html,body{ margin:0; height:100%; font-family: var(--font-body); color: var(--in
   display:flex;
   align-items:center;
   gap: 14px;
+  margin-left: auto;
 }
 
 .theme-toggle{
@@ -141,16 +147,24 @@ html,body{ margin:0; height:100%; font-family: var(--font-body); color: var(--in
 [data-theme="dark"] .toggle-knob{ transform: translateX(18px); background: var(--accent); }
 
 .api-badge{
-  font-family: var(--font-body);
+  font-family: var(--font-display);
   font-size: 10.5px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  color: var(--dark);
-  background: var(--accent);
+  color: var(--ink);
+  background: var(--cream-card);
   padding: 4px 9px;
   border-radius: var(--radius-pill);
+  transition: background 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
 }
-.api-badge.is-live{ background: #bfe3c0; }
+.api-badge.is-live{ background: var(--cream-card); }
+
+.topbar-right .api-badge:hover,
+.topbar-right .avatar--user:hover{
+  background: var(--cream-border);
+  color: var(--ink);
+  box-shadow: 0 4px 14px rgba(20, 25, 12, 0.16);
+}
 
 .avatar{
   width: 38px;
@@ -166,6 +180,11 @@ html,body{ margin:0; height:100%; font-family: var(--font-body); color: var(--in
 }
 .avatar--user{ background: var(--accent); color: var(--accent-ink); }
 .avatar--bot{ background: var(--accent); color: var(--accent-ink); }
+.topbar-right .avatar--user{
+  background: var(--cream-card);
+  color: var(--ink);
+  transition: background 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
+}
 
 /* ---------- Sidebar ---------- */
 .sidebar{
@@ -186,13 +205,17 @@ html,body{ margin:0; height:100%; font-family: var(--font-body); color: var(--in
   border: none;
   border-radius: var(--radius-pill);
   padding: 13px 16px;
-  font-family: var(--font-body);
+  font-family: var(--font-display);
   font-weight: 600;
-  font-size: 14px;
+  font-size: 13.5px;
   cursor: pointer;
-  transition: background 0.15s ease;
+  transition: background 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
 }
-.new-chat:hover{ background: var(--accent); color: var(--accent-ink); }
+.new-chat:hover{
+  background: var(--cream-card);
+  color: var(--ink);
+  box-shadow: 0 4px 14px rgba(20, 25, 12, 0.16);
+}
 .new-chat .plus{ font-size: 16px; }
 
 .history{ margin-top: 26px; }
@@ -486,13 +509,14 @@ html,body{ margin:0; height:100%; font-family: var(--font-body); color: var(--in
   overflow-y: auto;
 }
 .aside-empty{
-  font-family: var(--font-display);
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 1.5;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
   color: var(--ink-soft);
 }
-.aside-empty strong{ color: var(--accent-ink); font-weight: 700; }
+.aside-empty strong{ color: var(--ink); font-weight: 600; }
 
 .aside-content h2{
   font-family: var(--font-display);
