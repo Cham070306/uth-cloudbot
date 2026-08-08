@@ -1,0 +1,12 @@
+{
+  "default": {
+    "answer": "Đây là phản hồi minh họa của UTH CloudBot. Nội dung hiện tại là dữ liệu mock, không phải nguồn thông tin chính thức của UTH; dữ liệu đã kiểm chứng sẽ được bổ sung ở giai đoạn sau.",
+    "intent": "unknown",
+    "source": {
+      "type": "mock",
+      "title": "Dữ liệu mẫu BE-01",
+      "url": null
+    },
+    "updated_at": null
+  }
+}

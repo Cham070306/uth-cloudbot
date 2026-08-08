@@ -1,0 +1,14 @@
+{
+  "info": {
+    "name": "UTH CloudBot BE-01",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [{"key": "baseUrl", "value": "http://localhost:8080"}],
+  "item": [
+    {"name": "Health thành công", "request": {"method": "GET", "url": "{{baseUrl}}/api/health"}},
+    {"name": "Chat thành công", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\n  \"message\": \"UTH CloudBot hỗ trợ gì?\"\n}"}, "url": "{{baseUrl}}/api/chat"}},
+    {"name": "Chat message rỗng", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\n  \"message\": \"   \"\n}"}, "url": "{{baseUrl}}/api/chat"}},
+    {"name": "Feedback thành công", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\n  \"message_id\": \"demo-message-001\",\n  \"helpful\": true\n}"}, "url": "{{baseUrl}}/api/feedback"}},
+    {"name": "Feedback không hợp lệ", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\n  \"message_id\": \"demo-message-001\",\n  \"helpful\": \"true\"\n}"}, "url": "{{baseUrl}}/api/feedback"}}
+  ]
+}
