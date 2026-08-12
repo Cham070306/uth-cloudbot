@@ -79,6 +79,20 @@ def test_note_and_reminder_confirmation_flow(client):
     assert confirmed.get_json()["status"] == "scheduled"
 
 
+def test_reminder_requires_timezone_and_normalizes_to_vietnam(client):
+    missing_timezone = client.post(
+        "/api/me/reminders",
+        json={"content": "Không có múi giờ", "remind_at": "2026-08-13T20:00:00"}, headers=AUTH,
+    )
+    assert missing_timezone.status_code == 400
+    utc_reminder = client.post(
+        "/api/me/reminders",
+        json={"content": "UTC demo", "remind_at": "2026-08-13T13:00:00Z"}, headers=AUTH,
+    )
+    assert utc_reminder.status_code == 201
+    assert utc_reminder.get_json()["remind_at"] == "2026-08-13T20:00:00+07:00"
+
+
 def test_chat_actions_require_confirmation(client):
     for message in ("Ghi chú hỏi giảng viên", "Nhắc tôi làm bài lúc 19 giờ"):
         data = client.post("/api/chat", json={"message": message}, headers=AUTH).get_json()

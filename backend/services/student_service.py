@@ -1,26 +1,23 @@
-import json
 from datetime import datetime, timedelta
-from functools import lru_cache
-from pathlib import Path
 from zoneinfo import ZoneInfo
 
+from repositories import get_repository
 
-DATA_PATH = Path(__file__).resolve().parents[2] / "data" / "sample" / "student_context.json"
+
 TIMEZONE = ZoneInfo("Asia/Ho_Chi_Minh")
 
 
-@lru_cache(maxsize=1)
 def load_student_data():
-    with DATA_PATH.open(encoding="utf-8") as data_file:
-        return json.load(data_file)
+    repository = get_repository()
+    return {name: repository.list(name) for name in ("students", "schedules", "assignments", "exams", "announcements")}
 
 
 def get_student_by_token(token):
-    return next((item for item in load_student_data()["students"] if item["token"] == token), None)
+    return next(iter(get_repository().list("students", token=token)), None)
 
 
 def _owned(collection, student_id):
-    return [item.copy() for item in load_student_data()[collection] if item["student_id"] == student_id]
+    return get_repository().list(collection, student_id=student_id)
 
 
 def get_schedule(student_id, start=None, end=None):

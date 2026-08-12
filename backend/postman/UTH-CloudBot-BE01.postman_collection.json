@@ -1,14 +1,17 @@
 {
-  "info": {
-    "name": "UTH CloudBot BE-01",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-  },
-  "variable": [{"key": "baseUrl", "value": "http://localhost:8080"}],
-  "item": [
-    {"name": "Health thành công", "request": {"method": "GET", "url": "{{baseUrl}}/api/health"}},
-    {"name": "Chat thành công", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\n  \"message\": \"UTH CloudBot hỗ trợ gì?\"\n}"}, "url": "{{baseUrl}}/api/chat"}},
-    {"name": "Chat message rỗng", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\n  \"message\": \"   \"\n}"}, "url": "{{baseUrl}}/api/chat"}},
-    {"name": "Feedback thành công", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\n  \"message_id\": \"demo-message-001\",\n  \"helpful\": true\n}"}, "url": "{{baseUrl}}/api/feedback"}},
-    {"name": "Feedback không hợp lệ", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\n  \"message_id\": \"demo-message-001\",\n  \"helpful\": \"true\"\n}"}, "url": "{{baseUrl}}/api/feedback"}}
+  "info":{"name":"UTH CloudBot BE-02 / DB-01","schema":"https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},
+  "variable":[{"key":"baseUrl","value":"http://localhost:8080"},{"key":"demoToken","value":"demo-token-sv001"}],
+  "item":[
+    {"name":"Health","request":{"method":"GET","url":"{{baseUrl}}/api/health"}},
+    {"name":"Chat FAQ","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"message\":\"Học phí xem ở đâu?\"}"},"url":"{{baseUrl}}/api/chat"}},
+    {"name":"Chat intent lịch thi","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"message\":\"Lịch thi cuối kỳ ở đâu?\"}"},"url":"{{baseUrl}}/api/chat"}},
+    {"name":"Login demo local","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"username\":\"sv001\",\"password\":\"demo123\"}"},"url":"{{baseUrl}}/api/auth/login"}},
+    {"name":"Profile","request":{"method":"GET","header":[{"key":"Authorization","value":"Bearer {{demoToken}}"}],"url":"{{baseUrl}}/api/me"}},
+    {"name":"Chat cá nhân","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"},{"key":"Authorization","value":"Bearer {{demoToken}}"}],"body":{"mode":"raw","raw":"{\"message\":\"Tôi còn bài tập nào chưa làm?\"}"},"url":"{{baseUrl}}/api/chat"}},
+    {"name":"Tạo note","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"},{"key":"Authorization","value":"Bearer {{demoToken}}"}],"body":{"mode":"raw","raw":"{\"content\":\"Note demo local\"}"},"url":"{{baseUrl}}/api/me/notes"}},
+    {"name":"Feedback mới","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"message_id\":\"demo-message-001\",\"helpful\":true}"},"url":"{{baseUrl}}/api/feedback"}},
+    {"name":"Feedback legacy","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"question\":\"Câu hỏi demo\",\"answer\":\"Câu trả lời demo\",\"vote\":\"up\"}"},"url":"{{baseUrl}}/api/feedback"}},
+    {"name":"Lỗi chat rỗng","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"message\":\"   \"}"},"url":"{{baseUrl}}/api/chat"}},
+    {"name":"Lỗi token","request":{"method":"GET","header":[{"key":"Authorization","value":"Bearer invalid"}],"url":"{{baseUrl}}/api/me"}}
   ]
 }

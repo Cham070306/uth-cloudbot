@@ -32,9 +32,19 @@ def normalize_text(value):
 
 def classify_intent(message):
     normalized = normalize_text(message)
-    for intent, keywords in INTENT_KEYWORDS.items():
-        if any(keyword in normalized for keyword in keywords):
+    def contains(keyword):
+        return re.search(rf"(?:^|\s){re.escape(keyword)}(?:$|\s)", normalized) is not None
+
+    priority = (
+        "create_reminder", "create_note", "personal_deadline", "personal_assignment",
+        "personal_announcement", "personal_exam", "personal_schedule", "exam_schedule", "schedule",
+    )
+    for intent in priority:
+        if any(contains(keyword) for keyword in INTENT_KEYWORDS[intent]):
             return intent
-    if any(keyword in normalized for keyword in FAQ_KEYWORDS):
+    if any(contains(keyword) for keyword in FAQ_KEYWORDS):
         return "faq"
+    for intent in ("document", "knowledge"):
+        if any(contains(keyword) for keyword in INTENT_KEYWORDS[intent]):
+            return intent
     return "unknown"

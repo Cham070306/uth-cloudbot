@@ -1,6 +1,6 @@
 # UTH CloudBot
 
-UTH CloudBot là dự án chatbot hỗ trợ sinh viên Trường Đại học Giao thông vận tải TP.HCM (UTH). Phiên bản hiện tại gồm giao diện frontend và backend BE-01 chạy local bằng dữ liệu mock.
+UTH CloudBot là dự án chatbot hỗ trợ sinh viên Trường Đại học Giao thông vận tải TP.HCM (UTH). Phiên bản hiện tại gồm FE-02, BE-02 và DB-01 chạy local bằng dữ liệu demo, với repository local mặc định và Firestore tùy chọn.
 
 > Nội dung mock chỉ phục vụ phát triển và kiểm thử, không phải nguồn thông tin chính thức của UTH.
 
@@ -8,7 +8,8 @@ UTH CloudBot là dự án chatbot hỗ trợ sinh viên Trường Đại học G
 
 - FE-01: giao diện chatbot HTML/CSS/JavaScript.
 - BE-01: Flask API cơ bản với health check, chat mock và tiếp nhận feedback.
-- Dữ liệu thật UTH, database, Firestore, Gemini và triển khai cloud chưa được tích hợp.
+- Personal Assistant demo hỗ trợ đăng nhập, lịch, bài tập, thi, thông báo, note/reminder.
+- DB-01 có repository abstraction, seed local và Firestore adapter; triển khai cloud chưa thuộc phạm vi này.
 
 ## Cấu trúc dự án
 

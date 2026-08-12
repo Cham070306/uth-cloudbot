@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UTH Chatbot — Trợ lý sinh viên</title>
+<link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../src/css/style.css">
@@ -19,7 +20,9 @@
 
   <div class="topbar">
     <div class="topbar-right">
-      <span class="api-badge" id="apiBadge">MOCK</span>
+      <span class="api-badge" id="apiBadge">LIVE</span>
+      <span class="health-status" id="healthStatus" role="status">Đang kiểm tra API</span>
+      <button class="auth-button" id="authButton" type="button">Đăng nhập</button>
       <button class="theme-toggle" id="themeToggle" aria-label="Đổi giao diện sáng/tối">
         <span class="toggle-knob"></span>
       </button>
@@ -114,6 +117,20 @@
   </aside>
 
 </div>
+
+<dialog class="auth-dialog" id="authDialog" aria-labelledby="authTitle">
+  <form class="auth-form" id="authForm">
+    <h2 id="authTitle">Đăng nhập tài khoản demo</h2>
+    <p>Dữ liệu cá nhân bên dưới hoàn toàn giả lập.</p>
+    <label>Tài khoản <input id="usernameInput" value="sv001" autocomplete="username" required></label>
+    <label>Mật khẩu <input id="passwordInput" type="password" value="demo123" autocomplete="current-password" required></label>
+    <p class="auth-error" id="authError" role="alert" hidden></p>
+    <div class="dialog-actions">
+      <button type="button" id="authCancel">Hủy</button>
+      <button type="submit">Đăng nhập</button>
+    </div>
+  </form>
+</dialog>
 
 <script src="../src/js/script.js"></script>
 </body>

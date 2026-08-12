@@ -1,10 +1,13 @@
 from time import perf_counter
+from datetime import datetime, timezone
+from uuid import uuid4
 
 from flask import current_app, jsonify, request
 
 from routes import api
 from services.chat_service import get_chat_response
 from services.student_service import get_student_by_token
+from repositories import get_repository
 
 
 def invalid(message):
@@ -40,5 +43,15 @@ def chat():
     token = header[7:].strip() if header.startswith("Bearer ") else ""
     student = get_student_by_token(token) if token else None
     result = get_chat_response(message, student)
+    message_id = f"msg-{uuid4().hex[:16]}"
+    result["message_id"] = message_id
+    get_repository().upsert("conversations", {
+        "id": message_id,
+        "student_id": student.get("id") if student else None,
+        "question": message,
+        "answer": result.get("answer", ""),
+        "intent": result.get("intent", "unknown"),
+        "created_at": datetime.now(timezone.utc).isoformat(),
+    })
     result["latency_ms"] = max(0, int((perf_counter() - started_at) * 1000))
     return jsonify(result)

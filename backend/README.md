@@ -1,4 +1,4 @@
-# UTH CloudBot — BE-01 mở rộng
+# UTH CloudBot — BE-02 và DB-01
 
 Backend Flask cơ bản chạy local với đúng ba endpoint health, chat mock và feedback không lưu trữ. Nội dung mock chỉ dùng để minh họa, **không phải nguồn thông tin chính thức của UTH**.
 
@@ -36,6 +36,11 @@ python app.py
 |---|---|---|
 | `PORT` | `8080` | Cổng HTTP local |
 | `CORS_ORIGINS` | hai origin Vite local ở trên | Danh sách origin, phân tách bằng dấu phẩy |
+| `DATA_BACKEND` | `local` | `local` hoặc `firestore` |
+| `GOOGLE_CLOUD_PROJECT` | rỗng | Project khi dùng Firestore |
+| `FIRESTORE_COLLECTION_PREFIX` | `uth_cloudbot` | Prefix collection |
+
+Local repository là mặc định và không cần Google credential. Conversation, feedback, note và reminder đều đi qua repository abstraction. Chạy seed idempotent bằng `python -m scripts.seed_data`; schema ở `docs/architecture/DATABASE-SCHEMA.md`.
 
 Server không bật debug và giới hạn request ở 16 KiB.
 

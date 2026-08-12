@@ -1,0 +1,15 @@
+{
+  "notice": "Dữ liệu tài liệu hoàn toàn giả lập, chưa được UTH kiểm chứng.",
+  "documents": [
+    {"id":"doc-001","title":"Sổ tay sinh viên demo","category":"handbook","url":null,"updated_at":"2026-08-01"},
+    {"id":"doc-002","title":"Hướng dẫn đăng ký học phần demo","category":"academic","url":null,"updated_at":"2026-08-01"},
+    {"id":"doc-003","title":"Hướng dẫn tra cứu lịch thi demo","category":"exam","url":null,"updated_at":"2026-08-01"},
+    {"id":"doc-004","title":"Quy trình phúc khảo demo","category":"exam","url":null,"updated_at":"2026-08-01"},
+    {"id":"doc-005","title":"Hướng dẫn sử dụng thư viện demo","category":"library","url":null,"updated_at":"2026-08-01"},
+    {"id":"doc-006","title":"Hướng dẫn email sinh viên demo","category":"account","url":null,"updated_at":"2026-08-01"},
+    {"id":"doc-007","title":"Quy trình bảo lưu demo","category":"academic","url":null,"updated_at":"2026-08-01"},
+    {"id":"doc-008","title":"Thông tin học bổng demo","category":"student","url":null,"updated_at":"2026-08-01"},
+    {"id":"doc-009","title":"Hướng dẫn thực tập demo","category":"career","url":null,"updated_at":"2026-08-01"},
+    {"id":"doc-010","title":"Checklist tốt nghiệp demo","category":"graduation","url":null,"updated_at":"2026-08-01"}
+  ]
+}

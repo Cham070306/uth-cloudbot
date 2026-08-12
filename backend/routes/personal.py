@@ -92,7 +92,7 @@ def add_reminder():
     try:
         item = create_reminder(g.student["id"], payload.get("content", "").strip(), payload.get("remind_at", ""))
     except (AttributeError, TypeError, ValueError):
-        return invalid("content và remind_at ISO-8601 phải hợp lệ.")
+        return invalid("content và remind_at ISO-8601 kèm múi giờ phải hợp lệ.")
     if not item["content"]:
         return invalid("Trường content không được để trống.")
     return jsonify(item), 201

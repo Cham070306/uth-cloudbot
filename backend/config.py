@@ -12,6 +12,9 @@ class Config:
         ).split(",")
         if origin.strip()
     ]
+    DATA_BACKEND = os.getenv("DATA_BACKEND", "local")
+    GOOGLE_CLOUD_PROJECT = os.getenv("GOOGLE_CLOUD_PROJECT")
+    FIRESTORE_COLLECTION_PREFIX = os.getenv("FIRESTORE_COLLECTION_PREFIX", "uth_cloudbot")
 
 
 def get_port():

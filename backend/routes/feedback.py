@@ -1,6 +1,9 @@
 from flask import jsonify, request
+from datetime import datetime, timezone
+from uuid import uuid4
 
 from routes import api
+from repositories import get_repository
 
 
 def invalid(message):
@@ -24,9 +27,15 @@ def feedback():
             return invalid("Trường question không được để trống.")
         if vote not in ("up", "down"):
             return invalid("Trường vote phải là 'up' hoặc 'down'.")
+        feedback_id = f"feedback-{uuid4().hex[:12]}"
+        get_repository().upsert("feedback", {
+            "id": feedback_id, "message_id": None, "question": question.strip(),
+            "answer": payload.get("answer", ""), "vote": vote, "helpful": vote == "up",
+            "created_at": datetime.now(timezone.utc).isoformat(),
+        })
         return jsonify({
             "status": "received",
-            "message_id": "fe01-message",
+            "message_id": feedback_id,
             "helpful": vote == "up",
         })
 
@@ -41,4 +50,8 @@ def feedback():
     if type(helpful) is not bool:
         return invalid("Trường helpful phải là boolean.")
 
+    get_repository().upsert("feedback", {
+        "id": f"feedback-{uuid4().hex[:12]}", "message_id": message_id.strip(),
+        "helpful": helpful, "created_at": datetime.now(timezone.utc).isoformat(),
+    })
     return jsonify({"status": "received", "message_id": message_id.strip(), "helpful": helpful})

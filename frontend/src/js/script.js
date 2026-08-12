@@ -1,415 +1,608 @@
-/* ==========================================================
-   UTH Chatbot — FE-02: Tích hợp API
-   Kết nối giao diện với:
-     POST /api/chat      { question }              -> câu trả lời
-     POST /api/feedback  { question, answer, vote } -> ghi nhận đánh giá
-   Xử lý: loading, lỗi mạng, timeout, câu hỏi rỗng.
+/* UTH CloudBot — FE-02: tích hợp frontend với API BE-01. */
 
-   Đang chạy ở chế độ MOCK (USE_MOCK = true) vì backend team 2
-   (backend/app.py) chưa có endpoint thật. Khi backend deploy xong,
-   đổi USE_MOCK = false và chỉnh API_BASE bên dưới là chạy được ngay
-   — không cần sửa gì thêm trong phần render/UI.
-   ========================================================== */
-
-// ---------- Cấu hình API ----------
-const USE_MOCK   = true;              // false khi backend đã sẵn sàng
-const API_BASE    = "";                // vd: "https://uth-cloudbot-api.example.com"
-const CHAT_URL     = `${API_BASE}/api/chat`;
+// Đổi USE_MOCK thành true khi cần demo frontend mà không chạy backend.
+const USE_MOCK = false;
+const API_BASE = "http://localhost:8080";
+const CHAT_URL = `${API_BASE}/api/chat`;
 const FEEDBACK_URL = `${API_BASE}/api/feedback`;
-const TIMEOUT_MS   = 12000;            // 12s — quá thời gian này coi là timeout
+const HEALTH_URL = `${API_BASE}/api/health`;
+const LOGIN_URL = `${API_BASE}/api/auth/login`;
+const TIMEOUT_MS = 12000;
 
-// ---------- fetch có timeout ----------
-function fetchWithTimeout(url, options = {}, timeoutMs = TIMEOUT_MS){
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), timeoutMs);
-
-  return fetch(url, { ...options, signal: controller.signal })
-    .then(res => { clearTimeout(timer); return res; })
-    .catch(err => {
-      clearTimeout(timer);
-      if (err.name === "AbortError"){
-        const e = new Error("timeout");
-        e.kind = "timeout";
-        throw e;
-      }
-      const e = new Error("network");
-      e.kind = "network";
-      throw e;
-    });
-}
-
-// ---------- Mock knowledge base (chỉ dùng khi USE_MOCK = true) ----------
 const mockKnowledgeBase = [
   {
-    keywords: ["học phí", "hoc phi", "tiền học", "đóng tiền"],
-    paragraphs: ["Học phí học kỳ này được tính theo số tín chỉ đăng ký, cụ thể như sau:"],
-    list: [
-      "<strong>Mức phí:</strong> 850.000đ / tín chỉ đối với chương trình đại trà.",
-      "<strong>Hạn đóng:</strong> chậm nhất ngày 20 hằng tháng kể từ khi mở học kỳ.",
-      "<strong>Hình thức:</strong> đóng online qua cổng sinh viên, mục \"Tài chính\".",
-      "<strong>Trễ hạn:</strong> hệ thống sẽ khóa đăng ký môn học kỳ sau nếu chưa hoàn tất."
-    ],
-    sources: [
-      { label: "Thông báo học phí HK1 2026", url: "#" },
-      { label: "Cổng thanh toán sinh viên", url: "#" }
-    ]
+    keywords: ["học phí", "hoc phi"],
+    paragraphs: ["Học phí được tính theo số tín chỉ đã đăng ký."],
+    list: ["Kiểm tra số tiền trên cổng sinh viên.", "Hoàn tất trước hạn ghi trên thông báo."],
+    sources: [{ label: "Dữ liệu minh họa FE-02", url: null }]
   },
   {
-    keywords: ["lịch thi", "thi cuối kỳ", "lich thi"],
-    paragraphs: ["Lịch thi cuối kỳ được công bố và cập nhật trên cổng đào tạo:"],
-    list: [
-      "Vào mục <strong>\"Lịch thi\"</strong> trên cổng đào tạo để tra theo mã lớp.",
-      "Phòng thi cụ thể hiển thị trước ngày thi <strong>3 ngày</strong>.",
-      "Nếu trùng lịch thi, làm đơn xin đổi ca tại phòng Đào tạo trước 1 tuần."
-    ],
-    sources: [
-      { label: "Lịch thi học kỳ 1", url: "#" },
-      { label: "Hướng dẫn tra cứu phòng thi", url: "#" }
-    ]
-  },
-  {
-    keywords: ["đăng ký môn", "dang ky mon", "đăng ký học phần"],
-    paragraphs: ["Quy trình đăng ký học phần gồm các bước sau:"],
-    list: [
-      "Đăng nhập cổng đào tạo trong <strong>thời gian mở đăng ký</strong>.",
-      "Chọn học phần theo chương trình đào tạo của ngành.",
-      "Tối đa <strong>24 tín chỉ</strong> mỗi học kỳ, tối thiểu 12 tín chỉ.",
-      "Xác nhận và không chỉnh sửa được sau khi hết thời gian mở cổng."
-    ],
-    sources: [{ label: "Sổ tay sinh viên 2025 — Chương 3", url: "#" }]
+    keywords: ["lịch thi", "lich thi"],
+    paragraphs: ["Lịch thi được công bố trên cổng đào tạo."],
+    list: [],
+    sources: [{ label: "Dữ liệu minh họa FE-02", url: null }]
   }
 ];
 
-function wait(ms){ return new Promise(r => setTimeout(r, ms)); }
+const emptyState = document.getElementById("emptyState");
+const thread = document.getElementById("thread");
+const chatForm = document.getElementById("chatForm");
+const chatInput = document.getElementById("chatInput");
+const inputError = document.getElementById("inputError");
+const sendBtn = document.getElementById("sendBtn");
+const errorBanner = document.getElementById("errorBanner");
+const errorBannerText = errorBanner.querySelector("span");
+const retryBtn = document.getElementById("retryBtn");
+const newChatBtn = document.getElementById("newChatBtn");
+const themeToggle = document.getElementById("themeToggle");
+const apiBadge = document.getElementById("apiBadge");
+const sourcesEmpty = document.getElementById("sourcesEmpty");
+const sourcesContent = document.getElementById("sourcesContent");
+const sourceList = document.getElementById("sourceList");
+const historyItems = document.querySelectorAll(".history-item");
+const suggestionCards = document.querySelectorAll(".suggest-card");
+const healthStatus = document.getElementById("healthStatus");
+const authButton = document.getElementById("authButton");
+const authDialog = document.getElementById("authDialog");
+const authForm = document.getElementById("authForm");
+const authCancel = document.getElementById("authCancel");
+const authError = document.getElementById("authError");
+const usernameInput = document.getElementById("usernameInput");
+const passwordInput = document.getElementById("passwordInput");
 
-async function mockAsk(question){
-  await wait(900 + Math.random() * 700);
-  const q = question.toLowerCase();
+let isSending = false;
+let lastFailedQuestion = null;
+let activeController = null;
+let requestSequence = 0;
+let authToken = sessionStorage.getItem("uthCloudBotToken") || "";
+let currentStudent = JSON.parse(sessionStorage.getItem("uthCloudBotStudent") || "null");
 
-  // gõ câu có chữ "timeout" hoặc "lỗi mạng" để demo 2 trạng thái lỗi khác nhau
-  if (q.includes("timeout")){
-    await wait(TIMEOUT_MS + 500); // sẽ tự bị AbortController huỷ trước khi tới đây
-  }
-  if (q.includes("lỗi mạng")){
-    const e = new Error("network");
-    e.kind = "network";
-    throw e;
-  }
+apiBadge.textContent = USE_MOCK ? "MOCK" : "LIVE";
+apiBadge.classList.toggle("is-live", !USE_MOCK);
+updateAuthUi();
 
-  const hit = mockKnowledgeBase.find(item => item.keywords.some(k => q.includes(k)));
-  if (hit) return { invalid: false, ...hit };
-  return { invalid: true };
+function wait(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-// ---------- API client thật ----------
+async function requestJson(url, options, timeoutMs = TIMEOUT_MS, controller = new AbortController()) {
+  const timer = setTimeout(() => controller.abort("timeout"), timeoutMs);
+  let response;
+  try {
+    response = await fetch(url, { ...options, signal: controller.signal });
+  } catch (error) {
+    const requestError = new Error(controller.signal.reason === "timeout" ? "Yêu cầu quá thời gian chờ." : "Không thể kết nối tới backend.");
+    requestError.kind = controller.signal.reason === "timeout" ? "timeout" : "network";
+    throw requestError;
+  } finally {
+    clearTimeout(timer);
+  }
+
+  const raw = await response.text();
+  let data = null;
+  if (raw) {
+    try {
+      data = JSON.parse(raw);
+    } catch (_error) {
+      const invalidJson = new Error("Máy chủ trả về dữ liệu không phải JSON hợp lệ.");
+      invalidJson.kind = "invalid_json";
+      invalidJson.status = response.status;
+      throw invalidJson;
+    }
+  }
+
+  if (!response.ok) {
+    const serverMessage = data && data.error && typeof data.error.message === "string"
+      ? data.error.message.trim()
+      : "";
+    const httpError = new Error(serverMessage || httpMessage(response.status));
+    httpError.kind = "http";
+    httpError.status = response.status;
+    throw httpError;
+  }
+
+  if (!data || typeof data !== "object" || Array.isArray(data)) {
+    const invalidResponse = new Error("Phản hồi JSON từ máy chủ không hợp lệ.");
+    invalidResponse.kind = "invalid_json";
+    throw invalidResponse;
+  }
+  return data;
+}
+
+function httpMessage(status) {
+  const messages = {
+    400: "Câu hỏi không hợp lệ. Vui lòng kiểm tra và thử lại.",
+    404: "Không tìm thấy API trên máy chủ.",
+    405: "API không hỗ trợ phương thức gửi này.",
+    413: "Câu hỏi quá dài để máy chủ xử lý.",
+    500: "Máy chủ gặp lỗi. Vui lòng thử lại sau."
+  };
+  return messages[status] || `Máy chủ trả về lỗi HTTP ${status}.`;
+}
+
+async function mockAsk(question) {
+  await wait(700);
+  const normalizedQuestion = question.toLowerCase();
+  const hit = mockKnowledgeBase.find(item => item.keywords.some(keyword => normalizedQuestion.includes(keyword)));
+  return hit ? { answer: hit.paragraphs.join(" "), invalid: false, ...hit } : {
+    answer: "Mình chưa có dữ liệu minh họa phù hợp cho câu hỏi này.",
+    invalid: true,
+    paragraphs: ["Mình chưa có dữ liệu minh họa phù hợp cho câu hỏi này."],
+    list: [],
+    sources: []
+  };
+}
+
 const apiClient = {
-  async ask(question){
+  async ask(question, controller) {
     if (USE_MOCK) return mockAsk(question);
-
-    let res;
-    try{
-      res = await fetchWithTimeout(CHAT_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ question })
-      });
-    } catch(err){
-      throw err; // giữ nguyên err.kind = 'timeout' | 'network'
-    }
-
-    if (!res.ok){
-      const e = new Error("server_error");
-      e.kind = "network";
-      e.status = res.status;
-      throw e;
-    }
-
-    const data = await res.json();
-    // Hợp đồng API kỳ vọng từ backend:
-    // { invalid: false, paragraphs: string[], list?: string[], sources: [{label,url}] }
-    // hoặc { invalid: true }
-    return data;
+    return requestJson(CHAT_URL, {
+      method: "POST",
+      headers: authHeaders(),
+      body: JSON.stringify({ message: question })
+    }, TIMEOUT_MS, controller);
   },
 
-  async sendFeedback(payload){
-    if (USE_MOCK){
+  health() {
+    return requestJson(HEALTH_URL, { method: "GET" }, 5000);
+  },
+
+  login(username, password) {
+    return requestJson(LOGIN_URL, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ username, password }) }, 8000);
+  },
+
+  personal(path, options = {}) {
+    return requestJson(`${API_BASE}${path}`, { ...options, headers: authHeaders(options.headers) }, 8000);
+  },
+
+  async sendFeedback(payload) {
+    if (USE_MOCK) {
       await wait(300);
-      console.info("[mock feedback]", payload);
-      return { ok: true };
+      return { status: "received" };
     }
-    const res = await fetchWithTimeout(FEEDBACK_URL, {
+    return requestJson(FEEDBACK_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload)
     }, 8000);
-    if (!res.ok) throw new Error("feedback_failed");
-    return res.json();
   }
 };
 
-// ---------- DOM refs ----------
-const emptyState    = document.getElementById('emptyState');
-const thread         = document.getElementById('thread');
-const chatForm        = document.getElementById('chatForm');
-const chatInput       = document.getElementById('chatInput');
-const inputError      = document.getElementById('inputError');
-const sendBtn         = document.getElementById('sendBtn');
-const errorBanner     = document.getElementById('errorBanner');
-const errorBannerText = errorBanner.querySelector('span');
-const retryBtn        = document.getElementById('retryBtn');
-const newChatBtn      = document.getElementById('newChatBtn');
-const themeToggle     = document.getElementById('themeToggle');
-const apiBadge        = document.getElementById('apiBadge');
-const sourcesEmpty    = document.getElementById('sourcesEmpty');
-const sourcesContent  = document.getElementById('sourcesContent');
-const sourceList      = document.getElementById('sourceList');
-const historyItems    = document.querySelectorAll('.history-item');
-
-let lastFailedQuestion = null;
-
-apiBadge.textContent = USE_MOCK ? 'MOCK' : 'LIVE';
-apiBadge.classList.toggle('is-live', !USE_MOCK);
-
-// ---------- Theme toggle ----------
-themeToggle.addEventListener('click', () => {
-  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-  document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
-});
-
-// ---------- New chat ----------
-newChatBtn.addEventListener('click', () => resetThread());
-
-function resetThread(){
-  thread.innerHTML = '';
-  thread.hidden = true;
-  emptyState.hidden = false;
-  errorBanner.hidden = true;
-  sourcesEmpty.hidden = false;
-  sourcesContent.hidden = true;
-  historyItems.forEach(h => h.classList.remove('is-active'));
-  chatInput.focus();
+function authHeaders(extra = {}) {
+  return { "Content-Type": "application/json", ...(authToken ? { Authorization: `Bearer ${authToken}` } : {}), ...extra };
 }
 
-// ---------- History items (demo: load lại câu hỏi đó) ----------
-historyItems.forEach(item => {
-  item.addEventListener('click', () => {
-    historyItems.forEach(h => h.classList.remove('is-active'));
-    item.classList.add('is-active');
-    sendQuestion(item.dataset.title);
-  });
-});
-
-// ---------- Suggestion cards (empty state) ----------
-document.querySelectorAll('.suggest-card').forEach(card => {
-  card.addEventListener('click', () => sendQuestion(card.dataset.q));
-});
-
-// ---------- Helpers ----------
-function escapeHtml(str){
-  const div = document.createElement('div');
-  div.textContent = str;
-  return div.innerHTML;
+function stringArray(value) {
+  return Array.isArray(value) ? value.filter(item => typeof item === "string") : [];
 }
-function scrollToBottom(){ thread.scrollTop = thread.scrollHeight; }
 
-function renderSources(sources){
-  if (!sources || !sources.length){
+function normalizeResponse(data) {
+  let paragraphs = stringArray(data.paragraphs);
+  const answer = typeof data.answer === "string" ? data.answer : "";
+  if (!paragraphs.length && answer) {
+    paragraphs = answer.split(/\n+/).map(paragraph => paragraph.trim()).filter(Boolean);
+  }
+  if (!paragraphs.length) paragraphs = ["Máy chủ chưa cung cấp nội dung trả lời."];
+
+  const sources = Array.isArray(data.sources)
+    ? data.sources.filter(source => source && typeof source === "object").map(source => ({
+      label: typeof source.label === "string" && source.label.trim() ? source.label : "Nguồn tham khảo",
+      url: typeof source.url === "string" ? source.url : null
+    }))
+    : [];
+
+  return {
+    invalid: data.invalid === true,
+    answer: answer || [...paragraphs, ...stringArray(data.list)].join(" "),
+    paragraphs,
+    list: stringArray(data.list),
+    sources,
+    messageId: typeof data.message_id === "string" && data.message_id.trim() ? data.message_id.trim() : null,
+    intent: typeof data.intent === "string" ? data.intent : "unknown",
+    source: data.source && typeof data.source === "object" ? data.source : null,
+    updatedAt: typeof data.updated_at === "string" ? data.updated_at : null,
+    latencyMs: Number.isFinite(data.latency_ms) ? data.latency_ms : null,
+    items: data.data && Array.isArray(data.data.items) ? data.data.items.filter(item => item && typeof item === "object") : [],
+    requiresAuthentication: data.requires_authentication === true,
+    requiresConfirmation: data.requires_confirmation === true,
+    confirmation: data.confirmation && typeof data.confirmation === "object" ? data.confirmation : null
+  };
+}
+
+function element(tag, className, text) {
+  const node = document.createElement(tag);
+  if (className) node.className = className;
+  if (text !== undefined) node.textContent = text;
+  return node;
+}
+
+function iconButton(vote, label) {
+  const button = element("button", "fb-btn", vote === "up" ? "👍" : "👎");
+  button.type = "button";
+  button.dataset.fb = vote;
+  button.setAttribute("aria-label", label);
+  return button;
+}
+
+function setBusy(busy) {
+  isSending = busy;
+  sendBtn.disabled = busy;
+  suggestionCards.forEach(button => { button.disabled = busy; });
+  historyItems.forEach(button => { button.disabled = busy; });
+  thread.querySelectorAll(".followup-btn").forEach(button => { button.disabled = busy; });
+  chatInput.setAttribute("aria-busy", String(busy));
+}
+
+function scrollToBottom() {
+  thread.scrollTop = thread.scrollHeight;
+}
+
+function renderSources(sources) {
+  sourceList.replaceChildren();
+  if (!sources.length) {
     sourcesEmpty.hidden = false;
     sourcesContent.hidden = true;
     return;
   }
-  sourceList.innerHTML = sources.map(s => `
-    <div class="source-item">
-      <span>${escapeHtml(s.label)}</span>
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M5.5 8.5L8.5 5.5M6 4.5L6.7 3.8C7.7 2.8 9.3 2.8 10.2 3.8C11.2 4.7 11.2 6.3 10.2 7.2L9.5 8M8 9.5L7.3 10.2C6.3 11.2 4.7 11.2 3.8 10.2C2.8 9.3 2.8 7.7 3.8 6.7L4.5 6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-      </svg>
-    </div>`).join('');
+  sources.forEach(source => {
+    const item = element("div", "source-item");
+    const safeUrl = safeHttpUrl(source.url);
+    if (safeUrl) {
+      const link = element("a", "source-link", source.label);
+      link.href = safeUrl;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      item.append(link);
+    } else {
+      item.append(element("span", "", source.label));
+    }
+    sourceList.append(item);
+  });
   sourcesEmpty.hidden = true;
   sourcesContent.hidden = false;
 }
 
-// ---------- Build a turn (question pill + answer card) ----------
-function buildTurn(questionText){
+function safeHttpUrl(value) {
+  if (!value) return null;
+  try {
+    const url = new URL(value, window.location.href);
+    return url.protocol === "http:" || url.protocol === "https:" ? url.href : null;
+  } catch (_error) {
+    return null;
+  }
+}
+
+function buildTurn(question) {
   emptyState.hidden = true;
   thread.hidden = false;
+  const turn = element("div", "turn");
+  turn.dataset.question = question;
 
-  const turn = document.createElement('div');
-  turn.className = 'turn';
-  turn.dataset.question = questionText;
-  turn.innerHTML = `
-    <div class="q-row">
-      <div class="q-pill">
-        <span>${escapeHtml(questionText)}</span>
-        <svg class="edit-ico" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10.5 2.5L12.5 4.5L5 12H3V10L10.5 2.5Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <div class="avatar avatar--user">SV</div>
-    </div>
-    <div class="a-row">
-      <div class="avatar avatar--bot">A</div>
-      <div class="a-card is-loading">
-        <div class="typing-dots"><span></span><span></span><span></span></div>
-        <p></p>
-      </div>
-    </div>
-  `;
-  thread.appendChild(turn);
+  const questionRow = element("div", "q-row");
+  const pill = element("div", "q-pill");
+  pill.append(element("span", "", question));
+  pill.append(element("span", "edit-ico", "✎"));
+  questionRow.append(pill, element("div", "avatar avatar--user", "SV"));
+
+  const answerRow = element("div", "a-row");
+  const card = element("div", "a-card is-loading");
+  const dots = element("div", "typing-dots");
+  dots.append(element("span"), element("span"), element("span"));
+  card.append(dots);
+  answerRow.append(element("div", "avatar avatar--bot", "A"), card);
+  turn.append(questionRow, answerRow);
+  thread.append(turn);
   scrollToBottom();
   return turn;
 }
 
-function resolveTurn(turn, result){
-  const card = turn.querySelector('.a-card');
-  card.classList.remove('is-loading');
+function addFollowups(turn, invalid) {
+  const followups = element("div", "followups");
+  const choices = invalid
+    ? [["Hỏi về học phí", "Học phí kỳ này là bao nhiêu?"], ["Hỏi về lịch thi", "Lịch thi cuối kỳ ở đâu?"]]
+    : [["Trả lời ngắn gọn hơn", "shorter"], ["Cho ví dụ cụ thể", "example"], ["Nói thêm chi tiết", "more"]];
+  choices.forEach(([label, value]) => {
+    const button = element("button", "followup-btn", label);
+    button.type = "button";
+    if (invalid) button.dataset.q = value;
+    else button.dataset.followup = value;
+    followups.append(button);
+  });
+  turn.append(followups);
+}
 
-  if (result.invalid){
-    card.classList.add('is-invalid');
-    card.innerHTML = `
-      <p>Mình chưa hiểu rõ câu hỏi này. Bạn có thể hỏi cụ thể hơn, ví dụ về học phí, lịch thi hoặc đăng ký môn học không?</p>
-      <div class="a-meta">
-        <button class="fb-btn" data-fb="up" aria-label="Hữu ích">👍</button>
-        <button class="fb-btn" data-fb="down" aria-label="Không hữu ích">👎</button>
-      </div>`;
-    turn.insertAdjacentHTML('beforeend', `
-      <div class="followups">
-        <button class="followup-btn" data-q="Học phí kỳ này là bao nhiêu?">Hỏi về học phí</button>
-        <button class="followup-btn" data-q="Lịch thi cuối kỳ ở đâu?">Hỏi về lịch thi</button>
-        <button class="followup-btn" data-q="Làm sao để đăng ký môn học?">Hỏi về đăng ký môn</button>
-      </div>`);
-    renderSources([]);
-    scrollToBottom();
-    return;
+function resolveTurn(turn, rawResult) {
+  const result = normalizeResponse(rawResult);
+  const card = turn.querySelector(".a-card");
+  card.classList.remove("is-loading");
+  if (result.invalid) card.classList.add("is-invalid");
+  card.replaceChildren();
+
+  result.paragraphs.forEach(paragraph => card.append(element("p", "", paragraph)));
+  if (result.list.length) {
+    const list = element("ol");
+    result.list.forEach(item => list.append(element("li", "", item)));
+    card.append(list);
   }
+  if (result.items.length) {
+    const items = element("div", "data-items");
+    result.items.forEach(item => {
+      const title = item.title || item.course_name || item.content || item.id || "Mục dữ liệu";
+      const detail = item.due_at || item.start_at || item.date || item.published_at || item.status || "";
+      const row = element("div", "data-item");
+      row.append(element("strong", "", String(title)), element("span", "", String(detail)));
+      items.append(row);
+    });
+    card.append(items);
+  }
+  const details = [
+    `Chủ đề: ${result.intent}`,
+    result.source?.title ? `Nguồn: ${result.source.title}` : null,
+    result.updatedAt ? `Cập nhật: ${result.updatedAt}` : null,
+    result.latencyMs !== null ? `Phản hồi: ${result.latencyMs} ms` : null
+  ].filter(Boolean);
+  card.append(element("p", "response-meta", details.join(" · ")));
+  if (result.requiresAuthentication) {
+    const loginPrompt = element("button", "inline-action", "Đăng nhập để tiếp tục");
+    loginPrompt.type = "button"; loginPrompt.dataset.openLogin = "true"; card.append(loginPrompt);
+  }
+  if (result.requiresConfirmation && result.confirmation) addConfirmation(card, result.confirmation);
+  const meta = element("div", "a-meta");
+  meta.append(iconButton("up", "Hữu ích"), iconButton("down", "Không hữu ích"));
+  card.append(meta);
 
-  const paraHtml = (result.paragraphs || []).map(p => `<p>${p}</p>`).join('');
-  const listHtml = result.list && result.list.length
-    ? `<ol>${result.list.map(li => `<li>${li}</li>`).join('')}</ol>`
-    : '';
-  const answerText = (result.paragraphs || []).join(' ') +
-    (result.list ? ' ' + result.list.join(' ') : '');
-  turn.dataset.answer = answerText;
-
-  card.innerHTML = `
-    ${paraHtml}
-    ${listHtml}
-    <div class="a-meta">
-      <button class="fb-btn" data-fb="up" aria-label="Hữu ích">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 14H3.5a1 1 0 01-1-1V8a1 1 0 011-1H6m0 7V7m0 7h6.2a1.5 1.5 0 001.47-1.8l-.9-4.5A1.5 1.5 0 0011.3 6.4H9V3.5a1.5 1.5 0 00-3 0V6L4.5 7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-      <button class="fb-btn" data-fb="down" aria-label="Không hữu ích">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="transform:rotate(180deg)"><path d="M6 14H3.5a1 1 0 01-1-1V8a1 1 0 011-1H6m0 7V7m0 7h6.2a1.5 1.5 0 001.47-1.8l-.9-4.5A1.5 1.5 0 0011.3 6.4H9V3.5a1.5 1.5 0 00-3 0V6L4.5 7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-    </div>`;
-
-  turn.insertAdjacentHTML('beforeend', `
-    <div class="followups">
-      <button class="followup-btn" data-followup="shorter">Trả lời ngắn gọn hơn</button>
-      <button class="followup-btn" data-followup="example">Cho ví dụ cụ thể</button>
-      <button class="followup-btn" data-followup="more">Nói thêm chi tiết</button>
-    </div>`);
-
+  turn.dataset.answer = result.answer;
+  if (result.messageId) turn.dataset.messageId = result.messageId;
+  addFollowups(turn, result.invalid);
   renderSources(result.sources);
   scrollToBottom();
 }
 
-function removeTurn(turn){ turn.remove(); }
+function addConfirmation(card, confirmation) {
+  const box = element("div", "confirmation-box");
+  box.append(element("strong", "", "Xác nhận thao tác"), element("p", "", confirmation.raw_message || "Bạn có muốn tiếp tục?"));
+  if (confirmation.action === "create_reminder") {
+    const label = element("label", "reminder-time-label", "Thời gian nhắc");
+    const input = element("input", "reminder-time-input");
+    input.type = "datetime-local";
+    input.dataset.reminderTime = "true";
+    const defaultTime = new Date(Date.now() + 60 * 60 * 1000);
+    defaultTime.setMinutes(defaultTime.getMinutes() - defaultTime.getTimezoneOffset());
+    input.value = defaultTime.toISOString().slice(0, 16);
+    const minimum = new Date();
+    minimum.setMinutes(minimum.getMinutes() - minimum.getTimezoneOffset());
+    input.min = minimum.toISOString().slice(0, 16);
+    input.required = true;
+    label.append(input); box.append(label);
+  }
+  const confirm = element("button", "inline-action", "Xác nhận");
+  const cancel = element("button", "inline-action secondary", "Hủy");
+  confirm.type = cancel.type = "button";
+  confirm.dataset.confirmAction = confirmation.action || "";
+  confirm.dataset.rawMessage = confirmation.raw_message || "";
+  cancel.dataset.cancelConfirmation = "true";
+  box.append(confirm, cancel); card.append(box);
+}
 
-function showError(kind){
-  errorBannerText.textContent = kind === 'timeout'
-    ? '⏱ Yêu cầu quá thời gian chờ (timeout). Máy chủ phản hồi chậm, vui lòng thử lại.'
-    : '⚠ Không thể kết nối máy chủ. Vui lòng kiểm tra mạng và thử lại.';
+async function handleConfirmation(button) {
+  const box = button.closest(".confirmation-box");
+  const action = button.dataset.confirmAction;
+  const raw = button.dataset.rawMessage;
+  button.disabled = true;
+  try {
+    const isReminder = action === "create_reminder";
+    const timeInput = box.querySelector("[data-reminder-time]");
+    if (isReminder && (!timeInput.value || new Date(timeInput.value).getTime() <= Date.now())) {
+      throw new Error("Vui lòng chọn thời gian nhắc trong tương lai.");
+    }
+    const payload = isReminder ? { content: raw, remind_at: new Date(timeInput.value).toISOString() } : { content: raw };
+    const base = isReminder ? "/api/me/reminders" : "/api/me/notes";
+    const created = await apiClient.personal(base, { method: "POST", body: JSON.stringify(payload) });
+    await apiClient.personal(`${base}/${encodeURIComponent(created.id)}/confirm`, { method: "POST" });
+    box.replaceChildren(element("p", "confirmation-success", "Đã xác nhận và lưu dữ liệu demo."));
+  } catch (error) {
+    box.append(element("p", "feedback-status is-error", error.message)); button.disabled = false;
+  }
+}
+
+function updateAuthUi() {
+  authButton.textContent = currentStudent ? `Đăng xuất · ${currentStudent.id}` : "Đăng nhập";
+  authButton.setAttribute("aria-label", currentStudent ? `Đăng xuất tài khoản ${currentStudent.id}` : "Đăng nhập tài khoản demo");
+}
+
+async function checkHealth() {
+  if (USE_MOCK) { healthStatus.textContent = "Mock sẵn sàng"; return; }
+  try { await apiClient.health(); healthStatus.textContent = "API sẵn sàng"; healthStatus.classList.add("is-ok"); }
+  catch (_error) { healthStatus.textContent = "API ngoại tuyến"; healthStatus.classList.remove("is-ok"); }
+}
+
+function showError(error) {
+  const prefix = error.kind === "timeout" ? "⏱ " : "⚠ ";
+  errorBannerText.textContent = prefix + (error.message || "Đã xảy ra lỗi. Vui lòng thử lại.");
   errorBanner.hidden = false;
 }
 
-// ---------- Core send flow ----------
-async function sendQuestion(rawText){
-  const text = (rawText || '').trim();
-
-  // Validate câu hỏi rỗng
-  if (!text){
-    inputError.hidden = false;
-    chatInput.classList.add('is-invalid');
-    chatInput.focus();
-    return;
-  }
-  inputError.hidden = true;
-  chatInput.classList.remove('is-invalid');
-
-  errorBanner.hidden = true;
-  chatInput.value = '';
-  sendBtn.disabled = true;
-
-  const turn = buildTurn(text);
-
-  try{
-    const result = await apiClient.ask(text);
-    resolveTurn(turn, result);
-  } catch(err){
-    removeTurn(turn);
-    lastFailedQuestion = text;
-    showError(err.kind || 'network');
-  } finally{
-    sendBtn.disabled = false;
-    chatInput.focus();
+function restoreEmptyStateIfNeeded() {
+  if (!thread.children.length) {
+    thread.hidden = true;
+    emptyState.hidden = false;
   }
 }
 
-// ---------- Events ----------
-chatForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  sendQuestion(chatInput.value);
-});
-
-chatInput.addEventListener('input', () => {
-  if (!inputError.hidden && chatInput.value.trim()){
-    inputError.hidden = true;
-    chatInput.classList.remove('is-invalid');
-  }
-});
-
-retryBtn.addEventListener('click', () => {
-  if (lastFailedQuestion) sendQuestion(lastFailedQuestion);
-  else errorBanner.hidden = true;
-});
-
-// feedback + follow-up buttons (event delegation)
-thread.addEventListener('click', async (e) => {
-  const fb = e.target.closest('.fb-btn');
-  if (fb){
-    const group = fb.parentElement;
-    group.querySelectorAll('.fb-btn').forEach(b => b.classList.remove('is-selected'));
-    fb.classList.add('is-selected');
-
-    const turn = fb.closest('.turn');
-    const payload = {
-      question: turn?.dataset.question || '',
-      answer: turn?.dataset.answer || '',
-      vote: fb.dataset.fb // 'up' | 'down'
-    };
-    try{
-      await apiClient.sendFeedback(payload);
-    } catch(err){
-      // Không chặn UI vì feedback là phụ — chỉ log để debug
-      console.warn('Gửi feedback thất bại:', err);
-    }
+async function sendQuestion(rawText) {
+  if (isSending) return;
+  const text = typeof rawText === "string" ? rawText.trim() : "";
+  const maxLength = Number(chatInput.maxLength) || 300;
+  if (!text || text.length > maxLength) {
+    inputError.textContent = !text
+      ? "Vui lòng nhập câu hỏi trước khi gửi."
+      : `Câu hỏi không được vượt quá ${maxLength} ký tự.`;
+    inputError.hidden = false;
+    chatInput.classList.add("is-invalid");
+    chatInput.focus();
     return;
   }
 
-  const follow = e.target.closest('.followup-btn');
-  if (follow){
-    if (follow.dataset.q){
-      sendQuestion(follow.dataset.q);
-      return;
+  inputError.hidden = true;
+  chatInput.classList.remove("is-invalid");
+  errorBanner.hidden = true;
+  chatInput.value = "";
+  setBusy(true);
+  const turn = buildTurn(text);
+  activeController = new AbortController();
+  const sequence = ++requestSequence;
+
+  try {
+    const result = await apiClient.ask(text, activeController);
+    if (sequence === requestSequence) {
+      resolveTurn(turn, result);
+      lastFailedQuestion = null;
     }
-    const kind = follow.dataset.followup;
-    const prefixMap = {
-      shorter: "(trả lời ngắn gọn hơn) ",
-      example: "(cho ví dụ cụ thể) ",
-      more: "(nói thêm chi tiết) "
-    };
-    const baseQuestion = follow.closest('.turn').querySelector('.q-pill span').textContent;
-    sendQuestion((prefixMap[kind] || '') + baseQuestion);
+  } catch (error) {
+    turn.remove();
+    restoreEmptyStateIfNeeded();
+    if (sequence === requestSequence && activeController?.signal.reason !== "reset") {
+      lastFailedQuestion = text;
+      showError(error);
+    }
+  } finally {
+    if (sequence === requestSequence) {
+      activeController = null;
+      setBusy(false);
+      chatInput.focus();
+    }
+  }
+}
+
+function resetThread() {
+  requestSequence += 1;
+  if (activeController) activeController.abort("reset");
+  activeController = null;
+  thread.replaceChildren();
+  thread.hidden = true;
+  emptyState.hidden = false;
+  errorBanner.hidden = true;
+  inputError.hidden = true;
+  chatInput.classList.remove("is-invalid");
+  chatInput.value = "";
+  lastFailedQuestion = null;
+  renderSources([]);
+  historyItems.forEach(item => item.classList.remove("is-active"));
+  setBusy(false);
+  chatInput.focus();
+}
+
+function showFeedbackStatus(turn, message, isError = false) {
+  let status = turn.querySelector(".feedback-status");
+  if (!status) {
+    status = element("p", "feedback-status");
+    turn.querySelector(".a-card").append(status);
+  }
+  status.textContent = message;
+  status.classList.toggle("is-error", isError);
+}
+
+async function handleFeedback(button) {
+  const turn = button.closest(".turn");
+  const buttons = [...turn.querySelectorAll(".fb-btn")];
+  if (buttons.some(item => item.disabled)) return;
+  buttons.forEach(item => { item.disabled = true; });
+  const vote = button.dataset.fb;
+  const payload = turn.dataset.messageId
+    ? { message_id: turn.dataset.messageId, helpful: vote === "up" }
+    : { question: turn.dataset.question || "", answer: turn.dataset.answer || "", vote };
+
+  try {
+    await apiClient.sendFeedback(payload);
+    buttons.forEach(item => item.classList.toggle("is-selected", item === button));
+    showFeedbackStatus(turn, "Cảm ơn bạn đã phản hồi.");
+  } catch (error) {
+    showFeedbackStatus(turn, error.message || "Chưa gửi được phản hồi. Vui lòng thử lại.", true);
+  } finally {
+    buttons.forEach(item => { item.disabled = false; });
+  }
+}
+
+themeToggle.addEventListener("click", () => {
+  const dark = document.documentElement.getAttribute("data-theme") === "dark";
+  document.documentElement.setAttribute("data-theme", dark ? "light" : "dark");
+});
+
+authButton.addEventListener("click", () => {
+  if (currentStudent) {
+    authToken = ""; currentStudent = null;
+    sessionStorage.removeItem("uthCloudBotToken"); sessionStorage.removeItem("uthCloudBotStudent");
+    updateAuthUi(); return;
+  }
+  authError.hidden = true; authDialog.showModal(); usernameInput.focus();
+});
+authCancel.addEventListener("click", () => authDialog.close());
+authForm.addEventListener("submit", async event => {
+  event.preventDefault(); authError.hidden = true;
+  const submit = authForm.querySelector('button[type="submit"]'); submit.disabled = true;
+  try {
+    const result = await apiClient.login(usernameInput.value.trim(), passwordInput.value);
+    authToken = result.access_token; currentStudent = result.student;
+    sessionStorage.setItem("uthCloudBotToken", authToken); sessionStorage.setItem("uthCloudBotStudent", JSON.stringify(currentStudent));
+    updateAuthUi(); authDialog.close(); chatInput.focus();
+  } catch (error) { authError.textContent = error.message; authError.hidden = false; }
+  finally { submit.disabled = false; }
+});
+
+newChatBtn.addEventListener("click", resetThread);
+
+historyItems.forEach(item => item.addEventListener("click", () => {
+  if (isSending) return;
+  historyItems.forEach(history => history.classList.remove("is-active"));
+  item.classList.add("is-active");
+  sendQuestion(item.dataset.title || "");
+}));
+
+suggestionCards.forEach(card => card.addEventListener("click", () => {
+  if (!isSending) sendQuestion(card.dataset.q || "");
+}));
+
+chatForm.addEventListener("submit", event => {
+  event.preventDefault();
+  sendQuestion(chatInput.value);
+});
+
+chatInput.addEventListener("input", () => {
+  if (chatInput.value.trim()) {
+    inputError.hidden = true;
+    chatInput.classList.remove("is-invalid");
   }
 });
+
+retryBtn.addEventListener("click", () => {
+  if (!isSending && lastFailedQuestion) sendQuestion(lastFailedQuestion);
+});
+
+thread.addEventListener("click", event => {
+  const login = event.target.closest("[data-open-login]");
+  if (login) { authDialog.showModal(); usernameInput.focus(); return; }
+  const confirm = event.target.closest("[data-confirm-action]");
+  if (confirm) { handleConfirmation(confirm); return; }
+  const cancel = event.target.closest("[data-cancel-confirmation]");
+  if (cancel) { cancel.closest(".confirmation-box").replaceChildren(element("p", "", "Đã hủy thao tác.")); return; }
+  const feedback = event.target.closest(".fb-btn");
+  if (feedback) {
+    handleFeedback(feedback);
+    return;
+  }
+  const followup = event.target.closest(".followup-btn");
+  if (!followup || isSending) return;
+  if (followup.dataset.q) {
+    sendQuestion(followup.dataset.q);
+    return;
+  }
+  const prefixes = {
+    shorter: "(trả lời ngắn gọn hơn) ",
+    example: "(cho ví dụ cụ thể) ",
+    more: "(nói thêm chi tiết) "
+  };
+  const question = followup.closest(".turn").dataset.question || "";
+  sendQuestion((prefixes[followup.dataset.followup] || "") + question);
+});
+
+checkHealth();

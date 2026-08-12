@@ -38,6 +38,8 @@ Token cố định và mật khẩu rõ chỉ được dùng cho bản demo loca
 
 Khi đọc danh sách reminder, backend kiểm tra các reminder `scheduled` đã đến hạn và chuyển chúng sang `sent`. Đây là scheduler mô phỏng cho môi trường local.
 
+`remind_at` bắt buộc là ISO-8601 có múi giờ, ví dụ `2026-08-13T20:00:00+07:00` hoặc hậu tố `Z`. Backend chuẩn hóa về `Asia/Ho_Chi_Minh`; frontend yêu cầu người dùng chọn thời gian tương lai trước khi xác nhận.
+
 ## Chat cá nhân hóa
 
 `POST /api/chat` giữ nguyên contract BE-01 và nhận thêm header đăng nhập. Các intent cá nhân gồm:
@@ -61,6 +63,8 @@ Content-Type: application/json
 ```
 
 Response cá nhân có thêm `data.items`. Nếu câu hỏi cần dữ liệu cá nhân nhưng không có token, response có `requires_authentication: true`.
+
+Mọi response chat còn có `message_id` để liên kết conversation với feedback. Conversation và feedback được ghi qua repository abstraction; local chỉ tồn tại trong vòng đời tiến trình.
 
 Yêu cầu tạo note hoặc reminder trả `requires_confirmation: true`. Client phải hiển thị bước xác nhận rồi mới gọi endpoint tạo và xác nhận tương ứng.
 

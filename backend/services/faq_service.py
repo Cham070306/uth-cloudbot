@@ -1,11 +1,7 @@
-import json
-from functools import lru_cache
-from pathlib import Path
-
+from repositories import get_repository
 from services.intent_service import normalize_text
 
 
-DATA_PATH = Path(__file__).resolve().parents[2] / "data" / "sample" / "faqs.json"
 MIN_SCORE = 0.45
 STOP_WORDS = {
     "ai", "cach", "cho", "co", "cua", "dau", "duoc", "gi", "ho", "la", "lam",
@@ -14,11 +10,8 @@ STOP_WORDS = {
 }
 
 
-@lru_cache(maxsize=1)
 def load_faqs():
-    with DATA_PATH.open(encoding="utf-8") as data_file:
-        payload = json.load(data_file)
-    records = payload.get("faqs")
+    records = get_repository().list("faqs")
     if not isinstance(records, list):
         raise ValueError("faqs.json must contain a 'faqs' array")
     return records
@@ -71,4 +64,5 @@ def build_faq_response(faq):
         "paragraphs": [faq["answer"]],
         "list": [],
         "sources": [{"label": source["title"], "url": source.get("url")}],
+        "data": {"items": []},
     }
