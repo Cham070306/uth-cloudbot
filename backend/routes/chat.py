@@ -3,7 +3,8 @@ from time import perf_counter
 from flask import current_app, jsonify, request
 
 from routes import api
-from services.mock_chat_service import get_mock_response
+from services.chat_service import get_chat_response
+from services.student_service import get_student_by_token
 
 
 def invalid(message):
@@ -35,6 +36,9 @@ def chat():
             f"Trường message không được vượt quá {current_app.config['MAX_MESSAGE_LENGTH']} ký tự."
         )
 
-    result = get_mock_response(message)
+    header = request.headers.get("Authorization", "")
+    token = header[7:].strip() if header.startswith("Bearer ") else ""
+    student = get_student_by_token(token) if token else None
+    result = get_chat_response(message, student)
     result["latency_ms"] = max(0, int((perf_counter() - started_at) * 1000))
     return jsonify(result)

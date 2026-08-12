@@ -1,0 +1,40 @@
+import re
+import unicodedata
+
+
+INTENT_KEYWORDS = {
+    "create_reminder": ("nhac toi", "nhac minh", "tao nhac nho"),
+    "create_note": ("ghi chu", "luu ghi chu", "note lai"),
+    "personal_deadline": ("deadline", "sap het han", "gan het han", "qua han"),
+    "personal_assignment": ("bai tap", "e learning", "chua lam", "chua nop"),
+    "personal_announcement": ("thong bao moi", "thong bao chua doc"),
+    "personal_exam": ("toi co kiem tra", "co bai kiem tra", "kiem tra tuan"),
+    "personal_schedule": ("toi hoc", "minh hoc", "hoc mon gi", "lich cua toi", "lich cua minh"),
+    "exam_schedule": ("lich thi", "thi cuoi ky", "thi giua ky", "phong thi", "ca thi"),
+    "schedule": ("lich hoc", "thoi khoa bieu", "phong hoc", "ca hoc", "hoc bu"),
+    "document": ("tai lieu", "giao trinh", "de cuong", "slide", "bai giang"),
+    "knowledge": ("giai thich", "khai niem", "la gi", "tai sao", "nhu the nao"),
+}
+
+FAQ_KEYWORDS = (
+    "hoc phi", "dang ky hoc phan", "rut hoc phan", "bao luu", "hoc bong",
+    "email sinh vien", "wifi", "thu vien", "the sinh vien", "phong dao tao",
+    "cong tac sinh vien", "tot nghiep", "bang diem", "phuc khao", "nghi hoc",
+)
+
+
+def normalize_text(value):
+    value = unicodedata.normalize("NFD", value.casefold())
+    value = "".join(char for char in value if unicodedata.category(char) != "Mn")
+    value = value.replace("đ", "d")
+    return re.sub(r"[^a-z0-9]+", " ", value).strip()
+
+
+def classify_intent(message):
+    normalized = normalize_text(message)
+    for intent, keywords in INTENT_KEYWORDS.items():
+        if any(keyword in normalized for keyword in keywords):
+            return intent
+    if any(keyword in normalized for keyword in FAQ_KEYWORDS):
+        return "faq"
+    return "unknown"

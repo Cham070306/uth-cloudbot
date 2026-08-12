@@ -1,0 +1,29 @@
+{
+  "notice": "Dữ liệu hoàn toàn giả lập, không phải dữ liệu sinh viên thật của UTH.",
+  "students": [
+    {"id":"SV001","username":"sv001","password":"demo123","token":"demo-token-sv001","full_name":"Nguyễn Văn An","email":"sv001@demo.uth.edu.vn","class_code":"CNTT01","major":"Công nghệ thông tin","semester":"2026-1","timezone":"Asia/Ho_Chi_Minh"},
+    {"id":"SV002","username":"sv002","password":"demo123","token":"demo-token-sv002","full_name":"Trần Minh Bình","email":"sv002@demo.uth.edu.vn","class_code":"CNTT01","major":"Công nghệ thông tin","semester":"2026-1","timezone":"Asia/Ho_Chi_Minh"},
+    {"id":"SV003","username":"sv003","password":"demo123","token":"demo-token-sv003","full_name":"Lê Thu Chi","email":"sv003@demo.uth.edu.vn","class_code":"LOG01","major":"Logistics","semester":"2026-1","timezone":"Asia/Ho_Chi_Minh"}
+  ],
+  "schedules": [
+    {"id":"schedule-001","student_id":"SV001","course_code":"CC101","course_name":"Điện toán đám mây","date":"2026-08-10","start_time":"07:00","end_time":"09:30","room":"A101","lecturer":"Giảng viên A"},
+    {"id":"schedule-002","student_id":"SV001","course_code":"SE201","course_name":"Công nghệ phần mềm","date":"2026-08-12","start_time":"09:45","end_time":"12:15","room":"B203","lecturer":"Giảng viên B"},
+    {"id":"schedule-003","student_id":"SV001","course_code":"DB202","course_name":"Cơ sở dữ liệu","date":"2026-08-14","start_time":"13:00","end_time":"15:30","room":"C305","lecturer":"Giảng viên C"},
+    {"id":"schedule-004","student_id":"SV002","course_code":"CC101","course_name":"Điện toán đám mây","date":"2026-08-11","start_time":"07:00","end_time":"09:30","room":"A102","lecturer":"Giảng viên A"}
+  ],
+  "assignments": [
+    {"id":"assignment-001","student_id":"SV001","course_code":"CC101","course_name":"Điện toán đám mây","title":"Bài tập chương 3","platform":"e-learning","due_at":"2026-08-12T23:59:00+07:00","status":"pending"},
+    {"id":"assignment-002","student_id":"SV001","course_code":"SE201","course_name":"Công nghệ phần mềm","title":"Thiết kế use case","platform":"e-learning","due_at":"2026-08-16T23:59:00+07:00","status":"in_progress"},
+    {"id":"assignment-003","student_id":"SV001","course_code":"DB202","course_name":"Cơ sở dữ liệu","title":"Bài tập SQL số 2","platform":"e-learning","due_at":"2026-08-09T23:59:00+07:00","status":"pending"},
+    {"id":"assignment-004","student_id":"SV002","course_code":"CC101","course_name":"Điện toán đám mây","title":"Bài tập chương 3","platform":"e-learning","due_at":"2026-08-12T23:59:00+07:00","status":"completed"}
+  ],
+  "exams": [
+    {"id":"exam-001","student_id":"SV001","course_code":"CC101","course_name":"Điện toán đám mây","type":"quiz","title":"Kiểm tra chương 2","start_at":"2026-08-13T08:00:00+07:00","end_at":"2026-08-13T08:30:00+07:00","room":null,"platform":"e-learning"},
+    {"id":"exam-002","student_id":"SV001","course_code":"DB202","course_name":"Cơ sở dữ liệu","type":"midterm","title":"Kiểm tra giữa kỳ","start_at":"2026-08-20T13:00:00+07:00","end_at":"2026-08-20T14:00:00+07:00","room":"C305","platform":null}
+  ],
+  "announcements": [
+    {"id":"announcement-001","student_id":"SV001","title":"Thay đổi phòng học","content":"Buổi Công nghệ phần mềm ngày 12/08 chuyển sang phòng B203.","priority":"high","published_at":"2026-08-09T09:00:00+07:00","read":false},
+    {"id":"announcement-002","student_id":"SV001","title":"Bảo trì E-learning","content":"Hệ thống E-learning dự kiến bảo trì tối 15/08.","priority":"normal","published_at":"2026-08-08T10:00:00+07:00","read":true},
+    {"id":"announcement-003","student_id":"SV002","title":"Thông báo lớp","content":"Lớp học ngày 11/08 bắt đầu đúng giờ.","priority":"normal","published_at":"2026-08-09T11:00:00+07:00","read":false}
+  ]
+}

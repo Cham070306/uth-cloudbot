@@ -31,6 +31,40 @@ def test_chat_valid(client):
     assert isinstance(data["latency_ms"], int) and data["latency_ms"] >= 0
 
 
+def test_chat_matches_faq_with_vietnamese_accents(client):
+    response = client.post("/api/chat", json={"message": "Mình muốn tra cứu học phí ở đâu?"})
+    data = response.get_json()
+    assert response.status_code == 200
+    assert data["intent"] == "faq"
+    assert data["source"]["type"] == "sample"
+    assert "học phí" in data["answer"].lower()
+
+
+def test_chat_matches_faq_without_vietnamese_accents(client):
+    response = client.post("/api/chat", json={"message": "Toi quen mat khau cong sinh vien"})
+    data = response.get_json()
+    assert response.status_code == 200
+    assert data["intent"] == "faq"
+    assert "mật khẩu" in data["answer"].lower()
+
+
+@pytest.mark.parametrize(
+    ("message", "intent"),
+    [
+        ("Lịch học tuần này ở đâu?", "schedule"),
+        ("Cho mình xem lịch thi cuối kỳ", "exam_schedule"),
+        ("Tìm tài liệu bài giảng", "document"),
+        ("Giải thích điện toán đám mây là gì", "knowledge"),
+    ],
+)
+def test_chat_routes_non_faq_intents_to_safe_fallback(client, message, intent):
+    response = client.post("/api/chat", json={"message": message})
+    data = response.get_json()
+    assert response.status_code == 200
+    assert data["intent"] == intent
+    assert data["source"]["type"] == "mock"
+
+
 @pytest.mark.parametrize("payload", [{}, {"message": ""}, {"message": "   "}, {"message": 123}])
 def test_chat_invalid_message(client, payload):
     assert_error(client.post("/api/chat", json=payload), 400)

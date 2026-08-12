@@ -1,6 +1,10 @@
-# UTH CloudBot — BE-01
+# UTH CloudBot — BE-01 mở rộng
 
 Backend Flask cơ bản chạy local với đúng ba endpoint health, chat mock và feedback không lưu trữ. Nội dung mock chỉ dùng để minh họa, **không phải nguồn thông tin chính thức của UTH**.
+
+BE-01 mở rộng bổ sung Intent Router và hơn 100 cách hỏi FAQ cho `/api/chat`. Các intent lịch học, lịch thi, tài liệu và kiến thức chung vẫn dùng fallback mock khi không có dữ liệu cá nhân phù hợp.
+
+Backend hiện còn có chế độ trợ lý học tập cá nhân dựa trên tài khoản và dữ liệu hoàn toàn giả lập: lịch học, bài tập E-learning, deadline, kiểm tra, thông báo, note và reminder có xác nhận. Xem [tài liệu trợ lý cá nhân](../docs/api/PERSONAL-ASSISTANT.md).
 
 ## Yêu cầu và cài đặt
 
