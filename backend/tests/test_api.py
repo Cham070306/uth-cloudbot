@@ -27,7 +27,9 @@ def test_chat_valid(client):
     assert response.status_code == 200
     assert {"answer", "intent", "source", "latency_ms"} <= data.keys()
     assert data["intent"] == "unknown"
-    assert data["source"]["type"] == "mock"
+    assert data["source"]["type"] == "fallback"
+    assert data["ai_generated"] is False
+    assert data["fallback_used"] is True
     assert isinstance(data["latency_ms"], int) and data["latency_ms"] >= 0
 
 
@@ -57,12 +59,12 @@ def test_chat_matches_faq_without_vietnamese_accents(client):
         ("Giải thích điện toán đám mây là gì", "knowledge"),
     ],
 )
-def test_chat_routes_non_faq_intents_to_safe_fallback(client, message, intent):
+def test_chat_routes_non_ai_intents_to_safe_fallback(client, message, intent):
     response = client.post("/api/chat", json={"message": message})
     data = response.get_json()
     assert response.status_code == 200
     assert data["intent"] == intent
-    assert data["source"]["type"] == "mock"
+    assert data["source"]["type"] == "fallback"
 
 
 @pytest.mark.parametrize("payload", [{}, {"message": ""}, {"message": "   "}, {"message": 123}])

@@ -1,4 +1,5 @@
 from services.faq_service import build_faq_response, find_faq
+from services.gemini_service import GeminiUnavailableError, generate_answer
 from services.intent_service import classify_intent
 from services.mock_chat_service import get_mock_response
 from services.student_service import (
@@ -20,7 +21,59 @@ def _personal_response(answer, intent, items, student_id):
         "sources": [{"label": f"Dữ liệu giả lập của {student_id}", "url": None}],
         "requires_confirmation": False,
         "confirmation": None,
+        "ai_generated": False,
+        "fallback_used": False,
     }
+
+
+def _authentication_response(intent):
+    answer = "Bạn cần đăng nhập để xem hoặc thay đổi dữ liệu cá nhân."
+    source = {"type": "system", "title": "Yêu cầu đăng nhập", "url": None}
+    return {
+        "answer": answer,
+        "intent": intent,
+        "source": source,
+        "updated_at": None,
+        "invalid": False,
+        "paragraphs": [answer],
+        "list": [],
+        "sources": [{"label": source["title"], "url": None}],
+        "data": {"items": []},
+        "requires_authentication": True,
+        "ai_generated": False,
+        "fallback_used": False,
+    }
+
+
+def _fallback_response(message, intent):
+    response = get_mock_response(message)
+    answer = response["answer"]
+    response.update({
+        "intent": intent,
+        "source": {"type": "fallback", "title": "Phản hồi dự phòng", "url": None},
+        "ai_generated": False,
+        "fallback_used": True,
+        "paragraphs": [answer],
+        "list": [],
+        "sources": [{"label": "Phản hồi dự phòng", "url": None}],
+        "data": {"items": []},
+    })
+    return response
+
+
+def _gemini_response(message, intent):
+    result = generate_answer(message)
+    answer = result["answer"]
+    result.update({
+        "intent": intent,
+        "updated_at": None,
+        "invalid": False,
+        "paragraphs": [answer],
+        "list": [],
+        "sources": [{"label": "Gemini AI", "url": None}],
+        "data": {"items": []},
+    })
+    return result
 
 
 def get_chat_response(message, student=None):
@@ -30,13 +83,7 @@ def get_chat_response(message, student=None):
         "personal_announcement", "create_note", "create_reminder",
     }
     if intent in personal_intents and student is None:
-        result = get_mock_response(message)
-        result.update({
-            "intent": intent, "answer": "Bạn cần đăng nhập để xem hoặc thay đổi dữ liệu cá nhân.",
-            "requires_authentication": True,
-        })
-        result["paragraphs"] = [result["answer"]]
-        return result
+        return _authentication_response(intent)
 
     if student is not None:
         student_id = student["id"]
@@ -64,9 +111,13 @@ def get_chat_response(message, student=None):
             return response
 
     faq = find_faq(message)
-    if faq is not None and intent in {"faq", "unknown"}:
+    if faq is not None:
         return build_faq_response(faq)
 
-    response = get_mock_response(message)
-    response["intent"] = intent
-    return response
+    if intent in {"knowledge", "unknown"}:
+        try:
+            return _gemini_response(message, intent)
+        except GeminiUnavailableError:
+            pass
+
+    return _fallback_response(message, intent)

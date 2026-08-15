@@ -4,6 +4,9 @@
   "item":[
     {"name":"Health","request":{"method":"GET","url":"{{baseUrl}}/api/health"}},
     {"name":"Chat FAQ","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"message\":\"Học phí xem ở đâu?\"}"},"url":"{{baseUrl}}/api/chat"}},
+    {"name":"Chat kiến thức mở bằng Gemini","request":{"description":"Yêu cầu server chạy với GEMINI_ENABLED=true cùng API key và model hợp lệ.","method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"message\":\"Giải thích điện toán đám mây là gì\"}"},"url":"{{baseUrl}}/api/chat"}},
+    {"name":"Chat fallback khi Gemini tắt","request":{"description":"Yêu cầu server chạy với GEMINI_ENABLED=false (mặc định). Kết quả phải có source.type=fallback và fallback_used=true.","method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"message\":\"Giải thích điện toán đám mây là gì\"}"},"url":"{{baseUrl}}/api/chat"}},
+    {"name":"Chat unknown (Gemini hoặc fallback)","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"message\":\"So sánh TCP và UDP\"}"},"url":"{{baseUrl}}/api/chat"}},
     {"name":"Chat intent lịch thi","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"message\":\"Lịch thi cuối kỳ ở đâu?\"}"},"url":"{{baseUrl}}/api/chat"}},
     {"name":"Login demo local","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"username\":\"sv001\",\"password\":\"demo123\"}"},"url":"{{baseUrl}}/api/auth/login"}},
     {"name":"Profile","request":{"method":"GET","header":[{"key":"Authorization","value":"Bearer {{demoToken}}"}],"url":"{{baseUrl}}/api/me"}},

@@ -2,7 +2,9 @@ from repositories import get_repository
 from services.intent_service import normalize_text
 
 
-MIN_SCORE = 0.45
+# A single generic token such as "học" or "thi" scores at most 0.5 and must
+# not turn schedule/knowledge questions into an unrelated FAQ response.
+MIN_SCORE = 0.55
 STOP_WORDS = {
     "ai", "cach", "cho", "co", "cua", "dau", "duoc", "gi", "ho", "la", "lam",
     "minh", "nao", "nhu", "o", "ra", "sinh", "the", "theo", "thong", "tin",
@@ -43,8 +45,15 @@ def _score(message, faq):
 
 
 def find_faq(message):
+    message_normalized = normalize_text(message)
+    faqs = load_faqs()
+    for faq in faqs:
+        terms = [faq["question"], *faq.get("keywords", [])]
+        if any(normalize_text(term) == message_normalized for term in terms):
+            return faq
+
     ranked = sorted(
-        ((_score(message, faq), faq) for faq in load_faqs()),
+        ((_score(message, faq), faq) for faq in faqs),
         key=lambda item: item[0],
         reverse=True,
     )
@@ -65,4 +74,6 @@ def build_faq_response(faq):
         "list": [],
         "sources": [{"label": source["title"], "url": source.get("url")}],
         "data": {"items": []},
+        "ai_generated": False,
+        "fallback_used": False,
     }
