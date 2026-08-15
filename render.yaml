@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: uth-cloudbot-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    envVars:
+      - key: DATA_BACKEND
+        value: local
+      - key: GEMINI_ENABLED
+        value: "false"
+    healthCheckPath: /api/health
