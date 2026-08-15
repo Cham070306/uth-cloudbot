@@ -3,7 +3,7 @@ services:
     name: uth-cloudbot-backend
     runtime: docker
     dockerfilePath: ./backend/Dockerfile
-    dockerContext: ./backend
+    dockerContext: .
     envVars:
       - key: DATA_BACKEND
         value: local
