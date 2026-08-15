@@ -59,6 +59,9 @@ def test_chat_uses_authenticated_student_context(client, message, intent):
 def test_personal_chat_without_login_requests_authentication(client):
     data = client.post("/api/chat", json={"message": "Tuần này tôi học môn gì?"}).get_json()
     assert data["requires_authentication"] is True
+    assert data["source"]["type"] == "system"
+    assert data["ai_generated"] is False
+    assert data["fallback_used"] is False
 
 
 def test_note_and_reminder_confirmation_flow(client):

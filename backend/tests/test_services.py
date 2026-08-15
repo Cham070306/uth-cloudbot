@@ -11,6 +11,12 @@ def test_faq_dataset_has_unique_ids_and_required_fields():
         assert {"id", "question", "answer", "source"} <= faq.keys()
 
 
+def test_every_faq_question_and_keyword_resolves_to_its_owner():
+    for faq in load_faqs():
+        for text in [faq["question"], *faq.get("keywords", [])]:
+            assert find_faq(text)["id"] == faq["id"], text
+
+
 def test_normalize_text_handles_vietnamese():
     assert normalize_text("Đăng ký HỌC phần!") == "dang ky hoc phan"
 

@@ -1,8 +1,8 @@
 # UTH CloudBot — BE-02 và DB-01
 
-Backend Flask cơ bản chạy local với đúng ba endpoint health, chat mock và feedback không lưu trữ. Nội dung mock chỉ dùng để minh họa, **không phải nguồn thông tin chính thức của UTH**.
+Backend Flask chạy theo mô hình hybrid Rule-based + Gemini. Nội dung FAQ, tài khoản và dữ liệu cá nhân hiện tại chỉ dùng để minh họa, **không phải nguồn thông tin chính thức của UTH**.
 
-BE-01 mở rộng bổ sung Intent Router và hơn 100 cách hỏi FAQ cho `/api/chat`. Các intent lịch học, lịch thi, tài liệu và kiến thức chung vẫn dùng fallback mock khi không có dữ liệu cá nhân phù hợp.
+BE-01 mở rộng bổ sung Intent Router và hơn 100 cách hỏi FAQ cho `/api/chat`. Intent `knowledge` và `unknown` chỉ gọi Gemini khi không khớp FAQ; lịch học, lịch thi và tài liệu tiếp tục dùng fallback khi không có dữ liệu phù hợp.
 
 Backend hiện còn có chế độ trợ lý học tập cá nhân dựa trên tài khoản và dữ liệu hoàn toàn giả lập: lịch học, bài tập E-learning, deadline, kiểm tra, thông báo, note và reminder có xác nhận. Xem [tài liệu trợ lý cá nhân](../docs/api/PERSONAL-ASSISTANT.md).
 
@@ -39,6 +39,10 @@ python app.py
 | `DATA_BACKEND` | `local` | `local` hoặc `firestore` |
 | `GOOGLE_CLOUD_PROJECT` | rỗng | Project khi dùng Firestore |
 | `FIRESTORE_COLLECTION_PREFIX` | `uth_cloudbot` | Prefix collection |
+| `GEMINI_ENABLED` | `false` | Bật/tắt tầng trả lời Gemini |
+| `GEMINI_API_KEY` | rỗng | API key Gemini; chỉ cấu hình bằng secret môi trường |
+| `GEMINI_MODEL` | rỗng | Tên model Gemini đang được tài khoản hỗ trợ |
+| `GEMINI_TIMEOUT_SECONDS` | `10` | Timeout dương theo giây; giá trị sai tự về 10 |
 
 Local repository là mặc định và không cần Google credential. Conversation, feedback, note và reminder đều đi qua repository abstraction. Chạy seed idempotent bằng `python -m scripts.seed_data`; schema ở `docs/architecture/DATABASE-SCHEMA.md`.
 
@@ -64,13 +68,15 @@ Request chuẩn:
 
 `message` phải là chuỗi không rỗng sau khi trim và tối đa 2.000 ký tự. Để tương thích FE-01 hiện tại, `question` được chấp nhận như alias của `message`.
 
-HTTP 200 luôn có các trường chuẩn `answer`, `intent`, `source`, `updated_at`, `latency_ms`. Ngoài ra có `invalid`, `paragraphs`, `list`, `sources` để renderer FE-01 hiện tại sử dụng:
+HTTP 200 luôn có các trường chuẩn `answer`, `intent`, `source`, `ai_generated`, `fallback_used`, `invalid`, `paragraphs`, `list`, `sources`, `data`, `latency_ms` và `message_id`. Rule-based luôn được ưu tiên: dữ liệu cá nhân, FAQ, sau đó mới Gemini cho intent `knowledge`/`unknown`; Gemini không khả dụng sẽ trả fallback an toàn. Gemini không được dùng để tạo thông tin UTH chính thức.
 
 ```json
 {
   "answer": "Đây là phản hồi minh họa...",
   "intent": "unknown",
-  "source": {"type":"mock","title":"Dữ liệu mẫu BE-01","url":null},
+  "source": {"type":"fallback","title":"Phản hồi dự phòng","url":null},
+  "ai_generated": false,
+  "fallback_used": true,
   "updated_at": null,
   "latency_ms": 0,
   "invalid": false,
@@ -104,7 +110,9 @@ Mọi lỗi trả JSON dạng `{"error":{"code":"...","message":"..."}}`; gồm 
 python -m pytest -q
 ```
 
-Import `postman/UTH-CloudBot-BE01.postman_collection.json` vào Postman, chạy server rồi chạy collection. Biến `baseUrl` mặc định là `http://localhost:8080`. Collection chỉ có năm request thuộc BE-01.
+Các test mock hoàn toàn Gemini, không cần API key và không tiêu thụ quota. Cấu hình local mẫu nằm tại `../.env.example`; ứng dụng không tự nạp file `.env`, vì vậy cần đặt biến môi trường trong shell hoặc nền tảng deploy. Xem thêm [API chat hybrid](../docs/api/HYBRID-CHAT.md).
+
+Import `postman/UTH-CloudBot-BE01.postman_collection.json` vào Postman, chạy server rồi chạy collection. Biến `baseUrl` mặc định là `http://localhost:8080`; collection có sẵn request FAQ, kiến thức mở, fallback và dữ liệu cá nhân demo.
 
 ## Kết nối FE-01 local
 
@@ -112,7 +120,7 @@ Trong `frontend/src/js/script.js`, FE hiện vẫn ở mock mode. Khi tích hợ
 
 ## Known issues và công việc tiếp theo
 
-- Mock luôn trả cùng một nội dung và `intent: "unknown"`; không phân loại câu hỏi thật.
+- Fallback hiện dùng nội dung demo chung và không phải nguồn thông tin UTH chính thức.
 - Alias tương thích FE-01 sẽ được giữ cho đến khi frontend thống nhất contract chuẩn BE-01.
-- Firestore, Gemini, dữ liệu thật đã kiểm chứng của UTH, intent router, tài khoản sinh viên và triển khai cloud thuộc giai đoạn sau, chưa được triển khai.
-- Khi sang giai đoạn được phê duyệt, có thể thay `services/mock_chat_service.py` bằng service dữ liệu thật mà không đổi các trường response chuẩn.
+- Gemini phụ thuộc API key, model hợp lệ, mạng và quota của môi trường deploy; khi lỗi hệ thống vẫn trả fallback.
+- Chưa có dữ liệu thật đã kiểm chứng của UTH; không dùng response AI như thông báo chính thức.
