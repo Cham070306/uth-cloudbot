@@ -20,7 +20,8 @@ WORKDIR /app
 COPY --from=builder /install /usr/local
 
 # Copy toàn bộ source backend
-COPY . .
+COPY backend/ .
+COPY data/ /data
 
 # Đổi owner cho appuser
 RUN chown -R appuser:appgroup /app
