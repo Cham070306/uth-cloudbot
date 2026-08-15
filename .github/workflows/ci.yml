@@ -1,0 +1,29 @@
+name: CI - Run Tests
+
+on:
+  push:
+    branches: [ develop, feature/cl-01-cloud-run ]
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        working-directory: backend
+        run: pip install -r requirements.txt
+
+      - name: Run pytest
+        working-directory: backend
+        env:
+          DATA_BACKEND: local
+        run: pytest --tb=short -v
