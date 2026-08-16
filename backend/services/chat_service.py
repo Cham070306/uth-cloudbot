@@ -1,9 +1,9 @@
 from services.faq_service import build_faq_response, find_faq
 from services.gemini_service import GeminiUnavailableError, generate_answer
-from services.intent_service import classify_intent
+from services.intent_service import classify_intent, normalize_text
 from services.mock_chat_service import get_mock_response
 from services.student_service import (
-    current_week_range, get_announcements, get_assignments, get_exams, get_schedule,
+    current_week_range, get_announcements, get_assignments, get_exams, get_remaining_schedule, get_schedule,
     get_upcoming_assignments,
 )
 
@@ -89,8 +89,18 @@ def get_chat_response(message, student=None):
         student_id = student["id"]
         if intent == "personal_schedule":
             start, end = current_week_range()
-            items = get_schedule(student_id, start, end)
-            return _personal_response(f"Tuần này bạn có {len(items)} buổi học.", intent, items, student_id)
+            asks_remaining = "con" in normalize_text(message).split()
+            items = (
+                get_remaining_schedule(student_id, start, end)
+                if asks_remaining else get_schedule(student_id, start, end)
+            )
+            if asks_remaining and not items:
+                answer = "Tuần này bạn không còn buổi học nào chưa diễn ra."
+            elif asks_remaining:
+                answer = f"Tuần này bạn còn {len(items)} buổi học chưa diễn ra."
+            else:
+                answer = f"Tuần này bạn có {len(items)} buổi học."
+            return _personal_response(answer, intent, items, student_id)
         if intent == "personal_assignment":
             items = [x for x in get_assignments(student_id) if x["status"] not in {"completed", "submitted"}]
             return _personal_response(f"Bạn còn {len(items)} bài tập chưa hoàn thành.", intent, items, student_id)

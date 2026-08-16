@@ -29,6 +29,22 @@ def get_schedule(student_id, start=None, end=None):
     return sorted(items, key=lambda item: (item["date"], item["start_time"]))
 
 
+def get_remaining_schedule(student_id, start=None, end=None, now=None):
+    """Return only classes whose end time has not passed yet."""
+    now = now or datetime.now(TIMEZONE)
+    remaining = []
+    for item in get_schedule(student_id, start, end):
+        try:
+            ends_at = datetime.fromisoformat(
+                f'{item["date"]}T{item["end_time"]}'
+            ).replace(tzinfo=TIMEZONE)
+        except (KeyError, TypeError, ValueError):
+            continue
+        if ends_at >= now:
+            remaining.append(item)
+    return remaining
+
+
 def get_assignments(student_id, status=None):
     items = _owned("assignments", student_id)
     now = datetime.now(TIMEZONE)

@@ -8,5 +8,11 @@ services:
       - key: DATA_BACKEND
         value: local
       - key: GEMINI_ENABLED
-        value: "false"
+        value: "true"
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        sync: false
+      - key: GEMINI_TIMEOUT_SECONDS
+        value: "30"
     healthCheckPath: /api/health

@@ -2,12 +2,12 @@
 
 // Đổi USE_MOCK thành true khi cần demo frontend mà không chạy backend.
 const USE_MOCK = false;
-const API_BASE = "http://localhost:8080";
+const API_BASE = "https://uth-cloudbot.onrender.com";
 const CHAT_URL = `${API_BASE}/api/chat`;
 const FEEDBACK_URL = `${API_BASE}/api/feedback`;
 const HEALTH_URL = `${API_BASE}/api/health`;
 const LOGIN_URL = `${API_BASE}/api/auth/login`;
-const TIMEOUT_MS = 12000;
+const TIMEOUT_MS = 30000;
 
 const mockKnowledgeBase = [
   {
@@ -144,7 +144,7 @@ const apiClient = {
   },
 
   health() {
-    return requestJson(HEALTH_URL, { method: "GET" }, 5000);
+    return requestJson(HEALTH_URL, { method: "GET" }, TIMEOUT_MS);
   },
 
   login(username, password) {
@@ -412,7 +412,12 @@ function updateAuthUi() {
 
 async function checkHealth() {
   if (USE_MOCK) { healthStatus.textContent = "Mock sẵn sàng"; return; }
-  try { await apiClient.health(); healthStatus.textContent = "API sẵn sàng"; healthStatus.classList.add("is-ok"); }
+  try {
+    await apiClient.health();
+    healthStatus.textContent = "API sẵn sàng";
+    healthStatus.classList.add("is-ok");
+    errorBanner.hidden = true;
+  }
   catch (_error) { healthStatus.textContent = "API ngoại tuyến"; healthStatus.classList.remove("is-ok"); }
 }
 
@@ -544,6 +549,8 @@ authForm.addEventListener("submit", async event => {
     const result = await apiClient.login(usernameInput.value.trim(), passwordInput.value);
     authToken = result.access_token; currentStudent = result.student;
     sessionStorage.setItem("uthCloudBotToken", authToken); sessionStorage.setItem("uthCloudBotStudent", JSON.stringify(currentStudent));
+    errorBanner.hidden = true;
+    lastFailedQuestion = null;
     updateAuthUi(); authDialog.close(); chatInput.focus();
   } catch (error) { authError.textContent = error.message; authError.hidden = false; }
   finally { submit.disabled = false; }
