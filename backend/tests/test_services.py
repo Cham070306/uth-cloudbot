@@ -1,3 +1,6 @@
+import json
+from pathlib import Path
+
 from services.faq_service import find_faq, load_faqs, searchable_question_count
 from services.intent_service import classify_intent, normalize_text
 from services.student_service import get_remaining_schedule
@@ -5,11 +8,35 @@ from services.student_service import get_remaining_schedule
 
 def test_faq_dataset_has_unique_ids_and_required_fields():
     faqs = load_faqs()
-    assert len(faqs) >= 30
-    assert searchable_question_count() >= 100
-    assert len({faq["id"] for faq in faqs}) == len(faqs)
+    assert len(faqs) == 150
+    assert len({faq["id"] for faq in faqs}) == 150
+    assert faqs[0]["id"] == "faq-001"
+    assert faqs[-1]["id"] == "faq-150"
+    assert [faq["id"] for faq in faqs] == [f"faq-{index:03d}" for index in range(1, 151)]
+    assert searchable_question_count() >= 750
+    normalized_questions = []
     for faq in faqs:
-        assert {"id", "question", "answer", "source"} <= faq.keys()
+        assert {"id", "question", "keywords", "answer", "source", "updated_at"} <= faq.keys()
+        assert faq["question"].strip() and faq["answer"].strip()
+        assert len(faq["keywords"]) >= 3
+        assert all(isinstance(keyword, str) and keyword.strip() for keyword in faq["keywords"])
+        normalized_keywords = [normalize_text(keyword) for keyword in faq["keywords"]]
+        assert len(normalized_keywords) == len(set(normalized_keywords)), faq["id"]
+        assert isinstance(faq["source"], dict)
+        assert isinstance(faq["source"].get("title"), str) and faq["source"]["title"].strip()
+        normalized_questions.append(normalize_text(faq["question"]))
+    assert len(normalized_questions) == len(set(normalized_questions))
+
+
+def test_faq_evaluation_dataset_is_valid():
+    root = Path(__file__).resolve().parents[2]
+    cases = json.loads((root / "data/evaluation/faq_questions.json").read_text(encoding="utf-8"))["cases"]
+    faq_ids = {faq["id"] for faq in load_faqs()}
+    assert len(cases) >= 300
+    assert len({case["id"] for case in cases}) == len(cases)
+    assert all(case["expected_faq_id"] in faq_ids for case in cases)
+    assert all(case["expected_intent"] == "faq" for case in cases)
+    assert all(case["must_not_use_gemini"] is True for case in cases)
 
 
 def test_every_faq_question_and_keyword_resolves_to_its_owner():
@@ -31,9 +58,11 @@ def test_remaining_schedule_excludes_classes_that_already_ended():
     from datetime import datetime
     from zoneinfo import ZoneInfo
 
-    now = datetime(2026, 8, 12, 12, 30, tzinfo=ZoneInfo("Asia/Ho_Chi_Minh"))
-    items = get_remaining_schedule("SV001", "2026-08-10", "2026-08-16", now=now)
-    assert [item["id"] for item in items] == ["schedule-003"]
+    now = datetime(2026, 8, 19, 12, 30, tzinfo=ZoneInfo("Asia/Ho_Chi_Minh"))
+    items = get_remaining_schedule("SV001", "2026-08-17", "2026-08-23", now=now)
+    assert [item["id"] for item in items] == [
+        "schedule-003", "schedule-004", "schedule-005", "schedule-006",
+    ]
 
 
 def test_find_faq_rejects_unrelated_question():

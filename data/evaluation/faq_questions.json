@@ -1,0 +1,2104 @@
+{
+  "cases": [
+    {
+      "id": "eval-001",
+      "message": "Mình muốn hỏi về đăng ký môn học, cần làm thế nào?",
+      "expected_faq_id": "faq-001",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-002",
+      "message": "Cho mình biết cổng đăng ký học phần được không?",
+      "expected_faq_id": "faq-001",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-003",
+      "message": "Mình muốn hỏi về rút môn, cần làm thế nào?",
+      "expected_faq_id": "faq-002",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-004",
+      "message": "Cho mình biết hủy học phần được không?",
+      "expected_faq_id": "faq-002",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-005",
+      "message": "Mình muốn hỏi về xem học phí, cần làm thế nào?",
+      "expected_faq_id": "faq-003",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-006",
+      "message": "Cho mình biết đóng học phí được không?",
+      "expected_faq_id": "faq-003",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-007",
+      "message": "Mình muốn hỏi về quên mật khẩu, cần làm thế nào?",
+      "expected_faq_id": "faq-004",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-008",
+      "message": "Cho mình biết đặt lại mật khẩu được không?",
+      "expected_faq_id": "faq-004",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-009",
+      "message": "Mình muốn hỏi về mail sinh viên, cần làm thế nào?",
+      "expected_faq_id": "faq-005",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-010",
+      "message": "cho minh biet tai khoan email duoc khong?",
+      "expected_faq_id": "faq-005",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-011",
+      "message": "Mình muốn hỏi về wifi trường, cần làm thế nào?",
+      "expected_faq_id": "faq-006",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-012",
+      "message": "Cho mình biết mạng không dây được không?",
+      "expected_faq_id": "faq-006",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-013",
+      "message": "Mình muốn hỏi về giờ mở cửa thư viện, cần làm thế nào?",
+      "expected_faq_id": "faq-007",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-014",
+      "message": "Cho mình biết thời gian thư viện được không?",
+      "expected_faq_id": "faq-007",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-015",
+      "message": "Mình muốn hỏi về mượn sách, cần làm thế nào?",
+      "expected_faq_id": "faq-008",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-016",
+      "message": "Cho mình biết trả sách được không?",
+      "expected_faq_id": "faq-008",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-017",
+      "message": "Mình muốn hỏi về mất thẻ sinh viên, cần làm thế nào?",
+      "expected_faq_id": "faq-009",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-018",
+      "message": "Cho mình biết cấp lại thẻ được không?",
+      "expected_faq_id": "faq-009",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-019",
+      "message": "Mình muốn hỏi về giấy xác nhận sinh viên, cần làm thế nào?",
+      "expected_faq_id": "faq-010",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-020",
+      "message": "cho minh biet xac nhan dang hoc duoc khong?",
+      "expected_faq_id": "faq-010",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-021",
+      "message": "Mình muốn hỏi về học bổng, cần làm thế nào?",
+      "expected_faq_id": "faq-011",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-022",
+      "message": "Cho mình biết xét học bổng được không?",
+      "expected_faq_id": "faq-011",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-023",
+      "message": "Mình muốn hỏi về bảo lưu, cần làm thế nào?",
+      "expected_faq_id": "faq-012",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-024",
+      "message": "Cho mình biết tạm dừng học được không?",
+      "expected_faq_id": "faq-012",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-025",
+      "message": "Mình muốn hỏi về nghỉ học, cần làm thế nào?",
+      "expected_faq_id": "faq-013",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-026",
+      "message": "Cho mình biết tạm nghỉ được không?",
+      "expected_faq_id": "faq-013",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-027",
+      "message": "Mình muốn hỏi về xem điểm, cần làm thế nào?",
+      "expected_faq_id": "faq-014",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-028",
+      "message": "Cho mình biết bảng điểm được không?",
+      "expected_faq_id": "faq-014",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-029",
+      "message": "Mình muốn hỏi về phúc khảo, cần làm thế nào?",
+      "expected_faq_id": "faq-015",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-030",
+      "message": "cho minh biet khieu nai diem duoc khong?",
+      "expected_faq_id": "faq-015",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-031",
+      "message": "Mình muốn hỏi về điều kiện dự thi, cần làm thế nào?",
+      "expected_faq_id": "faq-016",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-032",
+      "message": "Cho mình biết cấm thi được không?",
+      "expected_faq_id": "faq-016",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-033",
+      "message": "Mình muốn hỏi về xét tốt nghiệp, cần làm thế nào?",
+      "expected_faq_id": "faq-017",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-034",
+      "message": "Cho mình biết chuẩn đầu ra được không?",
+      "expected_faq_id": "faq-017",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-035",
+      "message": "Mình muốn hỏi về cấp bảng điểm, cần làm thế nào?",
+      "expected_faq_id": "faq-018",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-036",
+      "message": "Cho mình biết bảng điểm có dấu được không?",
+      "expected_faq_id": "faq-018",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-037",
+      "message": "Mình muốn hỏi về phòng đào tạo, cần làm thế nào?",
+      "expected_faq_id": "faq-019",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-038",
+      "message": "Cho mình biết hỗ trợ học vụ được không?",
+      "expected_faq_id": "faq-019",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-039",
+      "message": "Mình muốn hỏi về công tác sinh viên, cần làm thế nào?",
+      "expected_faq_id": "faq-020",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-040",
+      "message": "cho minh biet ho tro sinh vien duoc khong?",
+      "expected_faq_id": "faq-020",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-041",
+      "message": "Mình muốn hỏi về học lại, cần làm thế nào?",
+      "expected_faq_id": "faq-021",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-042",
+      "message": "Cho mình biết đăng ký môn lại được không?",
+      "expected_faq_id": "faq-021",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-043",
+      "message": "Mình muốn hỏi về học cải thiện, cần làm thế nào?",
+      "expected_faq_id": "faq-022",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-044",
+      "message": "Cho mình biết cải thiện điểm được không?",
+      "expected_faq_id": "faq-022",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-045",
+      "message": "Mình muốn hỏi về đổi lớp học phần, cần làm thế nào?",
+      "expected_faq_id": "faq-023",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-046",
+      "message": "Cho mình biết chuyển lớp được không?",
+      "expected_faq_id": "faq-023",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-047",
+      "message": "Mình muốn hỏi về biên lai học phí, cần làm thế nào?",
+      "expected_faq_id": "faq-024",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-048",
+      "message": "Cho mình biết hóa đơn học phí được không?",
+      "expected_faq_id": "faq-024",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-049",
+      "message": "Mình muốn hỏi về ký túc xá, cần làm thế nào?",
+      "expected_faq_id": "faq-025",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-050",
+      "message": "cho minh biet dang ky noi tru duoc khong?",
+      "expected_faq_id": "faq-025",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-051",
+      "message": "Mình muốn hỏi về bảo hiểm y tế, cần làm thế nào?",
+      "expected_faq_id": "faq-026",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-052",
+      "message": "Cho mình biết BHYT sinh viên được không?",
+      "expected_faq_id": "faq-026",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-053",
+      "message": "Mình muốn hỏi về điểm rèn luyện, cần làm thế nào?",
+      "expected_faq_id": "faq-027",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-054",
+      "message": "Cho mình biết đánh giá rèn luyện được không?",
+      "expected_faq_id": "faq-027",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-055",
+      "message": "Mình muốn hỏi về giấy giới thiệu thực tập, cần làm thế nào?",
+      "expected_faq_id": "faq-028",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-056",
+      "message": "Cho mình biết xác nhận thực tập được không?",
+      "expected_faq_id": "faq-028",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-057",
+      "message": "Mình muốn hỏi về khóa luận tốt nghiệp, cần làm thế nào?",
+      "expected_faq_id": "faq-029",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-058",
+      "message": "Cho mình biết đồ án tốt nghiệp được không?",
+      "expected_faq_id": "faq-029",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-059",
+      "message": "Mình muốn hỏi về đổi thông tin cá nhân, cần làm thế nào?",
+      "expected_faq_id": "faq-030",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-060",
+      "message": "cho minh biet sua so dien thoai duoc khong?",
+      "expected_faq_id": "faq-030",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-061",
+      "message": "Mình muốn hỏi về học phần tiên quyết, cần làm thế nào?",
+      "expected_faq_id": "faq-031",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-062",
+      "message": "Cho mình biết hướng dẫn học phần tiên quyết được không?",
+      "expected_faq_id": "faq-031",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-063",
+      "message": "Mình muốn hỏi về học phần song hành, cần làm thế nào?",
+      "expected_faq_id": "faq-032",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-064",
+      "message": "Cho mình biết hướng dẫn học phần song hành được không?",
+      "expected_faq_id": "faq-032",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-065",
+      "message": "Mình muốn hỏi về đăng kí vượt tín chỉ, cần làm thế nào?",
+      "expected_faq_id": "faq-033",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-066",
+      "message": "Cho mình biết hướng dẫn đăng ký vượt tín chỉ được không?",
+      "expected_faq_id": "faq-033",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-067",
+      "message": "Mình muốn hỏi về sĩ số lớp học phần, cần làm thế nào?",
+      "expected_faq_id": "faq-034",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-068",
+      "message": "Cho mình biết hướng dẫn sĩ số lớp học phần được không?",
+      "expected_faq_id": "faq-034",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-069",
+      "message": "Mình muốn hỏi về điều chỉnh học phần, cần làm thế nào?",
+      "expected_faq_id": "faq-035",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-070",
+      "message": "cho minh biet huong dan dieu chinh hoc phan duoc khong?",
+      "expected_faq_id": "faq-035",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-071",
+      "message": "Mình muốn hỏi về trùng lịch học phần, cần làm thế nào?",
+      "expected_faq_id": "faq-036",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-072",
+      "message": "Cho mình biết hướng dẫn trùng lịch học phần được không?",
+      "expected_faq_id": "faq-036",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-073",
+      "message": "Mình muốn hỏi về học phần không mở, cần làm thế nào?",
+      "expected_faq_id": "faq-037",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-074",
+      "message": "Cho mình biết hướng dẫn học phần không mở được không?",
+      "expected_faq_id": "faq-037",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-075",
+      "message": "Mình muốn hỏi về học phần khác ngành, cần làm thế nào?",
+      "expected_faq_id": "faq-038",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-076",
+      "message": "Cho mình biết hướng dẫn học phần khác ngành được không?",
+      "expected_faq_id": "faq-038",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-077",
+      "message": "Mình muốn hỏi về học phần tự chọn, cần làm thế nào?",
+      "expected_faq_id": "faq-039",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-078",
+      "message": "Cho mình biết hướng dẫn học phần tự chọn được không?",
+      "expected_faq_id": "faq-039",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-079",
+      "message": "Mình muốn hỏi về học phần bắt buộc, cần làm thế nào?",
+      "expected_faq_id": "faq-040",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-080",
+      "message": "cho minh biet huong dan hoc phan bat buoc duoc khong?",
+      "expected_faq_id": "faq-040",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-081",
+      "message": "Mình muốn hỏi về lớp thực hành, cần làm thế nào?",
+      "expected_faq_id": "faq-041",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-082",
+      "message": "Cho mình biết hướng dẫn lớp thực hành được không?",
+      "expected_faq_id": "faq-041",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-083",
+      "message": "Mình muốn hỏi về mã học phần, cần làm thế nào?",
+      "expected_faq_id": "faq-042",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-084",
+      "message": "Cho mình biết hướng dẫn mã học phần được không?",
+      "expected_faq_id": "faq-042",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-085",
+      "message": "Mình muốn hỏi về chương trình đào tạo, cần làm thế nào?",
+      "expected_faq_id": "faq-043",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-086",
+      "message": "Cho mình biết hướng dẫn chương trình đào tạo được không?",
+      "expected_faq_id": "faq-043",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-087",
+      "message": "Mình muốn hỏi về hủy đăng kí học kỳ, cần làm thế nào?",
+      "expected_faq_id": "faq-044",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-088",
+      "message": "Cho mình biết hướng dẫn hủy đăng ký học kỳ được không?",
+      "expected_faq_id": "faq-044",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-089",
+      "message": "Mình muốn hỏi về đăng ký môn bằng điện thoại, cần làm thế nào?",
+      "expected_faq_id": "faq-045",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-090",
+      "message": "cho minh biet huong dan dang ky mon bang dien thoai duoc khong?",
+      "expected_faq_id": "faq-045",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-091",
+      "message": "Mình muốn hỏi về xác nhận đăng ký học phần, cần làm thế nào?",
+      "expected_faq_id": "faq-046",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-092",
+      "message": "Cho mình biết hướng dẫn xác nhận đăng ký học phần được không?",
+      "expected_faq_id": "faq-046",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-093",
+      "message": "Mình muốn hỏi về học phí theo tín chỉ, cần làm thế nào?",
+      "expected_faq_id": "faq-047",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-094",
+      "message": "Cho mình biết hướng dẫn học phí theo tín chỉ được không?",
+      "expected_faq_id": "faq-047",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-095",
+      "message": "Mình muốn hỏi về kênh đóng học phí, cần làm thế nào?",
+      "expected_faq_id": "faq-048",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-096",
+      "message": "Cho mình biết hướng dẫn kênh đóng học phí được không?",
+      "expected_faq_id": "faq-048",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-097",
+      "message": "Mình muốn hỏi về giao dịch học phí, cần làm thế nào?",
+      "expected_faq_id": "faq-049",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-098",
+      "message": "Cho mình biết hướng dẫn giao dịch học phí được không?",
+      "expected_faq_id": "faq-049",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-099",
+      "message": "Mình muốn hỏi về trễ hạn học phí, cần làm thế nào?",
+      "expected_faq_id": "faq-050",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-100",
+      "message": "cho minh biet huong dan tre han hoc phi duoc khong?",
+      "expected_faq_id": "faq-050",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-101",
+      "message": "Mình muốn hỏi về đóng học phí nhiều lần, cần làm thế nào?",
+      "expected_faq_id": "faq-051",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-102",
+      "message": "Cho mình biết hướng dẫn đóng học phí nhiều lần được không?",
+      "expected_faq_id": "faq-051",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-103",
+      "message": "Mình muốn hỏi về học phí môn học lại, cần làm thế nào?",
+      "expected_faq_id": "faq-052",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-104",
+      "message": "Cho mình biết hướng dẫn học phí môn học lại được không?",
+      "expected_faq_id": "faq-052",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-105",
+      "message": "Mình muốn hỏi về học phí cải thiện, cần làm thế nào?",
+      "expected_faq_id": "faq-053",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-106",
+      "message": "Cho mình biết hướng dẫn học phí cải thiện được không?",
+      "expected_faq_id": "faq-053",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-107",
+      "message": "Mình muốn hỏi về khoản thu bảo hiểm, cần làm thế nào?",
+      "expected_faq_id": "faq-054",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-108",
+      "message": "Cho mình biết hướng dẫn khoản thu bảo hiểm được không?",
+      "expected_faq_id": "faq-054",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-109",
+      "message": "Mình muốn hỏi về sai nội dung chuyển khoản, cần làm thế nào?",
+      "expected_faq_id": "faq-055",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-110",
+      "message": "cho minh biet huong dan sai noi dung chuyen khoan duoc khong?",
+      "expected_faq_id": "faq-055",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-111",
+      "message": "Mình muốn hỏi về học phí ghi nhận thiếu, cần làm thế nào?",
+      "expected_faq_id": "faq-056",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-112",
+      "message": "Cho mình biết hướng dẫn học phí ghi nhận thiếu được không?",
+      "expected_faq_id": "faq-056",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-113",
+      "message": "Mình muốn hỏi về hoàn học phí rút môn, cần làm thế nào?",
+      "expected_faq_id": "faq-057",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-114",
+      "message": "Cho mình biết hướng dẫn hoàn học phí rút môn được không?",
+      "expected_faq_id": "faq-057",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-115",
+      "message": "Mình muốn hỏi về công nợ sinh viên, cần làm thế nào?",
+      "expected_faq_id": "faq-058",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-116",
+      "message": "Cho mình biết hướng dẫn công nợ sinh viên được không?",
+      "expected_faq_id": "faq-058",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-117",
+      "message": "Mình muốn hỏi về lệ phí giấy tờ, cần làm thế nào?",
+      "expected_faq_id": "faq-059",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-118",
+      "message": "Cho mình biết hướng dẫn lệ phí giấy tờ được không?",
+      "expected_faq_id": "faq-059",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-119",
+      "message": "Mình muốn hỏi về tra cứu lịch thi, cần làm thế nào?",
+      "expected_faq_id": "faq-060",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-120",
+      "message": "cho minh biet huong dan tra cuu lich thi duoc khong?",
+      "expected_faq_id": "faq-060",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-121",
+      "message": "Mình muốn hỏi về trùng lịch thi, cần làm thế nào?",
+      "expected_faq_id": "faq-061",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-122",
+      "message": "Cho mình biết hướng dẫn trùng lịch thi được không?",
+      "expected_faq_id": "faq-061",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-123",
+      "message": "Mình muốn hỏi về quên thẻ khi thi, cần làm thế nào?",
+      "expected_faq_id": "faq-062",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-124",
+      "message": "Cho mình biết hướng dẫn quên thẻ khi thi được không?",
+      "expected_faq_id": "faq-062",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-125",
+      "message": "Mình muốn hỏi về vắng thi có phép, cần làm thế nào?",
+      "expected_faq_id": "faq-063",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-126",
+      "message": "Cho mình biết hướng dẫn vắng thi có phép được không?",
+      "expected_faq_id": "faq-063",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-127",
+      "message": "Mình muốn hỏi về điểm chuyên cần, cần làm thế nào?",
+      "expected_faq_id": "faq-064",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-128",
+      "message": "Cho mình biết hướng dẫn điểm chuyên cần được không?",
+      "expected_faq_id": "faq-064",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-129",
+      "message": "Mình muốn hỏi về quy đổi điểm chữ, cần làm thế nào?",
+      "expected_faq_id": "faq-065",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-130",
+      "message": "cho minh biet huong dan quy doi diem chu duoc khong?",
+      "expected_faq_id": "faq-065",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-131",
+      "message": "Mình muốn hỏi về thời gian công bố điểm, cần làm thế nào?",
+      "expected_faq_id": "faq-066",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-132",
+      "message": "Cho mình biết hướng dẫn thời gian công bố điểm được không?",
+      "expected_faq_id": "faq-066",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-133",
+      "message": "Mình muốn hỏi về sai lệch điểm, cần làm thế nào?",
+      "expected_faq_id": "faq-067",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-134",
+      "message": "Cho mình biết hướng dẫn sai lệch điểm được không?",
+      "expected_faq_id": "faq-067",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-135",
+      "message": "Mình muốn hỏi về kết quả phúc khảo, cần làm thế nào?",
+      "expected_faq_id": "faq-068",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-136",
+      "message": "Cho mình biết hướng dẫn kết quả phúc khảo được không?",
+      "expected_faq_id": "faq-068",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-137",
+      "message": "Mình muốn hỏi về phúc khảo điểm quá trình, cần làm thế nào?",
+      "expected_faq_id": "faq-069",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-138",
+      "message": "Cho mình biết hướng dẫn phúc khảo điểm quá trình được không?",
+      "expected_faq_id": "faq-069",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-139",
+      "message": "Mình muốn hỏi về chuẩn bị thi trực tuyến, cần làm thế nào?",
+      "expected_faq_id": "faq-070",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-140",
+      "message": "cho minh biet huong dan chuan bi thi truc tuyen duoc khong?",
+      "expected_faq_id": "faq-070",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-141",
+      "message": "Mình muốn hỏi về thời khóa biểu cá nhân, cần làm thế nào?",
+      "expected_faq_id": "faq-071",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-142",
+      "message": "Cho mình biết hướng dẫn thời khóa biểu cá nhân được không?",
+      "expected_faq_id": "faq-071",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-143",
+      "message": "Mình muốn hỏi về thay đổi lịch học, cần làm thế nào?",
+      "expected_faq_id": "faq-072",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-144",
+      "message": "Cho mình biết hướng dẫn thay đổi lịch học được không?",
+      "expected_faq_id": "faq-072",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-145",
+      "message": "Mình muốn hỏi về tra phòng học, cần làm thế nào?",
+      "expected_faq_id": "faq-073",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-146",
+      "message": "Cho mình biết hướng dẫn tra phòng học được không?",
+      "expected_faq_id": "faq-073",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-147",
+      "message": "Mình muốn hỏi về hủy buổi học, cần làm thế nào?",
+      "expected_faq_id": "faq-074",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-148",
+      "message": "Cho mình biết hướng dẫn hủy buổi học được không?",
+      "expected_faq_id": "faq-074",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-149",
+      "message": "Mình muốn hỏi về lịch học bù, cần làm thế nào?",
+      "expected_faq_id": "faq-075",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-150",
+      "message": "cho minh biet huong dan lich hoc bu duoc khong?",
+      "expected_faq_id": "faq-075",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-151",
+      "message": "Mình muốn hỏi về xin nghỉ một buổi, cần làm thế nào?",
+      "expected_faq_id": "faq-076",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-152",
+      "message": "Cho mình biết hướng dẫn xin nghỉ một buổi được không?",
+      "expected_faq_id": "faq-076",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-153",
+      "message": "Mình muốn hỏi về đi học muộn, cần làm thế nào?",
+      "expected_faq_id": "faq-077",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-154",
+      "message": "Cho mình biết hướng dẫn đi học muộn được không?",
+      "expected_faq_id": "faq-077",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-155",
+      "message": "Mình muốn hỏi về lịch thực hành, cần làm thế nào?",
+      "expected_faq_id": "faq-078",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-156",
+      "message": "Cho mình biết hướng dẫn lịch thực hành được không?",
+      "expected_faq_id": "faq-078",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-157",
+      "message": "Mình muốn hỏi về lịch tuần và học kỳ, cần làm thế nào?",
+      "expected_faq_id": "faq-079",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-158",
+      "message": "Cho mình biết hướng dẫn lịch tuần và học kỳ được không?",
+      "expected_faq_id": "faq-079",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-159",
+      "message": "Mình muốn hỏi về thời khóa biểu chưa cập nhật, cần làm thế nào?",
+      "expected_faq_id": "faq-080",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-160",
+      "message": "cho minh biet huong dan thoi khoa bieu chua cap nhat duoc khong?",
+      "expected_faq_id": "faq-080",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-161",
+      "message": "Mình muốn hỏi về đổi ca học bù, cần làm thế nào?",
+      "expected_faq_id": "faq-081",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-162",
+      "message": "Cho mình biết hướng dẫn đổi ca học bù được không?",
+      "expected_faq_id": "faq-081",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-163",
+      "message": "Mình muốn hỏi về nghỉ lễ học bù, cần làm thế nào?",
+      "expected_faq_id": "faq-082",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-164",
+      "message": "Cho mình biết hướng dẫn nghỉ lễ học bù được không?",
+      "expected_faq_id": "faq-082",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-165",
+      "message": "Mình muốn hỏi về tài khoản bị khóa, cần làm thế nào?",
+      "expected_faq_id": "faq-083",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-166",
+      "message": "Cho mình biết hướng dẫn tài khoản bị khóa được không?",
+      "expected_faq_id": "faq-083",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-167",
+      "message": "Mình muốn hỏi về đổi mật khẩu cổng sinh viên, cần làm thế nào?",
+      "expected_faq_id": "faq-084",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-168",
+      "message": "Cho mình biết hướng dẫn đổi mật khẩu cổng sinh viên được không?",
+      "expected_faq_id": "faq-084",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-169",
+      "message": "Mình muốn hỏi về không nhận mã otp, cần làm thế nào?",
+      "expected_faq_id": "faq-085",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-170",
+      "message": "cho minh biet huong dan khong nhan ma otp duoc khong?",
+      "expected_faq_id": "faq-085",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-171",
+      "message": "Mình muốn hỏi về lỗi cổng sinh viên, cần làm thế nào?",
+      "expected_faq_id": "faq-086",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-172",
+      "message": "Cho mình biết hướng dẫn lỗi cổng sinh viên được không?",
+      "expected_faq_id": "faq-086",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-173",
+      "message": "Mình muốn hỏi về đăng nhập nhiều thiết bị, cần làm thế nào?",
+      "expected_faq_id": "faq-087",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-174",
+      "message": "Cho mình biết hướng dẫn đăng nhập nhiều thiết bị được không?",
+      "expected_faq_id": "faq-087",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-175",
+      "message": "Mình muốn hỏi về đăng xuất thiết bị cũ, cần làm thế nào?",
+      "expected_faq_id": "faq-088",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-176",
+      "message": "Cho mình biết hướng dẫn đăng xuất thiết bị cũ được không?",
+      "expected_faq_id": "faq-088",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-177",
+      "message": "Mình muốn hỏi về thông báo trên cổng sinh viên, cần làm thế nào?",
+      "expected_faq_id": "faq-089",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-178",
+      "message": "Cho mình biết hướng dẫn thông báo trên cổng sinh viên được không?",
+      "expected_faq_id": "faq-089",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-179",
+      "message": "Mình muốn hỏi về tra cứu sách thư viện, cần làm thế nào?",
+      "expected_faq_id": "faq-090",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-180",
+      "message": "cho minh biet huong dan tra cuu sach thu vien duoc khong?",
+      "expected_faq_id": "faq-090",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-181",
+      "message": "Mình muốn hỏi về gia hạn sách, cần làm thế nào?",
+      "expected_faq_id": "faq-091",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-182",
+      "message": "Cho mình biết hướng dẫn gia hạn sách được không?",
+      "expected_faq_id": "faq-091",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-183",
+      "message": "Mình muốn hỏi về mất sách thư viện, cần làm thế nào?",
+      "expected_faq_id": "faq-092",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-184",
+      "message": "Cho mình biết hướng dẫn mất sách thư viện được không?",
+      "expected_faq_id": "faq-092",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-185",
+      "message": "Mình muốn hỏi về tài liệu điện tử, cần làm thế nào?",
+      "expected_faq_id": "faq-093",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-186",
+      "message": "Cho mình biết hướng dẫn tài liệu điện tử được không?",
+      "expected_faq_id": "faq-093",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-187",
+      "message": "Mình muốn hỏi về tải giáo trình, cần làm thế nào?",
+      "expected_faq_id": "faq-094",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-188",
+      "message": "Cho mình biết hướng dẫn tải giáo trình được không?",
+      "expected_faq_id": "faq-094",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-189",
+      "message": "Mình muốn hỏi về đặt trước sách, cần làm thế nào?",
+      "expected_faq_id": "faq-095",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-190",
+      "message": "cho minh biet huong dan dat truoc sach duoc khong?",
+      "expected_faq_id": "faq-095",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-191",
+      "message": "Mình muốn hỏi về lịch sử mượn sách, cần làm thế nào?",
+      "expected_faq_id": "faq-096",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-192",
+      "message": "Cho mình biết hướng dẫn lịch sử mượn sách được không?",
+      "expected_faq_id": "faq-096",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-193",
+      "message": "Mình muốn hỏi về phòng tự học thư viện, cần làm thế nào?",
+      "expected_faq_id": "faq-097",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-194",
+      "message": "Cho mình biết hướng dẫn phòng tự học thư viện được không?",
+      "expected_faq_id": "faq-097",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-195",
+      "message": "Mình muốn hỏi về hồ sơ học bổng, cần làm thế nào?",
+      "expected_faq_id": "faq-098",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-196",
+      "message": "Cho mình biết hướng dẫn hồ sơ học bổng được không?",
+      "expected_faq_id": "faq-098",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-197",
+      "message": "Mình muốn hỏi về kết quả học bổng, cần làm thế nào?",
+      "expected_faq_id": "faq-099",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-198",
+      "message": "Cho mình biết hướng dẫn kết quả học bổng được không?",
+      "expected_faq_id": "faq-099",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-199",
+      "message": "Mình muốn hỏi về hỗ trợ sinh viên khó khăn, cần làm thế nào?",
+      "expected_faq_id": "faq-100",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-200",
+      "message": "cho minh biet huong dan ho tro sinh vien kho khan duoc khong?",
+      "expected_faq_id": "faq-100",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-201",
+      "message": "Mình muốn hỏi về tư vấn tâm lý sinh viên, cần làm thế nào?",
+      "expected_faq_id": "faq-101",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-202",
+      "message": "Cho mình biết hướng dẫn tư vấn tâm lý sinh viên được không?",
+      "expected_faq_id": "faq-101",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-203",
+      "message": "Mình muốn hỏi về minh chứng rèn luyện, cần làm thế nào?",
+      "expected_faq_id": "faq-102",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-204",
+      "message": "Cho mình biết hướng dẫn minh chứng rèn luyện được không?",
+      "expected_faq_id": "faq-102",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-205",
+      "message": "Mình muốn hỏi về thiếu điểm rèn luyện, cần làm thế nào?",
+      "expected_faq_id": "faq-103",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-206",
+      "message": "Cho mình biết hướng dẫn thiếu điểm rèn luyện được không?",
+      "expected_faq_id": "faq-103",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-207",
+      "message": "Mình muốn hỏi về đăng ký câu lạc bộ, cần làm thế nào?",
+      "expected_faq_id": "faq-104",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-208",
+      "message": "Cho mình biết hướng dẫn đăng ký câu lạc bộ được không?",
+      "expected_faq_id": "faq-104",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-209",
+      "message": "Mình muốn hỏi về hoạt động tình nguyện, cần làm thế nào?",
+      "expected_faq_id": "faq-105",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-210",
+      "message": "cho minh biet huong dan hoat dong tinh nguyen duoc khong?",
+      "expected_faq_id": "faq-105",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-211",
+      "message": "Mình muốn hỏi về sự kiện sinh viên, cần làm thế nào?",
+      "expected_faq_id": "faq-106",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-212",
+      "message": "Cho mình biết hướng dẫn sự kiện sinh viên được không?",
+      "expected_faq_id": "faq-106",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-213",
+      "message": "Mình muốn hỏi về ban cán sự lớp, cần làm thế nào?",
+      "expected_faq_id": "faq-107",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-214",
+      "message": "Cho mình biết hướng dẫn ban cán sự lớp được không?",
+      "expected_faq_id": "faq-107",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-215",
+      "message": "Mình muốn hỏi về ảnh hưởng điểm rèn luyện, cần làm thế nào?",
+      "expected_faq_id": "faq-108",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-216",
+      "message": "Cho mình biết hướng dẫn ảnh hưởng điểm rèn luyện được không?",
+      "expected_faq_id": "faq-108",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-217",
+      "message": "Mình muốn hỏi về bổ sung minh chứng muộn, cần làm thế nào?",
+      "expected_faq_id": "faq-109",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-218",
+      "message": "Cho mình biết hướng dẫn bổ sung minh chứng muộn được không?",
+      "expected_faq_id": "faq-109",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-219",
+      "message": "Mình muốn hỏi về chứng nhận hoạt động, cần làm thế nào?",
+      "expected_faq_id": "faq-110",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-220",
+      "message": "cho minh biet huong dan chung nhan hoat dong duoc khong?",
+      "expected_faq_id": "faq-110",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-221",
+      "message": "Mình muốn hỏi về điều kiện thực tập, cần làm thế nào?",
+      "expected_faq_id": "faq-111",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-222",
+      "message": "Cho mình biết hướng dẫn điều kiện thực tập được không?",
+      "expected_faq_id": "faq-111",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-223",
+      "message": "Mình muốn hỏi về tự tìm nơi thực tập, cần làm thế nào?",
+      "expected_faq_id": "faq-112",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-224",
+      "message": "Cho mình biết hướng dẫn tự tìm nơi thực tập được không?",
+      "expected_faq_id": "faq-112",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-225",
+      "message": "Mình muốn hỏi về đề cương thực tập, cần làm thế nào?",
+      "expected_faq_id": "faq-113",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-226",
+      "message": "Cho mình biết hướng dẫn đề cương thực tập được không?",
+      "expected_faq_id": "faq-113",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-227",
+      "message": "Mình muốn hỏi về nộp báo cáo thực tập, cần làm thế nào?",
+      "expected_faq_id": "faq-114",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-228",
+      "message": "Cho mình biết hướng dẫn nộp báo cáo thực tập được không?",
+      "expected_faq_id": "faq-114",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-229",
+      "message": "Mình muốn hỏi về đổi doanh nghiệp thực tập, cần làm thế nào?",
+      "expected_faq_id": "faq-115",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-230",
+      "message": "cho minh biet huong dan doi doanh nghiep thuc tap duoc khong?",
+      "expected_faq_id": "faq-115",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-231",
+      "message": "Mình muốn hỏi về giảng viên hướng dẫn thực tập, cần làm thế nào?",
+      "expected_faq_id": "faq-116",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-232",
+      "message": "Cho mình biết hướng dẫn giảng viên hướng dẫn thực tập được không?",
+      "expected_faq_id": "faq-116",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-233",
+      "message": "Mình muốn hỏi về thông tin tuyển dụng, cần làm thế nào?",
+      "expected_faq_id": "faq-117",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-234",
+      "message": "Cho mình biết hướng dẫn thông tin tuyển dụng được không?",
+      "expected_faq_id": "faq-117",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-235",
+      "message": "Mình muốn hỏi về ngày hội việc làm, cần làm thế nào?",
+      "expected_faq_id": "faq-118",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-236",
+      "message": "Cho mình biết hướng dẫn ngày hội việc làm được không?",
+      "expected_faq_id": "faq-118",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-237",
+      "message": "Mình muốn hỏi về xác nhận hoàn thành thực tập, cần làm thế nào?",
+      "expected_faq_id": "faq-119",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-238",
+      "message": "Cho mình biết hướng dẫn xác nhận hoàn thành thực tập được không?",
+      "expected_faq_id": "faq-119",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-239",
+      "message": "Mình muốn hỏi về điều kiện làm đồ án, cần làm thế nào?",
+      "expected_faq_id": "faq-120",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-240",
+      "message": "cho minh biet huong dan dieu kien lam do an duoc khong?",
+      "expected_faq_id": "faq-120",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-241",
+      "message": "Mình muốn hỏi về chọn giảng viên hướng dẫn, cần làm thế nào?",
+      "expected_faq_id": "faq-121",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-242",
+      "message": "Cho mình biết hướng dẫn chọn giảng viên hướng dẫn được không?",
+      "expected_faq_id": "faq-121",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-243",
+      "message": "Mình muốn hỏi về đổi đề tài khóa luận, cần làm thế nào?",
+      "expected_faq_id": "faq-122",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-244",
+      "message": "Cho mình biết hướng dẫn đổi đề tài khóa luận được không?",
+      "expected_faq_id": "faq-122",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-245",
+      "message": "Mình muốn hỏi về đổi giảng viên hướng dẫn, cần làm thế nào?",
+      "expected_faq_id": "faq-123",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-246",
+      "message": "Cho mình biết hướng dẫn đổi giảng viên hướng dẫn được không?",
+      "expected_faq_id": "faq-123",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-247",
+      "message": "Mình muốn hỏi về mẫu trình bày khóa luận, cần làm thế nào?",
+      "expected_faq_id": "faq-124",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-248",
+      "message": "Cho mình biết hướng dẫn mẫu trình bày khóa luận được không?",
+      "expected_faq_id": "faq-124",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-249",
+      "message": "Mình muốn hỏi về nộp bản mềm đồ án, cần làm thế nào?",
+      "expected_faq_id": "faq-125",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-250",
+      "message": "cho minh biet huong dan nop ban mem do an duoc khong?",
+      "expected_faq_id": "faq-125",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-251",
+      "message": "Mình muốn hỏi về nộp bản in khóa luận, cần làm thế nào?",
+      "expected_faq_id": "faq-126",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-252",
+      "message": "Cho mình biết hướng dẫn nộp bản in khóa luận được không?",
+      "expected_faq_id": "faq-126",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-253",
+      "message": "Mình muốn hỏi về lịch bảo vệ đồ án, cần làm thế nào?",
+      "expected_faq_id": "faq-127",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-254",
+      "message": "Cho mình biết hướng dẫn lịch bảo vệ đồ án được không?",
+      "expected_faq_id": "faq-127",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-255",
+      "message": "Mình muốn hỏi về chuẩn bị bảo vệ khóa luận, cần làm thế nào?",
+      "expected_faq_id": "faq-128",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-256",
+      "message": "Cho mình biết hướng dẫn chuẩn bị bảo vệ khóa luận được không?",
+      "expected_faq_id": "faq-128",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-257",
+      "message": "Mình muốn hỏi về điểm đồ án tốt nghiệp, cần làm thế nào?",
+      "expected_faq_id": "faq-129",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-258",
+      "message": "Cho mình biết hướng dẫn điểm đồ án tốt nghiệp được không?",
+      "expected_faq_id": "faq-129",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-259",
+      "message": "Mình muốn hỏi về thủ tục xét tốt nghiệp, cần làm thế nào?",
+      "expected_faq_id": "faq-130",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-260",
+      "message": "cho minh biet huong dan thu tuc xet tot nghiep duoc khong?",
+      "expected_faq_id": "faq-130",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-261",
+      "message": "Mình muốn hỏi về kiểm tra nợ môn, cần làm thế nào?",
+      "expected_faq_id": "faq-131",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-262",
+      "message": "Cho mình biết hướng dẫn kiểm tra nợ môn được không?",
+      "expected_faq_id": "faq-131",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-263",
+      "message": "Mình muốn hỏi về lịch nhận bằng tốt nghiệp, cần làm thế nào?",
+      "expected_faq_id": "faq-132",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-264",
+      "message": "Cho mình biết hướng dẫn lịch nhận bằng tốt nghiệp được không?",
+      "expected_faq_id": "faq-132",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-265",
+      "message": "Mình muốn hỏi về cảnh báo học vụ, cần làm thế nào?",
+      "expected_faq_id": "faq-133",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-266",
+      "message": "Cho mình biết hướng dẫn cảnh báo học vụ được không?",
+      "expected_faq_id": "faq-133",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-267",
+      "message": "Mình muốn hỏi về tra cứu mức cảnh báo, cần làm thế nào?",
+      "expected_faq_id": "faq-134",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-268",
+      "message": "Cho mình biết hướng dẫn tra cứu mức cảnh báo được không?",
+      "expected_faq_id": "faq-134",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-269",
+      "message": "Mình muốn hỏi về khắc phục cảnh báo học vụ, cần làm thế nào?",
+      "expected_faq_id": "faq-135",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-270",
+      "message": "cho minh biet huong dan khac phuc canh bao hoc vu duoc khong?",
+      "expected_faq_id": "faq-135",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-271",
+      "message": "Mình muốn hỏi về thời hạn bảo lưu, cần làm thế nào?",
+      "expected_faq_id": "faq-136",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-272",
+      "message": "Cho mình biết hướng dẫn thời hạn bảo lưu được không?",
+      "expected_faq_id": "faq-136",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-273",
+      "message": "Mình muốn hỏi về quay lại học sau bảo lưu, cần làm thế nào?",
+      "expected_faq_id": "faq-137",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-274",
+      "message": "Cho mình biết hướng dẫn quay lại học sau bảo lưu được không?",
+      "expected_faq_id": "faq-137",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-275",
+      "message": "Mình muốn hỏi về điểm môn học lại, cần làm thế nào?",
+      "expected_faq_id": "faq-138",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-276",
+      "message": "Cho mình biết hướng dẫn điểm môn học lại được không?",
+      "expected_faq_id": "faq-138",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-277",
+      "message": "Mình muốn hỏi về thiết bị phòng học hỏng, cần làm thế nào?",
+      "expected_faq_id": "faq-139",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-278",
+      "message": "Cho mình biết hướng dẫn thiết bị phòng học hỏng được không?",
+      "expected_faq_id": "faq-139",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-279",
+      "message": "Mình muốn hỏi về sử dụng phòng máy, cần làm thế nào?",
+      "expected_faq_id": "faq-140",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-280",
+      "message": "cho minh biet huong dan su dung phong may duoc khong?",
+      "expected_faq_id": "faq-140",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-281",
+      "message": "Mình muốn hỏi về sơ đồ phòng học, cần làm thế nào?",
+      "expected_faq_id": "faq-141",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-282",
+      "message": "Cho mình biết hướng dẫn sơ đồ phòng học được không?",
+      "expected_faq_id": "faq-141",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-283",
+      "message": "Mình muốn hỏi về đồ thất lạc trong trường, cần làm thế nào?",
+      "expected_faq_id": "faq-142",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-284",
+      "message": "Cho mình biết hướng dẫn đồ thất lạc trong trường được không?",
+      "expected_faq_id": "faq-142",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-285",
+      "message": "Mình muốn hỏi về khái niệm điện toán đám mây, cần làm thế nào?",
+      "expected_faq_id": "faq-143",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-286",
+      "message": "Cho mình biết hướng dẫn khái niệm điện toán đám mây được không?",
+      "expected_faq_id": "faq-143",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-287",
+      "message": "Mình muốn hỏi về iaas paas và saas, cần làm thế nào?",
+      "expected_faq_id": "faq-144",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-288",
+      "message": "Cho mình biết hướng dẫn iaas paas và saas được không?",
+      "expected_faq_id": "faq-144",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-289",
+      "message": "Mình muốn hỏi về lợi ích điện toán đám mây, cần làm thế nào?",
+      "expected_faq_id": "faq-145",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-290",
+      "message": "cho minh biet huong dan loi ich dien toan dam may duoc khong?",
+      "expected_faq_id": "faq-145",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-291",
+      "message": "Mình muốn hỏi về cloud công cộng và cloud riêng, cần làm thế nào?",
+      "expected_faq_id": "faq-146",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-292",
+      "message": "Cho mình biết hướng dẫn cloud công cộng và cloud riêng được không?",
+      "expected_faq_id": "faq-146",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-293",
+      "message": "Mình muốn hỏi về chức năng uth cloudbot, cần làm thế nào?",
+      "expected_faq_id": "faq-147",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-294",
+      "message": "Cho mình biết hướng dẫn chức năng uth cloudbot được không?",
+      "expected_faq_id": "faq-147",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-295",
+      "message": "Mình muốn hỏi về cách đặt câu hỏi chatbot, cần làm thế nào?",
+      "expected_faq_id": "faq-148",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-296",
+      "message": "Cho mình biết hướng dẫn cách đặt câu hỏi chatbot được không?",
+      "expected_faq_id": "faq-148",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-297",
+      "message": "Mình muốn hỏi về phản hồi dự phòng, cần làm thế nào?",
+      "expected_faq_id": "faq-149",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-298",
+      "message": "Cho mình biết hướng dẫn phản hồi dự phòng được không?",
+      "expected_faq_id": "faq-149",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-299",
+      "message": "Mình muốn hỏi về nhận biết câu trả lời gemini, cần làm thế nào?",
+      "expected_faq_id": "faq-150",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    },
+    {
+      "id": "eval-300",
+      "message": "cho minh biet huong dan nhan biet cau tra loi gemini duoc khong?",
+      "expected_faq_id": "faq-150",
+      "expected_intent": "faq",
+      "must_not_use_gemini": true
+    }
+  ]
+}

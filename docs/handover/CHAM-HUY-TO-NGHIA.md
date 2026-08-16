@@ -31,7 +31,7 @@ Terminal khác: `python -m http.server 5173 --directory frontend`, rồi mở `h
 | `GOOGLE_CLOUD_PROJECT` | rỗng | Bắt buộc với Firestore |
 | `FIRESTORE_COLLECTION_PREFIX` | `uth_cloudbot` | Prefix collection |
 
-Seed/test: `python -m scripts.seed_data` và `python -m pytest -q` trong `backend`. Seed upsert nên chạy lặp an toàn. Local có 30 FAQ, 10 documents và dữ liệu lịch/bài tập/thi/thông báo. Xem schema ở `docs/architecture/DATABASE-SCHEMA.md`, API ở `docs/api/PERSONAL-ASSISTANT.md` và Postman trong `backend/postman/`.
+Seed/test: `python -m scripts.seed_data` và `python -m pytest -q` trong `backend`. Seed upsert nên chạy lặp an toàn. Hiện local có 150 FAQ, 30 tài liệu, 10 sinh viên demo, 60 lịch học, 35 bài tập, 20 kỳ thi và 30 thông báo. Xem schema ở `docs/architecture/DATABASE-SCHEMA.md`, API ở `docs/api/PERSONAL-ASSISTANT.md` và Postman trong `backend/postman/`.
 
 ## Mock và hạn chế
 

@@ -2,9 +2,10 @@ name: CI - Run Tests
 
 on:
   push:
-    branches: [ develop, feature/cl-01-cloud-run ]
+    branches: [ develop, "feature/**" ]
   pull_request:
     branches: [ develop ]
+  workflow_dispatch:
 
 jobs:
   test:

@@ -2,7 +2,7 @@
 
 // Đổi USE_MOCK thành true khi cần demo frontend mà không chạy backend.
 const USE_MOCK = false;
-const API_BASE = "https://uth-cloudbot.onrender.com";
+const API_BASE = window.APP_CONFIG?.API_BASE || "http://localhost:8080";
 const CHAT_URL = `${API_BASE}/api/chat`;
 const FEEDBACK_URL = `${API_BASE}/api/feedback`;
 const HEALTH_URL = `${API_BASE}/api/health`;
@@ -216,6 +216,95 @@ function element(tag, className, text) {
   return node;
 }
 
+function appendInlineMarkdown(parent, text) {
+  const pattern = /(\*\*[^*\n]+\*\*|`[^`\n]+`|\[[^\]\n]+\]\(https?:\/\/[^\s)]+\))/g;
+  let cursor = 0;
+  for (const match of text.matchAll(pattern)) {
+    if (match.index > cursor) parent.append(document.createTextNode(text.slice(cursor, match.index)));
+    const token = match[0];
+    if (token.startsWith("**")) {
+      parent.append(element("strong", "", token.slice(2, -2)));
+    } else if (token.startsWith("`")) {
+      parent.append(element("code", "", token.slice(1, -1)));
+    } else {
+      const parts = token.match(/^\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)$/);
+      const link = element("a", "gemini-link", parts[1]);
+      link.href = parts[2];
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      parent.append(link);
+    }
+    cursor = match.index + token.length;
+  }
+  if (cursor < text.length) parent.append(document.createTextNode(text.slice(cursor)));
+}
+
+function renderGeminiMarkdown(card, markdown) {
+  const lines = markdown.replace(/\r\n?/g, "\n").split("\n");
+  let list = null;
+  let codeLines = null;
+
+  const flushList = () => {
+    if (list) card.append(list);
+    list = null;
+  };
+  const flushCode = () => {
+    if (codeLines) {
+      const pre = element("pre", "gemini-code");
+      pre.append(element("code", "", codeLines.join("\n")));
+      card.append(pre);
+    }
+    codeLines = null;
+  };
+
+  for (const rawLine of lines) {
+    const line = rawLine.trim();
+    if (line.startsWith("```")) {
+      flushList();
+      if (codeLines) flushCode(); else codeLines = [];
+      continue;
+    }
+    if (codeLines) {
+      codeLines.push(rawLine);
+      continue;
+    }
+    if (!line) {
+      flushList();
+      continue;
+    }
+
+    const heading = line.match(/^(#{1,3})\s+(.+)$/);
+    if (heading) {
+      flushList();
+      const title = element(`h${Math.min(heading[1].length + 2, 5)}`, "gemini-heading");
+      appendInlineMarkdown(title, heading[2]);
+      card.append(title);
+      continue;
+    }
+
+    const bullet = line.match(/^[-*+]\s+(.+)$/);
+    const numbered = line.match(/^\d+[.)]\s+(.+)$/);
+    if (bullet || numbered) {
+      const tag = numbered ? "ol" : "ul";
+      if (!list || list.tagName.toLowerCase() !== tag) {
+        flushList();
+        list = element(tag, "gemini-list");
+      }
+      const item = element("li");
+      appendInlineMarkdown(item, (bullet || numbered)[1]);
+      list.append(item);
+      continue;
+    }
+
+    flushList();
+    const paragraph = element("p");
+    appendInlineMarkdown(paragraph, line.replace(/^>\s?/, ""));
+    card.append(paragraph);
+  }
+  flushList();
+  flushCode();
+}
+
 function iconButton(vote, label) {
   const button = element("button", "fb-btn", vote === "up" ? "👍" : "👎");
   button.type = "button";
@@ -318,8 +407,14 @@ function resolveTurn(turn, rawResult) {
   if (result.invalid) card.classList.add("is-invalid");
   card.replaceChildren();
 
-  result.paragraphs.forEach(paragraph => card.append(element("p", "", paragraph)));
-  if (result.list.length) {
+  const isGemini = result.source?.type === "gemini";
+  if (isGemini) {
+    card.classList.add("is-gemini");
+    renderGeminiMarkdown(card, result.answer);
+  } else {
+    result.paragraphs.forEach(paragraph => card.append(element("p", "", paragraph)));
+  }
+  if (!isGemini && result.list.length) {
     const list = element("ol");
     result.list.forEach(item => list.append(element("li", "", item)));
     card.append(list);

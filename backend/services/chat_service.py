@@ -120,6 +120,11 @@ def get_chat_response(message, student=None):
             response["confirmation"] = {"action": intent, "raw_message": message}
             return response
 
+    # Dynamic operational intents keep priority over static FAQ matches. This
+    # prevents a broad FAQ phrase from replacing schedule/exam/document flows.
+    if intent in {"schedule", "exam_schedule", "document"}:
+        return _fallback_response(message, intent)
+
     faq = find_faq(message)
     if faq is not None:
         return build_faq_response(faq)

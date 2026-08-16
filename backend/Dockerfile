@@ -33,4 +33,4 @@ ENV PORT=8080
 EXPOSE 8080
 
 # Dùng gunicorn cho production (thêm vào requirements nếu chưa có)
-CMD ["python", "-m", "gunicorn", "--bind", "0.0.0.0:8080", "--workers", "2", "--timeout", "60", "app:app"]
+CMD ["sh", "-c", "exec python -m gunicorn --bind 0.0.0.0:${PORT:-8080} --workers 2 --timeout 60 app:app"]

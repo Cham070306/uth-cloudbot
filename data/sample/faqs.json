@@ -2,35 +2,2405 @@
   "version": "BE-01-extended",
   "notice": "Dữ liệu mẫu phục vụ phát triển; cần được chủ sở hữu nội dung UTH xác minh trước khi dùng chính thức.",
   "faqs": [
-    {"id":"faq-001","question":"Đăng ký học phần ở đâu?","keywords":["đăng ký môn học","cổng đăng ký học phần"],"answer":"Sinh viên đăng ký học phần trên cổng thông tin đào tạo của trường trong thời gian được thông báo. Hãy kiểm tra thông báo học vụ trước mỗi học kỳ.","source":{"type":"sample","title":"FAQ mẫu UTH - Đăng ký học phần","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-002","question":"Làm sao để rút học phần?","keywords":["rút môn","hủy học phần"],"answer":"Việc rút học phần phải thực hiện trong thời hạn quy định của học kỳ. Sinh viên xem hướng dẫn trên cổng đào tạo hoặc liên hệ Phòng Đào tạo.","source":{"type":"sample","title":"FAQ mẫu UTH - Rút học phần","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-003","question":"Tra cứu học phí như thế nào?","keywords":["xem học phí","đóng học phí"],"answer":"Sinh viên tra cứu số tiền và hạn đóng học phí trên cổng sinh viên. Chỉ thanh toán qua các kênh được nhà trường công bố.","source":{"type":"sample","title":"FAQ mẫu UTH - Học phí","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-004","question":"Xin cấp lại mật khẩu cổng sinh viên?","keywords":["quên mật khẩu","đặt lại mật khẩu"],"answer":"Hãy dùng chức năng quên mật khẩu trên cổng sinh viên. Nếu không khôi phục được, liên hệ bộ phận hỗ trợ tài khoản và mang theo giấy tờ xác minh.","source":{"type":"sample","title":"FAQ mẫu UTH - Tài khoản sinh viên","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-005","question":"Email sinh viên được cấp như thế nào?","keywords":["mail sinh viên","tài khoản email"],"answer":"Email sinh viên được cấp theo thông báo nhập học hoặc hướng dẫn của trường. Sinh viên nên đổi mật khẩu ngay lần đăng nhập đầu tiên.","source":{"type":"sample","title":"FAQ mẫu UTH - Email sinh viên","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-006","question":"Kết nối Wi-Fi trong trường ra sao?","keywords":["wifi trường","mạng không dây"],"answer":"Chọn mạng Wi-Fi dành cho sinh viên và đăng nhập bằng tài khoản được trường cấp. Không chia sẻ mật khẩu hoặc thông tin đăng nhập.","source":{"type":"sample","title":"FAQ mẫu UTH - Wi-Fi","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-007","question":"Thư viện mở cửa khi nào?","keywords":["giờ mở cửa thư viện","thời gian thư viện"],"answer":"Giờ mở cửa có thể thay đổi theo học kỳ. Sinh viên kiểm tra thông báo mới nhất của thư viện trước khi đến.","source":{"type":"sample","title":"FAQ mẫu UTH - Thư viện","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-008","question":"Mượn sách thư viện cần gì?","keywords":["mượn sách","trả sách"],"answer":"Sinh viên dùng thẻ sinh viên hoặc tài khoản thư viện để mượn sách và phải trả đúng hạn theo quy định.","source":{"type":"sample","title":"FAQ mẫu UTH - Mượn sách","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-009","question":"Làm mất thẻ sinh viên phải làm sao?","keywords":["mất thẻ sinh viên","cấp lại thẻ"],"answer":"Sinh viên cần báo mất và làm thủ tục cấp lại thẻ theo hướng dẫn của Phòng Công tác sinh viên. Không cho người khác sử dụng tài khoản gắn với thẻ.","source":{"type":"sample","title":"FAQ mẫu UTH - Thẻ sinh viên","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-010","question":"Xin giấy xác nhận sinh viên ở đâu?","keywords":["giấy xác nhận sinh viên","xác nhận đang học"],"answer":"Sinh viên gửi yêu cầu xác nhận theo quy trình một cửa hoặc cổng dịch vụ sinh viên và theo dõi lịch nhận kết quả.","source":{"type":"sample","title":"FAQ mẫu UTH - Xác nhận sinh viên","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-011","question":"Điều kiện nhận học bổng là gì?","keywords":["học bổng","xét học bổng"],"answer":"Điều kiện học bổng phụ thuộc từng chương trình và học kỳ, thường xét kết quả học tập, rèn luyện và các tiêu chí kèm theo thông báo.","source":{"type":"sample","title":"FAQ mẫu UTH - Học bổng","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-012","question":"Đăng ký bảo lưu kết quả học tập thế nào?","keywords":["bảo lưu","tạm dừng học"],"answer":"Sinh viên nộp đơn và minh chứng theo quy định cho đơn vị phụ trách trước thời hạn. Chỉ xem là được bảo lưu khi có quyết định chấp thuận.","source":{"type":"sample","title":"FAQ mẫu UTH - Bảo lưu","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-013","question":"Xin nghỉ học tạm thời như thế nào?","keywords":["nghỉ học","tạm nghỉ"],"answer":"Sinh viên trao đổi với cố vấn học tập và nộp hồ sơ xin tạm nghỉ theo quy định hiện hành của trường.","source":{"type":"sample","title":"FAQ mẫu UTH - Nghỉ học","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-014","question":"Tra cứu điểm ở đâu?","keywords":["xem điểm","bảng điểm"],"answer":"Điểm học phần được tra cứu trên cổng sinh viên. Nếu phát hiện sai lệch, sinh viên phản hồi trong thời hạn công bố.","source":{"type":"sample","title":"FAQ mẫu UTH - Tra cứu điểm","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-015","question":"Phúc khảo điểm thi như thế nào?","keywords":["phúc khảo","khiếu nại điểm"],"answer":"Sinh viên nộp đơn phúc khảo và lệ phí nếu có trong thời hạn được thông báo, sau đó theo dõi kết quả qua kênh chính thức.","source":{"type":"sample","title":"FAQ mẫu UTH - Phúc khảo","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-016","question":"Điều kiện dự thi kết thúc học phần?","keywords":["điều kiện dự thi","cấm thi"],"answer":"Điều kiện dự thi phụ thuộc quy chế đào tạo, chuyên cần và yêu cầu của học phần. Sinh viên cần xem đề cương và thông báo của giảng viên.","source":{"type":"sample","title":"FAQ mẫu UTH - Điều kiện dự thi","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-017","question":"Điều kiện tốt nghiệp là gì?","keywords":["xét tốt nghiệp","chuẩn đầu ra"],"answer":"Sinh viên phải hoàn thành chương trình, đạt chuẩn đầu ra và các nghĩa vụ liên quan theo quy chế áp dụng cho khóa học.","source":{"type":"sample","title":"FAQ mẫu UTH - Tốt nghiệp","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-018","question":"Xin bảng điểm chính thức ở đâu?","keywords":["cấp bảng điểm","bảng điểm có dấu"],"answer":"Sinh viên đăng ký cấp bảng điểm tại bộ phận một cửa hoặc kênh dịch vụ được trường công bố và nhận theo lịch hẹn.","source":{"type":"sample","title":"FAQ mẫu UTH - Bảng điểm","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-019","question":"Liên hệ Phòng Đào tạo bằng cách nào?","keywords":["phòng đào tạo","hỗ trợ học vụ"],"answer":"Sinh viên xem địa chỉ, giờ tiếp nhận và kênh liên hệ mới nhất trên website chính thức của trường trước khi gửi yêu cầu.","source":{"type":"sample","title":"FAQ mẫu UTH - Phòng Đào tạo","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-020","question":"Liên hệ Phòng Công tác sinh viên ở đâu?","keywords":["công tác sinh viên","hỗ trợ sinh viên"],"answer":"Thông tin liên hệ và giờ làm việc được công bố trên website trường. Khi liên hệ, sinh viên nên cung cấp mã số sinh viên và nội dung cần hỗ trợ.","source":{"type":"sample","title":"FAQ mẫu UTH - Công tác sinh viên","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-021","question":"Đăng ký học lại như thế nào?","keywords":["học lại","đăng ký môn lại"],"answer":"Sinh viên đăng ký học lại trong đợt đăng ký học phần và tuân theo điều kiện tiên quyết, sĩ số cùng quy định học phí.","source":{"type":"sample","title":"FAQ mẫu UTH - Học lại","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-022","question":"Đăng ký học cải thiện ra sao?","keywords":["học cải thiện","cải thiện điểm"],"answer":"Việc học cải thiện thực hiện theo quy chế của khóa học. Sinh viên cần kiểm tra môn được phép đăng ký và cách tính điểm sau cải thiện.","source":{"type":"sample","title":"FAQ mẫu UTH - Học cải thiện","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-023","question":"Chuyển lớp học phần được không?","keywords":["đổi lớp học phần","chuyển lớp"],"answer":"Chuyển lớp chỉ thực hiện trong thời gian điều chỉnh đăng ký và khi lớp nhận còn chỗ, đáp ứng các điều kiện học vụ.","source":{"type":"sample","title":"FAQ mẫu UTH - Chuyển lớp","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-024","question":"Xin cấp lại biên lai học phí?","keywords":["biên lai học phí","hóa đơn học phí"],"answer":"Sinh viên liên hệ bộ phận tài chính hoặc sử dụng kênh tra cứu hóa đơn được trường hướng dẫn, kèm thông tin giao dịch để đối chiếu.","source":{"type":"sample","title":"FAQ mẫu UTH - Biên lai học phí","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-025","question":"Đăng ký ký túc xá như thế nào?","keywords":["ký túc xá","đăng ký nội trú"],"answer":"Theo dõi thông báo tiếp nhận của ký túc xá, chuẩn bị hồ sơ và đăng ký trong thời gian quy định. Chỗ ở phụ thuộc chỉ tiêu thực tế.","source":{"type":"sample","title":"FAQ mẫu UTH - Ký túc xá","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-026","question":"Tham gia bảo hiểm y tế sinh viên thế nào?","keywords":["bảo hiểm y tế","BHYT sinh viên"],"answer":"Sinh viên thực hiện đăng ký và đóng bảo hiểm theo thông báo từng năm học; cung cấp mã thẻ hiện có nếu thuộc diện được công nhận.","source":{"type":"sample","title":"FAQ mẫu UTH - Bảo hiểm y tế","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-027","question":"Đánh giá điểm rèn luyện ở đâu?","keywords":["điểm rèn luyện","đánh giá rèn luyện"],"answer":"Sinh viên tự đánh giá trên hệ thống hoặc biểu mẫu theo từng học kỳ, cung cấp minh chứng và theo dõi kết quả duyệt của lớp, khoa.","source":{"type":"sample","title":"FAQ mẫu UTH - Điểm rèn luyện","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-028","question":"Xin giấy giới thiệu thực tập như thế nào?","keywords":["giấy giới thiệu thực tập","xác nhận thực tập"],"answer":"Sinh viên làm theo hướng dẫn của khoa hoặc đơn vị phụ trách thực tập, cung cấp thông tin doanh nghiệp và thời gian thực tập.","source":{"type":"sample","title":"FAQ mẫu UTH - Thực tập","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-029","question":"Đăng ký đề tài khóa luận ra sao?","keywords":["khóa luận tốt nghiệp","đồ án tốt nghiệp"],"answer":"Sinh viên theo dõi kế hoạch của khoa, đáp ứng điều kiện thực hiện và đăng ký đề tài, giảng viên hướng dẫn đúng thời hạn.","source":{"type":"sample","title":"FAQ mẫu UTH - Khóa luận","url":null},"updated_at":"2026-08-09"},
-    {"id":"faq-030","question":"Cập nhật thông tin cá nhân ở đâu?","keywords":["đổi thông tin cá nhân","sửa số điện thoại"],"answer":"Sinh viên cập nhật các trường được phép trên cổng sinh viên; với thông tin định danh, cần gửi yêu cầu và giấy tờ minh chứng cho đơn vị phụ trách.","source":{"type":"sample","title":"FAQ mẫu UTH - Thông tin cá nhân","url":null},"updated_at":"2026-08-09"}
+    {
+      "id": "faq-001",
+      "question": "Đăng ký học phần ở đâu?",
+      "keywords": [
+        "đăng ký môn học",
+        "cổng đăng ký học phần",
+        "đăng ký học phần ở đâu"
+      ],
+      "answer": "Sinh viên đăng ký học phần trên cổng thông tin đào tạo của trường trong thời gian được thông báo. Hãy kiểm tra thông báo học vụ trước mỗi học kỳ.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Đăng ký học phần",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-002",
+      "question": "Làm sao để rút học phần?",
+      "keywords": [
+        "rút môn",
+        "hủy học phần",
+        "làm sao để rút học phần"
+      ],
+      "answer": "Việc rút học phần phải thực hiện trong thời hạn quy định của học kỳ. Sinh viên xem hướng dẫn trên cổng đào tạo hoặc liên hệ Phòng Đào tạo.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Rút học phần",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-003",
+      "question": "Tra cứu học phí như thế nào?",
+      "keywords": [
+        "xem học phí",
+        "đóng học phí",
+        "tra cứu học phí như thế nào"
+      ],
+      "answer": "Sinh viên tra cứu số tiền và hạn đóng học phí trên cổng sinh viên. Chỉ thanh toán qua các kênh được nhà trường công bố.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Học phí",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-004",
+      "question": "Xin cấp lại mật khẩu cổng sinh viên?",
+      "keywords": [
+        "quên mật khẩu",
+        "đặt lại mật khẩu",
+        "xin cấp lại mật khẩu cổng sinh viên"
+      ],
+      "answer": "Hãy dùng chức năng quên mật khẩu trên cổng sinh viên. Nếu không khôi phục được, liên hệ bộ phận hỗ trợ tài khoản và mang theo giấy tờ xác minh.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Tài khoản sinh viên",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-005",
+      "question": "Email sinh viên được cấp như thế nào?",
+      "keywords": [
+        "mail sinh viên",
+        "tài khoản email",
+        "email sinh viên được cấp như thế nào"
+      ],
+      "answer": "Email sinh viên được cấp theo thông báo nhập học hoặc hướng dẫn của trường. Sinh viên nên đổi mật khẩu ngay lần đăng nhập đầu tiên.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Email sinh viên",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-006",
+      "question": "Kết nối Wi-Fi trong trường ra sao?",
+      "keywords": [
+        "wifi trường",
+        "mạng không dây",
+        "kết nối wi-fi trong trường ra sao"
+      ],
+      "answer": "Chọn mạng Wi-Fi dành cho sinh viên và đăng nhập bằng tài khoản được trường cấp. Không chia sẻ mật khẩu hoặc thông tin đăng nhập.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Wi-Fi",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-007",
+      "question": "Thư viện mở cửa khi nào?",
+      "keywords": [
+        "giờ mở cửa thư viện",
+        "thời gian thư viện",
+        "thư viện mở cửa khi nào"
+      ],
+      "answer": "Giờ mở cửa có thể thay đổi theo học kỳ. Sinh viên kiểm tra thông báo mới nhất của thư viện trước khi đến.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Thư viện",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-008",
+      "question": "Mượn sách thư viện cần gì?",
+      "keywords": [
+        "mượn sách",
+        "trả sách",
+        "mượn sách thư viện cần gì"
+      ],
+      "answer": "Sinh viên dùng thẻ sinh viên hoặc tài khoản thư viện để mượn sách và phải trả đúng hạn theo quy định.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Mượn sách",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-009",
+      "question": "Làm mất thẻ sinh viên phải làm sao?",
+      "keywords": [
+        "mất thẻ sinh viên",
+        "cấp lại thẻ",
+        "làm mất thẻ sinh viên phải làm sao"
+      ],
+      "answer": "Sinh viên cần báo mất và làm thủ tục cấp lại thẻ theo hướng dẫn của Phòng Công tác sinh viên. Không cho người khác sử dụng tài khoản gắn với thẻ.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Thẻ sinh viên",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-010",
+      "question": "Xin giấy xác nhận sinh viên ở đâu?",
+      "keywords": [
+        "giấy xác nhận sinh viên",
+        "xác nhận đang học",
+        "xin giấy xác nhận sinh viên ở đâu"
+      ],
+      "answer": "Sinh viên gửi yêu cầu xác nhận theo quy trình một cửa hoặc cổng dịch vụ sinh viên và theo dõi lịch nhận kết quả.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Xác nhận sinh viên",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-011",
+      "question": "Điều kiện nhận học bổng là gì?",
+      "keywords": [
+        "học bổng",
+        "xét học bổng",
+        "điều kiện nhận học bổng là gì"
+      ],
+      "answer": "Điều kiện học bổng phụ thuộc từng chương trình và học kỳ, thường xét kết quả học tập, rèn luyện và các tiêu chí kèm theo thông báo.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Học bổng",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-012",
+      "question": "Đăng ký bảo lưu kết quả học tập thế nào?",
+      "keywords": [
+        "bảo lưu",
+        "tạm dừng học",
+        "đăng ký bảo lưu kết quả học tập thế nào"
+      ],
+      "answer": "Sinh viên nộp đơn và minh chứng theo quy định cho đơn vị phụ trách trước thời hạn. Chỉ xem là được bảo lưu khi có quyết định chấp thuận.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Bảo lưu",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-013",
+      "question": "Xin nghỉ học tạm thời như thế nào?",
+      "keywords": [
+        "nghỉ học",
+        "tạm nghỉ",
+        "xin nghỉ học tạm thời như thế nào"
+      ],
+      "answer": "Sinh viên trao đổi với cố vấn học tập và nộp hồ sơ xin tạm nghỉ theo quy định hiện hành của trường.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Nghỉ học",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-014",
+      "question": "Tra cứu điểm ở đâu?",
+      "keywords": [
+        "xem điểm",
+        "bảng điểm",
+        "tra cứu điểm ở đâu"
+      ],
+      "answer": "Điểm học phần được tra cứu trên cổng sinh viên. Nếu phát hiện sai lệch, sinh viên phản hồi trong thời hạn công bố.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Tra cứu điểm",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-015",
+      "question": "Phúc khảo điểm thi như thế nào?",
+      "keywords": [
+        "phúc khảo",
+        "khiếu nại điểm",
+        "phúc khảo điểm thi như thế nào"
+      ],
+      "answer": "Sinh viên nộp đơn phúc khảo và lệ phí nếu có trong thời hạn được thông báo, sau đó theo dõi kết quả qua kênh chính thức.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Phúc khảo",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-016",
+      "question": "Điều kiện dự thi kết thúc học phần?",
+      "keywords": [
+        "điều kiện dự thi",
+        "cấm thi",
+        "điều kiện dự thi kết thúc học phần"
+      ],
+      "answer": "Điều kiện dự thi phụ thuộc quy chế đào tạo, chuyên cần và yêu cầu của học phần. Sinh viên cần xem đề cương và thông báo của giảng viên.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Điều kiện dự thi",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-017",
+      "question": "Điều kiện tốt nghiệp là gì?",
+      "keywords": [
+        "xét tốt nghiệp",
+        "chuẩn đầu ra",
+        "điều kiện tốt nghiệp là gì"
+      ],
+      "answer": "Sinh viên phải hoàn thành chương trình, đạt chuẩn đầu ra và các nghĩa vụ liên quan theo quy chế áp dụng cho khóa học.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Tốt nghiệp",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-018",
+      "question": "Xin bảng điểm chính thức ở đâu?",
+      "keywords": [
+        "cấp bảng điểm",
+        "bảng điểm có dấu",
+        "xin bảng điểm chính thức ở đâu"
+      ],
+      "answer": "Sinh viên đăng ký cấp bảng điểm tại bộ phận một cửa hoặc kênh dịch vụ được trường công bố và nhận theo lịch hẹn.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Bảng điểm",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-019",
+      "question": "Liên hệ Phòng Đào tạo bằng cách nào?",
+      "keywords": [
+        "phòng đào tạo",
+        "hỗ trợ học vụ",
+        "liên hệ phòng đào tạo bằng cách nào"
+      ],
+      "answer": "Sinh viên xem địa chỉ, giờ tiếp nhận và kênh liên hệ mới nhất trên website chính thức của trường trước khi gửi yêu cầu.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Phòng Đào tạo",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-020",
+      "question": "Liên hệ Phòng Công tác sinh viên ở đâu?",
+      "keywords": [
+        "công tác sinh viên",
+        "hỗ trợ sinh viên",
+        "liên hệ phòng công tác sinh viên ở đâu"
+      ],
+      "answer": "Thông tin liên hệ và giờ làm việc được công bố trên website trường. Khi liên hệ, sinh viên nên cung cấp mã số sinh viên và nội dung cần hỗ trợ.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Công tác sinh viên",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-021",
+      "question": "Đăng ký học lại như thế nào?",
+      "keywords": [
+        "học lại",
+        "đăng ký môn lại",
+        "đăng ký học lại như thế nào"
+      ],
+      "answer": "Sinh viên đăng ký học lại trong đợt đăng ký học phần và tuân theo điều kiện tiên quyết, sĩ số cùng quy định học phí.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Học lại",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-022",
+      "question": "Đăng ký học cải thiện ra sao?",
+      "keywords": [
+        "học cải thiện",
+        "cải thiện điểm",
+        "đăng ký học cải thiện ra sao"
+      ],
+      "answer": "Việc học cải thiện thực hiện theo quy chế của khóa học. Sinh viên cần kiểm tra môn được phép đăng ký và cách tính điểm sau cải thiện.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Học cải thiện",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-023",
+      "question": "Chuyển lớp học phần được không?",
+      "keywords": [
+        "đổi lớp học phần",
+        "chuyển lớp",
+        "chuyển lớp học phần được không"
+      ],
+      "answer": "Chuyển lớp chỉ thực hiện trong thời gian điều chỉnh đăng ký và khi lớp nhận còn chỗ, đáp ứng các điều kiện học vụ.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Chuyển lớp",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-024",
+      "question": "Xin cấp lại biên lai học phí?",
+      "keywords": [
+        "biên lai học phí",
+        "hóa đơn học phí",
+        "xin cấp lại biên lai học phí"
+      ],
+      "answer": "Sinh viên liên hệ bộ phận tài chính hoặc sử dụng kênh tra cứu hóa đơn được trường hướng dẫn, kèm thông tin giao dịch để đối chiếu.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Biên lai học phí",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-025",
+      "question": "Đăng ký ký túc xá như thế nào?",
+      "keywords": [
+        "ký túc xá",
+        "đăng ký nội trú",
+        "đăng ký ký túc xá như thế nào"
+      ],
+      "answer": "Theo dõi thông báo tiếp nhận của ký túc xá, chuẩn bị hồ sơ và đăng ký trong thời gian quy định. Chỗ ở phụ thuộc chỉ tiêu thực tế.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Ký túc xá",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-026",
+      "question": "Tham gia bảo hiểm y tế sinh viên thế nào?",
+      "keywords": [
+        "bảo hiểm y tế",
+        "BHYT sinh viên",
+        "tham gia bảo hiểm y tế sinh viên thế nào"
+      ],
+      "answer": "Sinh viên thực hiện đăng ký và đóng bảo hiểm theo thông báo từng năm học; cung cấp mã thẻ hiện có nếu thuộc diện được công nhận.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Bảo hiểm y tế",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-027",
+      "question": "Đánh giá điểm rèn luyện ở đâu?",
+      "keywords": [
+        "điểm rèn luyện",
+        "đánh giá rèn luyện",
+        "đánh giá điểm rèn luyện ở đâu"
+      ],
+      "answer": "Sinh viên tự đánh giá trên hệ thống hoặc biểu mẫu theo từng học kỳ, cung cấp minh chứng và theo dõi kết quả duyệt của lớp, khoa.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Điểm rèn luyện",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-028",
+      "question": "Xin giấy giới thiệu thực tập như thế nào?",
+      "keywords": [
+        "giấy giới thiệu thực tập",
+        "xác nhận thực tập",
+        "xin giấy giới thiệu thực tập như thế nào"
+      ],
+      "answer": "Sinh viên làm theo hướng dẫn của khoa hoặc đơn vị phụ trách thực tập, cung cấp thông tin doanh nghiệp và thời gian thực tập.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Thực tập",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-029",
+      "question": "Đăng ký đề tài khóa luận ra sao?",
+      "keywords": [
+        "khóa luận tốt nghiệp",
+        "đồ án tốt nghiệp",
+        "đăng ký đề tài khóa luận ra sao"
+      ],
+      "answer": "Sinh viên theo dõi kế hoạch của khoa, đáp ứng điều kiện thực hiện và đăng ký đề tài, giảng viên hướng dẫn đúng thời hạn.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Khóa luận",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-030",
+      "question": "Cập nhật thông tin cá nhân ở đâu?",
+      "keywords": [
+        "đổi thông tin cá nhân",
+        "sửa số điện thoại",
+        "cập nhật thông tin cá nhân ở đâu"
+      ],
+      "answer": "Sinh viên cập nhật các trường được phép trên cổng sinh viên; với thông tin định danh, cần gửi yêu cầu và giấy tờ minh chứng cho đơn vị phụ trách.",
+      "source": {
+        "type": "sample",
+        "title": "FAQ mẫu UTH - Thông tin cá nhân",
+        "url": null
+      },
+      "updated_at": "2026-08-09"
+    },
+    {
+      "id": "faq-031",
+      "question": "Sinh viên cần làm gì về học phần tiên quyết?",
+      "keywords": [
+        "học phần tiên quyết",
+        "hướng dẫn học phần tiên quyết",
+        "tra cứu học phần tiên quyết"
+      ],
+      "answer": "Nội dung học phần tiên quyết phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-032",
+      "question": "Tra cứu thông tin học phần song hành như thế nào?",
+      "keywords": [
+        "học phần song hành",
+        "hướng dẫn học phần song hành",
+        "tra cứu học phần song hành"
+      ],
+      "answer": "Nội dung học phần song hành phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-033",
+      "question": "Hướng dẫn về đăng ký vượt tín chỉ ở đâu?",
+      "keywords": [
+        "đăng ký vượt tín chỉ",
+        "hướng dẫn đăng ký vượt tín chỉ",
+        "tra cứu đăng ký vượt tín chỉ"
+      ],
+      "answer": "Nội dung đăng ký vượt tín chỉ phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-034",
+      "question": "Sinh viên cần làm gì về sĩ số lớp học phần?",
+      "keywords": [
+        "sĩ số lớp học phần",
+        "hướng dẫn sĩ số lớp học phần",
+        "tra cứu sĩ số lớp học phần"
+      ],
+      "answer": "Nội dung sĩ số lớp học phần phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-035",
+      "question": "Tra cứu thông tin điều chỉnh học phần như thế nào?",
+      "keywords": [
+        "điều chỉnh học phần",
+        "hướng dẫn điều chỉnh học phần",
+        "tra cứu điều chỉnh học phần"
+      ],
+      "answer": "Nội dung điều chỉnh học phần phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-036",
+      "question": "Hướng dẫn về trùng lịch học phần ở đâu?",
+      "keywords": [
+        "trùng lịch học phần",
+        "hướng dẫn trùng lịch học phần",
+        "tra cứu trùng lịch học phần"
+      ],
+      "answer": "Nội dung trùng lịch học phần phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-037",
+      "question": "Sinh viên cần làm gì về học phần không mở?",
+      "keywords": [
+        "học phần không mở",
+        "hướng dẫn học phần không mở",
+        "tra cứu học phần không mở"
+      ],
+      "answer": "Nội dung học phần không mở phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-038",
+      "question": "Tra cứu thông tin học phần khác ngành như thế nào?",
+      "keywords": [
+        "học phần khác ngành",
+        "hướng dẫn học phần khác ngành",
+        "tra cứu học phần khác ngành"
+      ],
+      "answer": "Nội dung học phần khác ngành phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-039",
+      "question": "Hướng dẫn về học phần tự chọn ở đâu?",
+      "keywords": [
+        "học phần tự chọn",
+        "hướng dẫn học phần tự chọn",
+        "tra cứu học phần tự chọn"
+      ],
+      "answer": "Nội dung học phần tự chọn phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-040",
+      "question": "Sinh viên cần làm gì về học phần bắt buộc?",
+      "keywords": [
+        "học phần bắt buộc",
+        "hướng dẫn học phần bắt buộc",
+        "tra cứu học phần bắt buộc"
+      ],
+      "answer": "Nội dung học phần bắt buộc phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-041",
+      "question": "Tra cứu thông tin lớp thực hành như thế nào?",
+      "keywords": [
+        "lớp thực hành",
+        "hướng dẫn lớp thực hành",
+        "tra cứu lớp thực hành"
+      ],
+      "answer": "Nội dung lớp thực hành phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-042",
+      "question": "Hướng dẫn về mã học phần ở đâu?",
+      "keywords": [
+        "mã học phần",
+        "hướng dẫn mã học phần",
+        "tra cứu mã học phần"
+      ],
+      "answer": "Nội dung mã học phần phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-043",
+      "question": "Sinh viên cần làm gì về chương trình đào tạo?",
+      "keywords": [
+        "chương trình đào tạo",
+        "hướng dẫn chương trình đào tạo",
+        "tra cứu chương trình đào tạo"
+      ],
+      "answer": "Nội dung chương trình đào tạo phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-044",
+      "question": "Tra cứu thông tin hủy đăng ký học kỳ như thế nào?",
+      "keywords": [
+        "hủy đăng ký học kỳ",
+        "hướng dẫn hủy đăng ký học kỳ",
+        "tra cứu hủy đăng ký học kỳ"
+      ],
+      "answer": "Nội dung hủy đăng ký học kỳ phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-045",
+      "question": "Hướng dẫn về đăng ký môn bằng điện thoại ở đâu?",
+      "keywords": [
+        "đăng ký môn bằng điện thoại",
+        "hướng dẫn đăng ký môn bằng điện thoại",
+        "tra cứu đăng ký môn bằng điện thoại"
+      ],
+      "answer": "Nội dung đăng ký môn bằng điện thoại phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-046",
+      "question": "Sinh viên cần làm gì về xác nhận đăng ký học phần?",
+      "keywords": [
+        "xác nhận đăng ký học phần",
+        "hướng dẫn xác nhận đăng ký học phần",
+        "tra cứu xác nhận đăng ký học phần"
+      ],
+      "answer": "Nội dung xác nhận đăng ký học phần phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-047",
+      "question": "Sinh viên cần làm gì về học phí theo tín chỉ?",
+      "keywords": [
+        "học phí theo tín chỉ",
+        "hướng dẫn học phí theo tín chỉ",
+        "tra cứu học phí theo tín chỉ"
+      ],
+      "answer": "Nội dung học phí theo tín chỉ phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-048",
+      "question": "Tra cứu thông tin kênh đóng học phí như thế nào?",
+      "keywords": [
+        "kênh đóng học phí",
+        "hướng dẫn kênh đóng học phí",
+        "tra cứu kênh đóng học phí"
+      ],
+      "answer": "Nội dung kênh đóng học phí phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-049",
+      "question": "Hướng dẫn về giao dịch học phí ở đâu?",
+      "keywords": [
+        "giao dịch học phí",
+        "hướng dẫn giao dịch học phí",
+        "tra cứu giao dịch học phí"
+      ],
+      "answer": "Nội dung giao dịch học phí phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-050",
+      "question": "Sinh viên cần làm gì về trễ hạn học phí?",
+      "keywords": [
+        "trễ hạn học phí",
+        "hướng dẫn trễ hạn học phí",
+        "tra cứu trễ hạn học phí"
+      ],
+      "answer": "Nội dung trễ hạn học phí phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-051",
+      "question": "Tra cứu thông tin đóng học phí nhiều lần như thế nào?",
+      "keywords": [
+        "đóng học phí nhiều lần",
+        "hướng dẫn đóng học phí nhiều lần",
+        "tra cứu đóng học phí nhiều lần"
+      ],
+      "answer": "Nội dung đóng học phí nhiều lần phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-052",
+      "question": "Hướng dẫn về học phí môn học lại ở đâu?",
+      "keywords": [
+        "học phí môn học lại",
+        "hướng dẫn học phí môn học lại",
+        "tra cứu học phí môn học lại"
+      ],
+      "answer": "Nội dung học phí môn học lại phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-053",
+      "question": "Sinh viên cần làm gì về học phí cải thiện?",
+      "keywords": [
+        "học phí cải thiện",
+        "hướng dẫn học phí cải thiện",
+        "tra cứu học phí cải thiện"
+      ],
+      "answer": "Nội dung học phí cải thiện phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-054",
+      "question": "Tra cứu thông tin khoản thu bảo hiểm như thế nào?",
+      "keywords": [
+        "khoản thu bảo hiểm",
+        "hướng dẫn khoản thu bảo hiểm",
+        "tra cứu khoản thu bảo hiểm"
+      ],
+      "answer": "Nội dung khoản thu bảo hiểm phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-055",
+      "question": "Hướng dẫn về sai nội dung chuyển khoản ở đâu?",
+      "keywords": [
+        "sai nội dung chuyển khoản",
+        "hướng dẫn sai nội dung chuyển khoản",
+        "tra cứu sai nội dung chuyển khoản"
+      ],
+      "answer": "Nội dung sai nội dung chuyển khoản phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-056",
+      "question": "Sinh viên cần làm gì về học phí ghi nhận thiếu?",
+      "keywords": [
+        "học phí ghi nhận thiếu",
+        "hướng dẫn học phí ghi nhận thiếu",
+        "tra cứu học phí ghi nhận thiếu"
+      ],
+      "answer": "Nội dung học phí ghi nhận thiếu phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-057",
+      "question": "Tra cứu thông tin hoàn học phí rút môn như thế nào?",
+      "keywords": [
+        "hoàn học phí rút môn",
+        "hướng dẫn hoàn học phí rút môn",
+        "tra cứu hoàn học phí rút môn"
+      ],
+      "answer": "Nội dung hoàn học phí rút môn phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-058",
+      "question": "Hướng dẫn về công nợ sinh viên ở đâu?",
+      "keywords": [
+        "công nợ sinh viên",
+        "hướng dẫn công nợ sinh viên",
+        "tra cứu công nợ sinh viên"
+      ],
+      "answer": "Nội dung công nợ sinh viên phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-059",
+      "question": "Sinh viên cần làm gì về lệ phí giấy tờ?",
+      "keywords": [
+        "lệ phí giấy tờ",
+        "hướng dẫn lệ phí giấy tờ",
+        "tra cứu lệ phí giấy tờ"
+      ],
+      "answer": "Nội dung lệ phí giấy tờ phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-060",
+      "question": "Sinh viên cần làm gì về tra cứu lịch thi?",
+      "keywords": [
+        "tra cứu lịch thi",
+        "hướng dẫn tra cứu lịch thi",
+        "tra cứu tra cứu lịch thi"
+      ],
+      "answer": "Nội dung tra cứu lịch thi phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-061",
+      "question": "Tra cứu thông tin trùng lịch thi như thế nào?",
+      "keywords": [
+        "trùng lịch thi",
+        "hướng dẫn trùng lịch thi",
+        "tra cứu trùng lịch thi"
+      ],
+      "answer": "Nội dung trùng lịch thi phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-062",
+      "question": "Hướng dẫn về quên thẻ khi thi ở đâu?",
+      "keywords": [
+        "quên thẻ khi thi",
+        "hướng dẫn quên thẻ khi thi",
+        "tra cứu quên thẻ khi thi"
+      ],
+      "answer": "Nội dung quên thẻ khi thi phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-063",
+      "question": "Sinh viên cần làm gì về vắng thi có phép?",
+      "keywords": [
+        "vắng thi có phép",
+        "hướng dẫn vắng thi có phép",
+        "tra cứu vắng thi có phép"
+      ],
+      "answer": "Nội dung vắng thi có phép phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-064",
+      "question": "Tra cứu thông tin điểm chuyên cần như thế nào?",
+      "keywords": [
+        "điểm chuyên cần",
+        "hướng dẫn điểm chuyên cần",
+        "tra cứu điểm chuyên cần"
+      ],
+      "answer": "Nội dung điểm chuyên cần phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-065",
+      "question": "Hướng dẫn về quy đổi điểm chữ ở đâu?",
+      "keywords": [
+        "quy đổi điểm chữ",
+        "hướng dẫn quy đổi điểm chữ",
+        "tra cứu quy đổi điểm chữ"
+      ],
+      "answer": "Nội dung quy đổi điểm chữ phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-066",
+      "question": "Sinh viên cần làm gì về thời gian công bố điểm?",
+      "keywords": [
+        "thời gian công bố điểm",
+        "hướng dẫn thời gian công bố điểm",
+        "tra cứu thời gian công bố điểm"
+      ],
+      "answer": "Nội dung thời gian công bố điểm phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-067",
+      "question": "Tra cứu thông tin sai lệch điểm như thế nào?",
+      "keywords": [
+        "sai lệch điểm",
+        "hướng dẫn sai lệch điểm",
+        "tra cứu sai lệch điểm"
+      ],
+      "answer": "Nội dung sai lệch điểm phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-068",
+      "question": "Hướng dẫn về kết quả phúc khảo ở đâu?",
+      "keywords": [
+        "kết quả phúc khảo",
+        "hướng dẫn kết quả phúc khảo",
+        "tra cứu kết quả phúc khảo"
+      ],
+      "answer": "Nội dung kết quả phúc khảo phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-069",
+      "question": "Sinh viên cần làm gì về phúc khảo điểm quá trình?",
+      "keywords": [
+        "phúc khảo điểm quá trình",
+        "hướng dẫn phúc khảo điểm quá trình",
+        "tra cứu phúc khảo điểm quá trình"
+      ],
+      "answer": "Nội dung phúc khảo điểm quá trình phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-070",
+      "question": "Tra cứu thông tin chuẩn bị thi trực tuyến như thế nào?",
+      "keywords": [
+        "chuẩn bị thi trực tuyến",
+        "hướng dẫn chuẩn bị thi trực tuyến",
+        "tra cứu chuẩn bị thi trực tuyến"
+      ],
+      "answer": "Nội dung chuẩn bị thi trực tuyến phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-071",
+      "question": "Sinh viên cần làm gì về thời khóa biểu cá nhân?",
+      "keywords": [
+        "thời khóa biểu cá nhân",
+        "hướng dẫn thời khóa biểu cá nhân",
+        "tra cứu thời khóa biểu cá nhân"
+      ],
+      "answer": "Nội dung thời khóa biểu cá nhân phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-072",
+      "question": "Tra cứu thông tin thay đổi lịch học như thế nào?",
+      "keywords": [
+        "thay đổi lịch học",
+        "hướng dẫn thay đổi lịch học",
+        "tra cứu thay đổi lịch học"
+      ],
+      "answer": "Nội dung thay đổi lịch học phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-073",
+      "question": "Hướng dẫn về tra phòng học ở đâu?",
+      "keywords": [
+        "tra phòng học",
+        "hướng dẫn tra phòng học",
+        "tra cứu tra phòng học"
+      ],
+      "answer": "Nội dung tra phòng học phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-074",
+      "question": "Sinh viên cần làm gì về hủy buổi học?",
+      "keywords": [
+        "hủy buổi học",
+        "hướng dẫn hủy buổi học",
+        "tra cứu hủy buổi học"
+      ],
+      "answer": "Nội dung hủy buổi học phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-075",
+      "question": "Tra cứu thông tin lịch học bù như thế nào?",
+      "keywords": [
+        "lịch học bù",
+        "hướng dẫn lịch học bù",
+        "tra cứu lịch học bù"
+      ],
+      "answer": "Nội dung lịch học bù phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-076",
+      "question": "Hướng dẫn về xin nghỉ một buổi ở đâu?",
+      "keywords": [
+        "xin nghỉ một buổi",
+        "hướng dẫn xin nghỉ một buổi",
+        "tra cứu xin nghỉ một buổi"
+      ],
+      "answer": "Nội dung xin nghỉ một buổi phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-077",
+      "question": "Sinh viên cần làm gì về đi học muộn?",
+      "keywords": [
+        "đi học muộn",
+        "hướng dẫn đi học muộn",
+        "tra cứu đi học muộn"
+      ],
+      "answer": "Nội dung đi học muộn phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-078",
+      "question": "Tra cứu thông tin lịch thực hành như thế nào?",
+      "keywords": [
+        "lịch thực hành",
+        "hướng dẫn lịch thực hành",
+        "tra cứu lịch thực hành"
+      ],
+      "answer": "Nội dung lịch thực hành phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-079",
+      "question": "Hướng dẫn về lịch tuần và học kỳ ở đâu?",
+      "keywords": [
+        "lịch tuần và học kỳ",
+        "hướng dẫn lịch tuần và học kỳ",
+        "tra cứu lịch tuần và học kỳ"
+      ],
+      "answer": "Nội dung lịch tuần và học kỳ phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-080",
+      "question": "Sinh viên cần làm gì về thời khóa biểu chưa cập nhật?",
+      "keywords": [
+        "thời khóa biểu chưa cập nhật",
+        "hướng dẫn thời khóa biểu chưa cập nhật",
+        "tra cứu thời khóa biểu chưa cập nhật"
+      ],
+      "answer": "Nội dung thời khóa biểu chưa cập nhật phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-081",
+      "question": "Tra cứu thông tin đổi ca học bù như thế nào?",
+      "keywords": [
+        "đổi ca học bù",
+        "hướng dẫn đổi ca học bù",
+        "tra cứu đổi ca học bù"
+      ],
+      "answer": "Nội dung đổi ca học bù phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-082",
+      "question": "Hướng dẫn về nghỉ lễ học bù ở đâu?",
+      "keywords": [
+        "nghỉ lễ học bù",
+        "hướng dẫn nghỉ lễ học bù",
+        "tra cứu nghỉ lễ học bù"
+      ],
+      "answer": "Nội dung nghỉ lễ học bù phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-083",
+      "question": "Sinh viên cần làm gì về tài khoản bị khóa?",
+      "keywords": [
+        "tài khoản bị khóa",
+        "hướng dẫn tài khoản bị khóa",
+        "tra cứu tài khoản bị khóa"
+      ],
+      "answer": "Nội dung tài khoản bị khóa phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-084",
+      "question": "Tra cứu thông tin đổi mật khẩu cổng sinh viên như thế nào?",
+      "keywords": [
+        "đổi mật khẩu cổng sinh viên",
+        "hướng dẫn đổi mật khẩu cổng sinh viên",
+        "tra cứu đổi mật khẩu cổng sinh viên"
+      ],
+      "answer": "Nội dung đổi mật khẩu cổng sinh viên phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-085",
+      "question": "Hướng dẫn về không nhận mã otp ở đâu?",
+      "keywords": [
+        "không nhận mã otp",
+        "hướng dẫn không nhận mã otp",
+        "tra cứu không nhận mã otp"
+      ],
+      "answer": "Nội dung không nhận mã otp phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-086",
+      "question": "Sinh viên cần làm gì về lỗi cổng sinh viên?",
+      "keywords": [
+        "lỗi cổng sinh viên",
+        "hướng dẫn lỗi cổng sinh viên",
+        "tra cứu lỗi cổng sinh viên"
+      ],
+      "answer": "Nội dung lỗi cổng sinh viên phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-087",
+      "question": "Tra cứu thông tin đăng nhập nhiều thiết bị như thế nào?",
+      "keywords": [
+        "đăng nhập nhiều thiết bị",
+        "hướng dẫn đăng nhập nhiều thiết bị",
+        "tra cứu đăng nhập nhiều thiết bị"
+      ],
+      "answer": "Nội dung đăng nhập nhiều thiết bị phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-088",
+      "question": "Hướng dẫn về đăng xuất thiết bị cũ ở đâu?",
+      "keywords": [
+        "đăng xuất thiết bị cũ",
+        "hướng dẫn đăng xuất thiết bị cũ",
+        "tra cứu đăng xuất thiết bị cũ"
+      ],
+      "answer": "Nội dung đăng xuất thiết bị cũ phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-089",
+      "question": "Sinh viên cần làm gì về thông báo trên cổng sinh viên?",
+      "keywords": [
+        "thông báo trên cổng sinh viên",
+        "hướng dẫn thông báo trên cổng sinh viên",
+        "tra cứu thông báo trên cổng sinh viên"
+      ],
+      "answer": "Nội dung thông báo trên cổng sinh viên phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-090",
+      "question": "Sinh viên cần làm gì về tra cứu sách thư viện?",
+      "keywords": [
+        "tra cứu sách thư viện",
+        "hướng dẫn tra cứu sách thư viện",
+        "tra cứu tra cứu sách thư viện"
+      ],
+      "answer": "Nội dung tra cứu sách thư viện phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-091",
+      "question": "Tra cứu thông tin gia hạn sách như thế nào?",
+      "keywords": [
+        "gia hạn sách",
+        "hướng dẫn gia hạn sách",
+        "tra cứu gia hạn sách"
+      ],
+      "answer": "Nội dung gia hạn sách phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-092",
+      "question": "Hướng dẫn về mất sách thư viện ở đâu?",
+      "keywords": [
+        "mất sách thư viện",
+        "hướng dẫn mất sách thư viện",
+        "tra cứu mất sách thư viện"
+      ],
+      "answer": "Nội dung mất sách thư viện phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-093",
+      "question": "Sinh viên cần làm gì về tài liệu điện tử?",
+      "keywords": [
+        "tài liệu điện tử",
+        "hướng dẫn tài liệu điện tử",
+        "tra cứu tài liệu điện tử"
+      ],
+      "answer": "Nội dung tài liệu điện tử phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-094",
+      "question": "Tra cứu thông tin tải giáo trình như thế nào?",
+      "keywords": [
+        "tải giáo trình",
+        "hướng dẫn tải giáo trình",
+        "tra cứu tải giáo trình"
+      ],
+      "answer": "Nội dung tải giáo trình phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-095",
+      "question": "Hướng dẫn về đặt trước sách ở đâu?",
+      "keywords": [
+        "đặt trước sách",
+        "hướng dẫn đặt trước sách",
+        "tra cứu đặt trước sách"
+      ],
+      "answer": "Nội dung đặt trước sách phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-096",
+      "question": "Sinh viên cần làm gì về lịch sử mượn sách?",
+      "keywords": [
+        "lịch sử mượn sách",
+        "hướng dẫn lịch sử mượn sách",
+        "tra cứu lịch sử mượn sách"
+      ],
+      "answer": "Nội dung lịch sử mượn sách phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-097",
+      "question": "Tra cứu thông tin phòng tự học thư viện như thế nào?",
+      "keywords": [
+        "phòng tự học thư viện",
+        "hướng dẫn phòng tự học thư viện",
+        "tra cứu phòng tự học thư viện"
+      ],
+      "answer": "Nội dung phòng tự học thư viện phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-098",
+      "question": "Sinh viên cần làm gì về hồ sơ học bổng?",
+      "keywords": [
+        "hồ sơ học bổng",
+        "hướng dẫn hồ sơ học bổng",
+        "tra cứu hồ sơ học bổng"
+      ],
+      "answer": "Nội dung hồ sơ học bổng phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-099",
+      "question": "Tra cứu thông tin kết quả học bổng như thế nào?",
+      "keywords": [
+        "kết quả học bổng",
+        "hướng dẫn kết quả học bổng",
+        "tra cứu kết quả học bổng"
+      ],
+      "answer": "Nội dung kết quả học bổng phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-100",
+      "question": "Hướng dẫn về hỗ trợ sinh viên khó khăn ở đâu?",
+      "keywords": [
+        "hỗ trợ sinh viên khó khăn",
+        "hướng dẫn hỗ trợ sinh viên khó khăn",
+        "tra cứu hỗ trợ sinh viên khó khăn"
+      ],
+      "answer": "Nội dung hỗ trợ sinh viên khó khăn phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-101",
+      "question": "Sinh viên cần làm gì về tư vấn tâm lý sinh viên?",
+      "keywords": [
+        "tư vấn tâm lý sinh viên",
+        "hướng dẫn tư vấn tâm lý sinh viên",
+        "tra cứu tư vấn tâm lý sinh viên"
+      ],
+      "answer": "Nội dung tư vấn tâm lý sinh viên phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-102",
+      "question": "Sinh viên cần làm gì về minh chứng rèn luyện?",
+      "keywords": [
+        "minh chứng rèn luyện",
+        "hướng dẫn minh chứng rèn luyện",
+        "tra cứu minh chứng rèn luyện"
+      ],
+      "answer": "Nội dung minh chứng rèn luyện phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-103",
+      "question": "Tra cứu thông tin thiếu điểm rèn luyện như thế nào?",
+      "keywords": [
+        "thiếu điểm rèn luyện",
+        "hướng dẫn thiếu điểm rèn luyện",
+        "tra cứu thiếu điểm rèn luyện"
+      ],
+      "answer": "Nội dung thiếu điểm rèn luyện phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-104",
+      "question": "Hướng dẫn về đăng ký câu lạc bộ ở đâu?",
+      "keywords": [
+        "đăng ký câu lạc bộ",
+        "hướng dẫn đăng ký câu lạc bộ",
+        "tra cứu đăng ký câu lạc bộ"
+      ],
+      "answer": "Nội dung đăng ký câu lạc bộ phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-105",
+      "question": "Sinh viên cần làm gì về hoạt động tình nguyện?",
+      "keywords": [
+        "hoạt động tình nguyện",
+        "hướng dẫn hoạt động tình nguyện",
+        "tra cứu hoạt động tình nguyện"
+      ],
+      "answer": "Nội dung hoạt động tình nguyện phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-106",
+      "question": "Tra cứu thông tin sự kiện sinh viên như thế nào?",
+      "keywords": [
+        "sự kiện sinh viên",
+        "hướng dẫn sự kiện sinh viên",
+        "tra cứu sự kiện sinh viên"
+      ],
+      "answer": "Nội dung sự kiện sinh viên phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-107",
+      "question": "Hướng dẫn về ban cán sự lớp ở đâu?",
+      "keywords": [
+        "ban cán sự lớp",
+        "hướng dẫn ban cán sự lớp",
+        "tra cứu ban cán sự lớp"
+      ],
+      "answer": "Nội dung ban cán sự lớp phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-108",
+      "question": "Sinh viên cần làm gì về ảnh hưởng điểm rèn luyện?",
+      "keywords": [
+        "ảnh hưởng điểm rèn luyện",
+        "hướng dẫn ảnh hưởng điểm rèn luyện",
+        "tra cứu ảnh hưởng điểm rèn luyện"
+      ],
+      "answer": "Nội dung ảnh hưởng điểm rèn luyện phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-109",
+      "question": "Tra cứu thông tin bổ sung minh chứng muộn như thế nào?",
+      "keywords": [
+        "bổ sung minh chứng muộn",
+        "hướng dẫn bổ sung minh chứng muộn",
+        "tra cứu bổ sung minh chứng muộn"
+      ],
+      "answer": "Nội dung bổ sung minh chứng muộn phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-110",
+      "question": "Hướng dẫn về chứng nhận hoạt động ở đâu?",
+      "keywords": [
+        "chứng nhận hoạt động",
+        "hướng dẫn chứng nhận hoạt động",
+        "tra cứu chứng nhận hoạt động"
+      ],
+      "answer": "Nội dung chứng nhận hoạt động phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-111",
+      "question": "Sinh viên cần làm gì về điều kiện thực tập?",
+      "keywords": [
+        "điều kiện thực tập",
+        "hướng dẫn điều kiện thực tập",
+        "tra cứu điều kiện thực tập"
+      ],
+      "answer": "Nội dung điều kiện thực tập phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-112",
+      "question": "Tra cứu thông tin tự tìm nơi thực tập như thế nào?",
+      "keywords": [
+        "tự tìm nơi thực tập",
+        "hướng dẫn tự tìm nơi thực tập",
+        "tra cứu tự tìm nơi thực tập"
+      ],
+      "answer": "Nội dung tự tìm nơi thực tập phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-113",
+      "question": "Hướng dẫn về đề cương thực tập ở đâu?",
+      "keywords": [
+        "đề cương thực tập",
+        "hướng dẫn đề cương thực tập",
+        "tra cứu đề cương thực tập"
+      ],
+      "answer": "Nội dung đề cương thực tập phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-114",
+      "question": "Sinh viên cần làm gì về nộp báo cáo thực tập?",
+      "keywords": [
+        "nộp báo cáo thực tập",
+        "hướng dẫn nộp báo cáo thực tập",
+        "tra cứu nộp báo cáo thực tập"
+      ],
+      "answer": "Nội dung nộp báo cáo thực tập phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-115",
+      "question": "Tra cứu thông tin đổi doanh nghiệp thực tập như thế nào?",
+      "keywords": [
+        "đổi doanh nghiệp thực tập",
+        "hướng dẫn đổi doanh nghiệp thực tập",
+        "tra cứu đổi doanh nghiệp thực tập"
+      ],
+      "answer": "Nội dung đổi doanh nghiệp thực tập phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-116",
+      "question": "Hướng dẫn về giảng viên hướng dẫn thực tập ở đâu?",
+      "keywords": [
+        "giảng viên hướng dẫn thực tập",
+        "hướng dẫn giảng viên hướng dẫn thực tập",
+        "tra cứu giảng viên hướng dẫn thực tập"
+      ],
+      "answer": "Nội dung giảng viên hướng dẫn thực tập phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-117",
+      "question": "Sinh viên cần làm gì về thông tin tuyển dụng?",
+      "keywords": [
+        "thông tin tuyển dụng",
+        "hướng dẫn thông tin tuyển dụng",
+        "tra cứu thông tin tuyển dụng"
+      ],
+      "answer": "Nội dung thông tin tuyển dụng phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-118",
+      "question": "Tra cứu thông tin ngày hội việc làm như thế nào?",
+      "keywords": [
+        "ngày hội việc làm",
+        "hướng dẫn ngày hội việc làm",
+        "tra cứu ngày hội việc làm"
+      ],
+      "answer": "Nội dung ngày hội việc làm phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-119",
+      "question": "Hướng dẫn về xác nhận hoàn thành thực tập ở đâu?",
+      "keywords": [
+        "xác nhận hoàn thành thực tập",
+        "hướng dẫn xác nhận hoàn thành thực tập",
+        "tra cứu xác nhận hoàn thành thực tập"
+      ],
+      "answer": "Nội dung xác nhận hoàn thành thực tập phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-120",
+      "question": "Sinh viên cần làm gì về điều kiện làm đồ án?",
+      "keywords": [
+        "điều kiện làm đồ án",
+        "hướng dẫn điều kiện làm đồ án",
+        "tra cứu điều kiện làm đồ án"
+      ],
+      "answer": "Nội dung điều kiện làm đồ án phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-121",
+      "question": "Tra cứu thông tin chọn giảng viên hướng dẫn như thế nào?",
+      "keywords": [
+        "chọn giảng viên hướng dẫn",
+        "hướng dẫn chọn giảng viên hướng dẫn",
+        "tra cứu chọn giảng viên hướng dẫn"
+      ],
+      "answer": "Nội dung chọn giảng viên hướng dẫn phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-122",
+      "question": "Hướng dẫn về đổi đề tài khóa luận ở đâu?",
+      "keywords": [
+        "đổi đề tài khóa luận",
+        "hướng dẫn đổi đề tài khóa luận",
+        "tra cứu đổi đề tài khóa luận"
+      ],
+      "answer": "Nội dung đổi đề tài khóa luận phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-123",
+      "question": "Sinh viên cần làm gì về đổi giảng viên hướng dẫn?",
+      "keywords": [
+        "đổi giảng viên hướng dẫn",
+        "hướng dẫn đổi giảng viên hướng dẫn",
+        "tra cứu đổi giảng viên hướng dẫn"
+      ],
+      "answer": "Nội dung đổi giảng viên hướng dẫn phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-124",
+      "question": "Tra cứu thông tin mẫu trình bày khóa luận như thế nào?",
+      "keywords": [
+        "mẫu trình bày khóa luận",
+        "hướng dẫn mẫu trình bày khóa luận",
+        "tra cứu mẫu trình bày khóa luận"
+      ],
+      "answer": "Nội dung mẫu trình bày khóa luận phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-125",
+      "question": "Hướng dẫn về nộp bản mềm đồ án ở đâu?",
+      "keywords": [
+        "nộp bản mềm đồ án",
+        "hướng dẫn nộp bản mềm đồ án",
+        "tra cứu nộp bản mềm đồ án"
+      ],
+      "answer": "Nội dung nộp bản mềm đồ án phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-126",
+      "question": "Sinh viên cần làm gì về nộp bản in khóa luận?",
+      "keywords": [
+        "nộp bản in khóa luận",
+        "hướng dẫn nộp bản in khóa luận",
+        "tra cứu nộp bản in khóa luận"
+      ],
+      "answer": "Nội dung nộp bản in khóa luận phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-127",
+      "question": "Tra cứu thông tin lịch bảo vệ đồ án như thế nào?",
+      "keywords": [
+        "lịch bảo vệ đồ án",
+        "hướng dẫn lịch bảo vệ đồ án",
+        "tra cứu lịch bảo vệ đồ án"
+      ],
+      "answer": "Nội dung lịch bảo vệ đồ án phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-128",
+      "question": "Hướng dẫn về chuẩn bị bảo vệ khóa luận ở đâu?",
+      "keywords": [
+        "chuẩn bị bảo vệ khóa luận",
+        "hướng dẫn chuẩn bị bảo vệ khóa luận",
+        "tra cứu chuẩn bị bảo vệ khóa luận"
+      ],
+      "answer": "Nội dung chuẩn bị bảo vệ khóa luận phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-129",
+      "question": "Sinh viên cần làm gì về điểm đồ án tốt nghiệp?",
+      "keywords": [
+        "điểm đồ án tốt nghiệp",
+        "hướng dẫn điểm đồ án tốt nghiệp",
+        "tra cứu điểm đồ án tốt nghiệp"
+      ],
+      "answer": "Nội dung điểm đồ án tốt nghiệp phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-130",
+      "question": "Tra cứu thông tin thủ tục xét tốt nghiệp như thế nào?",
+      "keywords": [
+        "thủ tục xét tốt nghiệp",
+        "hướng dẫn thủ tục xét tốt nghiệp",
+        "tra cứu thủ tục xét tốt nghiệp"
+      ],
+      "answer": "Nội dung thủ tục xét tốt nghiệp phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-131",
+      "question": "Hướng dẫn về kiểm tra nợ môn ở đâu?",
+      "keywords": [
+        "kiểm tra nợ môn",
+        "hướng dẫn kiểm tra nợ môn",
+        "tra cứu kiểm tra nợ môn"
+      ],
+      "answer": "Nội dung kiểm tra nợ môn phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-132",
+      "question": "Sinh viên cần làm gì về lịch nhận bằng tốt nghiệp?",
+      "keywords": [
+        "lịch nhận bằng tốt nghiệp",
+        "hướng dẫn lịch nhận bằng tốt nghiệp",
+        "tra cứu lịch nhận bằng tốt nghiệp"
+      ],
+      "answer": "Nội dung lịch nhận bằng tốt nghiệp phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-133",
+      "question": "Sinh viên cần làm gì về cảnh báo học vụ?",
+      "keywords": [
+        "cảnh báo học vụ",
+        "hướng dẫn cảnh báo học vụ",
+        "tra cứu cảnh báo học vụ"
+      ],
+      "answer": "Nội dung cảnh báo học vụ phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-134",
+      "question": "Tra cứu thông tin tra cứu mức cảnh báo như thế nào?",
+      "keywords": [
+        "tra cứu mức cảnh báo",
+        "hướng dẫn tra cứu mức cảnh báo",
+        "tra cứu tra cứu mức cảnh báo"
+      ],
+      "answer": "Nội dung tra cứu mức cảnh báo phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-135",
+      "question": "Hướng dẫn về khắc phục cảnh báo học vụ ở đâu?",
+      "keywords": [
+        "khắc phục cảnh báo học vụ",
+        "hướng dẫn khắc phục cảnh báo học vụ",
+        "tra cứu khắc phục cảnh báo học vụ"
+      ],
+      "answer": "Nội dung khắc phục cảnh báo học vụ phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-136",
+      "question": "Sinh viên cần làm gì về thời hạn bảo lưu?",
+      "keywords": [
+        "thời hạn bảo lưu",
+        "hướng dẫn thời hạn bảo lưu",
+        "tra cứu thời hạn bảo lưu"
+      ],
+      "answer": "Nội dung thời hạn bảo lưu phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-137",
+      "question": "Tra cứu thông tin quay lại học sau bảo lưu như thế nào?",
+      "keywords": [
+        "quay lại học sau bảo lưu",
+        "hướng dẫn quay lại học sau bảo lưu",
+        "tra cứu quay lại học sau bảo lưu"
+      ],
+      "answer": "Nội dung quay lại học sau bảo lưu phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-138",
+      "question": "Hướng dẫn về điểm môn học lại ở đâu?",
+      "keywords": [
+        "điểm môn học lại",
+        "hướng dẫn điểm môn học lại",
+        "tra cứu điểm môn học lại"
+      ],
+      "answer": "Nội dung điểm môn học lại phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-139",
+      "question": "Sinh viên cần làm gì về thiết bị phòng học hỏng?",
+      "keywords": [
+        "thiết bị phòng học hỏng",
+        "hướng dẫn thiết bị phòng học hỏng",
+        "tra cứu thiết bị phòng học hỏng"
+      ],
+      "answer": "Nội dung thiết bị phòng học hỏng phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-140",
+      "question": "Tra cứu thông tin sử dụng phòng máy như thế nào?",
+      "keywords": [
+        "sử dụng phòng máy",
+        "hướng dẫn sử dụng phòng máy",
+        "tra cứu sử dụng phòng máy"
+      ],
+      "answer": "Nội dung sử dụng phòng máy phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-141",
+      "question": "Hướng dẫn về sơ đồ phòng học ở đâu?",
+      "keywords": [
+        "sơ đồ phòng học",
+        "hướng dẫn sơ đồ phòng học",
+        "tra cứu sơ đồ phòng học"
+      ],
+      "answer": "Nội dung sơ đồ phòng học phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-142",
+      "question": "Sinh viên cần làm gì về đồ thất lạc trong trường?",
+      "keywords": [
+        "đồ thất lạc trong trường",
+        "hướng dẫn đồ thất lạc trong trường",
+        "tra cứu đồ thất lạc trong trường"
+      ],
+      "answer": "Nội dung đồ thất lạc trong trường phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-143",
+      "question": "Sinh viên cần làm gì về khái niệm điện toán đám mây?",
+      "keywords": [
+        "khái niệm điện toán đám mây",
+        "hướng dẫn khái niệm điện toán đám mây",
+        "tra cứu khái niệm điện toán đám mây"
+      ],
+      "answer": "Nội dung khái niệm điện toán đám mây được giải thích ở mức nhập môn trong dữ liệu demo UTH CloudBot. Khi cần quyết định kỹ thuật, hãy đối chiếu thêm tài liệu chuyên môn phù hợp.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-144",
+      "question": "Tra cứu thông tin IaaS PaaS và SaaS như thế nào?",
+      "keywords": [
+        "iaas paas và saas",
+        "hướng dẫn iaas paas và saas",
+        "tra cứu iaas paas và saas"
+      ],
+      "answer": "Nội dung IaaS PaaS và SaaS được giải thích ở mức nhập môn trong dữ liệu demo UTH CloudBot. Khi cần quyết định kỹ thuật, hãy đối chiếu thêm tài liệu chuyên môn phù hợp.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-145",
+      "question": "Hướng dẫn về lợi ích điện toán đám mây ở đâu?",
+      "keywords": [
+        "lợi ích điện toán đám mây",
+        "hướng dẫn lợi ích điện toán đám mây",
+        "tra cứu lợi ích điện toán đám mây"
+      ],
+      "answer": "Nội dung lợi ích điện toán đám mây được giải thích ở mức nhập môn trong dữ liệu demo UTH CloudBot. Khi cần quyết định kỹ thuật, hãy đối chiếu thêm tài liệu chuyên môn phù hợp.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-146",
+      "question": "Sinh viên cần làm gì về cloud công cộng và cloud riêng?",
+      "keywords": [
+        "cloud công cộng và cloud riêng",
+        "hướng dẫn cloud công cộng và cloud riêng",
+        "tra cứu cloud công cộng và cloud riêng"
+      ],
+      "answer": "Nội dung cloud công cộng và cloud riêng được giải thích ở mức nhập môn trong dữ liệu demo UTH CloudBot. Khi cần quyết định kỹ thuật, hãy đối chiếu thêm tài liệu chuyên môn phù hợp.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-147",
+      "question": "Tra cứu thông tin chức năng UTH CloudBot như thế nào?",
+      "keywords": [
+        "chức năng uth cloudbot",
+        "hướng dẫn chức năng uth cloudbot",
+        "tra cứu chức năng uth cloudbot"
+      ],
+      "answer": "Nội dung chức năng UTH CloudBot được giải thích ở mức nhập môn trong dữ liệu demo UTH CloudBot. Khi cần quyết định kỹ thuật, hãy đối chiếu thêm tài liệu chuyên môn phù hợp.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-148",
+      "question": "Hướng dẫn về cách đặt câu hỏi chatbot ở đâu?",
+      "keywords": [
+        "cách đặt câu hỏi chatbot",
+        "hướng dẫn cách đặt câu hỏi chatbot",
+        "tra cứu cách đặt câu hỏi chatbot"
+      ],
+      "answer": "Nội dung cách đặt câu hỏi chatbot được giải thích ở mức nhập môn trong dữ liệu demo UTH CloudBot. Khi cần quyết định kỹ thuật, hãy đối chiếu thêm tài liệu chuyên môn phù hợp.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-149",
+      "question": "Sinh viên cần làm gì về phản hồi dự phòng?",
+      "keywords": [
+        "phản hồi dự phòng",
+        "hướng dẫn phản hồi dự phòng",
+        "tra cứu phản hồi dự phòng"
+      ],
+      "answer": "Nội dung phản hồi dự phòng được giải thích ở mức nhập môn trong dữ liệu demo UTH CloudBot. Khi cần quyết định kỹ thuật, hãy đối chiếu thêm tài liệu chuyên môn phù hợp.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    },
+    {
+      "id": "faq-150",
+      "question": "Tra cứu thông tin nhận biết câu trả lời Gemini như thế nào?",
+      "keywords": [
+        "nhận biết câu trả lời gemini",
+        "hướng dẫn nhận biết câu trả lời gemini",
+        "tra cứu nhận biết câu trả lời gemini"
+      ],
+      "answer": "Nội dung nhận biết câu trả lời Gemini được giải thích ở mức nhập môn trong dữ liệu demo UTH CloudBot. Khi cần quyết định kỹ thuật, hãy đối chiếu thêm tài liệu chuyên môn phù hợp.",
+      "source": {
+        "type": "sample",
+        "title": "Dữ liệu demo UTH CloudBot",
+        "url": null
+      },
+      "updated_at": "2026-08-16T00:00:00+07:00"
+    }
   ]
 }

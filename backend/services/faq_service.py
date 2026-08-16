@@ -4,7 +4,7 @@ from services.intent_service import normalize_text
 
 # A single generic token such as "học" or "thi" scores at most 0.5 and must
 # not turn schedule/knowledge questions into an unrelated FAQ response.
-MIN_SCORE = 0.55
+MIN_SCORE = 0.6
 STOP_WORDS = {
     "ai", "cach", "cho", "co", "cua", "dau", "duoc", "gi", "ho", "la", "lam",
     "minh", "nao", "nhu", "o", "ra", "sinh", "the", "theo", "thong", "tin",
@@ -32,16 +32,27 @@ def _score(message, faq):
     message_normalized = normalize_text(message)
     message_tokens = _tokens(message)
     terms = [faq["question"], *faq.get("keywords", [])]
-    best = 0.0
+    matches = []
     for term in terms:
         term_normalized = normalize_text(term)
         term_tokens = _tokens(term)
-        if not term_tokens:
-            continue
-        overlap = len(message_tokens & term_tokens) / len(term_tokens)
-        phrase_bonus = 0.35 if term_normalized in message_normalized else 0.0
-        best = max(best, min(1.0, overlap + phrase_bonus))
-    return best
+        # An exact phrase match outranks token-only overlap. Specific phrases
+        # receive a small length bonus, preventing a shorter substring from
+        # tying with the intended longer formulation.
+        if term_normalized in message_normalized:
+            score = min(0.99, 0.72 + min(0.24, len(term_normalized.split()) * 0.04))
+        else:
+            if not term_tokens:
+                continue
+            overlap = len(message_tokens & term_tokens) / len(term_tokens)
+            score = overlap * 0.68
+        if score > 0:
+            matches.append(score)
+    if not matches:
+        return 0.0
+    # Several matching formulations reinforce the best match without letting
+    # many weak generic terms outweigh one precise phrase.
+    return min(1.0, max(matches) + min(0.06, 0.015 * (len(matches) - 1)))
 
 
 def find_faq(message):

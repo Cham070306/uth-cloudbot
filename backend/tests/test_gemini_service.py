@@ -5,15 +5,15 @@ import pytest
 from app import create_app
 from config import Config, _get_bool, _get_positive_int
 from services import chat_service, gemini_service
-from services.gemini_service import GeminiUnavailableError
+from services.gemini_service import GeminiUnavailableError, MODEL_ID
 
 
 @pytest.fixture(autouse=True)
-def gemini_config(monkeypatch):
+def gemini_config(disable_real_gemini, monkeypatch):
     monkeypatch.setattr(Config, "GEMINI_ENABLED", True)
     monkeypatch.setattr(Config, "GEMINI_API_KEY", "test-key-not-real")
-    monkeypatch.setattr(Config, "GEMINI_MODEL", "test-model")
-    monkeypatch.setattr(Config, "GEMINI_TIMEOUT_SECONDS", 10)
+    monkeypatch.setattr(Config, "GEMINI_MODEL", MODEL_ID)
+    monkeypatch.setattr(Config, "GEMINI_TIMEOUT_SECONDS", 30)
 
 
 def test_gemini_disabled_does_not_create_client(monkeypatch):
@@ -38,20 +38,30 @@ def test_timeout_environment_parser_uses_safe_default(monkeypatch, value):
     assert _get_positive_int("TEST_TIMEOUT", 10) == 10
 
 
-@pytest.mark.parametrize(
-    ("attribute", "reason"),
-    [("GEMINI_API_KEY", "missing_api_key"), ("GEMINI_MODEL", "missing_model")],
-)
-def test_missing_gemini_configuration(monkeypatch, attribute, reason):
-    monkeypatch.setattr(Config, attribute, "")
-    with pytest.raises(GeminiUnavailableError, match=reason):
+def test_missing_api_key_uses_safe_error(monkeypatch):
+    monkeypatch.setattr(Config, "GEMINI_API_KEY", "")
+    with pytest.raises(GeminiUnavailableError, match="missing_api_key"):
+        gemini_service.generate_answer("Giải thích API")
+
+
+@pytest.mark.parametrize("model", ["", "gemini-wrong-model"])
+def test_invalid_model_is_rejected_before_creating_client(monkeypatch, model):
+    monkeypatch.setattr(Config, "GEMINI_MODEL", model)
+    monkeypatch.setattr(gemini_service, "_create_client", lambda *_args: pytest.fail("client created"))
+    with pytest.raises(GeminiUnavailableError, match="invalid_model"):
         gemini_service.generate_answer("Giải thích API")
 
 
 def test_gemini_success(monkeypatch):
-    monkeypatch.setattr(gemini_service, "_create_client", lambda *_args: object())
-    monkeypatch.setattr(gemini_service, "_generate", lambda *_args: SimpleNamespace(text="  API là giao diện lập trình.  "))
+    calls = []
+    monkeypatch.setattr(gemini_service, "_create_client", lambda api_key, timeout: calls.append((api_key, timeout)) or object())
+    monkeypatch.setattr(
+        gemini_service,
+        "_generate",
+        lambda _client, model, message: calls.append((model, message)) or SimpleNamespace(text="  API là giao diện lập trình.  "),
+    )
     result = gemini_service.generate_answer("API là gì?")
+    assert calls == [("test-key-not-real", 30), ("gemini-3.5-flash", "API là gì?")]
     assert result == {
         "answer": "API là giao diện lập trình.",
         "source": {"type": "gemini", "title": "Gemini AI", "url": None},
@@ -77,9 +87,11 @@ class FakeGeminiError(Exception):
     ("error", "reason"),
     [
         (TimeoutError("request timed out"), "timeout"),
+        (FakeGeminiError("DEADLINE_EXCEEDED", 504), "timeout"),
         (FakeGeminiError("RESOURCE_EXHAUSTED quota", 429), "quota_exceeded"),
         (ConnectionError("network connection failed"), "network_error"),
-        (FakeGeminiError("UNAUTHENTICATED", 401), "invalid_api_key"),
+        (FakeGeminiError("UNAUTHENTICATED", 401), "authentication_error"),
+        (FakeGeminiError("model not found", 404), "invalid_model"),
         (ValueError("unexpected"), "unexpected_error"),
     ],
 )
@@ -133,13 +145,20 @@ def test_gemini_failure_uses_complete_fallback(monkeypatch):
     assert {"answer", "intent", "source", "invalid", "paragraphs", "list", "sources", "data"} <= result.keys()
 
 
-def test_gemini_failure_keeps_chat_api_http_200(monkeypatch):
-    monkeypatch.setattr(chat_service, "generate_answer", lambda _message: (_ for _ in ()).throw(GeminiUnavailableError("quota_exceeded")))
+@pytest.mark.parametrize(
+    "reason",
+    ["disabled", "missing_api_key", "invalid_model", "quota_exceeded", "timeout", "authentication_error", "network_error", "empty_response", "unexpected_error"],
+)
+def test_gemini_failure_keeps_chat_api_http_200(monkeypatch, reason):
+    monkeypatch.setattr(chat_service, "generate_answer", lambda _message: (_ for _ in ()).throw(GeminiUnavailableError(reason)))
     response = create_app({"TESTING": True}).test_client().post(
         "/api/chat", json={"message": "Giải thích điện toán đám mây là gì"}
     )
     assert response.status_code == 200
-    assert response.get_json()["fallback_used"] is True
+    data = response.get_json()
+    assert data["ai_generated"] is False
+    assert data["fallback_used"] is True
+    assert data["source"]["type"] == "fallback"
 
 
 @pytest.mark.parametrize(

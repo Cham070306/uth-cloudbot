@@ -27,7 +27,8 @@ def normalize_text(value):
     value = unicodedata.normalize("NFD", value.casefold())
     value = "".join(char for char in value if unicodedata.category(char) != "Mn")
     value = value.replace("đ", "d")
-    return re.sub(r"[^a-z0-9]+", " ", value).strip()
+    value = re.sub(r"[^a-z0-9]+", " ", value).strip()
+    return re.sub(r"\bdang ki\b", "dang ky", value)
 
 
 def classify_intent(message):

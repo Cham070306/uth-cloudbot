@@ -33,7 +33,7 @@ class Config:
     GEMINI_ENABLED = _get_bool("GEMINI_ENABLED", False)
     GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
     GEMINI_MODEL = os.getenv("GEMINI_MODEL", "").strip()
-    GEMINI_TIMEOUT_SECONDS = _get_positive_int("GEMINI_TIMEOUT_SECONDS", 10)
+    GEMINI_TIMEOUT_SECONDS = _get_positive_int("GEMINI_TIMEOUT_SECONDS", 30)
 
 
 def get_port():

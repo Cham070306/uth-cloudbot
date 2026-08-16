@@ -2,6 +2,10 @@
 
 Backend Flask chạy theo mô hình hybrid Rule-based + Gemini. Nội dung FAQ, tài khoản và dữ liệu cá nhân hiện tại chỉ dùng để minh họa, **không phải nguồn thông tin chính thức của UTH**.
 
+Cơ sở tri thức hiện có 150 FAQ demo (yêu cầu tối thiểu ban đầu: 30), kèm 300 cách hỏi đánh giá retrieval. Chạy `python -m scripts.evaluate_faq` để xem accuracy mà không gọi Gemini.
+
+Dữ liệu local còn có 10 sinh viên demo, 60 lịch học, 35 bài tập, 20 kỳ thi, 30 thông báo và 30 tài liệu. Toàn bộ là dữ liệu giả lập; endpoint `GET /api/documents` trả tài liệu demo và hỗ trợ lọc bằng query `category`.
+
 BE-01 mở rộng bổ sung Intent Router và hơn 100 cách hỏi FAQ cho `/api/chat`. Intent `knowledge` và `unknown` chỉ gọi Gemini khi không khớp FAQ; lịch học, lịch thi và tài liệu tiếp tục dùng fallback khi không có dữ liệu phù hợp.
 
 Backend hiện còn có chế độ trợ lý học tập cá nhân dựa trên tài khoản và dữ liệu hoàn toàn giả lập: lịch học, bài tập E-learning, deadline, kiểm tra, thông báo, note và reminder có xác nhận. Xem [tài liệu trợ lý cá nhân](../docs/api/PERSONAL-ASSISTANT.md).

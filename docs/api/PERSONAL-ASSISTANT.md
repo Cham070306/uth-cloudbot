@@ -1,6 +1,6 @@
 # UTH CloudBot - Backend trợ lý học tập cá nhân
 
-Tài liệu này mô tả phần mở rộng tuần tự trên backend BE-01. Toàn bộ tài khoản, lịch học, bài tập, bài kiểm tra và thông báo trong repository đều là dữ liệu giả lập.
+Tài liệu này mô tả phần mở rộng tuần tự trên backend BE-01. Toàn bộ hồ sơ, lịch học, bài tập, kỳ thi và thông báo là dữ liệu demo, không phải dữ liệu sinh viên UTH thật. Học kỳ demo `2026-1` dùng mốc `2026-08-17` đến `2026-12-20` theo múi giờ `Asia/Ho_Chi_Minh`.
 
 ## Tài khoản demo
 
@@ -9,6 +9,13 @@ Tài liệu này mô tả phần mở rộng tuần tự trên backend BE-01. To
 | `sv001` | `demo123` | `demo-token-sv001` |
 | `sv002` | `demo123` | `demo-token-sv002` |
 | `sv003` | `demo123` | `demo-token-sv003` |
+| `sv004` | `demo123` | `demo-token-sv004` |
+| `sv005` | `demo123` | `demo-token-sv005` |
+| `sv006` | `demo123` | `demo-token-sv006` |
+| `sv007` | `demo123` | `demo-token-sv007` |
+| `sv008` | `demo123` | `demo-token-sv008` |
+| `sv009` | `demo123` | `demo-token-sv009` |
+| `sv010` | `demo123` | `demo-token-sv010` |
 
 Đăng nhập bằng `POST /api/auth/login`, sau đó gửi token trong header:
 
@@ -28,6 +35,7 @@ Token cố định và mật khẩu rõ chỉ được dùng cho bản demo loca
 | `GET` | `/api/me/assignments/upcoming` | Deadline trong 72 giờ |
 | `GET` | `/api/me/exams` | Bài kiểm tra và kỳ thi |
 | `GET` | `/api/me/announcements?unread=true` | Thông báo cá nhân |
+| `GET` | `/api/documents?category=...` | Tài liệu demo công khai, có thể lọc category |
 | `GET/POST` | `/api/me/notes` | Danh sách hoặc tạo note chờ xác nhận |
 | `POST` | `/api/me/notes/{id}/confirm` | Xác nhận note |
 | `POST` | `/api/me/notes/{id}/cancel` | Hủy note |
@@ -68,9 +76,11 @@ Mọi response chat còn có `message_id` để liên kết conversation với f
 
 Yêu cầu tạo note hoặc reminder trả `requires_confirmation: true`. Client phải hiển thị bước xác nhận rồi mới gọi endpoint tạo và xác nhận tương ứng.
 
+Hồ sơ `GET /api/me` giữ các trường cũ và bổ sung dữ liệu demo như `student_code`, `faculty`, `cohort`, `academic_year`, `phone_demo`, `enrollment_status`, `advisor`, `accumulated_credits`, `required_credits`, `gpa`, `conduct_score`, `specialization` và `campus`. Response không trả `password` hoặc `token`.
+
 ## Dữ liệu FAQ
 
-30 bản ghi kiến thức có câu hỏi chính, từ khóa và cách hỏi tự nhiên, tạo hơn 100 cách hỏi có thể tìm kiếm. Không xem nội dung mẫu là thông tin chính thức của UTH cho tới khi được người phụ trách xác minh.
+150 bản ghi kiến thức có câu hỏi chính, từ khóa và 300 cách hỏi đánh giá. Không xem nội dung mẫu là thông tin chính thức của UTH cho tới khi được người phụ trách xác minh.
 
 ## Kiểm thử
 

@@ -1,0 +1,22 @@
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+credential.json
+credentials*.json
+service-account*.json
+*.pem
+*.key
+
+# Python environments and caches
+.venv/
+backend/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local tooling and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

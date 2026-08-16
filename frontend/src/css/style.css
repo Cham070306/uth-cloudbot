@@ -383,6 +383,36 @@ html,body{ margin:0; height:100%; font-family: var(--font-body); color: var(--in
 }
 .a-card li:last-child{ margin-bottom: 0; }
 .a-card li strong{ font-family: var(--font-display); }
+.a-card.is-gemini .gemini-heading{
+  margin:14px 0 6px;
+  font-family:var(--font-display);
+  color:var(--ink);
+  line-height:1.35;
+}
+.a-card.is-gemini .gemini-heading:first-child{ margin-top:0; }
+.a-card.is-gemini h3.gemini-heading{ font-size:16px; }
+.a-card.is-gemini h4.gemini-heading{ font-size:14px; }
+.a-card.is-gemini h5.gemini-heading{ font-size:13px; }
+.a-card .gemini-list{ margin:6px 0 12px; padding-left:22px; }
+.a-card ul.gemini-list{ list-style:disc; }
+.a-card .gemini-code{
+  margin:10px 0 12px;
+  padding:12px;
+  overflow-x:auto;
+  border:1px solid var(--cream-border);
+  border-radius:10px;
+  background:rgba(51,64,27,.08);
+  color:var(--ink);
+  font:12px/1.55 Consolas, 'Courier New', monospace;
+  white-space:pre;
+}
+.a-card p code,.a-card li code{
+  padding:2px 5px;
+  border-radius:5px;
+  background:rgba(51,64,27,.10);
+  font:12px Consolas, 'Courier New', monospace;
+}
+.a-card .gemini-link{ color:var(--rust); text-decoration:underline; overflow-wrap:anywhere; }
 
 .a-meta{
   display:flex;

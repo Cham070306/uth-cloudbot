@@ -7,16 +7,20 @@ import requests
 import pytest
 
 BASE_URL = os.getenv("BASE_URL", "http://127.0.0.1:8080").rstrip("/")
+TIMEOUT_SECONDS = 30
+
+
+pytestmark = pytest.mark.integration
 
 
 def test_health():
-    r = requests.get(f"{BASE_URL}/api/health")
+    r = requests.get(f"{BASE_URL}/api/health", timeout=TIMEOUT_SECONDS)
     assert r.status_code == 200
     assert r.json()["status"] == "ok"
 
 
 def test_chat_lich_hoc():
-    r = requests.post(f"{BASE_URL}/api/chat", json={"message": "lich hoc"})
+    r = requests.post(f"{BASE_URL}/api/chat", json={"message": "lich hoc"}, timeout=TIMEOUT_SECONDS)
     assert r.status_code == 200
     data = r.json()
     assert "answer" in data
@@ -24,19 +28,19 @@ def test_chat_lich_hoc():
 
 
 def test_chat_hoc_phi():
-    r = requests.post(f"{BASE_URL}/api/chat", json={"message": "hoc phi"})
+    r = requests.post(f"{BASE_URL}/api/chat", json={"message": "hoc phi"}, timeout=TIMEOUT_SECONDS)
     assert r.status_code == 200
     assert "answer" in r.json()
 
 
 def test_chat_invalid():
-    r = requests.post(f"{BASE_URL}/api/chat", json={"message": ""})
+    r = requests.post(f"{BASE_URL}/api/chat", json={"message": ""}, timeout=TIMEOUT_SECONDS)
     assert r.status_code in [400, 422]
 
 
 def test_feedback():
     r = requests.post(f"{BASE_URL}/api/feedback", json={
         "message_id": "msg-test-001",
-        "rating": "up"
-    })
+        "helpful": True,
+    }, timeout=TIMEOUT_SECONDS)
     assert r.status_code == 200
