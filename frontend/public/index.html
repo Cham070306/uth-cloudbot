@@ -10,7 +10,29 @@
 </head>
 <body>
 
-  <div class="shell">
+  <!-- Màn hình đăng nhập demo (giả lập, không xác thực thật) -->
+  <div class="loginOverlay" id="loginOverlay">
+    <div class="loginCard">
+      <div class="sidebar__brand" style="margin-bottom: 18px;">
+        <span class="sidebar__logo" style="color:var(--ink);">UTH</span>
+        <span class="sidebar__logo-sub" style="color:var(--ink-soft);">CLOUDBOT</span>
+      </div>
+      <h2>Đăng nhập (demo)</h2>
+      <p class="loginCard__hint">Đây là đăng nhập giả lập cho mục đích demo giao diện — không xác thực thật với hệ thống trường.</p>
+
+      <form id="loginForm">
+        <label class="loginCard__label" for="loginName">Họ và tên</label>
+        <input type="text" id="loginName" class="loginCard__input" placeholder="Nguyễn Văn A" required />
+
+        <label class="loginCard__label" for="loginId">Mã số sinh viên</label>
+        <input type="text" id="loginId" class="loginCard__input" placeholder="038206005065" required />
+
+        <button type="submit" class="loginCard__submit">Vào trò chuyện</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="shell" id="mainShell" hidden>
 
     <!-- Sidebar -->
     <aside class="sidebar">
@@ -34,6 +56,10 @@
       </nav>
 
       <div class="sidebar__footer">
+        <div class="sidebar__student" id="sidebarStudent" hidden>
+          <span class="sidebar__student-name" id="studentNameLabel"></span>
+          <span class="sidebar__student-id" id="studentIdLabel"></span>
+        </div>
         <span class="env-pill" id="envPill">—</span>
       </div>
     </aside>
