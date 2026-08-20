@@ -24,6 +24,36 @@
     envPill.textContent = CONFIG.ENV === "local" ? "Môi trường: Local" : "Môi trường: Render";
   }
 
+  // ---------- Đăng nhập demo (giả lập, không xác thực thật) ----------
+  // Dữ liệu cá nhân chỉ lưu trong bộ nhớ trình duyệt (không gửi lên server nào).
+  const loginOverlay = document.getElementById("loginOverlay");
+  const loginForm = document.getElementById("loginForm");
+  const mainShell = document.getElementById("mainShell");
+  const sidebarStudent = document.getElementById("sidebarStudent");
+  const studentNameLabel = document.getElementById("studentNameLabel");
+  const studentIdLabel = document.getElementById("studentIdLabel");
+
+  if (loginForm) {
+    loginForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const name = document.getElementById("loginName").value.trim();
+      const id = document.getElementById("loginId").value.trim();
+      if (!name || !id) return;
+
+      if (sidebarStudent) {
+        studentNameLabel.textContent = name;
+        studentIdLabel.textContent = "MSSV: " + id;
+        sidebarStudent.hidden = false;
+      }
+      loginOverlay.hidden = true;
+      mainShell.hidden = false;
+      input && input.focus();
+    });
+  } else {
+    // Không có màn đăng nhập trên trang này -> hiện luôn giao diện chat.
+    if (mainShell) mainShell.hidden = false;
+  }
+
   if (newChatBtn) {
     newChatBtn.addEventListener("click", () => {
       chatScroll.innerHTML = "";
