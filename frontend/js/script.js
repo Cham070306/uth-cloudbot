@@ -42,13 +42,9 @@
     return new Promise((resolve, reject) => {
       const delay = 600 + Math.random() * 900;
       setTimeout(() => {
-        // Giả lập trường hợp câu hỏi không hợp lệ (quá ngắn)
-        if (question.trim().length < 3) {
-          resolve({
-            answer: "Câu hỏi hơi ngắn, bạn mô tả rõ hơn giúp mình nhé (ví dụ: 'lịch thi học kỳ 1 ở đâu?').",
-            source: "CloudBot — kiểm tra đầu vào",
-            updated_at: new Date().toISOString(),
-          });
+        // Giả lập trường hợp câu hỏi không hợp lệ (quá ngắn / không có chữ)
+        if (!isValidQuestion(question)) {
+          resolve(invalidQuestionReply());
           return;
         }
         resolve({
@@ -58,6 +54,23 @@
         });
       }, delay);
     });
+  }
+
+  // ---------- VALIDATE CÂU HỎI (áp dụng cho CẢ mock lẫn API thật) ----------
+  function isValidQuestion(text) {
+    const trimmed = text.trim();
+    if (trimmed.length < 3) return false;
+    if (!/[a-zA-ZÀ-ỹ]/.test(trimmed)) return false; // toàn ký tự đặc biệt/số
+    return true;
+  }
+
+  function invalidQuestionReply() {
+    return {
+      answer:
+        "Câu hỏi của bạn hơi ngắn hoặc chưa rõ, bạn mô tả cụ thể hơn giúp mình nhé (ví dụ: 'lịch thi học kỳ 1 khi nào?').",
+      source: "CloudBot — kiểm tra đầu vào",
+      updated_at: new Date().toISOString(),
+    };
   }
 
   // ---------- API CALLS THẬT ----------
@@ -223,6 +236,16 @@
 
     addUserMessage(question);
     input.value = "";
+
+    // Câu hỏi không hợp lệ (quá ngắn / không có chữ) → không cần gọi API,
+    // trả lời hướng dẫn ngay tại chỗ.
+    if (!isValidQuestion(question)) {
+      isSending = false;
+      sendBtn.disabled = false;
+      addBotMessage(invalidQuestionReply());
+      input.focus();
+      return;
+    }
 
     const loadingEl = addLoadingMessage();
 
