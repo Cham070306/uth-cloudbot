@@ -57,7 +57,6 @@
   if (newChatBtn) {
     newChatBtn.addEventListener("click", () => {
       chatScroll.innerHTML = "";
-      addUserMessage.__skip = true; // no-op guard, giữ style nhất quán
       const node = document.createElement("div");
       node.className = "msg msg--bot";
       node.innerHTML = '<div class="msg__avatar">B</div><div class="msg__bubble"><p>Chào bạn! Bắt đầu cuộc trò chuyện mới nhé — hỏi mình về học phí, lịch học hoặc lịch thi.</p></div>';
