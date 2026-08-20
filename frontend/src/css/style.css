@@ -103,6 +103,66 @@ body {
 
 .sidebar__footer { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 12px; }
 
+/* ---------------- Login overlay (demo) ---------------- */
+.loginOverlay {
+  position: fixed;
+  inset: 0;
+  background: var(--forest-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  padding: 20px;
+}
+
+.loginCard {
+  background: var(--cream);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  width: 100%;
+  max-width: 380px;
+}
+.loginCard h2 { font-family: var(--display); font-size: 24px; font-weight: 800; margin: 0 0 8px; }
+.loginCard__hint { font-size: 12.5px; color: var(--ink-soft); line-height: 1.5; margin: 0 0 20px; }
+.loginCard__label { display: block; font-size: 12px; font-weight: 600; color: var(--ink); margin: 14px 0 6px; }
+.loginCard__input {
+  width: 100%;
+  font-family: var(--sans);
+  font-size: 14px;
+  padding: 11px 14px;
+  border: 1px solid var(--cream-line);
+  border-radius: var(--radius-sm);
+  background: var(--sand);
+  color: var(--ink);
+}
+.loginCard__input:focus { outline: none; border-color: var(--moss); }
+.loginCard__submit {
+  width: 100%;
+  margin-top: 20px;
+  background: var(--forest);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 13px;
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.loginCard__submit:hover { background: var(--forest-deep); }
+
+/* ---------------- Sidebar student info (dữ liệu cá nhân) ---------------- */
+.sidebar__student {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.sidebar__student-name { font-size: 13px; font-weight: 700; color: #fff; }
+.sidebar__student-id { font-size: 11px; color: #a9b78d; }
+
 .env-pill {
   display: inline-block;
   font-family: var(--sans);
