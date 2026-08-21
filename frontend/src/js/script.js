@@ -208,6 +208,8 @@
     const sourceObj = data[CONFIG.RESPONSE_FIELDS.source] || null;
     return {
       answer: data[CONFIG.RESPONSE_FIELDS.answer] || "(Không có nội dung trả lời)",
+      intent: data.intent || "unknown",
+      items: data.data && Array.isArray(data.data.items) ? data.data.items : [],
       sourceObj,
       sourceText: formatSourceText(sourceObj),
       aiGenerated: !!data[CONFIG.RESPONSE_FIELDS.aiGenerated],
@@ -281,12 +283,73 @@
     return chatScroll.lastElementChild;
   }
 
-  function addBotMessage({ answer, sourceObj, sourceText, aiGenerated, fallbackUsed, updated_at }, lastQuestion) {
+  function fmtDate(value, includeTime = false) {
+    if (!value) return "Chưa cập nhật";
+    try {
+      const options = { day: "2-digit", month: "2-digit", year: "numeric" };
+      if (includeTime) Object.assign(options, { hour: "2-digit", minute: "2-digit" });
+      return new Date(value).toLocaleString("vi-VN", options);
+    } catch (e) {
+      return String(value);
+    }
+  }
+
+  function detailRow(label, value) {
+    const row = document.createElement("span");
+    row.className = "msg__detail-meta";
+    row.textContent = label + ": " + (value || "Chưa cập nhật");
+    return row;
+  }
+
+  function renderDetails(container, intent, items) {
+    if (!items.length) return;
+    const visibleItems = items.slice(0, 8);
+
+    visibleItems.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "msg__detail-card";
+      const title = document.createElement("strong");
+      title.className = "msg__detail-title";
+
+      if (intent === "personal_schedule") {
+        title.textContent = item.course_name || item.course_code || "Buổi học";
+        card.append(title, detailRow("Ngày", fmtDate(item.date)), detailRow("Thời gian", [item.start_time, item.end_time].filter(Boolean).join("–")), detailRow("Phòng", item.room));
+      } else if (intent === "personal_assignment" || intent === "personal_deadline") {
+        title.textContent = item.title || item.course_name || "Bài tập";
+        card.append(title, detailRow("Môn", item.course_name), detailRow("Hạn nộp", fmtDate(item.due_at, true)), detailRow("Trạng thái", item.status));
+      } else if (intent === "personal_exam") {
+        title.textContent = item.title || item.course_name || "Lịch kiểm tra";
+        card.append(title, detailRow("Môn", item.course_name), detailRow("Thời gian", fmtDate(item.start_at, true)), detailRow("Phòng", item.room || item.platform));
+      } else if (intent === "personal_announcement") {
+        title.textContent = item.title || "Thông báo";
+        const content = document.createElement("p");
+        content.className = "msg__detail-content";
+        content.textContent = item.content || "";
+        card.append(title, content, detailRow("Đăng lúc", fmtDate(item.published_at, true)));
+      } else {
+        return;
+      }
+      container.appendChild(card);
+    });
+
+    if (container.children.length) {
+      container.hidden = false;
+      if (items.length > visibleItems.length) {
+        const more = document.createElement("p");
+        more.className = "msg__detail-more";
+        more.textContent = `Còn ${items.length - visibleItems.length} mục khác.`;
+        container.appendChild(more);
+      }
+    }
+  }
+
+  function addBotMessage({ answer, intent, items = [], sourceObj, sourceText, aiGenerated, fallbackUsed, updated_at }, lastQuestion) {
     const node = botTpl.content.cloneNode(true);
     const resolvedType = inferSourceType(sourceObj, aiGenerated, fallbackUsed);
     const meta = CONFIG.SOURCE_LABELS[resolvedType];
 
     node.querySelector(".msg__answer").textContent = answer;
+    renderDetails(node.querySelector(".msg__details"), intent, items);
     node.querySelector(".msg__source-badge").textContent = meta.label;
     node.querySelector(".msg__source-badge").classList.add("badge--" + resolvedType);
     node.querySelector(".msg__source").textContent = "Nguồn: " + sourceText;
