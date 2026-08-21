@@ -6,7 +6,15 @@ services:
     dockerContext: .
     envVars:
       - key: DATA_BACKEND
-        value: local
+        value: firestore
+      - key: GOOGLE_CLOUD_PROJECT
+        value: uth-cloudbot
+      - key: FIRESTORE_COLLECTION_PREFIX
+        value: uth_cloudbot
+      - key: GOOGLE_APPLICATION_CREDENTIALS
+        value: /etc/secrets/credential.json
+      - key: CORS_ORIGINS
+        value: https://cham070306.github.io,http://localhost:5173,http://127.0.0.1:5173
       - key: GEMINI_ENABLED
         value: "true"
       - key: GEMINI_API_KEY
