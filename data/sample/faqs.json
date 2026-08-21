@@ -13,7 +13,7 @@
       "answer": "Bạn có thể tra cứu đăng ký học phần từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của đăng ký học phần trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Đăng ký học phần",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -29,7 +29,7 @@
       "answer": "Để thực hiện rút học phần, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái rút học phần trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Rút học phần",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -45,7 +45,7 @@
       "answer": "Bạn có thể tra cứu học phí từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của học phí trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Học phí",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -61,7 +61,7 @@
       "answer": "Để thực hiện cấp lại mật khẩu cổng sinh viên, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Thử lại trên trang chính thức, kiểm tra kết nối, trình duyệt và thông tin đăng nhập.\n2. Dùng chức năng khôi phục tài khoản; không chia sẻ mật khẩu, OTP hoặc mã xác minh cho người khác.\n3. Liên hệ bộ phận hỗ trợ kèm mã sinh viên, thời điểm lỗi và ảnh chụp đã che dữ liệu nhạy cảm.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái cấp lại mật khẩu cổng sinh viên trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Không gửi mật khẩu, OTP hay API key qua email, tin nhắn hoặc biểu mẫu không xác thực.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Tài khoản sinh viên",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -77,7 +77,7 @@
       "answer": "Để thực hiện email sinh viên được cấp, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Thử lại trên trang chính thức, kiểm tra kết nối, trình duyệt và thông tin đăng nhập.\n2. Dùng chức năng khôi phục tài khoản; không chia sẻ mật khẩu, OTP hoặc mã xác minh cho người khác.\n3. Liên hệ bộ phận hỗ trợ kèm mã sinh viên, thời điểm lỗi và ảnh chụp đã che dữ liệu nhạy cảm.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái email sinh viên được cấp trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Không gửi mật khẩu, OTP hay API key qua email, tin nhắn hoặc biểu mẫu không xác thực.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Email sinh viên",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -93,7 +93,7 @@
       "answer": "Để thực hiện kết nối wi-fi trong trường, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Ghi nhận vị trí, phòng, thời điểm và mô tả rõ vấn đề hoặc tài sản liên quan.\n2. Báo cho giảng viên, bảo vệ, quản lý phòng hoặc bộ phận cơ sở vật chất gần nhất.\n3. Cung cấp ảnh minh chứng khi an toàn và theo dõi mã/yêu cầu xử lý; không tự sửa thiết bị điện.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái kết nối wi-fi trong trường trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Với tài sản thất lạc, chỉ nhận lại qua đầu mối có xác minh và không công khai dữ liệu nhạy cảm.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Wi-Fi",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -109,7 +109,7 @@
       "answer": "Bạn có thể tra cứu thư viện mở cửa từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Tra cứu trên cổng thư viện bằng tên tài liệu, tác giả, chủ đề hoặc mã tài liệu.\n2. Kiểm tra tình trạng còn sách, hạn mượn, quyền truy cập và hướng dẫn sử dụng tài nguyên.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của thư viện mở cửa trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Liên hệ quầy thư viện bằng tài khoản sinh viên nếu cần gia hạn, xử lý mất sách hoặc hỗ trợ truy cập.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Tuân thủ hạn trả và điều kiện bản quyền; không chia sẻ tài khoản truy cập tài liệu điện tử.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Thư viện",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -125,7 +125,7 @@
       "answer": "Điều kiện liên quan đến mượn sách thư viện cần được đối chiếu theo quy định áp dụng cho khóa và học kỳ của bạn.\n\nNội dung cần kiểm tra:\n• Tra cứu trên cổng thư viện bằng tên tài liệu, tác giả, chủ đề hoặc mã tài liệu.\n• Kiểm tra tình trạng còn sách, hạn mượn, quyền truy cập và hướng dẫn sử dụng tài nguyên.\nCách xác nhận:\n1. Kiểm tra trạng thái mượn sách thư viện trên cổng sinh viên.\n2. Nếu thông tin chưa rõ, liên hệ quầy thư viện bằng tài khoản sinh viên nếu cần gia hạn, xử lý mất sách hoặc hỗ trợ truy cập.\n\nLưu ý: Tuân thủ hạn trả và điều kiện bản quyền; không chia sẻ tài khoản truy cập tài liệu điện tử.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Mượn sách",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -141,7 +141,7 @@
       "answer": "Khi gặp vấn đề về làm mất thẻ sinh viên phải làm sao, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến làm mất thẻ sinh viên phải làm sao, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Thẻ sinh viên",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -157,7 +157,7 @@
       "answer": "Bạn có thể tra cứu giấy xác nhận sinh viên từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của giấy xác nhận sinh viên trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Xác nhận sinh viên",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -173,7 +173,7 @@
       "answer": "Điều kiện liên quan đến nhận học bổng cần được đối chiếu theo quy định áp dụng cho khóa và học kỳ của bạn.\n\nNội dung cần kiểm tra:\n• Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n• Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\nCách xác nhận:\n1. Kiểm tra trạng thái nhận học bổng trên cổng sinh viên.\n2. Nếu thông tin chưa rõ, nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Học bổng",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -189,7 +189,7 @@
       "answer": "Bạn có thể tra cứu đăng ký bảo lưu kết quả học tập từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của đăng ký bảo lưu kết quả học tập trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Bảo lưu",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -205,7 +205,7 @@
       "answer": "Để thực hiện nghỉ học tạm thời, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái nghỉ học tạm thời trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Nghỉ học",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -221,7 +221,7 @@
       "answer": "Bạn có thể tra cứu điểm từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của điểm trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Tra cứu điểm",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -237,7 +237,7 @@
       "answer": "Để thực hiện phúc khảo điểm thi, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái phúc khảo điểm thi trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Phúc khảo",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -253,7 +253,7 @@
       "answer": "Điều kiện liên quan đến dự thi kết thúc học phần cần được đối chiếu theo quy định áp dụng cho khóa và học kỳ của bạn.\n\nNội dung cần kiểm tra:\n• Kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n• Đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\nCách xác nhận:\n1. Kiểm tra trạng thái dự thi kết thúc học phần trên cổng sinh viên.\n2. Nếu thông tin chưa rõ, báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\n\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Điều kiện dự thi",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -269,7 +269,7 @@
       "answer": "Điều kiện liên quan đến tốt nghiệp cần được đối chiếu theo quy định áp dụng cho khóa và học kỳ của bạn.\n\nNội dung cần kiểm tra:\n• Đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n• Chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\nCách xác nhận:\n1. Kiểm tra trạng thái tốt nghiệp trên cổng sinh viên.\n2. Nếu thông tin chưa rõ, trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\n\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Tốt nghiệp",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -285,7 +285,7 @@
       "answer": "Bạn có thể tra cứu bảng điểm chính thức từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của bảng điểm chính thức trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Bảng điểm",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -301,7 +301,7 @@
       "answer": "Để thực hiện liên hệ phòng đào tạo bằng cách nào, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái liên hệ phòng đào tạo bằng cách nào trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Phòng Đào tạo",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -317,7 +317,7 @@
       "answer": "Bạn có thể tra cứu liên hệ phòng công tác sinh viên từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của liên hệ phòng công tác sinh viên trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Công tác sinh viên",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -333,7 +333,7 @@
       "answer": "Để thực hiện đăng ký học lại, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái đăng ký học lại trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Học lại",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -349,7 +349,7 @@
       "answer": "Để thực hiện đăng ký học cải thiện, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái đăng ký học cải thiện trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Học cải thiện",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -365,7 +365,7 @@
       "answer": "Để thực hiện chuyển lớp học phần được không, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái chuyển lớp học phần được không trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Chuyển lớp",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -381,7 +381,7 @@
       "answer": "Để thực hiện cấp lại biên lai học phí, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái cấp lại biên lai học phí trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Biên lai học phí",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -397,7 +397,7 @@
       "answer": "Để thực hiện đăng ký ký túc xá, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái đăng ký ký túc xá trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Ký túc xá",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -413,7 +413,7 @@
       "answer": "Để thực hiện tham gia bảo hiểm y tế sinh viên, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái tham gia bảo hiểm y tế sinh viên trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Bảo hiểm y tế",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -429,7 +429,7 @@
       "answer": "Bạn có thể tra cứu đánh giá điểm rèn luyện từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của đánh giá điểm rèn luyện trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Điểm rèn luyện",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -445,7 +445,7 @@
       "answer": "Để thực hiện giấy giới thiệu thực tập, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Đọc kế hoạch thực tập của khoa để xác định điều kiện, mốc thời gian và biểu mẫu bắt buộc.\n2. Thống nhất nơi thực tập, giảng viên hướng dẫn, đề cương và đầu mối xác nhận tại doanh nghiệp.\n3. Lưu nhật ký, minh chứng, nhận xét và nộp báo cáo đúng định dạng qua kênh khoa công bố.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái giấy giới thiệu thực tập trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Mọi thay đổi về doanh nghiệp, đề tài hoặc người hướng dẫn cần được chấp thuận trước khi thực hiện.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Thực tập",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -461,7 +461,7 @@
       "answer": "Khi gặp vấn đề về đăng ký đề tài khóa luận, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến đăng ký đề tài khóa luận, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Khóa luận",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -477,7 +477,7 @@
       "answer": "Bạn có thể tra cứu cập nhật thông tin cá nhân từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Thử lại trên trang chính thức, kiểm tra kết nối, trình duyệt và thông tin đăng nhập.\n2. Dùng chức năng khôi phục tài khoản; không chia sẻ mật khẩu, OTP hoặc mã xác minh cho người khác.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của cập nhật thông tin cá nhân trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Liên hệ bộ phận hỗ trợ kèm mã sinh viên, thời điểm lỗi và ảnh chụp đã che dữ liệu nhạy cảm.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Không gửi mật khẩu, OTP hay API key qua email, tin nhắn hoặc biểu mẫu không xác thực.",
       "source": {
         "type": "sample",
-        "title": "FAQ mẫu UTH - Thông tin cá nhân",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-09"
@@ -493,7 +493,7 @@
       "answer": "Để thực hiện học phần tiên quyết, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái học phần tiên quyết trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -509,7 +509,7 @@
       "answer": "Bạn có thể tra cứu học phần song hành từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của học phần song hành trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -525,7 +525,7 @@
       "answer": "Bạn có thể tra cứu đăng ký vượt tín chỉ từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của đăng ký vượt tín chỉ trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -541,7 +541,7 @@
       "answer": "Để thực hiện sĩ số lớp học phần, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái sĩ số lớp học phần trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -557,7 +557,7 @@
       "answer": "Bạn có thể tra cứu điều chỉnh học phần từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của điều chỉnh học phần trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -573,7 +573,7 @@
       "answer": "Khi gặp vấn đề về trùng lịch học phần, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến trùng lịch học phần, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -589,7 +589,7 @@
       "answer": "Để thực hiện học phần không mở, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái học phần không mở trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -605,7 +605,7 @@
       "answer": "Bạn có thể tra cứu học phần khác ngành từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của học phần khác ngành trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -621,7 +621,7 @@
       "answer": "Bạn có thể tra cứu học phần tự chọn từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của học phần tự chọn trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -637,7 +637,7 @@
       "answer": "Để thực hiện học phần bắt buộc, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái học phần bắt buộc trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -653,7 +653,7 @@
       "answer": "Bạn có thể tra cứu lớp thực hành từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của lớp thực hành trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -669,7 +669,7 @@
       "answer": "Bạn có thể tra cứu mã học phần từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của mã học phần trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -685,7 +685,7 @@
       "answer": "Để thực hiện chương trình đào tạo, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái chương trình đào tạo trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -701,7 +701,7 @@
       "answer": "Bạn có thể tra cứu hủy đăng ký học kỳ từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của hủy đăng ký học kỳ trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -717,7 +717,7 @@
       "answer": "Bạn có thể tra cứu đăng ký môn bằng điện thoại từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của đăng ký môn bằng điện thoại trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -733,7 +733,7 @@
       "answer": "Để thực hiện xác nhận đăng ký học phần, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái xác nhận đăng ký học phần trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -749,7 +749,7 @@
       "answer": "Để thực hiện học phí theo tín chỉ, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái học phí theo tín chỉ trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -765,7 +765,7 @@
       "answer": "Bạn có thể tra cứu kênh đóng học phí từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của kênh đóng học phí trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -781,7 +781,7 @@
       "answer": "Bạn có thể tra cứu giao dịch học phí từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của giao dịch học phí trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -797,7 +797,7 @@
       "answer": "Khi gặp vấn đề về trễ hạn học phí, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến trễ hạn học phí, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -813,7 +813,7 @@
       "answer": "Bạn có thể tra cứu đóng học phí nhiều lần từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của đóng học phí nhiều lần trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -829,7 +829,7 @@
       "answer": "Bạn có thể tra cứu học phí môn học lại từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của học phí môn học lại trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -845,7 +845,7 @@
       "answer": "Để thực hiện học phí cải thiện, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái học phí cải thiện trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -861,7 +861,7 @@
       "answer": "Bạn có thể tra cứu khoản thu bảo hiểm từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của khoản thu bảo hiểm trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -877,7 +877,7 @@
       "answer": "Khi gặp vấn đề về sai nội dung chuyển khoản, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến sai nội dung chuyển khoản, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -893,7 +893,7 @@
       "answer": "Khi gặp vấn đề về học phí ghi nhận thiếu, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến học phí ghi nhận thiếu, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -909,7 +909,7 @@
       "answer": "Bạn có thể tra cứu hoàn học phí rút môn từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của hoàn học phí rút môn trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -925,7 +925,7 @@
       "answer": "Bạn có thể tra cứu công nợ sinh viên từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của công nợ sinh viên trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -941,7 +941,7 @@
       "answer": "Để thực hiện lệ phí giấy tờ, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái lệ phí giấy tờ trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -957,7 +957,7 @@
       "answer": "Bạn có thể tra cứu lịch thi từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của lịch thi trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -973,7 +973,7 @@
       "answer": "Khi gặp vấn đề về trùng lịch thi, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến trùng lịch thi, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -989,7 +989,7 @@
       "answer": "Khi gặp vấn đề về quên thẻ khi thi, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến quên thẻ khi thi, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1005,7 +1005,7 @@
       "answer": "Khi gặp vấn đề về vắng thi có phép, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến vắng thi có phép, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1021,7 +1021,7 @@
       "answer": "Bạn có thể tra cứu điểm chuyên cần từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của điểm chuyên cần trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1037,7 +1037,7 @@
       "answer": "Bạn có thể tra cứu quy đổi điểm chữ từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của quy đổi điểm chữ trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1053,7 +1053,7 @@
       "answer": "Bạn có thể tra cứu thời gian công bố điểm từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của thời gian công bố điểm trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1069,7 +1069,7 @@
       "answer": "Khi gặp vấn đề về sai lệch điểm, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến sai lệch điểm, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1085,7 +1085,7 @@
       "answer": "Bạn có thể tra cứu kết quả phúc khảo từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của kết quả phúc khảo trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1101,7 +1101,7 @@
       "answer": "Để thực hiện phúc khảo điểm quá trình, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái phúc khảo điểm quá trình trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1117,7 +1117,7 @@
       "answer": "Bạn có thể tra cứu chuẩn bị thi trực tuyến từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của chuẩn bị thi trực tuyến trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1133,7 +1133,7 @@
       "answer": "Khi gặp vấn đề về thời khóa biểu cá nhân, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến thời khóa biểu cá nhân, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1149,7 +1149,7 @@
       "answer": "Bạn có thể tra cứu thay đổi lịch học từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của thay đổi lịch học trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1165,7 +1165,7 @@
       "answer": "Bạn có thể tra cứu tra phòng học từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của tra phòng học trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1181,7 +1181,7 @@
       "answer": "Để thực hiện hủy buổi học, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái hủy buổi học trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1197,7 +1197,7 @@
       "answer": "Bạn có thể tra cứu lịch học bù từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của lịch học bù trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1213,7 +1213,7 @@
       "answer": "Bạn có thể tra cứu nghỉ một buổi từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của nghỉ một buổi trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1229,7 +1229,7 @@
       "answer": "Để thực hiện đi học muộn, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái đi học muộn trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1245,7 +1245,7 @@
       "answer": "Bạn có thể tra cứu lịch thực hành từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của lịch thực hành trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1261,7 +1261,7 @@
       "answer": "Bạn có thể tra cứu lịch tuần và học kỳ từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của lịch tuần và học kỳ trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1277,7 +1277,7 @@
       "answer": "Khi gặp vấn đề về thời khóa biểu chưa cập nhật, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến thời khóa biểu chưa cập nhật, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1293,7 +1293,7 @@
       "answer": "Bạn có thể tra cứu đổi ca học bù từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của đổi ca học bù trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1309,7 +1309,7 @@
       "answer": "Bạn có thể tra cứu nghỉ lễ học bù từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của nghỉ lễ học bù trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1325,7 +1325,7 @@
       "answer": "Khi gặp vấn đề về tài khoản bị khóa, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Thử lại trên trang chính thức, kiểm tra kết nối, trình duyệt và thông tin đăng nhập.\n2. Dùng chức năng khôi phục tài khoản; không chia sẻ mật khẩu, OTP hoặc mã xác minh cho người khác.\n3. Liên hệ bộ phận hỗ trợ kèm mã sinh viên, thời điểm lỗi và ảnh chụp đã che dữ liệu nhạy cảm.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến tài khoản bị khóa, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Không gửi mật khẩu, OTP hay API key qua email, tin nhắn hoặc biểu mẫu không xác thực.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1341,7 +1341,7 @@
       "answer": "Bạn có thể tra cứu đổi mật khẩu cổng sinh viên từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Thử lại trên trang chính thức, kiểm tra kết nối, trình duyệt và thông tin đăng nhập.\n2. Dùng chức năng khôi phục tài khoản; không chia sẻ mật khẩu, OTP hoặc mã xác minh cho người khác.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của đổi mật khẩu cổng sinh viên trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Liên hệ bộ phận hỗ trợ kèm mã sinh viên, thời điểm lỗi và ảnh chụp đã che dữ liệu nhạy cảm.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Không gửi mật khẩu, OTP hay API key qua email, tin nhắn hoặc biểu mẫu không xác thực.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1357,7 +1357,7 @@
       "answer": "Khi gặp vấn đề về không nhận mã otp, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Thử lại trên trang chính thức, kiểm tra kết nối, trình duyệt và thông tin đăng nhập.\n2. Dùng chức năng khôi phục tài khoản; không chia sẻ mật khẩu, OTP hoặc mã xác minh cho người khác.\n3. Liên hệ bộ phận hỗ trợ kèm mã sinh viên, thời điểm lỗi và ảnh chụp đã che dữ liệu nhạy cảm.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến không nhận mã otp, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Không gửi mật khẩu, OTP hay API key qua email, tin nhắn hoặc biểu mẫu không xác thực.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1373,7 +1373,7 @@
       "answer": "Khi gặp vấn đề về lỗi cổng sinh viên, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Thử lại trên trang chính thức, kiểm tra kết nối, trình duyệt và thông tin đăng nhập.\n2. Dùng chức năng khôi phục tài khoản; không chia sẻ mật khẩu, OTP hoặc mã xác minh cho người khác.\n3. Liên hệ bộ phận hỗ trợ kèm mã sinh viên, thời điểm lỗi và ảnh chụp đã che dữ liệu nhạy cảm.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến lỗi cổng sinh viên, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Không gửi mật khẩu, OTP hay API key qua email, tin nhắn hoặc biểu mẫu không xác thực.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1389,7 +1389,7 @@
       "answer": "Bạn có thể tra cứu đăng nhập nhiều thiết bị từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Thử lại trên trang chính thức, kiểm tra kết nối, trình duyệt và thông tin đăng nhập.\n2. Dùng chức năng khôi phục tài khoản; không chia sẻ mật khẩu, OTP hoặc mã xác minh cho người khác.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của đăng nhập nhiều thiết bị trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Liên hệ bộ phận hỗ trợ kèm mã sinh viên, thời điểm lỗi và ảnh chụp đã che dữ liệu nhạy cảm.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Không gửi mật khẩu, OTP hay API key qua email, tin nhắn hoặc biểu mẫu không xác thực.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1405,7 +1405,7 @@
       "answer": "Bạn có thể tra cứu đăng xuất thiết bị cũ từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Thử lại trên trang chính thức, kiểm tra kết nối, trình duyệt và thông tin đăng nhập.\n2. Dùng chức năng khôi phục tài khoản; không chia sẻ mật khẩu, OTP hoặc mã xác minh cho người khác.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của đăng xuất thiết bị cũ trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Liên hệ bộ phận hỗ trợ kèm mã sinh viên, thời điểm lỗi và ảnh chụp đã che dữ liệu nhạy cảm.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Không gửi mật khẩu, OTP hay API key qua email, tin nhắn hoặc biểu mẫu không xác thực.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1421,7 +1421,7 @@
       "answer": "Để thực hiện thông báo trên cổng sinh viên, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Thử lại trên trang chính thức, kiểm tra kết nối, trình duyệt và thông tin đăng nhập.\n2. Dùng chức năng khôi phục tài khoản; không chia sẻ mật khẩu, OTP hoặc mã xác minh cho người khác.\n3. Liên hệ bộ phận hỗ trợ kèm mã sinh viên, thời điểm lỗi và ảnh chụp đã che dữ liệu nhạy cảm.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái thông báo trên cổng sinh viên trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Không gửi mật khẩu, OTP hay API key qua email, tin nhắn hoặc biểu mẫu không xác thực.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1437,7 +1437,7 @@
       "answer": "Bạn có thể tra cứu sách thư viện từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Tra cứu trên cổng thư viện bằng tên tài liệu, tác giả, chủ đề hoặc mã tài liệu.\n2. Kiểm tra tình trạng còn sách, hạn mượn, quyền truy cập và hướng dẫn sử dụng tài nguyên.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của sách thư viện trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Liên hệ quầy thư viện bằng tài khoản sinh viên nếu cần gia hạn, xử lý mất sách hoặc hỗ trợ truy cập.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Tuân thủ hạn trả và điều kiện bản quyền; không chia sẻ tài khoản truy cập tài liệu điện tử.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1453,7 +1453,7 @@
       "answer": "Bạn có thể tra cứu gia hạn sách từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Tra cứu trên cổng thư viện bằng tên tài liệu, tác giả, chủ đề hoặc mã tài liệu.\n2. Kiểm tra tình trạng còn sách, hạn mượn, quyền truy cập và hướng dẫn sử dụng tài nguyên.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của gia hạn sách trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Liên hệ quầy thư viện bằng tài khoản sinh viên nếu cần gia hạn, xử lý mất sách hoặc hỗ trợ truy cập.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Tuân thủ hạn trả và điều kiện bản quyền; không chia sẻ tài khoản truy cập tài liệu điện tử.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1469,7 +1469,7 @@
       "answer": "Khi gặp vấn đề về mất sách thư viện, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Tra cứu trên cổng thư viện bằng tên tài liệu, tác giả, chủ đề hoặc mã tài liệu.\n2. Kiểm tra tình trạng còn sách, hạn mượn, quyền truy cập và hướng dẫn sử dụng tài nguyên.\n3. Liên hệ quầy thư viện bằng tài khoản sinh viên nếu cần gia hạn, xử lý mất sách hoặc hỗ trợ truy cập.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến mất sách thư viện, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Tuân thủ hạn trả và điều kiện bản quyền; không chia sẻ tài khoản truy cập tài liệu điện tử.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1485,7 +1485,7 @@
       "answer": "Để thực hiện tài liệu điện tử, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Tra cứu trên cổng thư viện bằng tên tài liệu, tác giả, chủ đề hoặc mã tài liệu.\n2. Kiểm tra tình trạng còn sách, hạn mượn, quyền truy cập và hướng dẫn sử dụng tài nguyên.\n3. Liên hệ quầy thư viện bằng tài khoản sinh viên nếu cần gia hạn, xử lý mất sách hoặc hỗ trợ truy cập.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái tài liệu điện tử trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Tuân thủ hạn trả và điều kiện bản quyền; không chia sẻ tài khoản truy cập tài liệu điện tử.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1501,7 +1501,7 @@
       "answer": "Bạn có thể tra cứu tải giáo trình từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Tra cứu trên cổng thư viện bằng tên tài liệu, tác giả, chủ đề hoặc mã tài liệu.\n2. Kiểm tra tình trạng còn sách, hạn mượn, quyền truy cập và hướng dẫn sử dụng tài nguyên.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của tải giáo trình trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Liên hệ quầy thư viện bằng tài khoản sinh viên nếu cần gia hạn, xử lý mất sách hoặc hỗ trợ truy cập.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Tuân thủ hạn trả và điều kiện bản quyền; không chia sẻ tài khoản truy cập tài liệu điện tử.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1517,7 +1517,7 @@
       "answer": "Bạn có thể tra cứu đặt trước sách từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Tra cứu trên cổng thư viện bằng tên tài liệu, tác giả, chủ đề hoặc mã tài liệu.\n2. Kiểm tra tình trạng còn sách, hạn mượn, quyền truy cập và hướng dẫn sử dụng tài nguyên.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của đặt trước sách trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Liên hệ quầy thư viện bằng tài khoản sinh viên nếu cần gia hạn, xử lý mất sách hoặc hỗ trợ truy cập.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Tuân thủ hạn trả và điều kiện bản quyền; không chia sẻ tài khoản truy cập tài liệu điện tử.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1533,7 +1533,7 @@
       "answer": "Bạn có thể tra cứu lịch sử mượn sách từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Tra cứu trên cổng thư viện bằng tên tài liệu, tác giả, chủ đề hoặc mã tài liệu.\n2. Kiểm tra tình trạng còn sách, hạn mượn, quyền truy cập và hướng dẫn sử dụng tài nguyên.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của lịch sử mượn sách trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Liên hệ quầy thư viện bằng tài khoản sinh viên nếu cần gia hạn, xử lý mất sách hoặc hỗ trợ truy cập.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Tuân thủ hạn trả và điều kiện bản quyền; không chia sẻ tài khoản truy cập tài liệu điện tử.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1549,7 +1549,7 @@
       "answer": "Bạn có thể tra cứu phòng tự học thư viện từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Tra cứu trên cổng thư viện bằng tên tài liệu, tác giả, chủ đề hoặc mã tài liệu.\n2. Kiểm tra tình trạng còn sách, hạn mượn, quyền truy cập và hướng dẫn sử dụng tài nguyên.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của phòng tự học thư viện trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Liên hệ quầy thư viện bằng tài khoản sinh viên nếu cần gia hạn, xử lý mất sách hoặc hỗ trợ truy cập.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Tuân thủ hạn trả và điều kiện bản quyền; không chia sẻ tài khoản truy cập tài liệu điện tử.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1565,7 +1565,7 @@
       "answer": "Để thực hiện hồ sơ học bổng, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái hồ sơ học bổng trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1581,7 +1581,7 @@
       "answer": "Bạn có thể tra cứu kết quả học bổng từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của kết quả học bổng trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1597,7 +1597,7 @@
       "answer": "Bạn có thể tra cứu hỗ trợ sinh viên khó khăn từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của hỗ trợ sinh viên khó khăn trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1613,7 +1613,7 @@
       "answer": "Để thực hiện tư vấn tâm lý sinh viên, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái tư vấn tâm lý sinh viên trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1629,7 +1629,7 @@
       "answer": "Để thực hiện minh chứng rèn luyện, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái minh chứng rèn luyện trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1645,7 +1645,7 @@
       "answer": "Khi gặp vấn đề về thiếu điểm rèn luyện, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến thiếu điểm rèn luyện, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1661,7 +1661,7 @@
       "answer": "Bạn có thể tra cứu đăng ký câu lạc bộ từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của đăng ký câu lạc bộ trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1677,7 +1677,7 @@
       "answer": "Để thực hiện hoạt động tình nguyện, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái hoạt động tình nguyện trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1693,7 +1693,7 @@
       "answer": "Bạn có thể tra cứu sự kiện sinh viên từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của sự kiện sinh viên trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1709,7 +1709,7 @@
       "answer": "Bạn có thể tra cứu ban cán sự lớp từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của ban cán sự lớp trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1725,7 +1725,7 @@
       "answer": "Để thực hiện ảnh hưởng điểm rèn luyện, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái ảnh hưởng điểm rèn luyện trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1741,7 +1741,7 @@
       "answer": "Bạn có thể tra cứu bổ sung minh chứng muộn từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của bổ sung minh chứng muộn trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1757,7 +1757,7 @@
       "answer": "Bạn có thể tra cứu chứng nhận hoạt động từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của chứng nhận hoạt động trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1773,7 +1773,7 @@
       "answer": "Điều kiện liên quan đến thực tập cần được đối chiếu theo quy định áp dụng cho khóa và học kỳ của bạn.\n\nNội dung cần kiểm tra:\n• Đọc kế hoạch thực tập của khoa để xác định điều kiện, mốc thời gian và biểu mẫu bắt buộc.\n• Thống nhất nơi thực tập, giảng viên hướng dẫn, đề cương và đầu mối xác nhận tại doanh nghiệp.\nCách xác nhận:\n1. Kiểm tra trạng thái thực tập trên cổng sinh viên.\n2. Nếu thông tin chưa rõ, lưu nhật ký, minh chứng, nhận xét và nộp báo cáo đúng định dạng qua kênh khoa công bố.\n\nLưu ý: Mọi thay đổi về doanh nghiệp, đề tài hoặc người hướng dẫn cần được chấp thuận trước khi thực hiện.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1789,7 +1789,7 @@
       "answer": "Bạn có thể tra cứu tự tìm nơi thực tập từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đọc kế hoạch thực tập của khoa để xác định điều kiện, mốc thời gian và biểu mẫu bắt buộc.\n2. Thống nhất nơi thực tập, giảng viên hướng dẫn, đề cương và đầu mối xác nhận tại doanh nghiệp.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của tự tìm nơi thực tập trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Lưu nhật ký, minh chứng, nhận xét và nộp báo cáo đúng định dạng qua kênh khoa công bố.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Mọi thay đổi về doanh nghiệp, đề tài hoặc người hướng dẫn cần được chấp thuận trước khi thực hiện.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1805,7 +1805,7 @@
       "answer": "Bạn có thể tra cứu đề cương thực tập từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đọc kế hoạch thực tập của khoa để xác định điều kiện, mốc thời gian và biểu mẫu bắt buộc.\n2. Thống nhất nơi thực tập, giảng viên hướng dẫn, đề cương và đầu mối xác nhận tại doanh nghiệp.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của đề cương thực tập trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Lưu nhật ký, minh chứng, nhận xét và nộp báo cáo đúng định dạng qua kênh khoa công bố.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Mọi thay đổi về doanh nghiệp, đề tài hoặc người hướng dẫn cần được chấp thuận trước khi thực hiện.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1821,7 +1821,7 @@
       "answer": "Để thực hiện nộp báo cáo thực tập, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Đọc kế hoạch thực tập của khoa để xác định điều kiện, mốc thời gian và biểu mẫu bắt buộc.\n2. Thống nhất nơi thực tập, giảng viên hướng dẫn, đề cương và đầu mối xác nhận tại doanh nghiệp.\n3. Lưu nhật ký, minh chứng, nhận xét và nộp báo cáo đúng định dạng qua kênh khoa công bố.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái nộp báo cáo thực tập trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Mọi thay đổi về doanh nghiệp, đề tài hoặc người hướng dẫn cần được chấp thuận trước khi thực hiện.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1837,7 +1837,7 @@
       "answer": "Bạn có thể tra cứu đổi doanh nghiệp thực tập từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đọc kế hoạch thực tập của khoa để xác định điều kiện, mốc thời gian và biểu mẫu bắt buộc.\n2. Thống nhất nơi thực tập, giảng viên hướng dẫn, đề cương và đầu mối xác nhận tại doanh nghiệp.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của đổi doanh nghiệp thực tập trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Lưu nhật ký, minh chứng, nhận xét và nộp báo cáo đúng định dạng qua kênh khoa công bố.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Mọi thay đổi về doanh nghiệp, đề tài hoặc người hướng dẫn cần được chấp thuận trước khi thực hiện.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1853,7 +1853,7 @@
       "answer": "Bạn có thể tra cứu giảng viên hướng dẫn thực tập từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đọc kế hoạch thực tập của khoa để xác định điều kiện, mốc thời gian và biểu mẫu bắt buộc.\n2. Thống nhất nơi thực tập, giảng viên hướng dẫn, đề cương và đầu mối xác nhận tại doanh nghiệp.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của giảng viên hướng dẫn thực tập trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Lưu nhật ký, minh chứng, nhận xét và nộp báo cáo đúng định dạng qua kênh khoa công bố.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Mọi thay đổi về doanh nghiệp, đề tài hoặc người hướng dẫn cần được chấp thuận trước khi thực hiện.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1869,7 +1869,7 @@
       "answer": "Bạn có thể tra cứu thông tin tuyển dụng từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đọc kế hoạch thực tập của khoa để xác định điều kiện, mốc thời gian và biểu mẫu bắt buộc.\n2. Thống nhất nơi thực tập, giảng viên hướng dẫn, đề cương và đầu mối xác nhận tại doanh nghiệp.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của thông tin tuyển dụng trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Lưu nhật ký, minh chứng, nhận xét và nộp báo cáo đúng định dạng qua kênh khoa công bố.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Mọi thay đổi về doanh nghiệp, đề tài hoặc người hướng dẫn cần được chấp thuận trước khi thực hiện.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1885,7 +1885,7 @@
       "answer": "Bạn có thể tra cứu ngày hội việc làm từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đọc kế hoạch thực tập của khoa để xác định điều kiện, mốc thời gian và biểu mẫu bắt buộc.\n2. Thống nhất nơi thực tập, giảng viên hướng dẫn, đề cương và đầu mối xác nhận tại doanh nghiệp.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của ngày hội việc làm trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Lưu nhật ký, minh chứng, nhận xét và nộp báo cáo đúng định dạng qua kênh khoa công bố.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Mọi thay đổi về doanh nghiệp, đề tài hoặc người hướng dẫn cần được chấp thuận trước khi thực hiện.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1901,7 +1901,7 @@
       "answer": "Bạn có thể tra cứu xác nhận hoàn thành thực tập từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đọc kế hoạch thực tập của khoa để xác định điều kiện, mốc thời gian và biểu mẫu bắt buộc.\n2. Thống nhất nơi thực tập, giảng viên hướng dẫn, đề cương và đầu mối xác nhận tại doanh nghiệp.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của xác nhận hoàn thành thực tập trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Lưu nhật ký, minh chứng, nhận xét và nộp báo cáo đúng định dạng qua kênh khoa công bố.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Mọi thay đổi về doanh nghiệp, đề tài hoặc người hướng dẫn cần được chấp thuận trước khi thực hiện.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1917,7 +1917,7 @@
       "answer": "Điều kiện liên quan đến làm đồ án cần được đối chiếu theo quy định áp dụng cho khóa và học kỳ của bạn.\n\nNội dung cần kiểm tra:\n• Đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n• Chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\nCách xác nhận:\n1. Kiểm tra trạng thái làm đồ án trên cổng sinh viên.\n2. Nếu thông tin chưa rõ, trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\n\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1933,7 +1933,7 @@
       "answer": "Bạn có thể tra cứu chọn giảng viên hướng dẫn từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của chọn giảng viên hướng dẫn trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1949,7 +1949,7 @@
       "answer": "Khi gặp vấn đề về đổi đề tài khóa luận, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến đổi đề tài khóa luận, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1965,7 +1965,7 @@
       "answer": "Để thực hiện đổi giảng viên hướng dẫn, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái đổi giảng viên hướng dẫn trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1981,7 +1981,7 @@
       "answer": "Khi gặp vấn đề về mẫu trình bày khóa luận, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến mẫu trình bày khóa luận, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -1997,7 +1997,7 @@
       "answer": "Bạn có thể tra cứu nộp bản mềm đồ án từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của nộp bản mềm đồ án trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2013,7 +2013,7 @@
       "answer": "Khi gặp vấn đề về nộp bản in khóa luận, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến nộp bản in khóa luận, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2029,7 +2029,7 @@
       "answer": "Bạn có thể tra cứu lịch bảo vệ đồ án từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của lịch bảo vệ đồ án trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2045,7 +2045,7 @@
       "answer": "Khi gặp vấn đề về chuẩn bị bảo vệ khóa luận, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến chuẩn bị bảo vệ khóa luận, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2061,7 +2061,7 @@
       "answer": "Điều kiện liên quan đến điểm đồ án tốt nghiệp cần được đối chiếu theo quy định áp dụng cho khóa và học kỳ của bạn.\n\nNội dung cần kiểm tra:\n• Đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n• Chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\nCách xác nhận:\n1. Kiểm tra trạng thái điểm đồ án tốt nghiệp trên cổng sinh viên.\n2. Nếu thông tin chưa rõ, trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\n\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2077,7 +2077,7 @@
       "answer": "Điều kiện liên quan đến thủ tục xét tốt nghiệp cần được đối chiếu theo quy định áp dụng cho khóa và học kỳ của bạn.\n\nNội dung cần kiểm tra:\n• Đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n• Chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\nCách xác nhận:\n1. Kiểm tra trạng thái thủ tục xét tốt nghiệp trên cổng sinh viên.\n2. Nếu thông tin chưa rõ, trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\n\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2093,7 +2093,7 @@
       "answer": "Bạn có thể tra cứu kiểm tra nợ môn từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của kiểm tra nợ môn trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2109,7 +2109,7 @@
       "answer": "Điều kiện liên quan đến lịch nhận bằng tốt nghiệp cần được đối chiếu theo quy định áp dụng cho khóa và học kỳ của bạn.\n\nNội dung cần kiểm tra:\n• Đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n• Chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\nCách xác nhận:\n1. Kiểm tra trạng thái lịch nhận bằng tốt nghiệp trên cổng sinh viên.\n2. Nếu thông tin chưa rõ, trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\n\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2125,7 +2125,7 @@
       "answer": "Để thực hiện cảnh báo học vụ, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Xem kết quả học tập và thông báo cảnh báo trên cổng sinh viên để xác định nguyên nhân cụ thể.\n2. Lập danh sách môn nợ, học phần cần cải thiện và kế hoạch đăng ký phù hợp cho kỳ tiếp theo.\n3. Trao đổi sớm với cố vấn học tập hoặc Phòng Đào tạo và lưu lại phương án đã được hướng dẫn.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái cảnh báo học vụ trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Mức cảnh báo và thời hạn xử lý phải đối chiếu theo quy chế áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2141,7 +2141,7 @@
       "answer": "Bạn có thể tra cứu mức cảnh báo từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Xem kết quả học tập và thông báo cảnh báo trên cổng sinh viên để xác định nguyên nhân cụ thể.\n2. Lập danh sách môn nợ, học phần cần cải thiện và kế hoạch đăng ký phù hợp cho kỳ tiếp theo.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của mức cảnh báo trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Trao đổi sớm với cố vấn học tập hoặc Phòng Đào tạo và lưu lại phương án đã được hướng dẫn.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Mức cảnh báo và thời hạn xử lý phải đối chiếu theo quy chế áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2157,7 +2157,7 @@
       "answer": "Bạn có thể tra cứu khắc phục cảnh báo học vụ từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Xem kết quả học tập và thông báo cảnh báo trên cổng sinh viên để xác định nguyên nhân cụ thể.\n2. Lập danh sách môn nợ, học phần cần cải thiện và kế hoạch đăng ký phù hợp cho kỳ tiếp theo.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của khắc phục cảnh báo học vụ trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Trao đổi sớm với cố vấn học tập hoặc Phòng Đào tạo và lưu lại phương án đã được hướng dẫn.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Mức cảnh báo và thời hạn xử lý phải đối chiếu theo quy chế áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2173,7 +2173,7 @@
       "answer": "Để thực hiện thời hạn bảo lưu, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\nQuy trình đề xuất:\n1. Xem kết quả học tập và thông báo cảnh báo trên cổng sinh viên để xác định nguyên nhân cụ thể.\n2. Lập danh sách môn nợ, học phần cần cải thiện và kế hoạch đăng ký phù hợp cho kỳ tiếp theo.\n3. Trao đổi sớm với cố vấn học tập hoặc Phòng Đào tạo và lưu lại phương án đã được hướng dẫn.\n\nSau khi hoàn tất:\n• Kiểm tra lại trạng thái thời hạn bảo lưu trên hệ thống.\n• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\nLưu ý: Mức cảnh báo và thời hạn xử lý phải đối chiếu theo quy chế áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2189,7 +2189,7 @@
       "answer": "Bạn có thể tra cứu quay lại học sau bảo lưu từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Xem kết quả học tập và thông báo cảnh báo trên cổng sinh viên để xác định nguyên nhân cụ thể.\n2. Lập danh sách môn nợ, học phần cần cải thiện và kế hoạch đăng ký phù hợp cho kỳ tiếp theo.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của quay lại học sau bảo lưu trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Trao đổi sớm với cố vấn học tập hoặc Phòng Đào tạo và lưu lại phương án đã được hướng dẫn.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Mức cảnh báo và thời hạn xử lý phải đối chiếu theo quy chế áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2205,7 +2205,7 @@
       "answer": "Bạn có thể tra cứu điểm môn học lại từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Xem kết quả học tập và thông báo cảnh báo trên cổng sinh viên để xác định nguyên nhân cụ thể.\n2. Lập danh sách môn nợ, học phần cần cải thiện và kế hoạch đăng ký phù hợp cho kỳ tiếp theo.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của điểm môn học lại trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Trao đổi sớm với cố vấn học tập hoặc Phòng Đào tạo và lưu lại phương án đã được hướng dẫn.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Mức cảnh báo và thời hạn xử lý phải đối chiếu theo quy chế áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2221,7 +2221,7 @@
       "answer": "Khi gặp vấn đề về thiết bị phòng học hỏng, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Ghi nhận vị trí, phòng, thời điểm và mô tả rõ vấn đề hoặc tài sản liên quan.\n2. Báo cho giảng viên, bảo vệ, quản lý phòng hoặc bộ phận cơ sở vật chất gần nhất.\n3. Cung cấp ảnh minh chứng khi an toàn và theo dõi mã/yêu cầu xử lý; không tự sửa thiết bị điện.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến thiết bị phòng học hỏng, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Với tài sản thất lạc, chỉ nhận lại qua đầu mối có xác minh và không công khai dữ liệu nhạy cảm.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2237,7 +2237,7 @@
       "answer": "Bạn có thể tra cứu sử dụng phòng máy từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Ghi nhận vị trí, phòng, thời điểm và mô tả rõ vấn đề hoặc tài sản liên quan.\n2. Báo cho giảng viên, bảo vệ, quản lý phòng hoặc bộ phận cơ sở vật chất gần nhất.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của sử dụng phòng máy trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Cung cấp ảnh minh chứng khi an toàn và theo dõi mã/yêu cầu xử lý; không tự sửa thiết bị điện.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Với tài sản thất lạc, chỉ nhận lại qua đầu mối có xác minh và không công khai dữ liệu nhạy cảm.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2253,7 +2253,7 @@
       "answer": "Bạn có thể tra cứu sơ đồ phòng học từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\nCác bước tra cứu:\n1. Ghi nhận vị trí, phòng, thời điểm và mô tả rõ vấn đề hoặc tài sản liên quan.\n2. Báo cho giảng viên, bảo vệ, quản lý phòng hoặc bộ phận cơ sở vật chất gần nhất.\n3. Đối chiếu mã sinh viên, học kỳ và trạng thái của sơ đồ phòng học trước khi sử dụng thông tin.\n\nNếu chưa thấy dữ liệu:\n• Cung cấp ảnh minh chứng khi an toàn và theo dõi mã/yêu cầu xử lý; không tự sửa thiết bị điện.\n• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\nLưu ý: Với tài sản thất lạc, chỉ nhận lại qua đầu mối có xác minh và không công khai dữ liệu nhạy cảm.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2269,7 +2269,7 @@
       "answer": "Khi gặp vấn đề về đồ thất lạc trong trường, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\nCách xử lý:\n1. Ghi nhận vị trí, phòng, thời điểm và mô tả rõ vấn đề hoặc tài sản liên quan.\n2. Báo cho giảng viên, bảo vệ, quản lý phòng hoặc bộ phận cơ sở vật chất gần nhất.\n3. Cung cấp ảnh minh chứng khi an toàn và theo dõi mã/yêu cầu xử lý; không tự sửa thiết bị điện.\n\nThông tin nên chuẩn bị:\n• Mã số sinh viên và học kỳ đang xử lý.\n• Nội dung liên quan đến đồ thất lạc trong trường, thời điểm xảy ra và ảnh chụp minh chứng.\n\nLưu ý: Với tài sản thất lạc, chỉ nhận lại qua đầu mối có xác minh và không công khai dữ liệu nhạy cảm.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2285,7 +2285,7 @@
       "answer": "Điện toán đám mây là mô hình cung cấp tài nguyên CNTT qua mạng theo nhu cầu.\n• Tài nguyên thường gồm máy chủ, lưu trữ, cơ sở dữ liệu, mạng và phần mềm.\n• Người dùng có thể mở rộng hoặc thu hẹp nhanh mà không phải tự sở hữu toàn bộ hạ tầng.\n• Chi phí thường dựa trên mức sử dụng.\nVí dụ: lưu tệp trên dịch vụ trực tuyến hoặc triển khai ứng dụng lên nền tảng cloud.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2301,7 +2301,7 @@
       "answer": "IaaS, PaaS và SaaS khác nhau ở phần người dùng phải tự quản lý.\n• IaaS: thuê hạ tầng như máy ảo, mạng và ổ đĩa; bạn quản lý hệ điều hành và ứng dụng.\n• PaaS: nền tảng lo hạ tầng và môi trường chạy; bạn tập trung phát triển ứng dụng.\n• SaaS: dùng phần mềm hoàn chỉnh qua web hoặc ứng dụng.\nCó thể nhớ ngắn gọn: IaaS cho hạ tầng, PaaS cho môi trường phát triển, SaaS cho người dùng cuối.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2317,7 +2317,7 @@
       "answer": "Điện toán đám mây giúp tổ chức triển khai dịch vụ nhanh và linh hoạt hơn.\n• Mở rộng tài nguyên theo nhu cầu thay vì mua sẵn toàn bộ thiết bị.\n• Truy cập dịch vụ từ nhiều nơi và hỗ trợ cộng tác.\n• Giảm công việc vận hành phần cứng tại chỗ.\n• Có công cụ sao lưu, giám sát và tự động hóa.\nLợi ích thực tế còn phụ thuộc kiến trúc, chi phí, bảo mật và năng lực quản trị.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2333,7 +2333,7 @@
       "answer": "Cloud công cộng dùng hạ tầng do nhà cung cấp vận hành và chia sẻ theo cơ chế cô lập giữa nhiều khách hàng; cloud riêng dành cho một tổ chức.\n• Public cloud: triển khai nhanh, dễ mở rộng, ít đầu tư ban đầu.\n• Private cloud: kiểm soát và tùy biến cao hơn nhưng cần nguồn lực vận hành.\n• Hybrid cloud kết hợp hai mô hình.\nNên lựa chọn dựa trên dữ liệu, tuân thủ, chi phí, hiệu năng và đội ngũ kỹ thuật.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2349,7 +2349,7 @@
       "answer": "UTH CloudBot hỗ trợ ba nhóm chức năng.\n• FAQ: trả lời các câu hỏi thủ tục từ bộ dữ liệu mẫu.\n• Trợ lý cá nhân: hiển thị lịch học, bài tập, kỳ thi và thông báo demo sau khi đăng nhập.\n• Gemini AI: giải thích kiến thức mở khi FAQ không phù hợp.\nMỗi câu trả lời đều có nhãn nguồn để người dùng phân biệt; dữ liệu demo không thay thế thông báo chính thức của UTH.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2365,7 +2365,7 @@
       "answer": "Để CloudBot hiểu đúng, hãy nêu một nhu cầu trong mỗi câu và thêm ngữ cảnh cần thiết.\n• Tốt: “Tuần này tôi học những môn gì?”\n• Tốt: “Tra cứu học phí như thế nào?”\n• Tốt: “Giải thích IaaS cho người mới bắt đầu.”\nTránh câu quá ngắn như “lịch?” hoặc gộp nhiều yêu cầu. Không nhập mật khẩu, OTP, API key hay dữ liệu cá nhân nhạy cảm vào ô chat.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2381,7 +2381,7 @@
       "answer": "Fallback xuất hiện khi câu hỏi chưa khớp FAQ, dữ liệu cá nhân hoặc Gemini đang không khả dụng.\n• Viết lại câu hỏi cụ thể hơn và chỉ hỏi một nội dung mỗi lần.\n• Kiểm tra trạng thái kết nối máy chủ.\n• Với câu hỏi cá nhân, hãy đăng nhập trước.\n• Với kiến thức mở, thử lại sau nếu Gemini đang lỗi.\nFallback là phản hồi an toàn, không phải thông tin chính thức để sử dụng ra quyết định.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"
@@ -2397,7 +2397,7 @@
       "answer": "Câu trả lời từ Gemini được nhận biết bằng nhãn “Gemini AI” và ghi chú nội dung do AI tạo.\n• Nguồn FAQ có nhãn “FAQ”.\n• Lịch học, bài tập và dữ liệu cá nhân demo có nhãn “Dữ liệu demo”.\n• Khi hệ thống không xử lý được, nhãn là “Fallback”.\nNội dung Gemini có thể sai hoặc thiếu; hãy kiểm tra nguồn chuyên môn trước khi dùng cho học tập hay quyết định quan trọng.",
       "source": {
         "type": "sample",
-        "title": "Dữ liệu demo UTH CloudBot",
+        "title": "Bộ FAQ UTH CloudBot",
         "url": null
       },
       "updated_at": "2026-08-16T00:00:00+07:00"

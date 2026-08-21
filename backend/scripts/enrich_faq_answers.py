@@ -225,6 +225,7 @@ def main():
         raise ValueError(f"Expected 150 FAQs, found {len(faqs)}")
     for number, faq in enumerate(faqs, 1):
         faq["answer"] = build_answer(number, faq)
+        faq["source"] = {"type": "sample", "title": "Bộ FAQ UTH CloudBot", "url": None}
     FAQ_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 

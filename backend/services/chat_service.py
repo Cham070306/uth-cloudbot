@@ -1,7 +1,6 @@
 from services.faq_service import build_faq_response, find_faq
 from services.gemini_service import GeminiUnavailableError, generate_answer
 from services.intent_service import classify_intent, normalize_text
-from services.mock_chat_service import get_mock_response
 from services.student_service import (
     current_week_range, get_announcements, get_assignments, get_exams, get_remaining_schedule, get_schedule,
     get_upcoming_assignments,
@@ -45,20 +44,24 @@ def _authentication_response(intent):
     }
 
 
-def _fallback_response(message, intent):
-    response = get_mock_response(message)
-    answer = response["answer"]
-    response.update({
+def _gemini_unavailable_response(intent):
+    answer = (
+        "Gemini hiện chưa thể phản hồi câu hỏi này. Bạn vui lòng thử lại sau hoặc kiểm tra "
+        "cấu hình API, kết nối mạng và hạn mức sử dụng của dịch vụ."
+    )
+    return {
+        "answer": answer,
         "intent": intent,
-        "source": {"type": "fallback", "title": "Phản hồi dự phòng", "url": None},
+        "source": {"type": "fallback", "title": "Gemini tạm thời không khả dụng", "url": None},
+        "updated_at": None,
+        "invalid": False,
         "ai_generated": False,
         "fallback_used": True,
         "paragraphs": [answer],
         "list": [],
-        "sources": [{"label": "Phản hồi dự phòng", "url": None}],
+        "sources": [{"label": "Gemini tạm thời không khả dụng", "url": None}],
         "data": {"items": []},
-    })
-    return response
+    }
 
 
 def _gemini_response(message, intent):
@@ -120,19 +123,11 @@ def get_chat_response(message, student=None):
             response["confirmation"] = {"action": intent, "raw_message": message}
             return response
 
-    # Dynamic operational intents keep priority over static FAQ matches. This
-    # prevents a broad FAQ phrase from replacing schedule/exam/document flows.
-    if intent in {"schedule", "exam_schedule", "document"}:
-        return _fallback_response(message, intent)
-
     faq = find_faq(message)
     if faq is not None:
         return build_faq_response(faq)
 
-    if intent in {"knowledge", "unknown"}:
-        try:
-            return _gemini_response(message, intent)
-        except GeminiUnavailableError:
-            pass
-
-    return _fallback_response(message, intent)
+    try:
+        return _gemini_response(message, intent)
+    except GeminiUnavailableError:
+        return _gemini_unavailable_response(intent)

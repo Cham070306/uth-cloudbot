@@ -103,3 +103,4 @@ def test_remaining_schedule_excludes_classes_that_already_ended():
 
 def test_find_faq_rejects_unrelated_question():
     assert find_faq("Thời tiết hôm nay thế nào?") is None
+    assert find_faq("Giới thiệu chung về Trường Đại học Giao thông vận tải Thành phố Hồ Chí Minh") is None

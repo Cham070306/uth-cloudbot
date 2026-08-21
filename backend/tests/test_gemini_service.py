@@ -144,8 +144,16 @@ def test_faq_has_priority_and_never_calls_gemini(monkeypatch):
     assert result["fallback_used"] is False
 
 
-@pytest.mark.parametrize("message", ["Giải thích điện toán đám mây là gì", "Thời tiết hôm nay"])
-def test_knowledge_and_unknown_use_gemini_without_faq(monkeypatch, message):
+@pytest.mark.parametrize(
+    "message",
+    [
+        "Giới thiệu chung về Trường Đại học Giao thông vận tải Thành phố Hồ Chí Minh",
+        "Thời tiết hôm nay",
+        "Tìm tài liệu về trí tuệ nhân tạo",
+        "Lịch diễn ra hội thao năm nay",
+    ],
+)
+def test_every_non_faq_question_uses_gemini(monkeypatch, message):
     calls = []
     monkeypatch.setattr(chat_service, "generate_answer", lambda value: calls.append(value) or {
         "answer": "Câu trả lời AI", "source": {"type": "gemini", "title": "Gemini AI", "url": None},
@@ -160,7 +168,8 @@ def test_knowledge_and_unknown_use_gemini_without_faq(monkeypatch, message):
 def test_gemini_failure_uses_complete_fallback(monkeypatch):
     monkeypatch.setattr(chat_service, "generate_answer", lambda _message: (_ for _ in ()).throw(GeminiUnavailableError("timeout")))
     result = chat_service.get_chat_response("Giải thích điện toán đám mây là gì")
-    assert result["source"] == {"type": "fallback", "title": "Phản hồi dự phòng", "url": None}
+    assert result["source"] == {"type": "fallback", "title": "Gemini tạm thời không khả dụng", "url": None}
+    assert "phản hồi minh họa" not in result["answer"].lower()
     assert result["ai_generated"] is False
     assert result["fallback_used"] is True
     assert {"answer", "intent", "source", "invalid", "paragraphs", "list", "sources", "data"} <= result.keys()
