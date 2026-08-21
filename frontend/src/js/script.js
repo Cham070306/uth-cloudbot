@@ -343,12 +343,29 @@
     }
   }
 
+  function markdownToPlainText(value) {
+    return String(value || "")
+      .replace(/```[a-zA-Z0-9_+-]*\s*/g, "")
+      .replace(/```|`/g, "")
+      .replace(/^\s{0,3}#{1,6}\s*/gm, "")
+      .replace(/^\s*>\s?/gm, "")
+      .replace(/\*\*(.+?)\*\*|__(.+?)__/g, (_match, boldA, boldB) => boldA || boldB)
+      .replace(/(^|[^*])\*([^*\n]+)\*(?!\*)/g, "$1$2")
+      .replace(/(^|[^_])_([^_\n]+)_(?!_)/g, "$1$2")
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1 ($2)")
+      .replace(/^\s*[-*+]\s+/gm, "• ")
+      .replace(/^\s*([-*_])(?:\s*\1){2,}\s*$/gm, "")
+      .replace(/\n{3,}/g, "\n\n")
+      .trim();
+  }
+
   function addBotMessage({ answer, intent, items = [], sourceObj, sourceText, aiGenerated, fallbackUsed, updated_at }, lastQuestion) {
     const node = botTpl.content.cloneNode(true);
     const resolvedType = inferSourceType(sourceObj, aiGenerated, fallbackUsed);
     const meta = CONFIG.SOURCE_LABELS[resolvedType];
 
-    node.querySelector(".msg__answer").textContent = answer;
+    const displayedAnswer = aiGenerated ? markdownToPlainText(answer) : answer;
+    node.querySelector(".msg__answer").textContent = displayedAnswer;
     renderDetails(node.querySelector(".msg__details"), intent, items);
     node.querySelector(".msg__source-badge").textContent = meta.label;
     node.querySelector(".msg__source-badge").classList.add("badge--" + resolvedType);
