@@ -284,7 +284,22 @@ body {
   margin: 0 0 8px;
   white-space: pre-line;
   overflow-wrap: anywhere;
-  line-height: 1.65;
+  line-height: 1.6;
+}
+.msg__answer p { margin: 0 0 10px; }
+.msg__answer p:last-child { margin-bottom: 0; }
+.msg__answer-heading {
+  margin-top: 14px !important;
+  margin-bottom: 5px !important;
+  color: var(--forest);
+}
+.msg__answer-list {
+  margin: 4px 0 12px;
+  padding-left: 22px;
+}
+.msg__answer-list li {
+  margin: 4px 0;
+  padding-left: 3px;
 }
 
 .msg__details {

@@ -359,13 +359,58 @@
       .trim();
   }
 
+  function renderStructuredAnswer(container, value) {
+    const lines = markdownToPlainText(value).split("\n");
+    let activeList = null;
+    let activeType = "";
+
+    lines.forEach((rawLine) => {
+      const line = rawLine.trim();
+      if (!line) {
+        activeList = null;
+        activeType = "";
+        return;
+      }
+
+      const bullet = line.match(/^•\s+(.+)/);
+      const numbered = line.match(/^\d{1,2}\.\s+(.+)/);
+      const listType = bullet ? "ul" : numbered ? "ol" : "";
+      if (listType) {
+        if (!activeList || activeType !== listType) {
+          activeList = document.createElement(listType);
+          activeList.className = "msg__answer-list";
+          container.appendChild(activeList);
+          activeType = listType;
+        }
+        const item = document.createElement("li");
+        item.textContent = (bullet || numbered)[1];
+        activeList.appendChild(item);
+        return;
+      }
+
+      activeList = null;
+      activeType = "";
+      const paragraph = document.createElement("p");
+      if (line.endsWith(":") && line.length <= 80) {
+        paragraph.className = "msg__answer-heading";
+        const heading = document.createElement("strong");
+        heading.textContent = line;
+        paragraph.appendChild(heading);
+      } else {
+        paragraph.textContent = line;
+      }
+      container.appendChild(paragraph);
+    });
+  }
+
   function addBotMessage({ answer, intent, items = [], sourceObj, sourceText, aiGenerated, fallbackUsed, updated_at }, lastQuestion) {
     const node = botTpl.content.cloneNode(true);
     const resolvedType = inferSourceType(sourceObj, aiGenerated, fallbackUsed);
     const meta = CONFIG.SOURCE_LABELS[resolvedType];
 
-    const displayedAnswer = aiGenerated ? markdownToPlainText(answer) : answer;
-    node.querySelector(".msg__answer").textContent = displayedAnswer;
+    const answerEl = node.querySelector(".msg__answer");
+    if (aiGenerated) renderStructuredAnswer(answerEl, answer);
+    else answerEl.textContent = answer;
     renderDetails(node.querySelector(".msg__details"), intent, items);
     node.querySelector(".msg__source-badge").textContent = meta.label;
     node.querySelector(".msg__source-badge").classList.add("badge--" + resolvedType);
