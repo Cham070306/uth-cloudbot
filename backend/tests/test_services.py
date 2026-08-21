@@ -20,6 +20,8 @@ def test_faq_dataset_has_unique_ids_and_required_fields():
     for faq in faqs:
         assert {"id", "question", "keywords", "answer", "source", "updated_at"} <= faq.keys()
         assert faq["question"].strip() and faq["answer"].strip()
+        assert len(faq["answer"]) >= 90
+        assert "phụ thuộc kế hoạch và quy định áp dụng" not in faq["answer"]
         assert len(faq["keywords"]) >= 3
         assert all(isinstance(keyword, str) and keyword.strip() for keyword in faq["keywords"])
         normalized_keywords = [normalize_text(keyword) for keyword in faq["keywords"]]

@@ -490,7 +490,7 @@
         "hướng dẫn học phần tiên quyết",
         "tra cứu học phần tiên quyết"
       ],
-      "answer": "Nội dung học phần tiên quyết phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung học phần tiên quyết, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Tiếp theo, ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Nếu chưa giải quyết được, gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -506,7 +506,7 @@
         "hướng dẫn học phần song hành",
         "tra cứu học phần song hành"
       ],
-      "answer": "Nội dung học phần song hành phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung học phần song hành, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Tiếp theo, ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Nếu chưa giải quyết được, gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -522,7 +522,7 @@
         "hướng dẫn đăng ký vượt tín chỉ",
         "tra cứu đăng ký vượt tín chỉ"
       ],
-      "answer": "Nội dung đăng ký vượt tín chỉ phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung đăng ký vượt tín chỉ, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Tiếp theo, ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Nếu chưa giải quyết được, gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -538,7 +538,7 @@
         "hướng dẫn sĩ số lớp học phần",
         "tra cứu sĩ số lớp học phần"
       ],
-      "answer": "Nội dung sĩ số lớp học phần phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung sĩ số lớp học phần, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Tiếp theo, ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Nếu chưa giải quyết được, gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -554,7 +554,7 @@
         "hướng dẫn điều chỉnh học phần",
         "tra cứu điều chỉnh học phần"
       ],
-      "answer": "Nội dung điều chỉnh học phần phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung điều chỉnh học phần, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Tiếp theo, ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Nếu chưa giải quyết được, gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -570,7 +570,7 @@
         "hướng dẫn trùng lịch học phần",
         "tra cứu trùng lịch học phần"
       ],
-      "answer": "Nội dung trùng lịch học phần phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung trùng lịch học phần, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Tiếp theo, ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Nếu chưa giải quyết được, gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -586,7 +586,7 @@
         "hướng dẫn học phần không mở",
         "tra cứu học phần không mở"
       ],
-      "answer": "Nội dung học phần không mở phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung học phần không mở, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Tiếp theo, ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Nếu chưa giải quyết được, gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -602,7 +602,7 @@
         "hướng dẫn học phần khác ngành",
         "tra cứu học phần khác ngành"
       ],
-      "answer": "Nội dung học phần khác ngành phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung học phần khác ngành, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Tiếp theo, ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Nếu chưa giải quyết được, gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -618,7 +618,7 @@
         "hướng dẫn học phần tự chọn",
         "tra cứu học phần tự chọn"
       ],
-      "answer": "Nội dung học phần tự chọn phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung học phần tự chọn, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Tiếp theo, ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Nếu chưa giải quyết được, gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -634,7 +634,7 @@
         "hướng dẫn học phần bắt buộc",
         "tra cứu học phần bắt buộc"
       ],
-      "answer": "Nội dung học phần bắt buộc phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung học phần bắt buộc, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Tiếp theo, ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Nếu chưa giải quyết được, gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -650,7 +650,7 @@
         "hướng dẫn lớp thực hành",
         "tra cứu lớp thực hành"
       ],
-      "answer": "Nội dung lớp thực hành phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung lớp thực hành, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Tiếp theo, ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Nếu chưa giải quyết được, gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -666,7 +666,7 @@
         "hướng dẫn mã học phần",
         "tra cứu mã học phần"
       ],
-      "answer": "Nội dung mã học phần phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung mã học phần, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Tiếp theo, ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Nếu chưa giải quyết được, gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -682,7 +682,7 @@
         "hướng dẫn chương trình đào tạo",
         "tra cứu chương trình đào tạo"
       ],
-      "answer": "Nội dung chương trình đào tạo phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung chương trình đào tạo, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Tiếp theo, ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Nếu chưa giải quyết được, gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -698,7 +698,7 @@
         "hướng dẫn hủy đăng ký học kỳ",
         "tra cứu hủy đăng ký học kỳ"
       ],
-      "answer": "Nội dung hủy đăng ký học kỳ phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung hủy đăng ký học kỳ, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Tiếp theo, ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Nếu chưa giải quyết được, gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -714,7 +714,7 @@
         "hướng dẫn đăng ký môn bằng điện thoại",
         "tra cứu đăng ký môn bằng điện thoại"
       ],
-      "answer": "Nội dung đăng ký môn bằng điện thoại phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung đăng ký môn bằng điện thoại, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Tiếp theo, ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Nếu chưa giải quyết được, gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -730,7 +730,7 @@
         "hướng dẫn xác nhận đăng ký học phần",
         "tra cứu xác nhận đăng ký học phần"
       ],
-      "answer": "Nội dung xác nhận đăng ký học phần phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung xác nhận đăng ký học phần, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở cổng sinh viên và đối chiếu chương trình đào tạo, điều kiện học phần cùng thông báo của học kỳ.\n2. Tiếp theo, ghi lại mã học phần, lớp, học kỳ và chụp màn hình trạng thái thao tác.\n3. Nếu chưa giải quyết được, gửi cố vấn học tập hoặc Phòng Đào tạo các thông tin trên nếu hệ thống không cho thực hiện.\nLưu ý: Chỉ xem mốc thời gian và điều kiện trên thông báo chính thức đang áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -746,7 +746,7 @@
         "hướng dẫn học phí theo tín chỉ",
         "tra cứu học phí theo tín chỉ"
       ],
-      "answer": "Nội dung học phí theo tín chỉ phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung học phí theo tín chỉ, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Tiếp theo, chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Nếu chưa giải quyết được, liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -762,7 +762,7 @@
         "hướng dẫn kênh đóng học phí",
         "tra cứu kênh đóng học phí"
       ],
-      "answer": "Nội dung kênh đóng học phí phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung kênh đóng học phí, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Tiếp theo, chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Nếu chưa giải quyết được, liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -778,7 +778,7 @@
         "hướng dẫn giao dịch học phí",
         "tra cứu giao dịch học phí"
       ],
-      "answer": "Nội dung giao dịch học phí phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung giao dịch học phí, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Tiếp theo, chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Nếu chưa giải quyết được, liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -794,7 +794,7 @@
         "hướng dẫn trễ hạn học phí",
         "tra cứu trễ hạn học phí"
       ],
-      "answer": "Nội dung trễ hạn học phí phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung trễ hạn học phí, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Tiếp theo, chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Nếu chưa giải quyết được, liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -810,7 +810,7 @@
         "hướng dẫn đóng học phí nhiều lần",
         "tra cứu đóng học phí nhiều lần"
       ],
-      "answer": "Nội dung đóng học phí nhiều lần phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung đóng học phí nhiều lần, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Tiếp theo, chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Nếu chưa giải quyết được, liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -826,7 +826,7 @@
         "hướng dẫn học phí môn học lại",
         "tra cứu học phí môn học lại"
       ],
-      "answer": "Nội dung học phí môn học lại phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung học phí môn học lại, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Tiếp theo, chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Nếu chưa giải quyết được, liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -842,7 +842,7 @@
         "hướng dẫn học phí cải thiện",
         "tra cứu học phí cải thiện"
       ],
-      "answer": "Nội dung học phí cải thiện phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung học phí cải thiện, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Tiếp theo, chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Nếu chưa giải quyết được, liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -858,7 +858,7 @@
         "hướng dẫn khoản thu bảo hiểm",
         "tra cứu khoản thu bảo hiểm"
       ],
-      "answer": "Nội dung khoản thu bảo hiểm phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung khoản thu bảo hiểm, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Tiếp theo, chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Nếu chưa giải quyết được, liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -874,7 +874,7 @@
         "hướng dẫn sai nội dung chuyển khoản",
         "tra cứu sai nội dung chuyển khoản"
       ],
-      "answer": "Nội dung sai nội dung chuyển khoản phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung sai nội dung chuyển khoản, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Tiếp theo, chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Nếu chưa giải quyết được, liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -890,7 +890,7 @@
         "hướng dẫn học phí ghi nhận thiếu",
         "tra cứu học phí ghi nhận thiếu"
       ],
-      "answer": "Nội dung học phí ghi nhận thiếu phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung học phí ghi nhận thiếu, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Tiếp theo, chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Nếu chưa giải quyết được, liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -906,7 +906,7 @@
         "hướng dẫn hoàn học phí rút môn",
         "tra cứu hoàn học phí rút môn"
       ],
-      "answer": "Nội dung hoàn học phí rút môn phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung hoàn học phí rút môn, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Tiếp theo, chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Nếu chưa giải quyết được, liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -922,7 +922,7 @@
         "hướng dẫn công nợ sinh viên",
         "tra cứu công nợ sinh viên"
       ],
-      "answer": "Nội dung công nợ sinh viên phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung công nợ sinh viên, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Tiếp theo, chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Nếu chưa giải quyết được, liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -938,7 +938,7 @@
         "hướng dẫn lệ phí giấy tờ",
         "tra cứu lệ phí giấy tờ"
       ],
-      "answer": "Nội dung lệ phí giấy tờ phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung lệ phí giấy tờ, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở mục Tài chính/Học phí trên cổng sinh viên và đối chiếu từng khoản phải thu.\n2. Tiếp theo, chuẩn bị mã sinh viên, biên lai hoặc mã giao dịch, thời gian và số tiền đã thanh toán.\n3. Nếu chưa giải quyết được, liên hệ bộ phận tài chính qua kênh chính thức nếu dữ liệu chưa khớp; lưu lại nội dung phản hồi.\nLưu ý: Không chuyển tiền theo tài khoản hoặc đường dẫn do nguồn không chính thức cung cấp.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -954,7 +954,7 @@
         "hướng dẫn tra cứu lịch thi",
         "tra cứu tra cứu lịch thi"
       ],
-      "answer": "Nội dung tra cứu lịch thi phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung tra cứu lịch thi, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Tiếp theo, đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Nếu chưa giải quyết được, báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -970,7 +970,7 @@
         "hướng dẫn trùng lịch thi",
         "tra cứu trùng lịch thi"
       ],
-      "answer": "Nội dung trùng lịch thi phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung trùng lịch thi, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Tiếp theo, đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Nếu chưa giải quyết được, báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -986,7 +986,7 @@
         "hướng dẫn quên thẻ khi thi",
         "tra cứu quên thẻ khi thi"
       ],
-      "answer": "Nội dung quên thẻ khi thi phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung quên thẻ khi thi, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Tiếp theo, đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Nếu chưa giải quyết được, báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1002,7 +1002,7 @@
         "hướng dẫn vắng thi có phép",
         "tra cứu vắng thi có phép"
       ],
-      "answer": "Nội dung vắng thi có phép phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung vắng thi có phép, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Tiếp theo, đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Nếu chưa giải quyết được, báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1018,7 +1018,7 @@
         "hướng dẫn điểm chuyên cần",
         "tra cứu điểm chuyên cần"
       ],
-      "answer": "Nội dung điểm chuyên cần phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung điểm chuyên cần, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Tiếp theo, đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Nếu chưa giải quyết được, báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1034,7 +1034,7 @@
         "hướng dẫn quy đổi điểm chữ",
         "tra cứu quy đổi điểm chữ"
       ],
-      "answer": "Nội dung quy đổi điểm chữ phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung quy đổi điểm chữ, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Tiếp theo, đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Nếu chưa giải quyết được, báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1050,7 +1050,7 @@
         "hướng dẫn thời gian công bố điểm",
         "tra cứu thời gian công bố điểm"
       ],
-      "answer": "Nội dung thời gian công bố điểm phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung thời gian công bố điểm, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Tiếp theo, đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Nếu chưa giải quyết được, báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1066,7 +1066,7 @@
         "hướng dẫn sai lệch điểm",
         "tra cứu sai lệch điểm"
       ],
-      "answer": "Nội dung sai lệch điểm phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung sai lệch điểm, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Tiếp theo, đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Nếu chưa giải quyết được, báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1082,7 +1082,7 @@
         "hướng dẫn kết quả phúc khảo",
         "tra cứu kết quả phúc khảo"
       ],
-      "answer": "Nội dung kết quả phúc khảo phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung kết quả phúc khảo, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Tiếp theo, đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Nếu chưa giải quyết được, báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1098,7 +1098,7 @@
         "hướng dẫn phúc khảo điểm quá trình",
         "tra cứu phúc khảo điểm quá trình"
       ],
-      "answer": "Nội dung phúc khảo điểm quá trình phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung phúc khảo điểm quá trình, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Tiếp theo, đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Nếu chưa giải quyết được, báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1114,7 +1114,7 @@
         "hướng dẫn chuẩn bị thi trực tuyến",
         "tra cứu chuẩn bị thi trực tuyến"
       ],
-      "answer": "Nội dung chuẩn bị thi trực tuyến phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung chuẩn bị thi trực tuyến, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, kiểm tra lịch thi, quy định học phần và thông báo của giảng viên trên các kênh chính thức.\n2. Tiếp theo, đối chiếu mã học phần, ngày, ca, phòng thi và tình trạng đủ điều kiện dự thi.\n3. Nếu chưa giải quyết được, báo ngay cho giảng viên hoặc Phòng Đào tạo khi có sai lệch, kèm ảnh chụp và thông tin môn học.\nLưu ý: Lịch, phòng và thủ tục có thể thay đổi; hãy kiểm tra lại sát ngày thi.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1130,7 +1130,7 @@
         "hướng dẫn thời khóa biểu cá nhân",
         "tra cứu thời khóa biểu cá nhân"
       ],
-      "answer": "Nội dung thời khóa biểu cá nhân phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung thời khóa biểu cá nhân, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Tiếp theo, đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Nếu chưa giải quyết được, xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1146,7 +1146,7 @@
         "hướng dẫn thay đổi lịch học",
         "tra cứu thay đổi lịch học"
       ],
-      "answer": "Nội dung thay đổi lịch học phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung thay đổi lịch học, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Tiếp theo, đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Nếu chưa giải quyết được, xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1162,7 +1162,7 @@
         "hướng dẫn tra phòng học",
         "tra cứu tra phòng học"
       ],
-      "answer": "Nội dung tra phòng học phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung tra phòng học, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Tiếp theo, đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Nếu chưa giải quyết được, xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1178,7 +1178,7 @@
         "hướng dẫn hủy buổi học",
         "tra cứu hủy buổi học"
       ],
-      "answer": "Nội dung hủy buổi học phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung hủy buổi học, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Tiếp theo, đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Nếu chưa giải quyết được, xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1194,7 +1194,7 @@
         "hướng dẫn lịch học bù",
         "tra cứu lịch học bù"
       ],
-      "answer": "Nội dung lịch học bù phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung lịch học bù, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Tiếp theo, đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Nếu chưa giải quyết được, xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1210,7 +1210,7 @@
         "hướng dẫn xin nghỉ một buổi",
         "tra cứu xin nghỉ một buổi"
       ],
-      "answer": "Nội dung xin nghỉ một buổi phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung xin nghỉ một buổi, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Tiếp theo, đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Nếu chưa giải quyết được, xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1226,7 +1226,7 @@
         "hướng dẫn đi học muộn",
         "tra cứu đi học muộn"
       ],
-      "answer": "Nội dung đi học muộn phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung đi học muộn, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Tiếp theo, đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Nếu chưa giải quyết được, xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1242,7 +1242,7 @@
         "hướng dẫn lịch thực hành",
         "tra cứu lịch thực hành"
       ],
-      "answer": "Nội dung lịch thực hành phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung lịch thực hành, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Tiếp theo, đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Nếu chưa giải quyết được, xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1258,7 +1258,7 @@
         "hướng dẫn lịch tuần và học kỳ",
         "tra cứu lịch tuần và học kỳ"
       ],
-      "answer": "Nội dung lịch tuần và học kỳ phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung lịch tuần và học kỳ, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Tiếp theo, đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Nếu chưa giải quyết được, xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1274,7 +1274,7 @@
         "hướng dẫn thời khóa biểu chưa cập nhật",
         "tra cứu thời khóa biểu chưa cập nhật"
       ],
-      "answer": "Nội dung thời khóa biểu chưa cập nhật phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung thời khóa biểu chưa cập nhật, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Tiếp theo, đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Nếu chưa giải quyết được, xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1290,7 +1290,7 @@
         "hướng dẫn đổi ca học bù",
         "tra cứu đổi ca học bù"
       ],
-      "answer": "Nội dung đổi ca học bù phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung đổi ca học bù, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Tiếp theo, đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Nếu chưa giải quyết được, xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1306,7 +1306,7 @@
         "hướng dẫn nghỉ lễ học bù",
         "tra cứu nghỉ lễ học bù"
       ],
-      "answer": "Nội dung nghỉ lễ học bù phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung nghỉ lễ học bù, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, mở thời khóa biểu cá nhân và thông báo lớp học phần để kiểm tra ngày, ca và phòng học.\n2. Tiếp theo, đối chiếu mã lớp, tuần học và ghi lại thay đổi hoặc ảnh chụp liên quan.\n3. Nếu chưa giải quyết được, xác nhận với giảng viên, lớp trưởng hoặc Phòng Đào tạo nếu hai nguồn hiển thị khác nhau.\nLưu ý: Ưu tiên thông báo mới nhất có ngày ban hành và đúng lớp học phần của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1322,7 +1322,7 @@
         "hướng dẫn tài khoản bị khóa",
         "tra cứu tài khoản bị khóa"
       ],
-      "answer": "Nội dung tài khoản bị khóa phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung tài khoản bị khóa, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, thử lại trên trang chính thức, kiểm tra kết nối, trình duyệt và thông tin đăng nhập.\n2. Tiếp theo, dùng chức năng khôi phục tài khoản; không chia sẻ mật khẩu, OTP hoặc mã xác minh cho người khác.\n3. Nếu chưa giải quyết được, liên hệ bộ phận hỗ trợ kèm mã sinh viên, thời điểm lỗi và ảnh chụp đã che dữ liệu nhạy cảm.\nLưu ý: Không gửi mật khẩu, OTP hay API key qua email, tin nhắn hoặc biểu mẫu không xác thực.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1338,7 +1338,7 @@
         "hướng dẫn đổi mật khẩu cổng sinh viên",
         "tra cứu đổi mật khẩu cổng sinh viên"
       ],
-      "answer": "Nội dung đổi mật khẩu cổng sinh viên phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung đổi mật khẩu cổng sinh viên, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, thử lại trên trang chính thức, kiểm tra kết nối, trình duyệt và thông tin đăng nhập.\n2. Tiếp theo, dùng chức năng khôi phục tài khoản; không chia sẻ mật khẩu, OTP hoặc mã xác minh cho người khác.\n3. Nếu chưa giải quyết được, liên hệ bộ phận hỗ trợ kèm mã sinh viên, thời điểm lỗi và ảnh chụp đã che dữ liệu nhạy cảm.\nLưu ý: Không gửi mật khẩu, OTP hay API key qua email, tin nhắn hoặc biểu mẫu không xác thực.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1354,7 +1354,7 @@
         "hướng dẫn không nhận mã otp",
         "tra cứu không nhận mã otp"
       ],
-      "answer": "Nội dung không nhận mã otp phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung không nhận mã otp, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, thử lại trên trang chính thức, kiểm tra kết nối, trình duyệt và thông tin đăng nhập.\n2. Tiếp theo, dùng chức năng khôi phục tài khoản; không chia sẻ mật khẩu, OTP hoặc mã xác minh cho người khác.\n3. Nếu chưa giải quyết được, liên hệ bộ phận hỗ trợ kèm mã sinh viên, thời điểm lỗi và ảnh chụp đã che dữ liệu nhạy cảm.\nLưu ý: Không gửi mật khẩu, OTP hay API key qua email, tin nhắn hoặc biểu mẫu không xác thực.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1370,7 +1370,7 @@
         "hướng dẫn lỗi cổng sinh viên",
         "tra cứu lỗi cổng sinh viên"
       ],
-      "answer": "Nội dung lỗi cổng sinh viên phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung lỗi cổng sinh viên, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, thử lại trên trang chính thức, kiểm tra kết nối, trình duyệt và thông tin đăng nhập.\n2. Tiếp theo, dùng chức năng khôi phục tài khoản; không chia sẻ mật khẩu, OTP hoặc mã xác minh cho người khác.\n3. Nếu chưa giải quyết được, liên hệ bộ phận hỗ trợ kèm mã sinh viên, thời điểm lỗi và ảnh chụp đã che dữ liệu nhạy cảm.\nLưu ý: Không gửi mật khẩu, OTP hay API key qua email, tin nhắn hoặc biểu mẫu không xác thực.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1386,7 +1386,7 @@
         "hướng dẫn đăng nhập nhiều thiết bị",
         "tra cứu đăng nhập nhiều thiết bị"
       ],
-      "answer": "Nội dung đăng nhập nhiều thiết bị phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung đăng nhập nhiều thiết bị, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, thử lại trên trang chính thức, kiểm tra kết nối, trình duyệt và thông tin đăng nhập.\n2. Tiếp theo, dùng chức năng khôi phục tài khoản; không chia sẻ mật khẩu, OTP hoặc mã xác minh cho người khác.\n3. Nếu chưa giải quyết được, liên hệ bộ phận hỗ trợ kèm mã sinh viên, thời điểm lỗi và ảnh chụp đã che dữ liệu nhạy cảm.\nLưu ý: Không gửi mật khẩu, OTP hay API key qua email, tin nhắn hoặc biểu mẫu không xác thực.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1402,7 +1402,7 @@
         "hướng dẫn đăng xuất thiết bị cũ",
         "tra cứu đăng xuất thiết bị cũ"
       ],
-      "answer": "Nội dung đăng xuất thiết bị cũ phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung đăng xuất thiết bị cũ, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, thử lại trên trang chính thức, kiểm tra kết nối, trình duyệt và thông tin đăng nhập.\n2. Tiếp theo, dùng chức năng khôi phục tài khoản; không chia sẻ mật khẩu, OTP hoặc mã xác minh cho người khác.\n3. Nếu chưa giải quyết được, liên hệ bộ phận hỗ trợ kèm mã sinh viên, thời điểm lỗi và ảnh chụp đã che dữ liệu nhạy cảm.\nLưu ý: Không gửi mật khẩu, OTP hay API key qua email, tin nhắn hoặc biểu mẫu không xác thực.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1418,7 +1418,7 @@
         "hướng dẫn thông báo trên cổng sinh viên",
         "tra cứu thông báo trên cổng sinh viên"
       ],
-      "answer": "Nội dung thông báo trên cổng sinh viên phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung thông báo trên cổng sinh viên, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, thử lại trên trang chính thức, kiểm tra kết nối, trình duyệt và thông tin đăng nhập.\n2. Tiếp theo, dùng chức năng khôi phục tài khoản; không chia sẻ mật khẩu, OTP hoặc mã xác minh cho người khác.\n3. Nếu chưa giải quyết được, liên hệ bộ phận hỗ trợ kèm mã sinh viên, thời điểm lỗi và ảnh chụp đã che dữ liệu nhạy cảm.\nLưu ý: Không gửi mật khẩu, OTP hay API key qua email, tin nhắn hoặc biểu mẫu không xác thực.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1434,7 +1434,7 @@
         "hướng dẫn tra cứu sách thư viện",
         "tra cứu tra cứu sách thư viện"
       ],
-      "answer": "Nội dung tra cứu sách thư viện phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung tra cứu sách thư viện, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, tra cứu trên cổng thư viện bằng tên tài liệu, tác giả, chủ đề hoặc mã tài liệu.\n2. Tiếp theo, kiểm tra tình trạng còn sách, hạn mượn, quyền truy cập và hướng dẫn sử dụng tài nguyên.\n3. Nếu chưa giải quyết được, liên hệ quầy thư viện bằng tài khoản sinh viên nếu cần gia hạn, xử lý mất sách hoặc hỗ trợ truy cập.\nLưu ý: Tuân thủ hạn trả và điều kiện bản quyền; không chia sẻ tài khoản truy cập tài liệu điện tử.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1450,7 +1450,7 @@
         "hướng dẫn gia hạn sách",
         "tra cứu gia hạn sách"
       ],
-      "answer": "Nội dung gia hạn sách phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung gia hạn sách, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, tra cứu trên cổng thư viện bằng tên tài liệu, tác giả, chủ đề hoặc mã tài liệu.\n2. Tiếp theo, kiểm tra tình trạng còn sách, hạn mượn, quyền truy cập và hướng dẫn sử dụng tài nguyên.\n3. Nếu chưa giải quyết được, liên hệ quầy thư viện bằng tài khoản sinh viên nếu cần gia hạn, xử lý mất sách hoặc hỗ trợ truy cập.\nLưu ý: Tuân thủ hạn trả và điều kiện bản quyền; không chia sẻ tài khoản truy cập tài liệu điện tử.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1466,7 +1466,7 @@
         "hướng dẫn mất sách thư viện",
         "tra cứu mất sách thư viện"
       ],
-      "answer": "Nội dung mất sách thư viện phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung mất sách thư viện, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, tra cứu trên cổng thư viện bằng tên tài liệu, tác giả, chủ đề hoặc mã tài liệu.\n2. Tiếp theo, kiểm tra tình trạng còn sách, hạn mượn, quyền truy cập và hướng dẫn sử dụng tài nguyên.\n3. Nếu chưa giải quyết được, liên hệ quầy thư viện bằng tài khoản sinh viên nếu cần gia hạn, xử lý mất sách hoặc hỗ trợ truy cập.\nLưu ý: Tuân thủ hạn trả và điều kiện bản quyền; không chia sẻ tài khoản truy cập tài liệu điện tử.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1482,7 +1482,7 @@
         "hướng dẫn tài liệu điện tử",
         "tra cứu tài liệu điện tử"
       ],
-      "answer": "Nội dung tài liệu điện tử phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung tài liệu điện tử, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, tra cứu trên cổng thư viện bằng tên tài liệu, tác giả, chủ đề hoặc mã tài liệu.\n2. Tiếp theo, kiểm tra tình trạng còn sách, hạn mượn, quyền truy cập và hướng dẫn sử dụng tài nguyên.\n3. Nếu chưa giải quyết được, liên hệ quầy thư viện bằng tài khoản sinh viên nếu cần gia hạn, xử lý mất sách hoặc hỗ trợ truy cập.\nLưu ý: Tuân thủ hạn trả và điều kiện bản quyền; không chia sẻ tài khoản truy cập tài liệu điện tử.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1498,7 +1498,7 @@
         "hướng dẫn tải giáo trình",
         "tra cứu tải giáo trình"
       ],
-      "answer": "Nội dung tải giáo trình phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung tải giáo trình, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, tra cứu trên cổng thư viện bằng tên tài liệu, tác giả, chủ đề hoặc mã tài liệu.\n2. Tiếp theo, kiểm tra tình trạng còn sách, hạn mượn, quyền truy cập và hướng dẫn sử dụng tài nguyên.\n3. Nếu chưa giải quyết được, liên hệ quầy thư viện bằng tài khoản sinh viên nếu cần gia hạn, xử lý mất sách hoặc hỗ trợ truy cập.\nLưu ý: Tuân thủ hạn trả và điều kiện bản quyền; không chia sẻ tài khoản truy cập tài liệu điện tử.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1514,7 +1514,7 @@
         "hướng dẫn đặt trước sách",
         "tra cứu đặt trước sách"
       ],
-      "answer": "Nội dung đặt trước sách phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung đặt trước sách, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, tra cứu trên cổng thư viện bằng tên tài liệu, tác giả, chủ đề hoặc mã tài liệu.\n2. Tiếp theo, kiểm tra tình trạng còn sách, hạn mượn, quyền truy cập và hướng dẫn sử dụng tài nguyên.\n3. Nếu chưa giải quyết được, liên hệ quầy thư viện bằng tài khoản sinh viên nếu cần gia hạn, xử lý mất sách hoặc hỗ trợ truy cập.\nLưu ý: Tuân thủ hạn trả và điều kiện bản quyền; không chia sẻ tài khoản truy cập tài liệu điện tử.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1530,7 +1530,7 @@
         "hướng dẫn lịch sử mượn sách",
         "tra cứu lịch sử mượn sách"
       ],
-      "answer": "Nội dung lịch sử mượn sách phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung lịch sử mượn sách, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, tra cứu trên cổng thư viện bằng tên tài liệu, tác giả, chủ đề hoặc mã tài liệu.\n2. Tiếp theo, kiểm tra tình trạng còn sách, hạn mượn, quyền truy cập và hướng dẫn sử dụng tài nguyên.\n3. Nếu chưa giải quyết được, liên hệ quầy thư viện bằng tài khoản sinh viên nếu cần gia hạn, xử lý mất sách hoặc hỗ trợ truy cập.\nLưu ý: Tuân thủ hạn trả và điều kiện bản quyền; không chia sẻ tài khoản truy cập tài liệu điện tử.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1546,7 +1546,7 @@
         "hướng dẫn phòng tự học thư viện",
         "tra cứu phòng tự học thư viện"
       ],
-      "answer": "Nội dung phòng tự học thư viện phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung phòng tự học thư viện, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, tra cứu trên cổng thư viện bằng tên tài liệu, tác giả, chủ đề hoặc mã tài liệu.\n2. Tiếp theo, kiểm tra tình trạng còn sách, hạn mượn, quyền truy cập và hướng dẫn sử dụng tài nguyên.\n3. Nếu chưa giải quyết được, liên hệ quầy thư viện bằng tài khoản sinh viên nếu cần gia hạn, xử lý mất sách hoặc hỗ trợ truy cập.\nLưu ý: Tuân thủ hạn trả và điều kiện bản quyền; không chia sẻ tài khoản truy cập tài liệu điện tử.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1562,7 +1562,7 @@
         "hướng dẫn hồ sơ học bổng",
         "tra cứu hồ sơ học bổng"
       ],
-      "answer": "Nội dung hồ sơ học bổng phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung hồ sơ học bổng, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Tiếp theo, chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nếu chưa giải quyết được, nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1578,7 +1578,7 @@
         "hướng dẫn kết quả học bổng",
         "tra cứu kết quả học bổng"
       ],
-      "answer": "Nội dung kết quả học bổng phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung kết quả học bổng, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Tiếp theo, chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nếu chưa giải quyết được, nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1594,7 +1594,7 @@
         "hướng dẫn hỗ trợ sinh viên khó khăn",
         "tra cứu hỗ trợ sinh viên khó khăn"
       ],
-      "answer": "Nội dung hỗ trợ sinh viên khó khăn phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung hỗ trợ sinh viên khó khăn, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Tiếp theo, chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nếu chưa giải quyết được, nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1610,7 +1610,7 @@
         "hướng dẫn tư vấn tâm lý sinh viên",
         "tra cứu tư vấn tâm lý sinh viên"
       ],
-      "answer": "Nội dung tư vấn tâm lý sinh viên phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung tư vấn tâm lý sinh viên, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Tiếp theo, chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nếu chưa giải quyết được, nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1626,7 +1626,7 @@
         "hướng dẫn minh chứng rèn luyện",
         "tra cứu minh chứng rèn luyện"
       ],
-      "answer": "Nội dung minh chứng rèn luyện phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung minh chứng rèn luyện, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Tiếp theo, chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nếu chưa giải quyết được, nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1642,7 +1642,7 @@
         "hướng dẫn thiếu điểm rèn luyện",
         "tra cứu thiếu điểm rèn luyện"
       ],
-      "answer": "Nội dung thiếu điểm rèn luyện phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung thiếu điểm rèn luyện, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Tiếp theo, chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nếu chưa giải quyết được, nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1658,7 +1658,7 @@
         "hướng dẫn đăng ký câu lạc bộ",
         "tra cứu đăng ký câu lạc bộ"
       ],
-      "answer": "Nội dung đăng ký câu lạc bộ phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung đăng ký câu lạc bộ, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Tiếp theo, chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nếu chưa giải quyết được, nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1674,7 +1674,7 @@
         "hướng dẫn hoạt động tình nguyện",
         "tra cứu hoạt động tình nguyện"
       ],
-      "answer": "Nội dung hoạt động tình nguyện phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung hoạt động tình nguyện, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Tiếp theo, chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nếu chưa giải quyết được, nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1690,7 +1690,7 @@
         "hướng dẫn sự kiện sinh viên",
         "tra cứu sự kiện sinh viên"
       ],
-      "answer": "Nội dung sự kiện sinh viên phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung sự kiện sinh viên, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Tiếp theo, chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nếu chưa giải quyết được, nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1706,7 +1706,7 @@
         "hướng dẫn ban cán sự lớp",
         "tra cứu ban cán sự lớp"
       ],
-      "answer": "Nội dung ban cán sự lớp phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung ban cán sự lớp, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Tiếp theo, chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nếu chưa giải quyết được, nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1722,7 +1722,7 @@
         "hướng dẫn ảnh hưởng điểm rèn luyện",
         "tra cứu ảnh hưởng điểm rèn luyện"
       ],
-      "answer": "Nội dung ảnh hưởng điểm rèn luyện phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung ảnh hưởng điểm rèn luyện, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Tiếp theo, chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nếu chưa giải quyết được, nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1738,7 +1738,7 @@
         "hướng dẫn bổ sung minh chứng muộn",
         "tra cứu bổ sung minh chứng muộn"
       ],
-      "answer": "Nội dung bổ sung minh chứng muộn phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung bổ sung minh chứng muộn, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Tiếp theo, chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nếu chưa giải quyết được, nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1754,7 +1754,7 @@
         "hướng dẫn chứng nhận hoạt động",
         "tra cứu chứng nhận hoạt động"
       ],
-      "answer": "Nội dung chứng nhận hoạt động phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung chứng nhận hoạt động, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc thông báo của Phòng Công tác sinh viên, khoa hoặc đơn vị tổ chức để xác định điều kiện.\n2. Tiếp theo, chuẩn bị mã sinh viên, biểu mẫu và minh chứng rõ thời gian, đơn vị tổ chức, nội dung tham gia.\n3. Nếu chưa giải quyết được, nộp đúng kênh, lưu xác nhận và theo dõi trạng thái; phản hồi sớm nếu thông tin bị thiếu.\nLưu ý: Kết quả chỉ được công nhận khi đáp ứng đúng tiêu chí và thời hạn của thông báo chính thức.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1770,7 +1770,7 @@
         "hướng dẫn điều kiện thực tập",
         "tra cứu điều kiện thực tập"
       ],
-      "answer": "Nội dung điều kiện thực tập phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung điều kiện thực tập, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc kế hoạch thực tập của khoa để xác định điều kiện, mốc thời gian và biểu mẫu bắt buộc.\n2. Tiếp theo, thống nhất nơi thực tập, giảng viên hướng dẫn, đề cương và đầu mối xác nhận tại doanh nghiệp.\n3. Nếu chưa giải quyết được, lưu nhật ký, minh chứng, nhận xét và nộp báo cáo đúng định dạng qua kênh khoa công bố.\nLưu ý: Mọi thay đổi về doanh nghiệp, đề tài hoặc người hướng dẫn cần được chấp thuận trước khi thực hiện.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1786,7 +1786,7 @@
         "hướng dẫn tự tìm nơi thực tập",
         "tra cứu tự tìm nơi thực tập"
       ],
-      "answer": "Nội dung tự tìm nơi thực tập phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung tự tìm nơi thực tập, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc kế hoạch thực tập của khoa để xác định điều kiện, mốc thời gian và biểu mẫu bắt buộc.\n2. Tiếp theo, thống nhất nơi thực tập, giảng viên hướng dẫn, đề cương và đầu mối xác nhận tại doanh nghiệp.\n3. Nếu chưa giải quyết được, lưu nhật ký, minh chứng, nhận xét và nộp báo cáo đúng định dạng qua kênh khoa công bố.\nLưu ý: Mọi thay đổi về doanh nghiệp, đề tài hoặc người hướng dẫn cần được chấp thuận trước khi thực hiện.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1802,7 +1802,7 @@
         "hướng dẫn đề cương thực tập",
         "tra cứu đề cương thực tập"
       ],
-      "answer": "Nội dung đề cương thực tập phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung đề cương thực tập, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc kế hoạch thực tập của khoa để xác định điều kiện, mốc thời gian và biểu mẫu bắt buộc.\n2. Tiếp theo, thống nhất nơi thực tập, giảng viên hướng dẫn, đề cương và đầu mối xác nhận tại doanh nghiệp.\n3. Nếu chưa giải quyết được, lưu nhật ký, minh chứng, nhận xét và nộp báo cáo đúng định dạng qua kênh khoa công bố.\nLưu ý: Mọi thay đổi về doanh nghiệp, đề tài hoặc người hướng dẫn cần được chấp thuận trước khi thực hiện.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1818,7 +1818,7 @@
         "hướng dẫn nộp báo cáo thực tập",
         "tra cứu nộp báo cáo thực tập"
       ],
-      "answer": "Nội dung nộp báo cáo thực tập phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung nộp báo cáo thực tập, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc kế hoạch thực tập của khoa để xác định điều kiện, mốc thời gian và biểu mẫu bắt buộc.\n2. Tiếp theo, thống nhất nơi thực tập, giảng viên hướng dẫn, đề cương và đầu mối xác nhận tại doanh nghiệp.\n3. Nếu chưa giải quyết được, lưu nhật ký, minh chứng, nhận xét và nộp báo cáo đúng định dạng qua kênh khoa công bố.\nLưu ý: Mọi thay đổi về doanh nghiệp, đề tài hoặc người hướng dẫn cần được chấp thuận trước khi thực hiện.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1834,7 +1834,7 @@
         "hướng dẫn đổi doanh nghiệp thực tập",
         "tra cứu đổi doanh nghiệp thực tập"
       ],
-      "answer": "Nội dung đổi doanh nghiệp thực tập phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung đổi doanh nghiệp thực tập, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc kế hoạch thực tập của khoa để xác định điều kiện, mốc thời gian và biểu mẫu bắt buộc.\n2. Tiếp theo, thống nhất nơi thực tập, giảng viên hướng dẫn, đề cương và đầu mối xác nhận tại doanh nghiệp.\n3. Nếu chưa giải quyết được, lưu nhật ký, minh chứng, nhận xét và nộp báo cáo đúng định dạng qua kênh khoa công bố.\nLưu ý: Mọi thay đổi về doanh nghiệp, đề tài hoặc người hướng dẫn cần được chấp thuận trước khi thực hiện.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1850,7 +1850,7 @@
         "hướng dẫn giảng viên hướng dẫn thực tập",
         "tra cứu giảng viên hướng dẫn thực tập"
       ],
-      "answer": "Nội dung giảng viên hướng dẫn thực tập phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung giảng viên hướng dẫn thực tập, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc kế hoạch thực tập của khoa để xác định điều kiện, mốc thời gian và biểu mẫu bắt buộc.\n2. Tiếp theo, thống nhất nơi thực tập, giảng viên hướng dẫn, đề cương và đầu mối xác nhận tại doanh nghiệp.\n3. Nếu chưa giải quyết được, lưu nhật ký, minh chứng, nhận xét và nộp báo cáo đúng định dạng qua kênh khoa công bố.\nLưu ý: Mọi thay đổi về doanh nghiệp, đề tài hoặc người hướng dẫn cần được chấp thuận trước khi thực hiện.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1866,7 +1866,7 @@
         "hướng dẫn thông tin tuyển dụng",
         "tra cứu thông tin tuyển dụng"
       ],
-      "answer": "Nội dung thông tin tuyển dụng phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung thông tin tuyển dụng, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc kế hoạch thực tập của khoa để xác định điều kiện, mốc thời gian và biểu mẫu bắt buộc.\n2. Tiếp theo, thống nhất nơi thực tập, giảng viên hướng dẫn, đề cương và đầu mối xác nhận tại doanh nghiệp.\n3. Nếu chưa giải quyết được, lưu nhật ký, minh chứng, nhận xét và nộp báo cáo đúng định dạng qua kênh khoa công bố.\nLưu ý: Mọi thay đổi về doanh nghiệp, đề tài hoặc người hướng dẫn cần được chấp thuận trước khi thực hiện.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1882,7 +1882,7 @@
         "hướng dẫn ngày hội việc làm",
         "tra cứu ngày hội việc làm"
       ],
-      "answer": "Nội dung ngày hội việc làm phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung ngày hội việc làm, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc kế hoạch thực tập của khoa để xác định điều kiện, mốc thời gian và biểu mẫu bắt buộc.\n2. Tiếp theo, thống nhất nơi thực tập, giảng viên hướng dẫn, đề cương và đầu mối xác nhận tại doanh nghiệp.\n3. Nếu chưa giải quyết được, lưu nhật ký, minh chứng, nhận xét và nộp báo cáo đúng định dạng qua kênh khoa công bố.\nLưu ý: Mọi thay đổi về doanh nghiệp, đề tài hoặc người hướng dẫn cần được chấp thuận trước khi thực hiện.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1898,7 +1898,7 @@
         "hướng dẫn xác nhận hoàn thành thực tập",
         "tra cứu xác nhận hoàn thành thực tập"
       ],
-      "answer": "Nội dung xác nhận hoàn thành thực tập phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung xác nhận hoàn thành thực tập, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đọc kế hoạch thực tập của khoa để xác định điều kiện, mốc thời gian và biểu mẫu bắt buộc.\n2. Tiếp theo, thống nhất nơi thực tập, giảng viên hướng dẫn, đề cương và đầu mối xác nhận tại doanh nghiệp.\n3. Nếu chưa giải quyết được, lưu nhật ký, minh chứng, nhận xét và nộp báo cáo đúng định dạng qua kênh khoa công bố.\nLưu ý: Mọi thay đổi về doanh nghiệp, đề tài hoặc người hướng dẫn cần được chấp thuận trước khi thực hiện.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1914,7 +1914,7 @@
         "hướng dẫn điều kiện làm đồ án",
         "tra cứu điều kiện làm đồ án"
       ],
-      "answer": "Nội dung điều kiện làm đồ án phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung điều kiện làm đồ án, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Tiếp theo, chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Nếu chưa giải quyết được, trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1930,7 +1930,7 @@
         "hướng dẫn chọn giảng viên hướng dẫn",
         "tra cứu chọn giảng viên hướng dẫn"
       ],
-      "answer": "Nội dung chọn giảng viên hướng dẫn phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung chọn giảng viên hướng dẫn, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Tiếp theo, chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Nếu chưa giải quyết được, trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1946,7 +1946,7 @@
         "hướng dẫn đổi đề tài khóa luận",
         "tra cứu đổi đề tài khóa luận"
       ],
-      "answer": "Nội dung đổi đề tài khóa luận phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung đổi đề tài khóa luận, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Tiếp theo, chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Nếu chưa giải quyết được, trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1962,7 +1962,7 @@
         "hướng dẫn đổi giảng viên hướng dẫn",
         "tra cứu đổi giảng viên hướng dẫn"
       ],
-      "answer": "Nội dung đổi giảng viên hướng dẫn phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung đổi giảng viên hướng dẫn, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Tiếp theo, chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Nếu chưa giải quyết được, trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1978,7 +1978,7 @@
         "hướng dẫn mẫu trình bày khóa luận",
         "tra cứu mẫu trình bày khóa luận"
       ],
-      "answer": "Nội dung mẫu trình bày khóa luận phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung mẫu trình bày khóa luận, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Tiếp theo, chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Nếu chưa giải quyết được, trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -1994,7 +1994,7 @@
         "hướng dẫn nộp bản mềm đồ án",
         "tra cứu nộp bản mềm đồ án"
       ],
-      "answer": "Nội dung nộp bản mềm đồ án phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung nộp bản mềm đồ án, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Tiếp theo, chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Nếu chưa giải quyết được, trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2010,7 +2010,7 @@
         "hướng dẫn nộp bản in khóa luận",
         "tra cứu nộp bản in khóa luận"
       ],
-      "answer": "Nội dung nộp bản in khóa luận phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung nộp bản in khóa luận, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Tiếp theo, chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Nếu chưa giải quyết được, trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2026,7 +2026,7 @@
         "hướng dẫn lịch bảo vệ đồ án",
         "tra cứu lịch bảo vệ đồ án"
       ],
-      "answer": "Nội dung lịch bảo vệ đồ án phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung lịch bảo vệ đồ án, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Tiếp theo, chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Nếu chưa giải quyết được, trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2042,7 +2042,7 @@
         "hướng dẫn chuẩn bị bảo vệ khóa luận",
         "tra cứu chuẩn bị bảo vệ khóa luận"
       ],
-      "answer": "Nội dung chuẩn bị bảo vệ khóa luận phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung chuẩn bị bảo vệ khóa luận, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Tiếp theo, chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Nếu chưa giải quyết được, trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2058,7 +2058,7 @@
         "hướng dẫn điểm đồ án tốt nghiệp",
         "tra cứu điểm đồ án tốt nghiệp"
       ],
-      "answer": "Nội dung điểm đồ án tốt nghiệp phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung điểm đồ án tốt nghiệp, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Tiếp theo, chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Nếu chưa giải quyết được, trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2074,7 +2074,7 @@
         "hướng dẫn thủ tục xét tốt nghiệp",
         "tra cứu thủ tục xét tốt nghiệp"
       ],
-      "answer": "Nội dung thủ tục xét tốt nghiệp phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung thủ tục xét tốt nghiệp, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Tiếp theo, chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Nếu chưa giải quyết được, trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2090,7 +2090,7 @@
         "hướng dẫn kiểm tra nợ môn",
         "tra cứu kiểm tra nợ môn"
       ],
-      "answer": "Nội dung kiểm tra nợ môn phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung kiểm tra nợ môn, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Tiếp theo, chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Nếu chưa giải quyết được, trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2106,7 +2106,7 @@
         "hướng dẫn lịch nhận bằng tốt nghiệp",
         "tra cứu lịch nhận bằng tốt nghiệp"
       ],
-      "answer": "Nội dung lịch nhận bằng tốt nghiệp phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung lịch nhận bằng tốt nghiệp, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, đối chiếu điều kiện trong kế hoạch của khoa và kiểm tra tiến độ học tập trên cổng sinh viên.\n2. Tiếp theo, chuẩn bị đề cương, biểu mẫu, minh chứng, bản mềm/bản in theo đúng quy cách được công bố.\n3. Nếu chưa giải quyết được, trao đổi với giảng viên hướng dẫn và theo dõi lịch nộp, phản biện, bảo vệ hoặc xét tốt nghiệp.\nLưu ý: Không dùng lịch hoặc mẫu của khóa trước nếu chưa xác nhận vẫn còn hiệu lực.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2122,7 +2122,7 @@
         "hướng dẫn cảnh báo học vụ",
         "tra cứu cảnh báo học vụ"
       ],
-      "answer": "Nội dung cảnh báo học vụ phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung cảnh báo học vụ, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, xem kết quả học tập và thông báo cảnh báo trên cổng sinh viên để xác định nguyên nhân cụ thể.\n2. Tiếp theo, lập danh sách môn nợ, học phần cần cải thiện và kế hoạch đăng ký phù hợp cho kỳ tiếp theo.\n3. Nếu chưa giải quyết được, trao đổi sớm với cố vấn học tập hoặc Phòng Đào tạo và lưu lại phương án đã được hướng dẫn.\nLưu ý: Mức cảnh báo và thời hạn xử lý phải đối chiếu theo quy chế áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2138,7 +2138,7 @@
         "hướng dẫn tra cứu mức cảnh báo",
         "tra cứu tra cứu mức cảnh báo"
       ],
-      "answer": "Nội dung tra cứu mức cảnh báo phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung tra cứu mức cảnh báo, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, xem kết quả học tập và thông báo cảnh báo trên cổng sinh viên để xác định nguyên nhân cụ thể.\n2. Tiếp theo, lập danh sách môn nợ, học phần cần cải thiện và kế hoạch đăng ký phù hợp cho kỳ tiếp theo.\n3. Nếu chưa giải quyết được, trao đổi sớm với cố vấn học tập hoặc Phòng Đào tạo và lưu lại phương án đã được hướng dẫn.\nLưu ý: Mức cảnh báo và thời hạn xử lý phải đối chiếu theo quy chế áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2154,7 +2154,7 @@
         "hướng dẫn khắc phục cảnh báo học vụ",
         "tra cứu khắc phục cảnh báo học vụ"
       ],
-      "answer": "Nội dung khắc phục cảnh báo học vụ phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung khắc phục cảnh báo học vụ, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, xem kết quả học tập và thông báo cảnh báo trên cổng sinh viên để xác định nguyên nhân cụ thể.\n2. Tiếp theo, lập danh sách môn nợ, học phần cần cải thiện và kế hoạch đăng ký phù hợp cho kỳ tiếp theo.\n3. Nếu chưa giải quyết được, trao đổi sớm với cố vấn học tập hoặc Phòng Đào tạo và lưu lại phương án đã được hướng dẫn.\nLưu ý: Mức cảnh báo và thời hạn xử lý phải đối chiếu theo quy chế áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2170,7 +2170,7 @@
         "hướng dẫn thời hạn bảo lưu",
         "tra cứu thời hạn bảo lưu"
       ],
-      "answer": "Nội dung thời hạn bảo lưu phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung thời hạn bảo lưu, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, xem kết quả học tập và thông báo cảnh báo trên cổng sinh viên để xác định nguyên nhân cụ thể.\n2. Tiếp theo, lập danh sách môn nợ, học phần cần cải thiện và kế hoạch đăng ký phù hợp cho kỳ tiếp theo.\n3. Nếu chưa giải quyết được, trao đổi sớm với cố vấn học tập hoặc Phòng Đào tạo và lưu lại phương án đã được hướng dẫn.\nLưu ý: Mức cảnh báo và thời hạn xử lý phải đối chiếu theo quy chế áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2186,7 +2186,7 @@
         "hướng dẫn quay lại học sau bảo lưu",
         "tra cứu quay lại học sau bảo lưu"
       ],
-      "answer": "Nội dung quay lại học sau bảo lưu phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung quay lại học sau bảo lưu, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, xem kết quả học tập và thông báo cảnh báo trên cổng sinh viên để xác định nguyên nhân cụ thể.\n2. Tiếp theo, lập danh sách môn nợ, học phần cần cải thiện và kế hoạch đăng ký phù hợp cho kỳ tiếp theo.\n3. Nếu chưa giải quyết được, trao đổi sớm với cố vấn học tập hoặc Phòng Đào tạo và lưu lại phương án đã được hướng dẫn.\nLưu ý: Mức cảnh báo và thời hạn xử lý phải đối chiếu theo quy chế áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2202,7 +2202,7 @@
         "hướng dẫn điểm môn học lại",
         "tra cứu điểm môn học lại"
       ],
-      "answer": "Nội dung điểm môn học lại phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung điểm môn học lại, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, xem kết quả học tập và thông báo cảnh báo trên cổng sinh viên để xác định nguyên nhân cụ thể.\n2. Tiếp theo, lập danh sách môn nợ, học phần cần cải thiện và kế hoạch đăng ký phù hợp cho kỳ tiếp theo.\n3. Nếu chưa giải quyết được, trao đổi sớm với cố vấn học tập hoặc Phòng Đào tạo và lưu lại phương án đã được hướng dẫn.\nLưu ý: Mức cảnh báo và thời hạn xử lý phải đối chiếu theo quy chế áp dụng cho khóa của bạn.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2218,7 +2218,7 @@
         "hướng dẫn thiết bị phòng học hỏng",
         "tra cứu thiết bị phòng học hỏng"
       ],
-      "answer": "Nội dung thiết bị phòng học hỏng phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung thiết bị phòng học hỏng, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, ghi nhận vị trí, phòng, thời điểm và mô tả rõ vấn đề hoặc tài sản liên quan.\n2. Tiếp theo, báo cho giảng viên, bảo vệ, quản lý phòng hoặc bộ phận cơ sở vật chất gần nhất.\n3. Nếu chưa giải quyết được, cung cấp ảnh minh chứng khi an toàn và theo dõi mã/yêu cầu xử lý; không tự sửa thiết bị điện.\nLưu ý: Với tài sản thất lạc, chỉ nhận lại qua đầu mối có xác minh và không công khai dữ liệu nhạy cảm.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2234,7 +2234,7 @@
         "hướng dẫn sử dụng phòng máy",
         "tra cứu sử dụng phòng máy"
       ],
-      "answer": "Nội dung sử dụng phòng máy phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung sử dụng phòng máy, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, ghi nhận vị trí, phòng, thời điểm và mô tả rõ vấn đề hoặc tài sản liên quan.\n2. Tiếp theo, báo cho giảng viên, bảo vệ, quản lý phòng hoặc bộ phận cơ sở vật chất gần nhất.\n3. Nếu chưa giải quyết được, cung cấp ảnh minh chứng khi an toàn và theo dõi mã/yêu cầu xử lý; không tự sửa thiết bị điện.\nLưu ý: Với tài sản thất lạc, chỉ nhận lại qua đầu mối có xác minh và không công khai dữ liệu nhạy cảm.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2250,7 +2250,7 @@
         "hướng dẫn sơ đồ phòng học",
         "tra cứu sơ đồ phòng học"
       ],
-      "answer": "Nội dung sơ đồ phòng học phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung sơ đồ phòng học, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, ghi nhận vị trí, phòng, thời điểm và mô tả rõ vấn đề hoặc tài sản liên quan.\n2. Tiếp theo, báo cho giảng viên, bảo vệ, quản lý phòng hoặc bộ phận cơ sở vật chất gần nhất.\n3. Nếu chưa giải quyết được, cung cấp ảnh minh chứng khi an toàn và theo dõi mã/yêu cầu xử lý; không tự sửa thiết bị điện.\nLưu ý: Với tài sản thất lạc, chỉ nhận lại qua đầu mối có xác minh và không công khai dữ liệu nhạy cảm.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2266,7 +2266,7 @@
         "hướng dẫn đồ thất lạc trong trường",
         "tra cứu đồ thất lạc trong trường"
       ],
-      "answer": "Nội dung đồ thất lạc trong trường phụ thuộc kế hoạch và quy định áp dụng tại từng thời điểm. Đây là dữ liệu demo; sinh viên cần kiểm tra thông báo chính thức của nhà trường.",
+      "answer": "Với nội dung đồ thất lạc trong trường, bạn nên thực hiện theo quy trình sau:\n1. Trước tiên, ghi nhận vị trí, phòng, thời điểm và mô tả rõ vấn đề hoặc tài sản liên quan.\n2. Tiếp theo, báo cho giảng viên, bảo vệ, quản lý phòng hoặc bộ phận cơ sở vật chất gần nhất.\n3. Nếu chưa giải quyết được, cung cấp ảnh minh chứng khi an toàn và theo dõi mã/yêu cầu xử lý; không tự sửa thiết bị điện.\nLưu ý: Với tài sản thất lạc, chỉ nhận lại qua đầu mối có xác minh và không công khai dữ liệu nhạy cảm.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2282,7 +2282,7 @@
         "hướng dẫn khái niệm điện toán đám mây",
         "tra cứu khái niệm điện toán đám mây"
       ],
-      "answer": "Nội dung khái niệm điện toán đám mây được giải thích ở mức nhập môn trong dữ liệu demo UTH CloudBot. Khi cần quyết định kỹ thuật, hãy đối chiếu thêm tài liệu chuyên môn phù hợp.",
+      "answer": "Điện toán đám mây là mô hình cung cấp tài nguyên CNTT qua mạng theo nhu cầu.\n• Tài nguyên thường gồm máy chủ, lưu trữ, cơ sở dữ liệu, mạng và phần mềm.\n• Người dùng có thể mở rộng hoặc thu hẹp nhanh mà không phải tự sở hữu toàn bộ hạ tầng.\n• Chi phí thường dựa trên mức sử dụng.\nVí dụ: lưu tệp trên dịch vụ trực tuyến hoặc triển khai ứng dụng lên nền tảng cloud.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2298,7 +2298,7 @@
         "hướng dẫn iaas paas và saas",
         "tra cứu iaas paas và saas"
       ],
-      "answer": "Nội dung IaaS PaaS và SaaS được giải thích ở mức nhập môn trong dữ liệu demo UTH CloudBot. Khi cần quyết định kỹ thuật, hãy đối chiếu thêm tài liệu chuyên môn phù hợp.",
+      "answer": "IaaS, PaaS và SaaS khác nhau ở phần người dùng phải tự quản lý.\n• IaaS: thuê hạ tầng như máy ảo, mạng và ổ đĩa; bạn quản lý hệ điều hành và ứng dụng.\n• PaaS: nền tảng lo hạ tầng và môi trường chạy; bạn tập trung phát triển ứng dụng.\n• SaaS: dùng phần mềm hoàn chỉnh qua web hoặc ứng dụng.\nCó thể nhớ ngắn gọn: IaaS cho hạ tầng, PaaS cho môi trường phát triển, SaaS cho người dùng cuối.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2314,7 +2314,7 @@
         "hướng dẫn lợi ích điện toán đám mây",
         "tra cứu lợi ích điện toán đám mây"
       ],
-      "answer": "Nội dung lợi ích điện toán đám mây được giải thích ở mức nhập môn trong dữ liệu demo UTH CloudBot. Khi cần quyết định kỹ thuật, hãy đối chiếu thêm tài liệu chuyên môn phù hợp.",
+      "answer": "Điện toán đám mây giúp tổ chức triển khai dịch vụ nhanh và linh hoạt hơn.\n• Mở rộng tài nguyên theo nhu cầu thay vì mua sẵn toàn bộ thiết bị.\n• Truy cập dịch vụ từ nhiều nơi và hỗ trợ cộng tác.\n• Giảm công việc vận hành phần cứng tại chỗ.\n• Có công cụ sao lưu, giám sát và tự động hóa.\nLợi ích thực tế còn phụ thuộc kiến trúc, chi phí, bảo mật và năng lực quản trị.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2330,7 +2330,7 @@
         "hướng dẫn cloud công cộng và cloud riêng",
         "tra cứu cloud công cộng và cloud riêng"
       ],
-      "answer": "Nội dung cloud công cộng và cloud riêng được giải thích ở mức nhập môn trong dữ liệu demo UTH CloudBot. Khi cần quyết định kỹ thuật, hãy đối chiếu thêm tài liệu chuyên môn phù hợp.",
+      "answer": "Cloud công cộng dùng hạ tầng do nhà cung cấp vận hành và chia sẻ theo cơ chế cô lập giữa nhiều khách hàng; cloud riêng dành cho một tổ chức.\n• Public cloud: triển khai nhanh, dễ mở rộng, ít đầu tư ban đầu.\n• Private cloud: kiểm soát và tùy biến cao hơn nhưng cần nguồn lực vận hành.\n• Hybrid cloud kết hợp hai mô hình.\nNên lựa chọn dựa trên dữ liệu, tuân thủ, chi phí, hiệu năng và đội ngũ kỹ thuật.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2346,7 +2346,7 @@
         "hướng dẫn chức năng uth cloudbot",
         "tra cứu chức năng uth cloudbot"
       ],
-      "answer": "Nội dung chức năng UTH CloudBot được giải thích ở mức nhập môn trong dữ liệu demo UTH CloudBot. Khi cần quyết định kỹ thuật, hãy đối chiếu thêm tài liệu chuyên môn phù hợp.",
+      "answer": "UTH CloudBot hỗ trợ ba nhóm chức năng.\n• FAQ: trả lời các câu hỏi thủ tục từ bộ dữ liệu mẫu.\n• Trợ lý cá nhân: hiển thị lịch học, bài tập, kỳ thi và thông báo demo sau khi đăng nhập.\n• Gemini AI: giải thích kiến thức mở khi FAQ không phù hợp.\nMỗi câu trả lời đều có nhãn nguồn để người dùng phân biệt; dữ liệu demo không thay thế thông báo chính thức của UTH.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2362,7 +2362,7 @@
         "hướng dẫn cách đặt câu hỏi chatbot",
         "tra cứu cách đặt câu hỏi chatbot"
       ],
-      "answer": "Nội dung cách đặt câu hỏi chatbot được giải thích ở mức nhập môn trong dữ liệu demo UTH CloudBot. Khi cần quyết định kỹ thuật, hãy đối chiếu thêm tài liệu chuyên môn phù hợp.",
+      "answer": "Để CloudBot hiểu đúng, hãy nêu một nhu cầu trong mỗi câu và thêm ngữ cảnh cần thiết.\n• Tốt: “Tuần này tôi học những môn gì?”\n• Tốt: “Tra cứu học phí như thế nào?”\n• Tốt: “Giải thích IaaS cho người mới bắt đầu.”\nTránh câu quá ngắn như “lịch?” hoặc gộp nhiều yêu cầu. Không nhập mật khẩu, OTP, API key hay dữ liệu cá nhân nhạy cảm vào ô chat.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2378,7 +2378,7 @@
         "hướng dẫn phản hồi dự phòng",
         "tra cứu phản hồi dự phòng"
       ],
-      "answer": "Nội dung phản hồi dự phòng được giải thích ở mức nhập môn trong dữ liệu demo UTH CloudBot. Khi cần quyết định kỹ thuật, hãy đối chiếu thêm tài liệu chuyên môn phù hợp.",
+      "answer": "Fallback xuất hiện khi câu hỏi chưa khớp FAQ, dữ liệu cá nhân hoặc Gemini đang không khả dụng.\n• Viết lại câu hỏi cụ thể hơn và chỉ hỏi một nội dung mỗi lần.\n• Kiểm tra trạng thái kết nối máy chủ.\n• Với câu hỏi cá nhân, hãy đăng nhập trước.\n• Với kiến thức mở, thử lại sau nếu Gemini đang lỗi.\nFallback là phản hồi an toàn, không phải thông tin chính thức để sử dụng ra quyết định.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
@@ -2394,7 +2394,7 @@
         "hướng dẫn nhận biết câu trả lời gemini",
         "tra cứu nhận biết câu trả lời gemini"
       ],
-      "answer": "Nội dung nhận biết câu trả lời Gemini được giải thích ở mức nhập môn trong dữ liệu demo UTH CloudBot. Khi cần quyết định kỹ thuật, hãy đối chiếu thêm tài liệu chuyên môn phù hợp.",
+      "answer": "Câu trả lời từ Gemini được nhận biết bằng nhãn “Gemini AI” và ghi chú nội dung do AI tạo.\n• Nguồn FAQ có nhãn “FAQ”.\n• Lịch học, bài tập và dữ liệu cá nhân demo có nhãn “Dữ liệu demo”.\n• Khi hệ thống không xử lý được, nhãn là “Fallback”.\nNội dung Gemini có thể sai hoặc thiếu; hãy kiểm tra nguồn chuyên môn trước khi dùng cho học tập hay quyết định quan trọng.",
       "source": {
         "type": "sample",
         "title": "Dữ liệu demo UTH CloudBot",
