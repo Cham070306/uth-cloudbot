@@ -1,11 +1,11 @@
 import logging
+import re
 
 from config import Config
 
 
 logger = logging.getLogger(__name__)
 MODEL_ID = "gemini-3.5-flash"
-GEMINI_TEMPERATURE = 0.3
 GEMINI_MAX_OUTPUT_TOKENS = 500
 
 SYSTEM_INSTRUCTION = """Bạn là UTH CloudBot, trợ lý kiến thức chung và học tập cho sinh viên.
@@ -66,7 +66,6 @@ def _generate(client, model, message):
         contents=message,
         config=types.GenerateContentConfig(
             system_instruction=SYSTEM_INSTRUCTION,
-            temperature=GEMINI_TEMPERATURE,
             max_output_tokens=GEMINI_MAX_OUTPUT_TOKENS,
         ),
     )
@@ -90,18 +89,30 @@ def _error_reason(error):
     return "unexpected_error"
 
 
+def _to_plain_text(value):
+    """Remove Markdown tokens when a model ignores the plain-text instruction."""
+    value = re.sub(r"```(?:[a-zA-Z0-9_+-]+)?\s*", "", value)
+    value = value.replace("```", "").replace("`", "")
+    value = re.sub(r"^\s{0,3}#{1,6}\s*", "", value, flags=re.MULTILINE)
+    value = re.sub(r"\*\*(.+?)\*\*|__(.+?)__", lambda match: match.group(1) or match.group(2), value)
+    value = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r"\1 (\2)", value)
+    value = re.sub(r"^\s*[-*+]\s+", "• ", value, flags=re.MULTILINE)
+    value = re.sub(r"\n{3,}", "\n\n", value)
+    return value.strip()
+
+
 def generate_answer(message: str) -> dict:
     if not Config.GEMINI_ENABLED:
         _unavailable("disabled")
     if not Config.GEMINI_API_KEY:
         _unavailable("missing_api_key")
-    if Config.GEMINI_MODEL != MODEL_ID:
+    if not Config.GEMINI_MODEL:
         _unavailable("invalid_model")
 
     try:
         client = _create_client(Config.GEMINI_API_KEY, Config.GEMINI_TIMEOUT_SECONDS)
         response = _generate(client, Config.GEMINI_MODEL, message)
-        answer = (getattr(response, "text", None) or "").strip()
+        answer = _to_plain_text(getattr(response, "text", None) or "")
         if not answer:
             _unavailable("empty_response")
     except GeminiUnavailableError:

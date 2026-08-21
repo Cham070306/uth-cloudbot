@@ -9,7 +9,7 @@ Gemini mặc định tắt. Đặt các biến sau trong PowerShell hoặc Envir
 ```powershell
 $env:GEMINI_ENABLED = "true"
 $env:GEMINI_API_KEY = "<secret>"
-$env:GEMINI_MODEL = "<supported-model-name>"
+$env:GEMINI_MODEL = "gemini-3.5-flash"
 $env:GEMINI_TIMEOUT_SECONDS = "10"
 ```
 

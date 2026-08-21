@@ -7,10 +7,10 @@ from config import Config, _get_bool, _get_positive_int
 from services import chat_service, gemini_service
 from services.gemini_service import (
     GEMINI_MAX_OUTPUT_TOKENS,
-    GEMINI_TEMPERATURE,
     SYSTEM_INSTRUCTION,
     GeminiUnavailableError,
     MODEL_ID,
+    _to_plain_text,
 )
 
 
@@ -50,7 +50,7 @@ def test_missing_api_key_uses_safe_error(monkeypatch):
         gemini_service.generate_answer("Giải thích API")
 
 
-@pytest.mark.parametrize("model", ["", "gemini-wrong-model"])
+@pytest.mark.parametrize("model", [""])
 def test_invalid_model_is_rejected_before_creating_client(monkeypatch, model):
     monkeypatch.setattr(Config, "GEMINI_MODEL", model)
     monkeypatch.setattr(gemini_service, "_create_client", lambda *_args: pytest.fail("client created"))
@@ -77,13 +77,17 @@ def test_gemini_success(monkeypatch):
 
 
 def test_gemini_answer_style_is_bounded_and_safe_for_plain_text_ui():
-    assert 0 <= GEMINI_TEMPERATURE <= 0.4
     assert 200 <= GEMINI_MAX_OUTPUT_TOKENS <= 600
     assert "80-180 từ" in SYSTEM_INSTRUCTION
     assert 'dùng dấu "•"' in SYSTEM_INSTRUCTION
     assert "Không dùng bảng, HTML" in SYSTEM_INSTRUCTION
     assert "Không bịa nguồn" in SYSTEM_INSTRUCTION
     assert "thông tin chính thức" in SYSTEM_INSTRUCTION
+
+
+def test_gemini_markdown_is_converted_to_plain_text():
+    raw = "## Khái niệm\n\n**Hệ thống thông tin** gồm:\n- Con người\n- Công nghệ"
+    assert _to_plain_text(raw) == "Khái niệm\n\nHệ thống thông tin gồm:\n• Con người\n• Công nghệ"
 
 
 def test_empty_gemini_response(monkeypatch):
