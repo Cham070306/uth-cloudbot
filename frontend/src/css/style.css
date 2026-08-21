@@ -19,7 +19,7 @@
 }
 
 * { box-sizing: border-box; }
-html, body { height: 100%; margin: 0; }
+html, body { height: 100%; margin: 0; overflow: hidden; }
 
 body {
   font-family: var(--sans);
@@ -31,6 +31,8 @@ body {
   display: grid;
   grid-template-columns: 240px 1fr 260px;
   height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
 }
 .shell[hidden] { display: none; }
 .loginOverlay[hidden] { display: none; }
@@ -191,6 +193,8 @@ body {
   display: flex;
   flex-direction: column;
   min-width: 0;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .panel__header {
@@ -218,14 +222,35 @@ body {
 .dot--ok { background: var(--moss); }
 .dot--error { background: var(--clay); }
 
-.chat { flex: 1; overflow: hidden; display: flex; }
+.chat {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+}
 .chat__scroll {
   flex: 1;
+  min-height: 0;
   overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
   padding: 24px 28px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.chat__scroll::-webkit-scrollbar { width: 8px; }
+.chat__scroll::-webkit-scrollbar-track { background: transparent; }
+.chat__scroll::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--moss) 48%, transparent);
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background-clip: padding-box;
+}
+.chat__scroll::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--moss-dark) 68%, transparent);
+  background-clip: padding-box;
 }
 
 .msg { display: flex; gap: 10px; max-width: 82%; }
@@ -344,7 +369,7 @@ body {
 
 /* ---------------- Responsive ---------------- */
 @media (max-width: 900px) {
-  .shell { grid-template-columns: 1fr; grid-template-rows: auto 1fr; }
+  .shell { grid-template-columns: 1fr; grid-template-rows: minmax(0, 1fr); }
   .sidebar { display: none; }
   .infopanel { display: none; }
   .panel__header { padding: 14px 16px; }
