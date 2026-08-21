@@ -409,7 +409,7 @@
     const meta = CONFIG.SOURCE_LABELS[resolvedType];
 
     const answerEl = node.querySelector(".msg__answer");
-    if (aiGenerated) renderStructuredAnswer(answerEl, answer);
+    if (aiGenerated || resolvedType === "sample") renderStructuredAnswer(answerEl, answer);
     else answerEl.textContent = answer;
     renderDetails(node.querySelector(".msg__details"), intent, items);
     node.querySelector(".msg__source-badge").textContent = meta.label;

@@ -1,5 +1,6 @@
 """Build consistent, actionable answers for the complete 150-item FAQ dataset."""
 import json
+import re
 from pathlib import Path
 
 
@@ -83,6 +84,33 @@ RANGES = [
     (133, 138, "warning"), (139, 142, "campus"),
 ]
 
+CATEGORY_OVERRIDES = {
+    3: "finance", 4: "account", 5: "account", 6: "campus", 7: "library",
+    8: "library", 9: "student", 10: "student", 11: "student", 12: "student",
+    13: "student", 14: "exam", 15: "exam", 16: "exam", 17: "graduation",
+    18: "exam", 19: "student", 20: "student", 24: "finance", 25: "student",
+    26: "student", 27: "student", 28: "internship", 29: "graduation", 30: "account",
+}
+
+INCIDENT_TERMS = (
+    "mất", "quên", "khóa", "lỗi", "không nhận", "sai", "thiếu", "trùng",
+    "vắng", "trễ", "hỏng", "thất lạc", "chưa cập nhật", "quá hạn",
+)
+LOOKUP_TERMS = (
+    "tra cứu", "ở đâu", "khi nào", "thời gian", "lịch", "kết quả", "thông tin",
+    "sơ đồ", "mức cảnh báo", "lịch sử",
+)
+CONDITION_TERMS = ("điều kiện", "cần gì", "dự thi", "tốt nghiệp", "làm đồ án")
+
+
+def category_for(number):
+    if number in CATEGORY_OVERRIDES:
+        return CATEGORY_OVERRIDES[number]
+    for start, end, name in RANGES:
+        if start <= number <= end:
+            return name
+    raise ValueError(f"No category for FAQ {number}")
+
 CUSTOM = {
     143: "Điện toán đám mây là mô hình cung cấp tài nguyên CNTT qua mạng theo nhu cầu.\n• Tài nguyên thường gồm máy chủ, lưu trữ, cơ sở dữ liệu, mạng và phần mềm.\n• Người dùng có thể mở rộng hoặc thu hẹp nhanh mà không phải tự sở hữu toàn bộ hạ tầng.\n• Chi phí thường dựa trên mức sử dụng.\nVí dụ: lưu tệp trên dịch vụ trực tuyến hoặc triển khai ứng dụng lên nền tảng cloud.",
     144: "IaaS, PaaS và SaaS khác nhau ở phần người dùng phải tự quản lý.\n• IaaS: thuê hạ tầng như máy ảo, mạng và ổ đĩa; bạn quản lý hệ điều hành và ứng dụng.\n• PaaS: nền tảng lo hạ tầng và môi trường chạy; bạn tập trung phát triển ứng dụng.\n• SaaS: dùng phần mềm hoàn chỉnh qua web hoặc ứng dụng.\nCó thể nhớ ngắn gọn: IaaS cho hạ tầng, PaaS cho môi trường phát triển, SaaS cho người dùng cuối.",
@@ -96,22 +124,96 @@ CUSTOM = {
 
 
 def workflow_for(number):
-    for start, end, name in RANGES:
-        if start <= number <= end:
-            return WORKFLOWS[name]
-    raise ValueError(f"No workflow for FAQ {number}")
+    return WORKFLOWS[category_for(number)]
+
+
+def answer_kind(question):
+    normalized = question.lower()
+    if any(term in normalized for term in INCIDENT_TERMS):
+        return "incident"
+    if any(term in normalized for term in CONDITION_TERMS):
+        return "condition"
+    if any(term in normalized for term in LOOKUP_TERMS):
+        return "lookup"
+    return "procedure"
+
+
+def subject_for(faq):
+    question = faq["question"].strip().rstrip("?")
+    patterns = (
+        r"^Sinh viên cần làm gì về\s+",
+        r"^Tra cứu thông tin\s+",
+        r"^Hướng dẫn về\s+",
+        r"^Tra cứu\s+",
+        r"^Làm sao để\s+",
+        r"^Xin\s+",
+        r"^Điều kiện\s+",
+    )
+    for pattern in patterns:
+        question = re.sub(pattern, "", question, flags=re.IGNORECASE)
+    question = re.sub(
+        r"\s+(như thế nào|thế nào|ra sao|ở đâu|khi nào|là gì|cần gì)$",
+        "",
+        question,
+        flags=re.IGNORECASE,
+    )
+    return question.strip().lower()
+
+
+def upper_first(value):
+    return value[:1].upper() + value[1:]
 
 
 def build_answer(number, faq):
     if number in CUSTOM:
         return CUSTOM[number]
-    subject = faq.get("keywords", [faq["question"]])[0].strip()
+    subject = subject_for(faq)
     step1, step2, step3, note = workflow_for(number)
+    kind = answer_kind(faq["question"])
+    if kind == "incident":
+        return (
+            f"Khi gặp vấn đề về {subject}, bạn nên xử lý sớm và giữ lại thông tin của lần thao tác bị lỗi.\n\n"
+            "Cách xử lý:\n"
+            f"1. {upper_first(step1)}.\n"
+            f"2. {upper_first(step2)}.\n"
+            f"3. {upper_first(step3)}.\n\n"
+            "Thông tin nên chuẩn bị:\n"
+            "• Mã số sinh viên và học kỳ đang xử lý.\n"
+            f"• Nội dung liên quan đến {subject}, thời điểm xảy ra và ảnh chụp minh chứng.\n\n"
+            f"Lưu ý: {note}"
+        )
+    if kind == "condition":
+        return (
+            f"Điều kiện liên quan đến {subject} cần được đối chiếu theo quy định áp dụng cho khóa và học kỳ của bạn.\n\n"
+            "Nội dung cần kiểm tra:\n"
+            f"• {upper_first(step1)}.\n"
+            f"• {upper_first(step2)}.\n"
+            "Cách xác nhận:\n"
+            f"1. Kiểm tra trạng thái {subject} trên cổng sinh viên.\n"
+            f"2. Nếu thông tin chưa rõ, {step3}.\n\n"
+            f"Lưu ý: {note}"
+        )
+    if kind == "lookup":
+        return (
+            f"Bạn có thể tra cứu {subject} từ cổng sinh viên hoặc kênh được đơn vị phụ trách công bố.\n\n"
+            "Các bước tra cứu:\n"
+            f"1. {upper_first(step1)}.\n"
+            f"2. {upper_first(step2)}.\n"
+            f"3. Đối chiếu mã sinh viên, học kỳ và trạng thái của {subject} trước khi sử dụng thông tin.\n\n"
+            "Nếu chưa thấy dữ liệu:\n"
+            f"• {upper_first(step3)}.\n"
+            "• Gửi kèm ảnh màn hình và thời điểm tra cứu để được kiểm tra nhanh hơn.\n\n"
+            f"Lưu ý: {note}"
+        )
     return (
-        f"Với nội dung {subject}, bạn nên thực hiện theo quy trình sau:\n"
-        f"1. Trước tiên, {step1}.\n"
-        f"2. Tiếp theo, {step2}.\n"
-        f"3. Nếu chưa giải quyết được, {step3}.\n"
+        f"Để thực hiện {subject}, bạn nên chuẩn bị thông tin trước và làm theo đúng kênh được trường công bố.\n\n"
+        "Quy trình đề xuất:\n"
+        f"1. {upper_first(step1)}.\n"
+        f"2. {upper_first(step2)}.\n"
+        f"3. {upper_first(step3)}.\n\n"
+        "Sau khi hoàn tất:\n"
+        f"• Kiểm tra lại trạng thái {subject} trên hệ thống.\n"
+        "• Lưu thông báo, biên nhận hoặc ảnh xác nhận để đối chiếu khi cần.\n\n"
         f"Lưu ý: {note}"
     )
 
@@ -121,11 +223,8 @@ def main():
     faqs = payload["faqs"]
     if len(faqs) != 150:
         raise ValueError(f"Expected 150 FAQs, found {len(faqs)}")
-    # FAQ 001-030 were already individually authored. Only replace the 120
-    # placeholder answers that previously repeated the same generic sentence.
     for number, faq in enumerate(faqs, 1):
-        if number >= 31:
-            faq["answer"] = build_answer(number, faq)
+        faq["answer"] = build_answer(number, faq)
     FAQ_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 

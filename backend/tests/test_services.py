@@ -12,6 +12,7 @@ def test_faq_dataset_has_unique_ids_and_required_fields():
     faqs = load_faqs()
     assert len(faqs) == 150
     assert len({faq["id"] for faq in faqs}) == 150
+    assert len({faq["answer"] for faq in faqs}) == 150
     assert faqs[0]["id"] == "faq-001"
     assert faqs[-1]["id"] == "faq-150"
     assert [faq["id"] for faq in faqs] == [f"faq-{index:03d}" for index in range(1, 151)]
@@ -20,7 +21,7 @@ def test_faq_dataset_has_unique_ids_and_required_fields():
     for faq in faqs:
         assert {"id", "question", "keywords", "answer", "source", "updated_at"} <= faq.keys()
         assert faq["question"].strip() and faq["answer"].strip()
-        assert len(faq["answer"]) >= 90
+        assert len(faq["answer"]) >= 300
         assert "phụ thuộc kế hoạch và quy định áp dụng" not in faq["answer"]
         assert len(faq["keywords"]) >= 3
         assert all(isinstance(keyword, str) and keyword.strip() for keyword in faq["keywords"])
@@ -30,6 +31,8 @@ def test_faq_dataset_has_unique_ids_and_required_fields():
         assert isinstance(faq["source"].get("title"), str) and faq["source"]["title"].strip()
         normalized_questions.append(normalize_text(faq["question"]))
     assert len(normalized_questions) == len(set(normalized_questions))
+    structured_markers = ("Cách xử lý:", "Nội dung cần kiểm tra:", "Các bước tra cứu:", "Quy trình đề xuất:")
+    assert sum(any(marker in faq["answer"] for faq in faqs) for marker in structured_markers) == 4
 
 
 def test_faq_evaluation_dataset_is_valid():
