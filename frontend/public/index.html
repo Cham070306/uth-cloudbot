@@ -18,14 +18,15 @@
         <span class="sidebar__logo-sub" style="color:var(--ink-soft);">CLOUDBOT</span>
       </div>
       <h2>Đăng nhập (demo)</h2>
-      <p class="loginCard__hint">Đây là đăng nhập giả lập cho mục đích demo giao diện — không xác thực thật với hệ thống trường.</p>
+      <p class="loginCard__hint">Tài khoản demo có sẵn: <strong>sv001</strong> / <strong>demo123</strong> (hoặc sv002 / demo123).</p>
+      <p class="loginCard__error" id="loginError" hidden></p>
 
       <form id="loginForm">
-        <label class="loginCard__label" for="loginName">Họ và tên</label>
-        <input type="text" id="loginName" class="loginCard__input" placeholder="Nguyễn Văn A" required />
+        <label class="loginCard__label" for="loginName">Tên đăng nhập</label>
+        <input type="text" id="loginName" class="loginCard__input" placeholder="sv001" required />
 
-        <label class="loginCard__label" for="loginId">Mã số sinh viên</label>
-        <input type="text" id="loginId" class="loginCard__input" placeholder="038206005065" required />
+        <label class="loginCard__label" for="loginId">Mật khẩu</label>
+        <input type="password" id="loginId" class="loginCard__input" placeholder="demo123" required />
 
         <button type="submit" class="loginCard__submit">Vào trò chuyện</button>
       </form>
