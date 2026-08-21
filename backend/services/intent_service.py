@@ -8,8 +8,15 @@ INTENT_KEYWORDS = {
     "personal_deadline": ("deadline", "sap het han", "gan het han", "qua han"),
     "personal_assignment": ("bai tap", "e learning", "chua lam", "chua nop"),
     "personal_announcement": ("thong bao moi", "thong bao chua doc"),
-    "personal_exam": ("toi co kiem tra", "co bai kiem tra", "kiem tra tuan"),
-    "personal_schedule": ("toi hoc", "minh hoc", "hoc mon gi", "lich cua toi", "lich cua minh"),
+    "personal_exam": (
+        "toi co kiem tra", "co bai kiem tra", "kiem tra tuan",
+        "lich thi cua toi", "lich thi cua minh", "toi thi mon gi", "minh thi mon gi",
+    ),
+    "personal_schedule": (
+        "toi hoc", "minh hoc", "hoc mon gi", "lich cua toi", "lich cua minh",
+        "thoi khoa bieu cua toi", "thoi khoa bieu cua minh", "lich hoc cua toi",
+        "lich hoc cua minh", "hom nay hoc gi", "ngay mai hoc gi",
+    ),
     "exam_schedule": ("lich thi", "thi cuoi ky", "thi giua ky", "phong thi", "ca thi"),
     "schedule": ("lich hoc", "thoi khoa bieu", "phong hoc", "ca hoc", "hoc bu"),
     "document": ("tai lieu", "giao trinh", "de cuong", "slide", "bai giang"),

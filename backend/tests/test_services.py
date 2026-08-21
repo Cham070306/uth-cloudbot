@@ -72,6 +72,19 @@ def test_intent_priority_distinguishes_exam_schedule():
     assert classify_intent("Lịch học hôm nay") == "schedule"
 
 
+@pytest.mark.parametrize(
+    ("message", "intent"),
+    [
+        ("Lịch thi của tôi tuần này", "personal_exam"),
+        ("Tôi thi môn gì?", "personal_exam"),
+        ("Thời khóa biểu của mình", "personal_schedule"),
+        ("Ngày mai học gì?", "personal_schedule"),
+    ],
+)
+def test_personal_schedule_phrasings_take_priority(message, intent):
+    assert classify_intent(message) == intent
+
+
 def test_remaining_schedule_excludes_classes_that_already_ended():
     from datetime import datetime
     from zoneinfo import ZoneInfo
