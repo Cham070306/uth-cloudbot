@@ -1,6 +1,8 @@
 import json
 from pathlib import Path
 
+import pytest
+
 from services.faq_service import find_faq, load_faqs, searchable_question_count
 from services.intent_service import classify_intent, normalize_text
 from services.student_service import get_remaining_schedule
@@ -43,6 +45,22 @@ def test_every_faq_question_and_keyword_resolves_to_its_owner():
     for faq in load_faqs():
         for text in [faq["question"], *faq.get("keywords", [])]:
             assert find_faq(text)["id"] == faq["id"], text
+
+
+@pytest.mark.parametrize(
+    ("message", "faq_id"),
+    [
+        ("cho mình hỏi cách dkhp", "faq-001"),
+        ("mình muốn xem hphi", "faq-003"),
+        ("quên mk cổng sinh viên", "faq-004"),
+        ("đăng kí học phầnn ở đâu", "faq-001"),
+        ("xin cấp lại thẻ sinh viê", "faq-009"),
+        ("đăng ký ktx như nào", "faq-025"),
+        ("đóng bhyt ở đâu", "faq-026"),
+    ],
+)
+def test_faq_recognizes_chat_abbreviations_and_minor_typos(message, faq_id):
+    assert find_faq(message)["id"] == faq_id
 
 
 def test_normalize_text_handles_vietnamese():

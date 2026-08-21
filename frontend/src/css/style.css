@@ -280,7 +280,11 @@ body {
 }
 .msg--user .msg__bubble { background: var(--forest); color: var(--cream); border-color: var(--forest); }
 
-.msg__answer { margin: 0 0 8px; }
+.msg__answer {
+  margin: 0 0 8px;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
 
 .msg__source-badge {
   display: inline-block;

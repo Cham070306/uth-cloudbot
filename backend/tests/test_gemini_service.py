@@ -5,7 +5,13 @@ import pytest
 from app import create_app
 from config import Config, _get_bool, _get_positive_int
 from services import chat_service, gemini_service
-from services.gemini_service import GeminiUnavailableError, MODEL_ID
+from services.gemini_service import (
+    GEMINI_MAX_OUTPUT_TOKENS,
+    GEMINI_TEMPERATURE,
+    SYSTEM_INSTRUCTION,
+    GeminiUnavailableError,
+    MODEL_ID,
+)
 
 
 @pytest.fixture(autouse=True)
@@ -68,6 +74,16 @@ def test_gemini_success(monkeypatch):
         "ai_generated": True,
         "fallback_used": False,
     }
+
+
+def test_gemini_answer_style_is_bounded_and_safe_for_plain_text_ui():
+    assert 0 <= GEMINI_TEMPERATURE <= 0.4
+    assert 200 <= GEMINI_MAX_OUTPUT_TOKENS <= 600
+    assert "80-180 từ" in SYSTEM_INSTRUCTION
+    assert 'dùng dấu "•"' in SYSTEM_INSTRUCTION
+    assert "Không dùng bảng, HTML" in SYSTEM_INSTRUCTION
+    assert "Không bịa nguồn" in SYSTEM_INSTRUCTION
+    assert "thông tin chính thức" in SYSTEM_INSTRUCTION
 
 
 def test_empty_gemini_response(monkeypatch):
