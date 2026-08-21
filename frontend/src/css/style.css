@@ -284,6 +284,7 @@ body {
   margin: 0 0 8px;
   white-space: pre-line;
   overflow-wrap: anywhere;
+  line-height: 1.65;
 }
 
 .msg__details {
