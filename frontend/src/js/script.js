@@ -24,8 +24,7 @@
     envPill.textContent = CONFIG.ENV === "local" ? "Môi trường: Local" : "Môi trường: Render";
   }
 
-  // ---------- Đăng nhập demo (giả lập, không xác thực thật) ----------
-  // Dữ liệu cá nhân chỉ lưu trong bộ nhớ trình duyệt (không gửi lên server nào).
+  // ---------- Đăng nhập (gọi backend thật /api/auth/login) ----------
   const loginOverlay = document.getElementById("loginOverlay");
   const loginForm = document.getElementById("loginForm");
   const mainShell = document.getElementById("mainShell");
@@ -33,24 +32,74 @@
   const studentNameLabel = document.getElementById("studentNameLabel");
   const studentIdLabel = document.getElementById("studentIdLabel");
 
-  if (loginForm) {
-    loginForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const name = document.getElementById("loginName").value.trim();
-      const id = document.getElementById("loginId").value.trim();
-      if (!name || !id) return;
+  // Lưu trong bộ nhớ phiên làm việc (không dùng localStorage).
+  let authToken = null;
 
-      if (sidebarStudent) {
-        studentNameLabel.textContent = name;
-        studentIdLabel.textContent = "MSSV: " + id;
-        sidebarStudent.hidden = false;
+  if (loginForm) {
+    loginForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const username = document.getElementById("loginName").value.trim();
+      const password = document.getElementById("loginId").value.trim();
+      if (!username || !password) return;
+
+      const submitBtn = loginForm.querySelector(".loginCard__submit");
+      const errorEl = document.getElementById("loginError");
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Đang đăng nhập…";
+      if (errorEl) errorEl.hidden = true;
+
+      try {
+        if (CONFIG.USE_MOCK) {
+          throw new Error("mock"); // mock mode -> bỏ qua gọi API, vào thẳng demo
+        }
+        const url = CONFIG.API_BASE_URL.replace(/\/$/, "") + CONFIG.ENDPOINTS.login;
+        const res = await withTimeout(
+          fetch(url, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ username, password }),
+          }),
+          8000
+        );
+        if (!res.ok) {
+          const errBody = await res.json().catch(() => null);
+          const msg = errBody && errBody.error && errBody.error.message
+            ? errBody.error.message
+            : "Tài khoản hoặc mật khẩu không đúng.";
+          throw new Error(msg);
+        }
+        const data = await res.json();
+        authToken = data.access_token || null;
+        const student = data.student || {};
+        if (sidebarStudent) {
+          studentNameLabel.textContent = student.name || username;
+          studentIdLabel.textContent = "MSSV: " + (student.id || username);
+          sidebarStudent.hidden = false;
+        }
+        loginOverlay.hidden = true;
+        mainShell.hidden = false;
+        input && input.focus();
+      } catch (err) {
+        if (err && err.message === "mock") {
+          // Chế độ mock: cho vào thẳng, không có token thật.
+          if (sidebarStudent) {
+            studentNameLabel.textContent = username;
+            studentIdLabel.textContent = "MSSV: " + password;
+            sidebarStudent.hidden = false;
+          }
+          loginOverlay.hidden = true;
+          mainShell.hidden = false;
+          input && input.focus();
+        } else if (errorEl) {
+          errorEl.textContent = err.message || "Không đăng nhập được. Kiểm tra lại tài khoản demo.";
+          errorEl.hidden = false;
+        }
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Vào trò chuyện";
       }
-      loginOverlay.hidden = true;
-      mainShell.hidden = false;
-      input && input.focus();
     });
   } else {
-    // Không có màn đăng nhập trên trang này -> hiện luôn giao diện chat.
     if (mainShell) mainShell.hidden = false;
   }
 
@@ -72,14 +121,14 @@
     });
   });
 
-  function updateInfoPanel({ source, source_type, updated_at }, question) {
+  function updateInfoPanel({ sourceObj, sourceText, aiGenerated, fallbackUsed, updated_at }, question) {
     if (!infoPanelBody) return;
-    const resolvedType = inferSourceType(source_type, source);
+    const resolvedType = inferSourceType(sourceObj, aiGenerated, fallbackUsed);
     const meta = CONFIG.SOURCE_LABELS[resolvedType];
     infoPanelBody.innerHTML = `
       <div class="infopanel__row"><strong>Câu hỏi</strong>${question}</div>
       <div class="infopanel__row"><strong>Loại nguồn</strong>${meta.label}</div>
-      <div class="infopanel__row"><strong>Nguồn</strong>${source}</div>
+      <div class="infopanel__row"><strong>Nguồn</strong>${sourceText}</div>
       <div class="infopanel__row"><strong>Cập nhật</strong>${fmtTime(updated_at)}</div>
       ${meta.note ? `<div class="infopanel__row" style="color:var(--plum); font-style:italic;">${meta.note}</div>` : ""}
     `;
@@ -87,14 +136,13 @@
 
   // ---------- MOCK DATA (chỉ dùng khi CONFIG.USE_MOCK = true) ----------
   const MOCK_ANSWERS = [
-    { match: /học phí|hoc phi|tuition/i, answer: "Học phí học kỳ này được tính theo tín chỉ đã đăng ký, xem chi tiết tại cổng sinh viên mục 'Tài chính'.", source: "Phòng Tài chính — Sổ tay sinh viên 2026", source_type: "faq" },
-    { match: /lịch thi|lich thi|exam/i, answer: "Lịch thi học kỳ này dự kiến công bố trước 2 tuần thi, bạn kiểm tra ở mục 'Lịch thi' trên cổng đào tạo.", source: "Phòng Đào tạo — Lịch thi HK1", source_type: "faq" },
-    { match: /lịch học|lich hoc|thời khóa biểu|tkb/i, answer: "Thời khóa biểu được cập nhật theo lớp đăng ký, bạn xem trong mục 'Thời khóa biểu' của cổng sinh viên.", source: "Phòng Đào tạo — TKB HK1", source_type: "demo" },
+    { match: /học phí|hoc phi|tuition/i, answer: "Học phí học kỳ này được tính theo tín chỉ đã đăng ký, xem chi tiết tại cổng sinh viên mục 'Tài chính'.", sourceObj: { type: "sample", title: "Phòng Tài chính — Sổ tay sinh viên 2026" } },
+    { match: /lịch thi|lich thi|exam/i, answer: "Lịch thi học kỳ này dự kiến công bố trước 2 tuần thi, bạn kiểm tra ở mục 'Lịch thi' trên cổng đào tạo.", sourceObj: { type: "sample", title: "Phòng Đào tạo — Lịch thi HK1" } },
+    { match: /lịch học|lich hoc|thời khóa biểu|tkb/i, answer: "Thời khóa biểu được cập nhật theo lớp đăng ký, bạn xem trong mục 'Thời khóa biểu' của cổng sinh viên.", sourceObj: { type: "mock", title: "Dữ liệu demo — TKB HK1" } },
   ];
   const MOCK_DEFAULT = {
     answer: "Mình chưa có dữ liệu chính xác cho câu hỏi này. Bạn thử hỏi về học phí, lịch học hoặc lịch thi nhé.",
-    source: "CloudBot — phản hồi mặc định",
-    source_type: "fallback",
+    sourceObj: { type: "fallback", title: "CloudBot — phản hồi mặc định" },
   };
 
   function mockReply(question) {
@@ -104,18 +152,23 @@
       const delay = 600 + Math.random() * 900;
       setTimeout(() => {
         if (question.trim().length < 3) {
+          const s = { type: "fallback", title: "CloudBot — kiểm tra đầu vào" };
           resolve({
             answer: "Câu hỏi hơi ngắn, bạn mô tả rõ hơn giúp mình nhé.",
-            source: "CloudBot — kiểm tra đầu vào",
-            source_type: "fallback",
+            sourceObj: s,
+            sourceText: formatSourceText(s),
+            aiGenerated: false,
+            fallbackUsed: true,
             updated_at: new Date().toISOString(),
           });
           return;
         }
         resolve({
           answer: picked.answer,
-          source: picked.source,
-          source_type: picked.source_type,
+          sourceObj: picked.sourceObj,
+          sourceText: formatSourceText(picked.sourceObj),
+          aiGenerated: picked.sourceObj.type === "gemini",
+          fallbackUsed: picked.sourceObj.type === "fallback",
           updated_at: new Date().toISOString(),
         });
       }, delay);
@@ -139,12 +192,11 @@
     const body = {};
     body[CONFIG.REQUEST_FIELDS.question] = question;
 
+    const headers = { "Content-Type": "application/json" };
+    if (authToken) headers["Authorization"] = "Bearer " + authToken;
+
     const res = await withTimeout(
-      fetch(url, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body),
-      }),
+      fetch(url, { method: "POST", headers, body: JSON.stringify(body) }),
       CONFIG.REQUEST_TIMEOUT_MS
     );
 
@@ -153,22 +205,25 @@
     }
 
     const data = await res.json();
+    const sourceObj = data[CONFIG.RESPONSE_FIELDS.source] || null;
     return {
       answer: data[CONFIG.RESPONSE_FIELDS.answer] || "(Không có nội dung trả lời)",
-      source: data[CONFIG.RESPONSE_FIELDS.source] || "Không rõ nguồn",
-      source_type: data[CONFIG.RESPONSE_FIELDS.sourceType] || null,
+      sourceObj,
+      sourceText: formatSourceText(sourceObj),
+      aiGenerated: !!data[CONFIG.RESPONSE_FIELDS.aiGenerated],
+      fallbackUsed: !!data[CONFIG.RESPONSE_FIELDS.fallbackUsed],
       updated_at: data[CONFIG.RESPONSE_FIELDS.updatedAt] || new Date().toISOString(),
     };
   }
 
-  async function sendFeedback(question, answer, rating) {
+  async function sendFeedback(question, answer, vote) {
     if (CONFIG.USE_MOCK) return true;
     try {
       const url = CONFIG.API_BASE_URL.replace(/\/$/, "") + CONFIG.ENDPOINTS.feedback;
       const body = {};
       body[CONFIG.FEEDBACK_FIELDS.question] = question;
       body[CONFIG.FEEDBACK_FIELDS.answer] = answer;
-      body[CONFIG.FEEDBACK_FIELDS.rating] = rating;
+      body[CONFIG.FEEDBACK_FIELDS.vote] = vote; // "up" | "down"
       await fetch(url, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -226,15 +281,15 @@
     return chatScroll.lastElementChild;
   }
 
-  function addBotMessage({ answer, source, source_type, updated_at }, lastQuestion) {
+  function addBotMessage({ answer, sourceObj, sourceText, aiGenerated, fallbackUsed, updated_at }, lastQuestion) {
     const node = botTpl.content.cloneNode(true);
-    const resolvedType = inferSourceType(source_type, source);
+    const resolvedType = inferSourceType(sourceObj, aiGenerated, fallbackUsed);
     const meta = CONFIG.SOURCE_LABELS[resolvedType];
 
     node.querySelector(".msg__answer").textContent = answer;
     node.querySelector(".msg__source-badge").textContent = meta.label;
     node.querySelector(".msg__source-badge").classList.add("badge--" + resolvedType);
-    node.querySelector(".msg__source").textContent = "Nguồn: " + source;
+    node.querySelector(".msg__source").textContent = "Nguồn: " + sourceText;
     node.querySelector(".msg__time").textContent = fmtTime(updated_at);
 
     const disclaimerEl = node.querySelector(".msg__disclaimer");
@@ -266,7 +321,7 @@
 
     chatScroll.appendChild(node);
     scrollToBottom();
-    updateInfoPanel({ source, source_type, updated_at }, lastQuestion);
+    updateInfoPanel({ sourceObj, sourceText, aiGenerated, fallbackUsed, updated_at }, lastQuestion);
   }
 
   function addErrorMessage(retryFn) {
