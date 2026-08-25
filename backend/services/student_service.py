@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 
 from repositories import get_repository
@@ -22,6 +22,12 @@ def _owned(collection, student_id):
 
 def get_schedule(student_id, start=None, end=None):
     items = _owned("schedules", student_id)
+    current_start, current_end = current_week_range()
+    if start == current_start and end == current_end:
+        monday = date.fromisoformat(current_start)
+        for item in items:
+            template_date = date.fromisoformat(item["date"])
+            item["date"] = (monday + timedelta(days=template_date.weekday())).isoformat()
     if start:
         items = [item for item in items if item["date"] >= start]
     if end:

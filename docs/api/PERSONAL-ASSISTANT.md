@@ -2,6 +2,8 @@
 
 Tài liệu này mô tả phần mở rộng tuần tự trên backend BE-01. Toàn bộ hồ sơ, lịch học, bài tập, kỳ thi và thông báo là dữ liệu demo, không phải dữ liệu sinh viên UTH thật. Học kỳ demo `2026-1` dùng mốc `2026-08-17` đến `2026-12-20` theo múi giờ `Asia/Ho_Chi_Minh`.
 
+Khi truy vấn lịch của tuần hiện tại, backend giữ nguyên thứ và giờ học trong dữ liệu mẫu nhưng chiếu ngày sang tuần đang chạy. Nhờ đó luồng demo không trả về lịch rỗng chỉ vì ngày seed cố định đã qua.
+
 ## Tài khoản demo
 
 | Username | Password | Token |
