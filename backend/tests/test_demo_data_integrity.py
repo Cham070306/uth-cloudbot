@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from app import create_app
 from repositories.local import LocalRepository
@@ -6,7 +6,7 @@ from repositories.local import LocalRepository
 
 EXPECTED_COUNTS = {
     "students": 10,
-    "schedules": 60,
+    "schedules": 390,
     "assignments": 35,
     "exams": 20,
     "announcements": 30,
@@ -107,6 +107,22 @@ def test_schedule_and_exam_times_are_valid_without_student_conflicts():
         lambda item: datetime.fromisoformat(item["end_at"]),
         lambda item: item["student_id"],
     )
+
+
+def test_every_student_has_weekly_schedule_through_september():
+    schedules = repository().list("schedules")
+    expected_dates = {
+        (datetime(2026, 8, 17) + timedelta(days=offset)).date().isoformat()
+        for offset in range(45)
+        if (datetime(2026, 8, 17) + timedelta(days=offset)).weekday() < 6
+    }
+
+    for student_number in range(1, 11):
+        student_id = f"SV{student_number:03d}"
+        actual_dates = {
+            item["date"] for item in schedules if item["student_id"] == student_id
+        }
+        assert actual_dates == expected_dates
 
 
 def test_demo_api_contracts_and_private_fields():

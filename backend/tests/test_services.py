@@ -5,7 +5,7 @@ import pytest
 
 from services.faq_service import find_faq, load_faqs, searchable_question_count
 from services.intent_service import classify_intent, normalize_text
-from services.student_service import current_week_range, get_remaining_schedule, get_schedule
+from services.student_service import get_remaining_schedule, get_schedule
 
 
 def test_faq_dataset_has_unique_ids_and_required_fields():
@@ -101,13 +101,24 @@ def test_remaining_schedule_excludes_classes_that_already_ended():
     ]
 
 
-def test_current_week_schedule_rolls_demo_dates_forward():
-    start, end = current_week_range()
-    items = get_schedule("SV001", start, end)
+def test_current_week_uses_templates_only_when_firestore_week_is_missing(monkeypatch):
+    from services import student_service
+
+    templates = student_service._owned("schedules", "SV001")[:6]
+    monkeypatch.setattr(student_service, "_owned", lambda _collection, _student_id: templates)
+    monkeypatch.setattr(
+        student_service,
+        "current_week_range",
+        lambda: ("2026-08-24", "2026-08-30"),
+    )
+
+    items = get_schedule("SV001", "2026-08-24", "2026-08-30")
 
     assert len(items) == 6
-    assert items[0]["date"] == start
-    assert items[-1]["date"] <= end
+    assert [item["date"] for item in items] == [
+        "2026-08-24", "2026-08-25", "2026-08-26",
+        "2026-08-27", "2026-08-28", "2026-08-29",
+    ]
 
 
 def test_find_faq_rejects_unrelated_question():

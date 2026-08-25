@@ -22,17 +22,24 @@ def _owned(collection, student_id):
 
 def get_schedule(student_id, start=None, end=None):
     items = _owned("schedules", student_id)
-    current_start, current_end = current_week_range()
-    if start == current_start and end == current_end:
-        monday = date.fromisoformat(current_start)
-        for item in items:
+    filtered = items
+    if start:
+        filtered = [item for item in filtered if item["date"] >= start]
+    if end:
+        filtered = [item for item in filtered if item["date"] <= end]
+    if not filtered and (start, end) == current_week_range() and items:
+        monday = date.fromisoformat(start)
+        template_monday = min(date.fromisoformat(item["date"]) for item in items)
+        template_monday -= timedelta(days=template_monday.weekday())
+        templates = [
+            item for item in items
+            if 0 <= (date.fromisoformat(item["date"]) - template_monday).days <= 6
+        ]
+        for item in templates:
             template_date = date.fromisoformat(item["date"])
             item["date"] = (monday + timedelta(days=template_date.weekday())).isoformat()
-    if start:
-        items = [item for item in items if item["date"] >= start]
-    if end:
-        items = [item for item in items if item["date"] <= end]
-    return sorted(items, key=lambda item: (item["date"], item["start_time"]))
+        filtered = templates
+    return sorted(filtered, key=lambda item: (item["date"], item["start_time"]))
 
 
 def get_remaining_schedule(student_id, start=None, end=None, now=None):

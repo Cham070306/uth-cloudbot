@@ -33,7 +33,7 @@ def test_seed_can_run_repeatedly():
         "faqs": 150,
         "documents": 30,
         "students": 10,
-        "schedules": 60,
+        "schedules": 390,
         "assignments": 35,
         "exams": 20,
         "announcements": 30,
