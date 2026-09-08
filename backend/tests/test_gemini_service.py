@@ -77,7 +77,7 @@ def test_gemini_success(monkeypatch):
 
 
 def test_gemini_answer_style_is_bounded_and_safe_for_plain_text_ui():
-    assert 200 <= GEMINI_MAX_OUTPUT_TOKENS <= 600
+    assert 1024 <= GEMINI_MAX_OUTPUT_TOKENS <= 4096
     assert "80-180 từ" in SYSTEM_INSTRUCTION
     assert "đề mục" in SYSTEM_INSTRUCTION
     assert 'dấu "•"' in SYSTEM_INSTRUCTION

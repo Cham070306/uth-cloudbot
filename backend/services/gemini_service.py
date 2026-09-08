@@ -6,7 +6,7 @@ from config import Config
 
 logger = logging.getLogger(__name__)
 MODEL_ID = "gemini-3.5-flash"
-GEMINI_MAX_OUTPUT_TOKENS = 500
+GEMINI_MAX_OUTPUT_TOKENS = 2048
 
 SYSTEM_INSTRUCTION = """Bạn là UTH CloudBot, trợ lý kiến thức chung và học tập cho sinh viên.
 
