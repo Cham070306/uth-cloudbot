@@ -76,6 +76,25 @@ def test_gemini_success(monkeypatch):
     }
 
 
+def test_generate_disables_automatic_function_calling():
+    calls = []
+
+    class FakeModels:
+        def generate_content(self, **kwargs):
+            calls.append(kwargs)
+            return SimpleNamespace(text="Câu trả lời")
+
+    response = gemini_service._generate(
+        SimpleNamespace(models=FakeModels()),
+        MODEL_ID,
+        "API là gì?",
+    )
+
+    assert response.text == "Câu trả lời"
+    config = calls[0]["config"]
+    assert config.automatic_function_calling.disable is True
+
+
 def test_gemini_answer_style_is_bounded_and_safe_for_plain_text_ui():
     assert 1024 <= GEMINI_MAX_OUTPUT_TOKENS <= 4096
     assert "80-180 từ" in SYSTEM_INSTRUCTION

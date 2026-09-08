@@ -69,6 +69,9 @@ def _generate(client, model, message):
         config=types.GenerateContentConfig(
             system_instruction=SYSTEM_INSTRUCTION,
             max_output_tokens=GEMINI_MAX_OUTPUT_TOKENS,
+            automatic_function_calling=types.AutomaticFunctionCallingConfig(
+                disable=True,
+            ),
         ),
     )
 
